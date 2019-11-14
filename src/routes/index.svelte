@@ -1,16 +1,19 @@
 <script>
 	import { _L, locale } from '../l18n/l18n';
+	import Docs from '../docs/api/logainm/developer.en.svx';
 </script>
 
 <svelte:head>
 	<title>{$_L(`en: Home | ga: Baile`)}</title>
 </svelte:head>
 
-<a on:click={() => $locale = 'en'} href>Click EN</a>
-<a on:click={() => $locale = 'ga'} href>Click GA</a>
 <p>{$locale} {$_L(`en: Home | ga: Baile`)}</p>
 
 <h1>Great success!</h1>
+
+<div>
+<Docs/>
+</div>
 
 <figure>
 	<img alt='Borat' src='great-success.png'>

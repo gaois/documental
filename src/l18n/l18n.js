@@ -1,8 +1,9 @@
 import { derived, writable } from 'svelte/store';
 
-let currentLocale;
 const defaultLocale = 'en';
 const supportedLocales = ['en', 'ga'];
+
+let currentLocale;
 
 const localizer = (localizeableString) => {
     if (!localizeableString)

@@ -6,6 +6,7 @@ import babel from 'rollup-plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
+import { mdsvex } from 'mdsvex';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -26,7 +27,16 @@ export default {
 			svelte({
 				dev,
 				hydratable: true,
-				emitCss: true
+				emitCss: true,
+				extensions: ['.svelte', '.svexy', '.svx'],
+				preprocess: mdsvex({
+					extension: '.svx',
+					//layout: path.join(__dirname, './DefaultLayout.svelte'), // this needs to be an absolute path
+					markdownOptions: {
+					  typographer: true,
+					  linkify: true
+					},
+				  })
 			}),
 			resolve({
 				browser: true,
@@ -69,7 +79,16 @@ export default {
 			}),
 			svelte({
 				generate: 'ssr',
-				dev
+				dev,
+				extensions: ['.svelte', '.svexy', '.svx'],
+				preprocess: mdsvex({
+					extension: '.svx',
+					//layout: path.join(__dirname, './DefaultLayout.svelte'), // this needs to be an absolute path
+					markdownOptions: {
+					  typographer: true,
+					  linkify: true
+					},
+				  })
 			}),
 			resolve({
 				dedupe

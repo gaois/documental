@@ -5,18 +5,16 @@
 
 	export let segment;
 
-	function setDocumentLang() {
-		document.documentElement.lang = $locale;
-	}
-
 	let currentLocale = $locale;
 
+	const setDocumentLocale = () => document.documentElement.lang = $locale;
+
 	$: if (currentLocale !== $locale) {
-		setDocumentLang();
+		setDocumentLocale();
 		currentLocale = $locale;
 	}
 
-	onMount(() => setDocumentLang());
+	onMount(() => setDocumentLocale);
 </script>
 
 <style>

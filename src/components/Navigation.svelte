@@ -1,5 +1,19 @@
 <script>
+	import { stores } from '@sapper/app';
+	import { _L, locale } from '../l18n/l18n';
+
 	export let segment;
+
+	const { page } = stores();
+
+	function path(targetLocale) {
+		if (!$page.path || $page.path === '/')
+			return `/${targetLocale}`;
+
+		const params = $page.path.split('/');
+		params[0] = targetLocale;
+		return params.join();
+	}
 </script>
 
 <style>
@@ -47,6 +61,9 @@
 		display: block;
 	}
 </style>
+
+<a href={path('en')}>EN</a>
+<a href={path('ga')}>GA</a>
 
 <nav>
 	<ul>
