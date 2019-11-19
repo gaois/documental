@@ -1,24 +1,12 @@
 ---
 title: Logainm Application Programming Interface (Version 0.9) - Developer documentation
 description: Developer documentation for the Logainm API
+public: true
 ---
 
 # Logainm Application Programming Interface (Version 0.9) Developer documentation
 
 **Note:** This documentation describes a **prerelease** version of the Logainm API. Features are being added on an ongoing basis. The documentation will be revised in advance of the v1.0 release.
-
-## Contents
-
-1. [Introduction](#introduction)
-2. [API overview](#api-overview)
-3. [API versioning](#api-versioning)
-4. [API authentication](#api-authentication)
-5. [Security](#security)
-6. [Resource paths](#resource-paths)
-7. [Sorting](#sorting)
-8. [Illustrative examples](#illustrative-examples)
-9. [HTTP status codes](#http-status-codes)
-10. [Data retention and data protection](#data-retention-and-data-protection)
 
 ## Introduction
 

@@ -1,6 +1,7 @@
 ---
-title: Logainm Application Programming Interface (Version 0.9): Data dictionary
+title: Logainm Application Programming Interface (Version 0.9) - Data dictionary
 description: Data dictionary for the Logainm API
+public: true
 ---
 
 # Logainm Application Programming Interface (Version 0.9): Data dictionary

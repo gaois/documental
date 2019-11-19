@@ -1,6 +1,6 @@
 <script>
-	import { _L, locale } from '../l18n/l18n';
-	import Docs from '../docs/api/logainm/developer.en.svx';
+	import { _L, locale } from 'l18n/l18n';
+	//import Docs, { _metadata } from './[locale]/api/logainm/developer.en.svx';
 </script>
 
 <svelte:head>
@@ -9,18 +9,13 @@
 
 <p>{$locale} {$_L(`en: Home | ga: Baile`)}</p>
 
-<h1>Great success!</h1>
-
 <div>
-<Docs/>
+<!--
+	<h1>{_metadata.title}</h1>
+	<Docs/>
+-->
+<h1>Hello</h1>
 </div>
-
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
-
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
 
 <style>
 	h1, figure, p {
@@ -39,11 +34,11 @@
 		margin: 0 0 1em 0;
 	}
 
-	img {
+	/*img {
 		width: 100%;
 		max-width: 400px;
 		margin: 0 0 1em 0;
-	}
+	}*/
 
 	p {
 		margin: 1em auto;

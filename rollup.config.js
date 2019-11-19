@@ -28,10 +28,9 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true,
-				extensions: ['.svelte', '.svexy', '.svx'],
+				extensions: ['.svelte', '.svx'],
 				preprocess: mdsvex({
 					extension: '.svx',
-					//layout: path.join(__dirname, './DefaultLayout.svelte'), // this needs to be an absolute path
 					markdownOptions: {
 					  typographer: true,
 					  linkify: true
@@ -80,10 +79,9 @@ export default {
 			svelte({
 				generate: 'ssr',
 				dev,
-				extensions: ['.svelte', '.svexy', '.svx'],
+				extensions: ['.svelte', '.svx'],
 				preprocess: mdsvex({
 					extension: '.svx',
-					//layout: path.join(__dirname, './DefaultLayout.svelte'), // this needs to be an absolute path
 					markdownOptions: {
 					  typographer: true,
 					  linkify: true

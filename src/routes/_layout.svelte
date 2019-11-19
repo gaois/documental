@@ -1,7 +1,7 @@
 <script>
+	import { _L, locale } from 'l18n/l18n';
 	import { onMount } from 'svelte';
 	import Navigation from '../components/Navigation.svelte';
-	import { _L, locale } from '../l18n/l18n';
 
 	export let segment;
 

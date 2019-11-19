@@ -1,6 +1,6 @@
 <script>
 	import { stores } from '@sapper/app';
-	import { _L, locale } from '../l18n/l18n';
+	import { _L, locale } from 'l18n/l18n';
 
 	export let segment;
 
@@ -11,8 +11,8 @@
 			return `/${targetLocale}`;
 
 		const params = $page.path.split('/');
-		params[0] = targetLocale;
-		return params.join();
+		params[1] = targetLocale;
+		return params.join('/');
 	}
 </script>
 
