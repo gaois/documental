@@ -61,7 +61,7 @@ Pass the API key into an `apiKey` GET query string parameter:
 
 **Note:** The GET query parameter may be used for non-GET requests (such as POST and PUT).
 
-#### HTTP Basic Authentication username
+#### HTTP Basic Authentication
 
 As an alternative, pass the API key as the username (with an empty password) using HTTP basic authentication:
 

@@ -22,12 +22,14 @@
 <style>
     .documentation {
         padding: 1rem;
+        margin-bottom: 2.6rem;
         width: 100%;
     }
 
     @media screen and (min-width: 1000px) {
         .documentation {
-            max-width: 52em;
+            max-width: 65%;
+            margin-top: 2.6rem;
             padding: 1rem 2rem;
         }
     }

@@ -33,7 +33,6 @@
 
 <script>
     import { _L, locale } from 'l18n/l18n';
-    import { beforeUpdate } from 'svelte';
     import Document from '../../../../../components/Document.svelte'
     import TableOfContents from '../../../../../components/TableOfContents.svelte'
 
@@ -44,11 +43,10 @@
     export let toc;
     export let content;
 
-    const alternateLocale = ($locale === 'en') ? 'ga' : 'en';
+    $: $locale = uiLocale;
+    $: showTOC = !(metadata.toc !== null && metadata.toc === 'false');
 
-    beforeUpdate(() => {
-        $locale = uiLocale;
-    });
+    const alternateLocale = ($locale === 'en') ? 'ga' : 'en';
     
     function path(targetLocale) {
 		const params = basePath.split('/');
@@ -79,6 +77,8 @@
     <meta name="twitter:url" content={`https://docs.gaois.ie${path($locale)}`}>
 </svelte:head>
 
-<TableOfContents {toc}/>
+{#if (showTOC)}
+    <TableOfContents {toc}/>
+{/if}
 
 <Document {content} {monolingual}/>

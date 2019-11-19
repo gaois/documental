@@ -9,14 +9,11 @@
 
 <script>
 	import { _L, locale } from 'l18n/l18n';
-    import { beforeUpdate } from 'svelte';
     import Index from '../index.svelte';
 
     export let uiLocale;
 
-    beforeUpdate(() => {
-        $locale = uiLocale;
-	});
+    $: $locale = uiLocale;
 </script>
 
 <Index/>

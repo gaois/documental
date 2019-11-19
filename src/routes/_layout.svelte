@@ -27,11 +27,13 @@
 	</a>
 </div>
 
-<Navigation {segment}/>
+<div class="container">
+	<Navigation {segment}/>
 
-<main id="app-main">
-	<slot></slot>
-</main>
+	<main id="main">
+		<slot></slot>
+	</main>
+</div>
 
 <Footer/>
 
@@ -80,15 +82,22 @@
 		border: 1px dotted #ffb4db;
 	}
 
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
 		padding: 1rem;
+		width: 100%;
 	}
 
 	@media screen and (min-width: 1000px) {
-		main {
+		.container, main {
 			flex-direction: row;
+			justify-content: space-between;
 		}
 	}
 </style>

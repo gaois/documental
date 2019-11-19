@@ -30,6 +30,14 @@
         margin: 0.2rem 0;
     }
 
+    div :global(strong) {
+        font-weight: inherit;
+    }
+
+    div :global(code) {
+        font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
+    }
+
     .contents {
 		padding: 1rem;
     }
@@ -37,6 +45,9 @@
     @media screen and (min-width: 1000px) {
         .contents {
             order: 1;
+            position: fixed;
+            right: 2rem;
+            top: 4rem;
         }
     }
 </style>

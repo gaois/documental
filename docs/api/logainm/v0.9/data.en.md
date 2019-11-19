@@ -1,6 +1,7 @@
 ---
 title: Logainm Application Programming Interface (Version 0.9) - Data dictionary
 description: Data dictionary for the Logainm API
+keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
 public: true
 ---
 
@@ -9,31 +10,6 @@ public: true
 **Note:** This documentation describes a **prerelease** version of the Logainm API. Features are being added on an ongoing basis. The documentation will be revised in advance of the v1.0 release.
 
 This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines please consult the [developer documentation](https://github.com/gaois/LogainmAPI-docs/blob/master/README.md).
-
-## Contents
-
-- [`placeList`](#placeList)
-- [`place`](#place)
-  - [`cluster`](#cluster)
-  - [`clusterMember`](#clusterMember)
-  - [`placename`](#placename)
-  - [`acceptability`](#acceptability)
-  - [`audio`](#audio)
-  - [`subName`](#subName)
-  - [`placeSummary`](#placeSummary)
-  - [`geography`](#geography)
-  - [`coordinates`](#coordinates) 
-  - [`gridReference`](#gridReference)
-  - [`placeProperty`](#placeProperty)
-  - [`image`](#image)
-  - [`resource`](#resource)
-  - [`supplier`](#supplier)
-  - [`link`](#link)
-  - [`biographyLink`](#biographyLink)
-  - [`folkloreLink`](#folkloreLink)
-  - [`sameAs`](#sameAs)
-- [`category`](#category)
-- [`glossary`](#glossary)
 
 ## `placeList`
 

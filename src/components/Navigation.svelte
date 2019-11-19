@@ -7,6 +7,8 @@
 
 	const { page } = stores();
 
+	$: params = $page.path.split('/');
+
 	let pathEN = path('en');
 	let pathGA = path('ga');
 
@@ -26,34 +28,69 @@
 </script>
 
 <nav class="language">
-	<a rel="prefetch" href={pathEN}>English</a>
-	<a rel="prefetch" href={pathGA}>Gaeilge</a>
+	<a class="gaois-link" href={`https://www.gaois.ie/${$locale}`}>Gaois</a>
+	<a rel="prefetch" class:selected={$locale === 'en'} href={pathEN}>English</a>
+	<a rel="prefetch" class:selected={$locale === 'ga'} href={pathGA}>Gaeilge</a>
 </nav>
 
 <nav class="site">
 	<ul>
 		<li>
-			<a href={`/${$locale}`}>
+			<a class="home-link" href={`/${$locale}`}>
 				<img src="" alt={$_L(`en: Home | ga: Baile`)}/>
 			</a>
 		</li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+		<li>
+			<a href>{$_L(`en: Open Data | ga: Sonraí Oscailte`)}</a>
+			<ul>
+				<li>
+					<a href={`/${$locale}/api/logainm/v0.9/developer`}>Logainm</a>
+					<ul>
+						<li>
+							<a href={`/${$locale}/api/logainm/v0.9/developer`}>{$_L(`en: Development | ga: Forbairt`)}</a>
+						</li>
+						<li>
+							<a href={`/${$locale}/api/logainm/v0.9/data`}>{$_L(`en: Data dictionary | ga: Foclóir sonraí`)}</a>
+						</li>
+						<li>
+							<a href={`/${$locale}/api/logainm/v0.9/licence`}>{$_L(`en: Licence | ga: Ceadúnas`)}</a>
+						</li>
+						<li>
+							<a href={`/${$locale}/api/logainm/v0.9/changelog`}>{$_L(`en: Changelog | ga: Loga athruithe`)}</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href={`/${$locale}/api/duchas/v1.0/surnames`}>{$_L(`en: Surnames Index | ga: Innéacs Sloinnte`)}</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href>{$_L(`en: Software | ga: Bogearraí`)}</a>
+		</li>
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+		<!--<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+
+		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>-->
 	</ul>
 </nav>
 
 <style>
 	.language {
+		background-color: rgb(79,134,142);
+		color: #fff;
+		display: inline-flex;
 		position: absolute;
-		top: 1rem;
-		right: 1rem;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	.language .selected {
+		font-weight: 700;
 	}
 
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
 	}
@@ -63,16 +100,44 @@
 		padding: 0;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
 	li {
 		display: block;
-		float: left;
+	}
+
+	a {
+		display: block;
+		padding: 1em 0.5em;
+		text-decoration: none;
+	}
+
+	.site ul {
+		text-transform: uppercase;
+	}
+
+	.site a {
+		font-weight: 700;
+	}
+
+	.site ul a {
+		margin-top: 0.5em;
+	}
+
+	.site ul ul {
+		color: #666;
+		text-transform: none;
+	}
+
+	.site ul ul a {
+		padding: 0.5em;
+		margin-top: 0;
+	}
+
+	.site ul ul ul {
+		margin-left: 1rem;
+	}
+
+	.site ul ul ul a {
+		font-weight: 300;
 	}
 
 	.selected {
@@ -89,10 +154,25 @@
 		display: block;
 		bottom: -1px;
 	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
+	
+	.site .home-link {
+		background-color: rgb(84, 192, 220);
+		margin-top: 0;
 	}
+
+	.gaois-link {
+		text-transform: uppercase;
+	}
+
+    @media screen and (min-width: 1000px) {
+		.language {
+			position: fixed;
+			text-align: center;
+			width: 26rem;
+		}
+
+        .site {
+            width: 15%;
+        }
+    }
 </style>

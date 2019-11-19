@@ -6,7 +6,7 @@
     div {
         background-color: rgb(235, 235, 247);
         border-radius: 5px;
-        margin-bottom: 2.6rem;
+        margin-bottom: 1.6rem;
         padding: 1rem;
     }
 </style>
