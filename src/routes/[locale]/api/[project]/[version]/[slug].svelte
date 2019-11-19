@@ -1,4 +1,7 @@
 <script context="module">
+    import { readMarkdown } from 'utils/markdown';
+    import { errorMessage } from 'utils/messenger';
+
 	export async function preload(page, session) {
         const { locale, project, version, slug } = page.params;
         const path = `${locale}/api/${project}/${version}/${slug}.json`;
@@ -7,10 +10,21 @@
 		const data = await response.json();
 
 		if (response.status === 200) {
-			return {
-                basePath: page.path,
-                markdown: data
-            };
+            const { metadata, toc, content } = readMarkdown(data.markdown, page.path);
+            const monolingual = data.monolingual;
+
+            if (!!metadata.public && metadata.public === 'true') {
+                return {
+                    uiLocale: locale,
+                    basePath: page.path,
+                    metadata,
+                    monolingual,
+                    toc,
+                    content
+                };
+            } else {
+                this.error(404, errorMessage(404, locale));
+            }
 		} else {
 			this.error(response.status, data.message);
 		}
@@ -19,39 +33,52 @@
 
 <script>
     import { _L, locale } from 'l18n/l18n';
-    import { readMarkdown } from 'utils/markdown';
+    import { beforeUpdate } from 'svelte';
+    import Document from '../../../../../components/Document.svelte'
+    import TableOfContents from '../../../../../components/TableOfContents.svelte'
 
+    export let uiLocale;
     export let basePath;
-    export let markdown;
+    export let metadata;
+    export let monolingual;
+    export let toc;
+    export let content;
 
-    const { metadata, toc, content } = readMarkdown(markdown, basePath);
+    const alternateLocale = ($locale === 'en') ? 'ga' : 'en';
 
-    if (metadata.public !== null && !metadata.public) {
-
-    }
+    beforeUpdate(() => {
+        $locale = uiLocale;
+    });
+    
+    function path(targetLocale) {
+		const params = basePath.split('/');
+		params[1] = targetLocale;
+		return params.join('/');
+	}
 </script>
 
 <svelte:head>
-    {#if (metadata.title)}
+    {#if (!!metadata.title)}
         <title>{metadata.title}</title>
-        <meta property="og:title" content={metadata.title}/>
-        <meta property="og:site_name" content={metadata.title}/>
-        <meta name="twitter:title" content={metadata.title}/>
+        <meta property="og:title" content={metadata.title}>
+        <meta property="og:site_name" content={metadata.title}>
+        <meta name="twitter:title" content={metadata.title}>
     {/if}
-    {#if (metadata.description)}
+    {#if (!!metadata.description)}
         <title>{metadata.description}</title>
-        <meta name="description" content={metadata.description}/>
-        <meta property="og:description" content={metadata.description}/>
-        <meta name="twitter:description" content={metadata.description}/>
+        <meta name="description" content={metadata.description}>
+        <meta property="og:description" content={metadata.description}>
+        <meta name="twitter:description" content={metadata.description}>
     {/if}
-    
-	<link rel="stylesheet" href="/gfm.css">
+    {#if (!!metadata.keywords)}
+        <meta name="keywords" content={metadata.keywords}>
+    {/if}
+
+    <link rel="alternate" hreflang="en" href={`https://docs.gaois.ie${path(alternateLocale)}`}>
+    <meta property="og:url" content={`https://docs.gaois.ie${path($locale)}`}>
+    <meta name="twitter:url" content={`https://docs.gaois.ie${path($locale)}`}>
 </svelte:head>
 
-<div class="toc">
-    {@html toc}
-</div>
+<TableOfContents {toc}/>
 
-<div class="markdown-body">
-    {@html content}
-</div>
+<Document {content} {monolingual}/>

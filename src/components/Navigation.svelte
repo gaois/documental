@@ -1,10 +1,19 @@
 <script>
 	import { stores } from '@sapper/app';
 	import { _L, locale } from 'l18n/l18n';
+	import { beforeUpdate } from 'svelte';
 
 	export let segment;
 
 	const { page } = stores();
+
+	let pathEN = path('en');
+	let pathGA = path('ga');
+
+	beforeUpdate(() => {
+		pathEN = path('en');
+		pathGA = path('ga');
+	});
 
 	function path(targetLocale) {
 		if (!$page.path || $page.path === '/')
@@ -16,7 +25,33 @@
 	}
 </script>
 
+<nav class="language">
+	<a rel="prefetch" href={pathEN}>English</a>
+	<a rel="prefetch" href={pathGA}>Gaeilge</a>
+</nav>
+
+<nav class="site">
+	<ul>
+		<li>
+			<a href={`/${$locale}`}>
+				<img src="" alt={$_L(`en: Home | ga: Baile`)}/>
+			</a>
+		</li>
+		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
+
+		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
+		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
+	</ul>
+</nav>
+
 <style>
+	.language {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
 	nav {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
@@ -61,17 +96,3 @@
 		display: block;
 	}
 </style>
-
-<a href={path('en')}>EN</a>
-<a href={path('ga')}>GA</a>
-
-<nav>
-	<ul>
-		<li><a class='{segment === undefined ? "selected" : ""}' href='.'>home</a></li>
-		<li><a class='{segment === "about" ? "selected" : ""}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch class='{segment === "blog" ? "selected" : ""}' href='blog'>blog</a></li>
-	</ul>
-</nav>

@@ -1,7 +1,11 @@
 <script>
+	import { stores } from '@sapper/app';
 	import { _L, locale } from 'l18n/l18n';
 	import { onMount } from 'svelte';
+	import Footer from '../components/Footer.svelte';
 	import Navigation from '../components/Navigation.svelte';
+
+	const { page } = stores();
 
 	export let segment;
 
@@ -17,19 +21,8 @@
 	onMount(() => setDocumentLocale);
 </script>
 
-<style>
-	main {
-		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-</style>
-
 <div class="skip">
-	<a href="#main">
+	<a href={`${$page.path}#main`}>
 		{$_L(`en: Skip to main content | ga: Léim go príomhábhar an leathanaigh`)}
 	</a>
 </div>
@@ -39,3 +32,63 @@
 <main id="app-main">
 	<slot></slot>
 </main>
+
+<Footer/>
+
+<style>
+/**
+	main {
+		position: relative;
+		max-width: 56em;
+		background-color: white;
+		padding: 2em;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+**/
+	.skip {
+		left: 0;
+		margin-left: 0;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		width: 100%;
+	}
+
+	.skip a {
+		left: -99999px;
+		position: absolute;
+		top: 30px;
+	}
+
+	.skip a:focus,
+	.skip a:active {
+		position: relative;
+		left: 0;
+		z-index:9999;
+		width: 75%;
+		height: auto;
+		margin: 0 auto;
+		padding: 30px 45px;
+		text-align: center;
+		text-decoration: none;
+		letter-spacing: -4px !important;
+		font: bold 50px "Arial", "Freesans", sans-serif !important;
+		/* color information, edit this to suit the colors of your layout */
+			color: #AEAEFE;
+		background: transparent url(transparent.png) repeat scroll 0 0;
+		border: 1px dotted #ffb4db;
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+	}
+
+	@media screen and (min-width: 1000px) {
+		main {
+			flex-direction: row;
+		}
+	}
+</style>
