@@ -25,10 +25,15 @@
 	}
 </script>
 
-<nav class="language">
-	<a class="gaois-link" href={`https://www.gaois.ie/${$locale}`}>Gaois</a>
-	<a rel="prefetch" class:selected={$locale === 'en'} href={pathEN}>English</a>
-	<a rel="prefetch" class:selected={$locale === 'ga'} href={pathGA}>Gaeilge</a>
+<nav class="meta">
+	<a class="gaois-link" href={`https://www.gaois.ie/${$locale}`}>
+		<span class="arrow arrow-left"></span>
+		<span class="gaois-link-text">Gaois</span>
+	</a>
+	<ul class="switcher">
+		<li><a rel="prefetch" class:selected={$locale === 'ga'} href={pathGA}>Gaeilge</a></li>
+		<li><a rel="prefetch" class:selected={$locale === 'en'} href={pathEN}>English</a></li>
+	</ul>
 </nav>
 
 <nav class="site">
@@ -75,7 +80,7 @@
 </nav>
 
 <style>
-	.language {
+	.meta {
 		background-color: rgb(79,134,142);
 		color: #fff;
 		display: inline-flex;
@@ -85,7 +90,13 @@
 		width: 100%;
 	}
 
-	.language .selected {
+	.switcher {
+		display: inline-flex;
+		margin-left: auto;
+		margin-right: 1.5em;
+	}
+
+	.switcher .selected {
 		font-weight: 700;
 	}
 
@@ -107,10 +118,6 @@
 		display: block;
 		padding: 1em 0.5em;
 		text-decoration: none;
-	}
-
-	.site {
-		border-right: 1px solid #ddd;
 	}
 
 	.site ul {
@@ -158,27 +165,49 @@
 		bottom: -1px;
 	}
 	
-	.site .home-link {
+	.site ul a.home-link {
 		background-color: rgb(84, 192, 220);
 		color: #fff;
 		font-weight: 300;
+		margin-bottom: 1rem;
 		margin-top: 0;
+		padding: 1.6rem 1.4rem 1.5rem 1rem;
 		text-transform: none;
+	}
+
+	.home-link img {
+		margin-bottom: 0.6rem;
 	}
 
 	.gaois-link {
 		text-transform: uppercase;
 	}
 
+	.gaois-link-text {
+		margin-left: 0.25rem;
+	}
+
+	.arrow {
+		display: inline-block;
+		width: 0.7rem;
+		height: 0.7rem;
+		border-top: 2px solid #fff;
+		border-right: 2px solid #fff;
+	}
+
+	.arrow-left {
+		transform: rotate(-135deg);
+	}
+
     @media screen and (min-width: 1000px) {
-		.language {
+		.meta {
 			position: fixed;
 			text-align: center;
-			width: 26rem;
+			width: 28%;
 		}
 
         .site {
-            width: 15%;
+            width: 18%;
         }
     }
 </style>

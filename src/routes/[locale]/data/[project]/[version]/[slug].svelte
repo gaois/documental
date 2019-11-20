@@ -44,9 +44,16 @@
     export let content;
 
     $: $locale = uiLocale;
+    $: alternateLocale = ($locale === 'en') ? 'ga' : 'en';
     $: showTOC = !(metadata.toc !== null && metadata.toc === 'false');
 
-    const alternateLocale = ($locale === 'en') ? 'ga' : 'en';
+    let title;
+
+    $: if (!!metadata.title && metadata.section) {
+        title = `${metadata.section} / ${metadata.title}`;
+    } else if (!!metadata.title) {
+        title = metadata.title;
+    }
     
     function path(targetLocale) {
 		const params = basePath.split('/');
@@ -57,10 +64,9 @@
 
 <svelte:head>
     {#if (!!metadata.title)}
-        <title>{metadata.title}</title>
-        <meta property="og:title" content={metadata.title}>
-        <meta property="og:site_name" content={metadata.title}>
-        <meta name="twitter:title" content={metadata.title}>
+        <title>{title}</title>
+        <meta property="og:title" content={title}>
+        <meta name="twitter:title" content={`${title} | docs.gaois.ie`}>
     {/if}
     {#if (!!metadata.description)}
         <meta name="description" content={metadata.description}>
@@ -76,8 +82,9 @@
     <meta name="twitter:url" content={`https://docs.gaois.ie${path($locale)}`}>
 </svelte:head>
 
-{#if (showTOC)}
-    <TableOfContents {toc}/>
-{/if}
-
-<Document {metadata} {content} {monolingual}/>
+<article>
+    {#if (showTOC)}
+        <TableOfContents {toc}/>
+    {/if}
+    <Document {metadata} {content} {monolingual}/>
+</article>

@@ -90,7 +90,7 @@
 	main {
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 0 1rem 1rem 1rem;
 		width: 100%;
 	}
 

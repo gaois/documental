@@ -39,23 +39,29 @@
     }
 
     .contents {
-        border-left: 1px solid #ddd;
 		padding: 1rem;
+    }
+
+    .contents div {
+        max-height: 80vh;
+        max-height: calc(90vh - 100px);
+        overflow: auto;
     }
 
     @media screen and (min-width: 1000px) {
         .contents {
             order: 1;
             position: fixed;
-            right: 2rem;
-            top: 4rem;
+            right: 0;
+            top: 5rem;
+            width: 25%;
         }
     }
 </style>
 
-<div class="contents">
+<nav class="contents">
     <h2>{$_L(`en: Contents | ga: Clár`)}</h2>
     <div>
         {@html toc}
     </div>
-</div>
+</nav>

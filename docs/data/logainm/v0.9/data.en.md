@@ -2,6 +2,7 @@
 title: Data dictionary (Version 0.9)
 description: Data dictionary for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
+section: Logainm
 public: true
 ---
 

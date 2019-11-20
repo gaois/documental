@@ -33,7 +33,7 @@
     @media screen and (min-width: 1000px) {
         .documentation {
             max-width: 65%;
-            margin-top: 2.6rem;
+            margin-top: 4.5rem;
             padding: 1rem 2rem;
         }
     }

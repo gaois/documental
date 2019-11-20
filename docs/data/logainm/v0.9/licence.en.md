@@ -2,6 +2,7 @@
 title: Copyright and licencing information
 description: Copyright and licencing information for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
+section: Logainm
 toc: false
 public: true
 ---

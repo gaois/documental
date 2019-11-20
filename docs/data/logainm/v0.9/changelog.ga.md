@@ -2,6 +2,7 @@
 title: Loga athruithe
 description: Cuntas ar athruithe ar bith a bhaineann le API Logainm
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
+section: Logainm
 toc: false
 public: true
 ---

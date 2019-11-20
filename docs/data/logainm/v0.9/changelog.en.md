@@ -2,6 +2,7 @@
 title: Changelog
 description: Record of changes to Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
+section: Logainm
 toc: false
 public: true
 ---
