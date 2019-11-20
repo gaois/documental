@@ -3,8 +3,6 @@
 	import { _L, locale } from 'l18n/l18n';
 	import { beforeUpdate } from 'svelte';
 
-	export let segment;
-
 	const { page } = stores();
 
 	$: params = $page.path.split('/');
@@ -37,31 +35,32 @@
 	<ul>
 		<li>
 			<a class="home-link" href={`/${$locale}`}>
-				<img src="" alt={$_L(`en: Home | ga: Baile`)}/>
+				<img src="/gaois-white.svg" alt=""/>
+				{$_L(`en: Documentation | ga: Doiciméadacht`)}
 			</a>
 		</li>
 		<li>
 			<a href>{$_L(`en: Open Data | ga: Sonraí Oscailte`)}</a>
 			<ul>
 				<li>
-					<a href={`/${$locale}/api/logainm/v0.9/developer`}>Logainm</a>
+					<a href={`/${$locale}/data/logainm/v0.9/api`}>Logainm</a>
 					<ul>
 						<li>
-							<a href={`/${$locale}/api/logainm/v0.9/developer`}>{$_L(`en: Development | ga: Forbairt`)}</a>
+							<a href={`/${$locale}/data/logainm/v0.9/api`}>{$_L(`en: API | ga: Comhéadan feidhmchláir`)}</a>
 						</li>
 						<li>
-							<a href={`/${$locale}/api/logainm/v0.9/data`}>{$_L(`en: Data dictionary | ga: Foclóir sonraí`)}</a>
+							<a href={`/${$locale}/data/logainm/v0.9/data`}>{$_L(`en: Data dictionary | ga: Foclóir sonraí`)}</a>
 						</li>
 						<li>
-							<a href={`/${$locale}/api/logainm/v0.9/licence`}>{$_L(`en: Licence | ga: Ceadúnas`)}</a>
+							<a href={`/${$locale}/data/logainm/v0.9/licence`}>{$_L(`en: Licence | ga: Ceadúnas`)}</a>
 						</li>
 						<li>
-							<a href={`/${$locale}/api/logainm/v0.9/changelog`}>{$_L(`en: Changelog | ga: Loga athruithe`)}</a>
+							<a href={`/${$locale}/data/logainm/v0.9/changelog`}>{$_L(`en: Changelog | ga: Loga athruithe`)}</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href={`/${$locale}/api/duchas/v1.0/surnames`}>{$_L(`en: Surnames Index | ga: Innéacs Sloinnte`)}</a>
+					<a href={`/${$locale}/data/duchas/v1.0/surnames`}>{$_L(`en: Surnames Index | ga: Innéacs Sloinnte`)}</a>
 				</li>
 			</ul>
 		</li>
@@ -108,6 +107,10 @@
 		display: block;
 		padding: 1em 0.5em;
 		text-decoration: none;
+	}
+
+	.site {
+		border-right: 1px solid #ddd;
 	}
 
 	.site ul {
@@ -157,7 +160,10 @@
 	
 	.site .home-link {
 		background-color: rgb(84, 192, 220);
+		color: #fff;
+		font-weight: 300;
 		margin-top: 0;
+		text-transform: none;
 	}
 
 	.gaois-link {

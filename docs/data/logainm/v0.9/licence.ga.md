@@ -6,8 +6,6 @@ toc: false
 public: true
 ---
 
-# Eolas cóipchirt agus ceadúnais
-
 ## Cóipcheart
 
 Tá sonraí Logainm faoi © Rialtas na hÉireann.

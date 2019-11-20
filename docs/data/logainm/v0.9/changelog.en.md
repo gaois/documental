@@ -6,8 +6,6 @@ toc: false
 public: true
 ---
 
-# Changelog
-
 ## **0.9.1** / 2019-11-18
 
 ### Added

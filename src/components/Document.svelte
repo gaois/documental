@@ -1,6 +1,7 @@
 <script>
     import MonolingualNotice from './MonolingualNotice.svelte'
 
+    export let metadata;
     export let content;
     export let monolingual;
 </script>
@@ -15,6 +16,9 @@
     {/if}
 
     <div class="markdown-body">
+        {#if (!!metadata.title)}
+            <h1>{metadata.title}</h1>
+        {/if}
         {@html content}
     </div>
 </div>

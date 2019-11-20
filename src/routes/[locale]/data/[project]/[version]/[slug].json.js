@@ -1,11 +1,12 @@
 import fs from 'fs';
+import { errorMessage } from 'utils/messenger'
 
 export function get(req, res, next) {
 	const { locale, project, version, slug } = req.params;
 
-	const filePath = `docs/api/${project}/${version}/${slug}.${locale}.md`;
+	const filePath = `docs/data/${project}/${version}/${slug}.${locale}.md`;
 	const alternateLocale = (locale === 'en') ? 'ga' : 'en';
-	const alternateFilePath = `docs/api/${project}/${version}/${slug}.${alternateLocale}.md`;
+	const alternateFilePath = `docs/data/${project}/${version}/${slug}.${alternateLocale}.md`;
 
 	let file;
 	let monolingual = false;
@@ -33,7 +34,7 @@ export function get(req, res, next) {
 		});
 
 		res.end(JSON.stringify({
-			message: (locale === 'en') ? 'The page was not found' : 'Níor aimsíodh an leathanach'
+			message: errorMessage(404, locale)
 		}));
 	}
 }

@@ -4,7 +4,7 @@
 
 	export async function preload(page, session) {
         const { locale, project, version, slug } = page.params;
-        const path = `${locale}/api/${project}/${version}/${slug}.json`;
+        const path = `${locale}/data/${project}/${version}/${slug}.json`;
 
         const response = await this.fetch(path);
 		const data = await response.json();
@@ -63,7 +63,6 @@
         <meta name="twitter:title" content={metadata.title}>
     {/if}
     {#if (!!metadata.description)}
-        <title>{metadata.description}</title>
         <meta name="description" content={metadata.description}>
         <meta property="og:description" content={metadata.description}>
         <meta name="twitter:description" content={metadata.description}>
@@ -81,4 +80,4 @@
     <TableOfContents {toc}/>
 {/if}
 
-<Document {content} {monolingual}/>
+<Document {metadata} {content} {monolingual}/>

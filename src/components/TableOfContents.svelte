@@ -39,6 +39,7 @@
     }
 
     .contents {
+        border-left: 1px solid #ddd;
 		padding: 1rem;
     }
 

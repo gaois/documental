@@ -6,8 +6,6 @@ toc: false
 public: true
 ---
 
-# Copyright and licencing information
-
 ## Copyright
 
 Logainm data is © Government of Ireland.
