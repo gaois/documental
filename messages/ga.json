@@ -1,0 +1,41 @@
+{
+    "global": {
+        "contact": "Teagmháil",
+        "dcu": "Ollscoil Chathair Bhaile Átha Cliath",
+        "description": "Doiciméadacht theicniúil i gcomhair bogearraí foinse oscailte agus acmhainní sonraí oscailte atá forbartha ag grúpa taighde Gaois, DCU",
+        "documentation": "Doiciméadacht",
+        "groupName": "Grúpa taighde Gaois",
+        "keywords": "Fiontar & Scoil na Gaeilge, Ollscoil Chathair Bhaile Átha Cliath, daonnachtaí digiteacha, sonraí oscailte, bogearraí, doiciméadacht theicniúil",
+        "skip": "Léim go príomhábhar an leathanaigh"
+    },
+    "navigation": {
+        "api": "Comhéadan feidhmchláir",
+        "changelog": "Loga athruithe",
+        "dataDictionary": "Foclóir sonraí",
+        "licence": "Ceadúnas",
+        "openData": "Sonraí Oscailte",
+        "software": "Bogearraí",
+        "surnames": "Innéacs Sloinnte"
+    },
+    "home": {
+        "heading": "Doiciméadacht Gaois",
+        "openData": "Sonraí Oscailte",
+        "software": "Bogearraí",
+        "title": "Doiciméadacht theicniúil",
+        "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil i gcomhair acmhainní foinse-oscailte atá forbartha ag {link}, Fiontar agus Scoil na Gaeilge, DCU ar fáil.",
+        "sections": {
+            "duchas": "Comhéadan feidhmchláir i gcomhair Cnuasach Bhéaloideas Éireann",
+            "logainm": "Comhéadan feidhmchláir i gcomhair Bunachar Logainmneacha na hÉireann",
+            "surnames": "Sonraí maidir le sloinnte Éireannacha i bhformáid XML",
+            "terminologue": "Uirlis fhoinse-oscailte néalbhunaithe chun bunachair téarmaíochta a bhainistiú",
+            "geoNames2Sql": "Bunachar SQL a chruthú agus a nuashonrú le sonraí gasaitéir GeoNames",
+            "localizer": "Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core",
+            "queryLogger": "Logálaí iarratais simplí so-chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core"
+        }
+    },
+    "document": {
+        "backToTop": "Ar ais go barr",
+        "contents": "Clár",
+        "monolingual": "Tá an iontráil seo ar fáil i mBéarla amháin faoi láthair"
+    }
+}

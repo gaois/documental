@@ -1,13 +1,15 @@
 ---
 title: Loga athruithe
-description: Cuntas ar athruithe ar bith a bhaineann le API Logainm
+shortTitle: Loga athruithe
+description: Cuntas ar athruithe a bhaineann le API Logainm
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
-section: Logainm
+project: Logainm
+order: 4
 toc: false
 public: true
 ---
 
-## **0.9.1** / 2019-11-18
+## **v0.9.1** / 2019-11-18
 
 ### Forbairtí breise
 

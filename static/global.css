@@ -1,14 +1,30 @@
-* {
-	box-sizing: border-box;
+:root {
+	--text-color: #333;
+	--primary-color: #54c0db;
+	--secondary-color: #4f858d;
+	--tertiary-color: #53565a;
+	--highlight-color: #ec5338;
+}
+
+*, *::before, *::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#sapper {
+	height: 100%;
+	width: 100%;
 }
 
 body {
 	margin: 0;
-	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
-	color: #333;
-	/**color: #16161d;**/
+	color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,5 +53,21 @@ code {
 @media (min-width: 400px) {
 	body {
 		font-size: 16px;
+	}
+}
+
+/** Internet Explorer **/
+.no-smil nav,
+.no-smil #app-main {
+	display: none !important;
+}
+
+@supports (-ms-ime-align: auto) {
+	.no-smil nav {
+		display: block;
+	}
+
+	.no-smil #app-main {
+		display: flex;
 	}
 }

@@ -1,8 +1,10 @@
 ---
 title: Copyright and licencing information
+shortTitle: Licence
 description: Copyright and licencing information for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
-section: Logainm
+project: Logainm
+order: 3
 toc: false
 public: true
 ---
@@ -25,4 +27,4 @@ If you use Logainm data, we would love to [hear from you](mailto:logainm@dcu.ie)
 
 ## Obtaining the data
 
-You can obtain Logainm data through the [Logainm API](/en/api/logainm/v0.9/developer) by creating an account. We reserve the right to block access to the API for any user not complying with the terms of service.
+You can obtain Logainm data through the [Logainm API](../api) by creating an account. We reserve the right to block access to the API for any user not complying with the terms of service.

@@ -1,18 +1,21 @@
-import resolve from 'rollup-plugin-node-resolve';
-import replace from '@rollup/plugin-replace';
-import commonjs from 'rollup-plugin-commonjs';
-import svelte from 'rollup-plugin-svelte';
-import babel from 'rollup-plugin-babel';
-import { terser } from 'rollup-plugin-terser';
-import config from 'sapper/config/rollup.js';
 import pkg from './package.json';
 import { mdsvex } from 'mdsvex';
+import json from '@rollup/plugin-json';
+import replace from '@rollup/plugin-replace';
+import babel from 'rollup-plugin-babel';
+import commonjs from 'rollup-plugin-commonjs';
+import resolve from 'rollup-plugin-node-resolve';
+import svelte from 'rollup-plugin-svelte';
+import { terser } from 'rollup-plugin-terser';
+import config from 'sapper/config/rollup.js';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
+const onwarn = (warning, onwarn) => (
+	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message))
+		|| warning.code === 'THIS_IS_UNDEFINED') || onwarn(warning);
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
 
 export default {
@@ -42,6 +45,7 @@ export default {
 				dedupe
 			}),
 			commonjs(),
+			json(),
 
 			legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
@@ -64,8 +68,7 @@ export default {
 				module: true
 			})
 		],
-
-		onwarn,
+		onwarn
 	},
 
 	server: {
@@ -91,13 +94,13 @@ export default {
 			resolve({
 				dedupe
 			}),
-			commonjs()
+			commonjs(),
+			json()
 		],
 		external: Object.keys(pkg.dependencies).concat(
 			require('module').builtinModules || Object.keys(process.binding('natives'))
 		),
-
-		onwarn,
+		onwarn
 	},
 
 	serviceworker: {
@@ -112,7 +115,6 @@ export default {
 			commonjs(),
 			!dev && terser()
 		],
-
-		onwarn,
+		onwarn
 	}
 };

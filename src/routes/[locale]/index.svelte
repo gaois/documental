@@ -1,19 +1,13 @@
 <script context="module">
+    import localize from 'i18n/localize';
+    
 	export async function preload(page, session) {
-        const { locale } = page.params;
-        const uiLocale = locale;
-
-        return { uiLocale };
-    }
+		await localize(page, session);
+    };
 </script>
 
 <script>
-	import { _L, locale } from 'l18n/l18n';
-    import Index from '../index.svelte';
-
-    export let uiLocale;
-
-    $: $locale = uiLocale;
+    import Home from 'components/Home.svelte';
 </script>
 
-<Index/>
+<Home/>

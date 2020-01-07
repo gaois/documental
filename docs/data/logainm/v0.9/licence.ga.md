@@ -1,8 +1,10 @@
 ---
 title: Eolas cóipchirt agus ceadúnais
+shortTitle: Ceadúnas
 description: Copyright and licencing information for the Logainm API
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
-section: Logainm
+project: Logainm
+order: 3
 toc: false
 public: true
 ---
@@ -25,4 +27,4 @@ Má úsaideann tú sonraí Logainm, ba bhreá linn [cloisteáil uait](mailto:log
 
 ## Na sonraí a fháil
 
-Is féidir sonraí Logainm a fháil trí [API Logainm](/ga/api/logainm/v0.9/developer) ach cuntas a chruthú. Coinnímid an ceart rochtain ar an API a chosc ar úsáideoir ar bith nach bhfuil ag cloí leis na téarmaí seirbhíse.
+Is féidir sonraí Logainm a fháil trí [API Logainm](../api) ach cuntas a chruthú. Coinnímid an ceart rochtain ar an API a chosc ar úsáideoir ar bith nach bhfuil ag cloí leis na téarmaí seirbhíse.
