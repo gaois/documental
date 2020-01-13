@@ -6,7 +6,8 @@
         "documentation": "Doiciméadacht",
         "groupName": "Grúpa taighde Gaois",
         "keywords": "Fiontar & Scoil na Gaeilge, Ollscoil Chathair Bhaile Átha Cliath, daonnachtaí digiteacha, sonraí oscailte, bogearraí, doiciméadacht theicniúil",
-        "skip": "Léim go príomhábhar an leathanaigh"
+        "skip": "Léim go príomhábhar an leathanaigh",
+        "tagline": "Is grúpa taighde é Gaois in Fiontar & Scoil na Gaeilge, DCU, atá dírithe ar acmhainní nuálaíocha a fhorbairt chun teanga agus saíocht na Gaeilge a chothú"
     },
     "navigation": {
         "api": "Comhéadan feidhmchláir",
@@ -19,6 +20,7 @@
     },
     "home": {
         "heading": "Doiciméadacht Gaois",
+        "moreInfo": "Cuir eolas ar Gaois",
         "openData": "Sonraí Oscailte",
         "software": "Bogearraí",
         "title": "Doiciméadacht theicniúil",

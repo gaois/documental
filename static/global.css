@@ -1,9 +1,10 @@
 :root {
-	--text-color: #333;
+	--text-color: #222;
 	--primary-color: #54c0db;
 	--secondary-color: #4f858d;
 	--tertiary-color: #53565a;
 	--highlight-color: #ec5338;
+	--link-color: #0366d6;
 }
 
 *, *::before, *::after {
@@ -16,15 +17,16 @@ html,
 body,
 #sapper {
 	height: 100%;
+	min-height: 100%;
 	width: 100%;
 }
 
 body {
-	margin: 0;
+	color: var(--text-color);
 	font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 14px;
+	margin: 0;
 	line-height: 1.5;
-	color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {

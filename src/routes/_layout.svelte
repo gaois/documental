@@ -72,6 +72,7 @@
 	main {
 		display: flex;
 		flex-direction: column;
+		height: 100%;
 		padding: 0 1rem 1rem 1rem;
 		width: 100%;
 	}
