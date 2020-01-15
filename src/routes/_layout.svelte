@@ -69,6 +69,10 @@
 		flex-direction: column;
 	}
 
+	:global(.js) .container {
+		margin-top: 6.4rem;
+	}
+
 	main {
 		display: flex;
 		flex-direction: column;
@@ -88,6 +92,10 @@
 		.container, main {
 			flex-direction: row;
 			justify-content: space-between;
+		}
+
+		:global(.js) .container {
+			margin-top: 0;
 		}
 	}
 </style>

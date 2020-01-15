@@ -6,6 +6,8 @@
         "documentation": "Documentation",
         "groupName": "Gaois research group",
         "keywords": "Fiontar & Scoil na Gaeilge, Dublin City University, digital humanities, open data, software, technical documentation",
+        "menu": "Menu",
+        "menuClose": "Close menu",
         "skip": "Skip to main content",
         "tagline": "Gaois is a research group in Fiontar & Scoil na Gaeilge, DCU, that develops innovative resources to support the Irish language and its heritage"
     },
@@ -38,6 +40,7 @@
     "document": {
         "backToTop": "Back to top",
         "contents": "Contents",
+        "inThisArticle": "In this article",
         "monolingual": "This entry is available in Irish only at present"
     }
 }
