@@ -20,7 +20,8 @@
     "mdsvex": "^0.4.0",
     "polka": "^1.0.0-next.9",
     "sirv": "^0.4.0",
-    "svelte-i18n": "^2.1.1"
+    "svelte-i18n": "^2.1.1",
+    "url-join": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

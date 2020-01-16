@@ -1,13 +1,14 @@
-import sirv from 'sirv';
-import polka from 'polka';
-import compression from 'compression';
 import * as sapper from '@sapper/server';
-
+import compression from 'compression';
 import enthusiast from 'enthusiast';
+import polka from 'polka';
+import sirv from 'sirv';
+import { getProtocol } from 'utils/server';
+
 import 'i18n';
 import { cookieName, defaultLocale, excludedRoutes, locales } from 'i18n/settings';
 
-const { PORT, NODE_ENV } = process.env;
+const { PORT, NODE_ENV, HOSTNAME } = process.env;
 const dev = NODE_ENV === 'development';
 
 polka()
@@ -22,7 +23,9 @@ polka()
 		}),
 		sapper.middleware({
 			session: (req) => ({
-				locale: req.locale || ''
+				locale: req.locale || '',
+				hostname: HOSTNAME,
+				protocol: getProtocol(req)
 			})
 		})
 	)

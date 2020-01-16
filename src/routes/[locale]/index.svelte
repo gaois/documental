@@ -2,7 +2,7 @@
     import localize from 'i18n/localize';
     
 	export async function preload(page, session) {
-		await localize(page, session);
+        await localize(page, session);
     };
 </script>
 
