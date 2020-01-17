@@ -1,8 +1,9 @@
 <script context="module">
-    import localize from 'i18n/localize';
+    import { locale, waitLocale } from 'svelte-i18n';
     
 	export async function preload(page, session) {
-		await localize(page, session);
+        locale.set(session.locale);
+        return await waitLocale();
     };
 </script>
 
