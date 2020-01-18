@@ -10,11 +10,12 @@ import { cookieName, defaultLocale, excludedRoutes, locales } from 'i18n/setting
 
 const { PORT, NODE_ENV, HOSTNAME } = process.env;
 const dev = NODE_ENV === 'development';
+const maxAge = !dev ? 2628000 : undefined;
 
 polka()
 	.use(
 		compression({ threshold: 0 }),
-		sirv('static', { dev }),
+		sirv('static', { dev, maxAge: maxAge }),
 		enthusiast({
 			cookieName: cookieName,
 			defaultLocale: defaultLocale,
