@@ -46,7 +46,6 @@ export default {
 			}),
 			commonjs(),
 			json(),
-
 			legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
 				runtimeHelpers: true,

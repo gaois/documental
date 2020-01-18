@@ -37,6 +37,10 @@
             "queryLogger": "A simple, configurable query logger for ASP.NET and ASP.NET Core applications"
         }
     },
+    "error": {
+        "contact": "Please contact us if you have any queries",
+        "pageNotFound": "Page not found"
+    },
     "document": {
         "backToTop": "Back to top",
         "contents": "Contents",

@@ -37,6 +37,10 @@
             "queryLogger": "Logálaí iarratais simplí so-chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core"
         }
     },
+    "error": {
+        "contact": "Déan teagmháil linn sa chás go mbíonn aon cheist agat",
+        "pageNotFound": "Níor aimsíodh an leathanach"
+    },
     "document": {
         "backToTop": "Ar ais go barr",
         "contents": "Clár",
