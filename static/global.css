@@ -60,17 +60,21 @@ code {
 }
 
 /** Internet Explorer **/
+.no-smil .site-header,
+.no-smil .site-footer,
 .no-smil nav,
-.no-smil #app-main {
+.no-smil #main {
 	display: none !important;
 }
 
 @supports (-ms-ime-align: auto) {
+	.no-smil .site-footer,
 	.no-smil nav {
-		display: block;
+		display: block !important;
 	}
 
-	.no-smil #app-main {
-		display: flex;
+	.no-smil .site-header,
+	.no-smil #main {
+		display: flex !important;
 	}
 }
