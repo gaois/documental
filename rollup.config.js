@@ -75,10 +75,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': false,
-				'process.env.NODE_ENV': JSON.stringify(mode),
-				// prevent html caching á la https://github.com/sveltejs/sapper/issues/567#issuecomment-542788270
-				// hack: but if html is cached users may receive wrong locale at root url /
-				'max-age=600': 'no-cache'
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
 				generate: 'ssr',
@@ -111,8 +108,7 @@ export default {
 			resolve(),
 			replace({
 				'process.browser': true,
-				'process.env.NODE_ENV': JSON.stringify(mode),
-				'max-age=600': 'no-cache'
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			commonjs(),
 			!dev && terser()

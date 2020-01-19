@@ -12,3 +12,11 @@
 </script>
 
 <Home/>
+
+<!--<script context="module">
+    import { locale, waitLocale } from 'svelte-i18n';
+    
+	export async function preload(page, session) {
+        this.redirect(302, `/${session.locale}`);
+    };
+</script>-->
