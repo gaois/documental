@@ -34,7 +34,7 @@
 </script>
 
 <script>
-    import Project from 'components/Project.svelte'
+    import Resource from 'components/Resource.svelte'
 
     export let basePath;
     export let metadata;
@@ -44,4 +44,4 @@
     export let articles;
 </script>
 
-<Project {basePath} {metadata} {monolingual} {toc} {content} {articles}/>
+<Resource {basePath} {metadata} {monolingual} {toc} {content} {articles}/>

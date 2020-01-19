@@ -6,11 +6,11 @@
 
 	export async function preload(page, session) {
         await localize(page, session);
-        
+
         const { locale } = page.params;
         const path = mapPath(`data/article.json?${new URLSearchParams(page.params).toString()}`, session);
         const response = await this.fetch(path);
-		const data = await response.json();
+        const data = await response.json();
 
 		if (response.status === 200) {
             const { metadata, toc, content } = readMarkdown(data.markdown, page.path);
@@ -22,7 +22,6 @@
                     monolingual: data.monolingual,
                     toc,
                     content,
-                    versions: data.versions,
                     articles: data.articles
                 };
             } else {
@@ -35,15 +34,14 @@
 </script>
 
 <script>
-    import Project from 'components/Project.svelte'
+    import Resource from 'components/Resource.svelte'
 
     export let basePath;
     export let metadata;
     export let monolingual;
     export let toc;
     export let content;
-    export let versions;
     export let articles;
 </script>
 
-<Project {basePath} {metadata} {monolingual} {toc} {content} {versions} {articles}/>
+<Resource {basePath} {metadata} {monolingual} {toc} {content} {articles}/>

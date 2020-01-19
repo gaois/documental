@@ -3,9 +3,9 @@ import { listVersions } from './_versions';
 import { errorMessage } from 'utils/messenger';
 
 export function get(req, res) {
-	const { locale, category, project, version, slug } = req.query;
+	const { locale, category, resource, version, slug } = req.query;
 
-	let dir = `docs/${category}/${project}`;
+	let dir = `docs/${category}/${resource}`;
 	let versions;
 	let articles;
 
