@@ -10,7 +10,7 @@ The settings below can be configured to suit your particular needs. You can conf
 
 ## Top level
 
-**ApplicationName** (`string`): Specifies a global name for your application that can be used in all queries logged. This means that many apps can all have different application names and share the same SQL database.
+**ApplicationName** (`string`): Specifies a global name for your application that can be used in all queries logged. This means that different applications can share the same SQL database for query logging.
 
 **MaxQueryTermsLength** (`int?`): If set, query terms longer than the specified maximum length will be truncated.
 

@@ -13,19 +13,11 @@ A toolkit for creating multilingual web applications on ASP.NET Core. It offers 
 
 The library was developed at [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), Dublin City University, Ireland where we use it to build our own multilingual web applications.
 
-## What problem does it solve?
-
-The library primarily focuses on request localisation, i.e. how we decide which form of localised contents to display to the user. It complements native localisation tools like `IStringLocalizer`, `IHtmlLocalizer`, `IViewLocalizer`, resource files and the `CultureInfo` class. If you are not already familiar with these aspects of globalisation and localisation in ASP.NET Core you will benefit greatly from [reading up on them](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1) first. Particularly, it will explain why we use terms like request *cultures* and target *cultures*, rather than just target languages, in this document.
-
-ASP.NET Core does offer a [number of tools](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1#implement-a-strategy-to-select-the-languageculture-for-each-request) to this end, but they are somewhat rigid and do not account for a number of scenarios. It can be particularly tricky to evaluate the request culture in URL parameters like `/fr-FR/about/` while respecting other request localisation techniques (using cookies or HTTP headers, for example) in situations where no culture parameter is available. Furthermore, it is left to the developer to cater for situations where the user attempts to access a page in a culture that is not supported by the application and to implement solutions that persist user language preferences across sessions.
-
-This library offers common-sense solutions to a number of typical localisation requirements. As a result, it is moderately opinionated in its approach, but we've tried to leave each individual tool as open to configuration as possible.
-
 ## Features
 
 The library provides out-of-the-box functionality that allows you to:
 
-- Get the request culture from URL path parameters such as `www.mymultilingualapp.com/en-GB/about/` and `www.mymultilingualapp.com/ga-IE/about/`
+- Get the request culture from URL path parameters such as `www.mymultilingualapp.com/en-GB/about/` and `www.mymultilingualapp.com/ga/about/`
 - Use cookies and HTTP `Accept-Language` headers to infer the user's desired culture when they visit the website homepage, e.g. `www.mymultilingualapp.com`, where no path parameters are present.
 - Handle requests to unsupported cultures, either by returning a 404 error page or redirecting the user to a page in the default language
 - Exclude certain routes from being affected by the localisation middleware
@@ -266,13 +258,13 @@ The redirect URL automatically respects settings configured in the [`Microsoft.A
 Numerous approaches can be taken when localising a website's homepage. Some websites will evaluate a user's preferred language and redirect them to a new URL, such as moving from `example.com` to `example.com/es`. This can be problematic, however, due to the nature of HTTP redirects and how they interact with the browser:
 
 - Some websites (for example, [mozilla.org](https://www.mozilla.org/)) examine the browser's language preferences and implement a 301 (permanent) redirect. This is fine if you are reasonably certain that most users will access the application in one language only. However, many browsers indefinitely cache 301 redirects, meaning that even if the user later updates their browser settings—or they access the computer in a public location such as a school or a library— the browser will always take them to the first localised version of the site that was opened in that browser.
-- Many other websites implement 302 redirects, likely for the reasons described above. However, this is both semantically incorrect (302 redirects define pages that have "Moved Temporarily") and bad for SEO as it is unclear whether web crawlers pay attention to pages with 302 redirects.
+- Many other websites implement 302 redirects, likely for the reasons described above. However, it is unclear whether some major web crawlers pay attention to pages with 302 redirects and this may not be ideal for SEO.
 
 That is why the default approach using the Gaois.Localizer library is not to redirect the user (i.e. the user stays on `example.com`) though the culture information will still be localised according to the criteria outlined [above](#getting-the-request-culture). We feel this gives optimal results both in terms of SEO and user experience.
 
 ## Language tag choice
 
-The library is agnostic as to which type of [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) you use in your URL to signify the target culture. The examples in this documentation use region subtags such as `ga-IE`, `en-GB`, `pt-BR`, etc. Many applications prefer ISO two-letter language codes like `ga`, `en`, `fr`. You can specify either type of tag in the supported cultures variable of your `RequestLocalizationOptions` in Startup.cs.
+The library is agnostic as to which type of [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) you use in your URL to signify the target culture. The examples in this documentation use region subtags such as `ga-IE`, `en-GB`, `pt-BR`, etc. Many applications prefer ISO two-letter language codes like `ga`, `en`, `fr`. You can specify either type of tag in the supported cultures variable of your `RequestLocalizationOptions` in **Startup.cs**.
 
 If you do opt for two-letter language codes it can often be helpful to store a set of region or extended language subtags that map to your language codes—for example, when supplying locale data in [Open Graph](http://ogp.me/) meta tags. Gaois.Localizer facilitates this by allowing you to configure the route culture options in the *Configure* method of **Startup.cs**:
 
