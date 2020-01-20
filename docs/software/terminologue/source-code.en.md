@@ -3,7 +3,7 @@ title: Understanding the source code
 shortTitle: Source code
 description: A guided tour through Terminologue's code base
 keywords: terminology, research, software, open source, javascript, Node JS, Fiontar & Scoil na Gaeilge, DCU
-project: Terminologue
+resource: Terminologue
 github: https://github.com/gaois/terminologue
 order: 3
 public: true

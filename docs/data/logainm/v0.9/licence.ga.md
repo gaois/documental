@@ -3,7 +3,7 @@ title: Eolas cóipchirt agus ceadúnais
 shortTitle: Ceadúnas
 description: Copyright and licencing information for the Logainm API
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
-project: Logainm
+resource: Logainm
 order: 3
 toc: false
 public: true

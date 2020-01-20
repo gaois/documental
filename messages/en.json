@@ -15,6 +15,7 @@
         "api": "API",
         "changelog": "Changelog",
         "dataDictionary": "Data dictionary",
+        "gettingStarted": "Getting started",
         "licence": "Licence",
         "openData": "Open Data",
         "software": "Software",
@@ -28,13 +29,16 @@
         "title": "Technical documentation",
         "tagline": "docs.gaois.ie provides technical documentation for open-source resources developed by the {link}, Fiontar & Scoil na Gaeilge, DCU.",
         "sections": {
-            "duchas": "Application Programming Interface for the National Folklore Collection of Ireland",
-            "logainm": "Application Programming Interface for the Placenames Database of Ireland",
-            "surnames": "An index of Irish surname data in XML format",
-            "terminologue": "A cloud-based, open-source terminology management tool",
-            "geoNames2Sql": "Build and maintain a SQL database using GeoNames Gazetteer data",
-            "localizer": "A toolkit for creating multilingual web applications on ASP.NET Core",
-            "queryLogger": "A simple, configurable query logger for ASP.NET and ASP.NET Core applications"
+            "gettingStarted": "Getting started",
+            "gettingStartedBlurb": "A general guide to using Open Data resources developed by Gaois",
+            "duchasBlurb": "Application Programming Interface for the National Folklore Collection of Ireland",
+            "logainmBlurb": "Application Programming Interface for the Placenames Database of Ireland",
+            "surnames": "Surnames Index",
+            "surnamesBlurb": "An index of Irish surname data in XML format",
+            "terminologueBlurb": "A cloud-based, open-source terminology management tool",
+            "geoNames2SqlBlurb": "Build and maintain a SQL database using GeoNames Gazetteer data",
+            "localizerBlurb": "A toolkit for creating multilingual web applications on ASP.NET Core",
+            "queryLoggerBlurb": "A simple, configurable query logger for ASP.NET and ASP.NET Core applications"
         }
     },
     "error": {

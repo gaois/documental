@@ -3,7 +3,7 @@ title: Loga athruithe
 shortTitle: Loga athruithe
 description: Cuntas ar athruithe a bhaineann le API Dúchas
 keywords: Dúchas, comhéadan feidhmchláir, béaloideas, stair, scéalaíocht, Fiontar & Scoil na Gaeilge, DCU
-project: Dúchas
+resource: Dúchas
 order: 4
 toc: false
 public: true

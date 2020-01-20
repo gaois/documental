@@ -3,7 +3,7 @@ title: Setting up a local installation
 shortTitle: Installation
 description: Installing and deploying Terminologue
 keywords: terminology, research, software, open source, javascript, Node JS, Fiontar & Scoil na Gaeilge, DCU
-project: Terminologue
+resource: Terminologue
 github: https://github.com/gaois/terminologue
 order: 2
 toc: false

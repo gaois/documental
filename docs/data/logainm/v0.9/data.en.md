@@ -3,12 +3,12 @@ title: Data dictionary (Version 0.9)
 shortTitle: Data dictionary
 description: Data dictionary for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
-project: Logainm
+resource: Logainm
 order: 2
 public: true
 ---
 
-**Note:** This documentation describes a **prerelease** version of the Logainm API. Features are being added on an ongoing basis. The documentation will be revised in advance of the v1.0 release.
+**Note:** This documentation describes a **prerelease** version of the Logainm API. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release.
 
 This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines please consult the [developer documentation](../api).
 

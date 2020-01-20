@@ -15,6 +15,7 @@
         "api": "Comhéadan feidhmchláir",
         "changelog": "Loga athruithe",
         "dataDictionary": "Foclóir sonraí",
+        "gettingStarted": "Buntreoir",
         "licence": "Ceadúnas",
         "openData": "Sonraí Oscailte",
         "software": "Bogearraí",
@@ -28,13 +29,16 @@
         "title": "Doiciméadacht theicniúil",
         "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil ar fáil i gcomhair acmhainní foinse-oscailte atá forbartha ag {link}, Fiontar agus Scoil na Gaeilge, DCU.",
         "sections": {
-            "duchas": "Comhéadan feidhmchláir i gcomhair Cnuasach Bhéaloideas Éireann",
-            "logainm": "Comhéadan feidhmchláir i gcomhair Bunachar Logainmneacha na hÉireann",
-            "surnames": "Sonraí maidir le sloinnte Éireannacha i bhformáid XML",
-            "terminologue": "Uirlis fhoinse-oscailte néalbhunaithe chun bunachair téarmaíochta a bhainistiú",
-            "geoNames2Sql": "Bunachar SQL a chruthú agus a nuashonrú le sonraí gasaitéir GeoNames",
-            "localizer": "Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core",
-            "queryLogger": "Logálaí iarratais simplí so-chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core"
+            "gettingStarted": "Buntreoir",
+            "gettingStartedBlurb": "Treoir ghinearálta chun acmhainní Sonraí Oscailte atá forbartha ag Gaois a úsáid",
+            "duchasBlurb": "Comhéadan feidhmchláir i gcomhair Cnuasach Bhéaloideas Éireann",
+            "logainmBlurb": "Comhéadan feidhmchláir i gcomhair Bunachar Logainmneacha na hÉireann",
+            "surnames": "Innéacs Sloinnte",
+            "surnamesBlurb": "Sonraí maidir le sloinnte Éireannacha i bhformáid XML",
+            "terminologueBlurb": "Uirlis fhoinse-oscailte néalbhunaithe chun bunachair téarmaíochta a bhainistiú",
+            "geoNames2SqlBlurb": "Bunachar SQL a chruthú agus a nuashonrú le sonraí gasaitéir GeoNames",
+            "localizerBlurb": "Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core",
+            "queryLoggerBlurb": "Logálaí iarratais simplí so-chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core"
         }
     },
     "error": {

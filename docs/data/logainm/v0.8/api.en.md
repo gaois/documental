@@ -3,7 +3,7 @@ title: Logainm Application Programming Interface (Version 0.9)
 shortTitle: API
 description: Developer documentation for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
-project: Logainm
+resource: Logainm
 order: 1
 public: true
 ---

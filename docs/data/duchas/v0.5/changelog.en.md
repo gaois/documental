@@ -3,7 +3,7 @@ title: Changelog
 shortTitle: Changelog
 description: A record of changes to the Dúchas API
 keywords: Dúchas, API, folklore, history, storytelling, Irish language, Fiontar & Scoil na Gaeilge, DCU
-project: Dúchas
+resource: Dúchas
 order: 4
 toc: false
 public: true

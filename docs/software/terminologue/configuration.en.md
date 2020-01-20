@@ -3,7 +3,7 @@ title: Configuring Terminologue
 shortTitle: Configuration
 description: How to configure your Terminologue installation
 keywords: terminology, research, software, open source, javascript, Node JS, Fiontar & Scoil na Gaeilge, DCU
-project: Terminologue
+resource: Terminologue
 github: https://github.com/gaois/terminologue
 order: 4
 public: true
