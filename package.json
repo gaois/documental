@@ -2,7 +2,7 @@
   "name": "documental",
   "description": "Documental is a multilingual technical documentation platform developed by the Gaois research group, Fiontar & Scoil na Gaeilge, DCU.",
   "repository": "https://github.com/gaois/documental",
-  "version": "0.0.1",
+  "version": "0.9.0",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
