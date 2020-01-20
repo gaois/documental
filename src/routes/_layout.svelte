@@ -1,15 +1,26 @@
+<script context="module">
+	export async function preload(page, session) {
+		if (!!session.analyticsId) return { analyticsId: session.analyticsId };
+	};
+</script>
+
 <script>
 	import { stores } from '@sapper/app';
 	import { onMount } from 'svelte';
 	import { _, locale } from 'svelte-i18n';
 
 	import Footer from 'components/Footer.svelte';
+	import GoogleAnalytics from 'components/GoogleAnalytics.svelte';
 	import Header from 'components/Header.svelte';
 	import InternetExplorerNotice from 'components/InternetExplorerNotice.svelte';
 	import Navigation from 'components/Navigation.svelte';
 
+	export let analyticsId;
+
 	const { page } = stores();
 </script>
+
+<GoogleAnalytics {analyticsId}/>
 
 <div class='skip'>
 	<a href={`${$page.path}#main`}>

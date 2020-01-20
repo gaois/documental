@@ -8,7 +8,7 @@ import { getProtocol } from 'utils/server';
 import 'i18n';
 import { cookieMaxAge, cookieName, defaultLocale, excludedRoutes, locales } from 'i18n/settings';
 
-const { PORT, NODE_ENV, HOSTNAME } = process.env;
+const { ANALYTICS_ID, PORT, NODE_ENV, HOSTNAME } = process.env;
 const dev = NODE_ENV === 'development';
 const maxAge = !dev ? cookieMaxAge : undefined;
 
@@ -25,6 +25,7 @@ polka()
 		}),
 		sapper.middleware({
 			session: (req) => ({
+				analyticsId: ANALYTICS_ID,
 				locale: req.locale || defaultLocale,
 				hostname: HOSTNAME,
 				protocol: getProtocol(req)
