@@ -27,10 +27,10 @@
         "openData": "Open Data",
         "software": "Software",
         "title": "Technical documentation",
-        "tagline": "docs.gaois.ie provides technical documentation for open-source resources developed by the {link}, Fiontar & Scoil na Gaeilge, DCU.",
+        "tagline": "docs.gaois.ie provides technical documentation for open data and software resources developed by the {link}, Fiontar & Scoil na Gaeilge, DCU.",
         "sections": {
             "gettingStarted": "Getting started",
-            "gettingStartedBlurb": "A general guide to using Open Data resources developed by Gaois",
+            "gettingStartedBlurb": "A general guide to using open data resources developed by Gaois",
             "duchasBlurb": "Application Programming Interface for the National Folklore Collection of Ireland",
             "logainmBlurb": "Application Programming Interface for the Placenames Database of Ireland",
             "surnames": "Surnames Index",

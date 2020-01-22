@@ -8,7 +8,7 @@ order: 1
 public: true
 ---
 
-**Note:** This documentation describes a **prerelease** version of the Logainm API. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release.
+**Note:** The Logainm API in now in **public beta release**. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
 ## Introduction
 

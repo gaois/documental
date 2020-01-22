@@ -27,10 +27,10 @@
         "openData": "Sonraí Oscailte",
         "software": "Bogearraí",
         "title": "Doiciméadacht theicniúil",
-        "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil ar fáil i gcomhair acmhainní foinse-oscailte atá forbartha ag {link}, Fiontar agus Scoil na Gaeilge, DCU.",
+        "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil ar fáil i gcomhair acmhainní sonraí oscailte agus bogearraí atá forbartha ag {link}, Fiontar agus Scoil na Gaeilge, DCU.",
         "sections": {
             "gettingStarted": "Buntreoir",
-            "gettingStartedBlurb": "Treoir ghinearálta chun acmhainní Sonraí Oscailte atá forbartha ag Gaois a úsáid",
+            "gettingStartedBlurb": "Treoir ghinearálta chun acmhainní sonraí oscailte atá forbartha ag Gaois a úsáid",
             "duchasBlurb": "Comhéadan feidhmchláir i gcomhair Cnuasach Bhéaloideas Éireann",
             "logainmBlurb": "Comhéadan feidhmchláir i gcomhair Bunachar Logainmneacha na hÉireann",
             "surnames": "Innéacs Sloinnte",
