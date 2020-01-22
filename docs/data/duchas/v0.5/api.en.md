@@ -8,11 +8,11 @@ order: 1
 public: true
 ---
 
-**Note:** This documentation describes a **prerelease** version of the Dúchas API. Features are being added on an ongoing basis. This documentation will be revised in advance of the v1.0 release.
+**Note:** This documentation describes a **prerelease** version of the Dúchas API. Features are being added on an ongoing basis. This documentation will be revised in advance of the v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
 ## Introduction
 
-Dúchas is a project is to initiate the digitization of the [National Folklore Collection](https://www.ucd.ie/irishfolklore/en) (NFC), held at University College Dublin (UCD), Ireland. The results of the work to date have been made publicly available at [www.duchas.ie](https://www.duchas.ie) and are in the process of being archived for preservation by the [UCD Digital Library](https://digital.ucd.ie/). The technical solution is provided by [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), Dublin City University (DCU). This documentation describes a web-based Application Programming Interface (API) that exposes the published content from the Collection to programmatic queries. A [data dictionary](../data) is available to assist users in parsing results returned by the API.
+Dúchas is a project is to initiate the digitization of the [National Folklore Collection](https://www.ucd.ie/irishfolklore/en) (NFC), held at University College Dublin (UCD), Ireland. The results of the work to date have been made publicly available at [www.duchas.ie](https://www.duchas.ie) and are in the process of being archived for preservation by the [UCD Digital Library](https://digital.ucd.ie/). The technical solution is provided by the Gaois research group at [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), Dublin City University (DCU). This documentation describes a web-based Application Programming Interface (API) that exposes the published content from the Collection to programmatic queries. A [data dictionary](../data) is available to assist users in parsing results returned by the API.
 
 ### The National Folklore Collection and its collections
 
