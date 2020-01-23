@@ -8,7 +8,7 @@ order: 2
 public: true
 ---
 
-**Note:** This documentation describes a **prerelease** version of the Logainm API. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release.
+**Note:** The Logainm API in now in **public beta release**. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
 This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines please consult the [developer documentation](../api).
 

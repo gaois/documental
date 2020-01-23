@@ -8,7 +8,7 @@ order: 2
 public: true
 ---
 
-**Note:** This documentation describes a prerelease version of the Dúchas API. Features are being added on an ongoing basis. This documentation will be revised in advance of the v1.0 release.
+**Note:** This documentation describes a **prerelease** version of the Dúchas API. Features are being added on an ongoing basis. This documentation will be revised in advance of the v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
 This document describes the data structure of the collections made available via the Dúchas Application Programming Interface (API). Dúchas is a project is to initiate the digitization of the [National Folklore Collection](https://www.ucd.ie/irishfolklore/en) (NFC). For general information regarding the API and for developer guidelines please consult the [developer documentation](../api).
   
