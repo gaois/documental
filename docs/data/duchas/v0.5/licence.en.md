@@ -11,7 +11,7 @@ public: true
 
 ## Copyright
 
-Dúchas data is © University College Dublin.
+Dúchas data is © National Folklore Collection, UCD.
 
 ## Licence
 
@@ -21,7 +21,7 @@ Dúchas data is made available under the [Creative Commons Attribution-NonCommer
 
 If you use Dúchas data, you have to acknowledge this and provide attribution. We recommend the following text:
 
-> Folklore data by [Dúchas](https://www.duchas.ie/en) © University College Dublin and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+> Folklore data by [Dúchas](https://www.duchas.ie/en) © National Folklore Collection, UCD and licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 It is not permissable to use Dúchas data for commercial purposes under this licence.
 

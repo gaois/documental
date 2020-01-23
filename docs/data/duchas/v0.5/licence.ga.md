@@ -11,7 +11,7 @@ public: true
 
 ## Cóipcheart
 
-Tá sonraí Dúchas faoi © An Coláiste Ollscoile, Baile Átha Cliath.
+Tá sonraí Dúchas faoi © Cnuasach Bhéaloideas Éireann, UCD.
 
 ## Ceadúnas
 
@@ -21,7 +21,7 @@ Cuirtear sonraí Dúchas ar fáil faoin gceadúnas [Creative Commons Attribution
 
 Má úsáideann tú sonraí Dúchas, ní mór duit é sin a admháil agus sannadh a sholáthar. Molaimid an téacs seo a leanas:
 
-> Sonraí béaloidis ó [Dúchas](https://www.duchas.ie/ga) faoi © An Coláiste Ollscoile, Baile Átha Cliath agus cheadúnas [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+> Sonraí béaloidis ó [Dúchas](https://www.duchas.ie/ga) faoi © Cnuasach Bhéaloideas Éireann, UCD agus cheadúnas [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 Ní ceadmhach sonraí Dúchas a úsáid chun críche tráchtála faoin gceadúnas seo.
 
