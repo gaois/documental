@@ -23,7 +23,7 @@ If you use Logainm data, you have to acknowledge this and provide attribution. W
 
 > Irish-language placename data by [Logainm](https://www.logainm.ie/en/) © Government of Ireland and licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-If you use Logainm data, we would love to [hear from you](mailto:logainm@dcu.ie) with information about how you are benefitting from it, but this is not a requirement.
+If you use Logainm data, we would love to [hear from you](mailto:gaois@dcu.ie) with information about how you are benefitting from it, but this is not a requirement.
 
 ## Obtaining the data
 

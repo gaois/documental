@@ -25,7 +25,7 @@ Má úsáideann tú sonraí Dúchas, ní mór duit é sin a admháil agus sannad
 
 Ní ceadmhach sonraí Dúchas a úsáid chun críche tráchtála faoin gceadúnas seo.
 
-Má úsaideann tú sonraí Dúchas, ba bhreá linn [cloisteáil uait](mailto:eolas@duchas.ie) le heolas faoi conas atá tú ag baint leasa as na sonraí, ach níl sé seo riachtanach.
+Má úsaideann tú sonraí Dúchas, ba bhreá linn [cloisteáil uait](mailto:gaois@dcu.ie) le heolas faoi conas atá tú ag baint leasa as na sonraí, ach níl sé seo riachtanach.
 
 ## Na sonraí a fháil
 

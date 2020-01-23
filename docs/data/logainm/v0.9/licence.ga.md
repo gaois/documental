@@ -23,7 +23,7 @@ Má úsáideann tú sonraí Logainm, ní mór duit é sin a admháil agus sannad
 
 > Sonraí logainmníochta Gaeilge ó [Logainm](https://www.logainm.ie/ga/) faoi © Rialtas na hÉireann agus cheadúnas [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-Má úsaideann tú sonraí Logainm, ba bhreá linn [cloisteáil uait](mailto:logainm@dcu.ie) le heolas faoi conas atá tú ag baint leasa as na sonraí, ach níl sé seo riachtanach.
+Má úsaideann tú sonraí Logainm, ba bhreá linn [cloisteáil uait](mailto:gaois@dcu.ie) le heolas faoi conas atá tú ag baint leasa as na sonraí, ach níl sé seo riachtanach.
 
 ## Na sonraí a fháil
 

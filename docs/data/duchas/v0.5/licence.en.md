@@ -25,7 +25,7 @@ If you use Dúchas data, you have to acknowledge this and provide attribution. W
 
 It is not permissable to use Dúchas data for commercial purposes under this licence.
 
-If you use Dúchas data, we would love to [hear from you](mailto:eolas@duchas.ie) with information about how you are benefitting from it, but this is not a requirement.
+If you use Dúchas data, we would love to [hear from you](mailto:gaois@dcu.ie) with information about how you are benefitting from it, but this is not a requirement.
 
 ## Obtaining the data
 
