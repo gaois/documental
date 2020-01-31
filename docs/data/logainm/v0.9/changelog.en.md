@@ -9,6 +9,13 @@ toc: false
 public: true
 ---
 
+## **v0.9.2** / 2020-01-20
+
+### Changed
+
+- Improved accuracy of geographic queries, particulary in respect of coordinates associated with street names.
+- URI strings in `Image` and `Audio` objects are now properly escaped.
+
 ## **v0.9.1** / 2019-11-18
 
 ### Added

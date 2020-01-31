@@ -9,6 +9,13 @@ toc: false
 public: true
 ---
 
+## **v0.9.2** / 2020-01-20
+
+### Athruithe
+
+- Tá feabhas ar chruinneas na n-iarratas geografach, go háirithe sa mhéid a bhaineann le comhordnáidí sráidainmneacha.
+- Déantar ceartionchódú ar theagráin URI i gcás oibiachtaí `Image` agus `Audio` anois.
+
 ## **v0.9.1** / 2019-11-18
 
 ### Forbairtí breise
