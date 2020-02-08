@@ -9,12 +9,26 @@ toc: false
 public: true
 ---
 
+## **v0.9.3** / 2020-02-08
+
+### Added
+
+- The Logainm API now supports [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS).
+
+### Changed
+
+- Updated the [getting started](/en/data/getting-started) documentation to reflect CORS support.
+
+---
+
 ## **v0.9.2** / 2020-01-20
 
 ### Changed
 
 - Improved accuracy of geographic queries, particulary in respect of coordinates associated with street names.
 - URI strings in `Image` and `Audio` objects are now properly escaped.
+
+---
 
 ## **v0.9.1** / 2019-11-18
 

@@ -9,12 +9,26 @@ toc: false
 public: true
 ---
 
+## **v0.9.3** / 2020-02-08
+
+### Forbairtí breise
+
+- Tá [Comhroinnt Sócmhainní Thras-Fhoinse](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS) cumasaithe i gcás API Logainm anois.
+
+### Changed
+
+- Leasaíodh [an bhuntreoir](/ga/data/getting-started) leis na forbairtí i dtaca le CORS a chur in iúl.
+
+---
+
 ## **v0.9.2** / 2020-01-20
 
 ### Athruithe
 
 - Tá feabhas ar chruinneas na n-iarratas geografach, go háirithe sa mhéid a bhaineann le comhordnáidí sráidainmneacha.
 - Déantar ceartionchódú ar theagráin URI i gcás oibiachtaí `Image` agus `Audio` anois.
+
+---
 
 ## **v0.9.1** / 2019-11-18
 

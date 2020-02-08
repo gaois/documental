@@ -9,6 +9,18 @@ toc: false
 public: true
 ---
 
+## **v0.5.3** / 2020-02-08
+
+### Added
+
+- The Dúchas API now supports [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS).
+
+### Changed
+
+- Updated the [getting started](/en/data/getting-started) documentation to reflect CORS support.
+
+---
+
 ## **v0.5.2** / 2019-10-24
 
 ### Changed

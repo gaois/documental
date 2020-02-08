@@ -20,6 +20,8 @@ Gaois APIs provide access to a number of resources by means of a defined URL sch
 
 Users or applications (clients) requesting a resource via the API must authenticate their identity. This is achieved by providing an API key with each request. Each client must obtain a unique API key prior to interacting with the interface. Authentication is required to prevent abuse of the service and to track general usage statistics. Further details are provided below.
 
+Gaois open data APIs support [Cross-Origin Resource Sharing](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS), meaning they can be used by client-side applications and in mobile browser environments. 
+
 ## API versioning
 
 Multiple API versions are facilitated for all of our REST APIs. This is to say more than one version of each API may be accessible at the same time. Newer API versions may offer additional resources or functionalities but may require a different request syntax to older versions. The target API version is indicated by the second path parameter in the request URL:

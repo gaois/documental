@@ -18,9 +18,11 @@ Cuireann Comhéadain Feidhmchláir Gaois rochtain ar roinnt achmhainní ar fáil
 
 > `https://www.logainm.ie/api/v0.9/1375542`
 
-Ní mór d'úsáideoirí nó d'fheidhmchláir (cliaint) a iarrann acmhainn trí API a n-aitheantas a fhíordheimhniú. Déantar é seo ach eochair API a thabhairt le gach iarratas. Ní mór do gach cliant eochair uathúil API a fháil sula n-idirghníomhaíonn sé/sí leis an gcomhéadan. Teastaíonn fíordheimhniú chun mí-úsáid seirbhíse a chosc agus chun staitisticí ginearálta úsáide a rianú. Faightear tuilleadh sonraí thíos.   
+Ní mór d'úsáideoirí nó d'fheidhmchláir (cliaint) a iarrann acmhainn trí API a n-aitheantas a fhíordheimhniú. Déantar é seo ach eochair API a thabhairt le gach iarratas. Ní mór do gach cliant eochair uathúil API a fháil sula n-idirghníomhaíonn sé/sí leis an gcomhéadan. Teastaíonn fíordheimhniú chun mí-úsáid seirbhíse a chosc agus chun staitisticí ginearálta úsáide a rianú. Faightear tuilleadh sonraí thíos.
 
-## Leaganú API  
+Tá [Comhroinnt Sócmhainní Thras-Fhoinse](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS) cumasaithe i dtaca leis na comhéadain feidhmchláir de chuid Gaois a chuireann sonraí oscailte ar fáil. Fágann sé seo gur féidir na sonraí a úsáid i bhfeidhmchláir ar thaobh an chliaint agus ar bhrabhsálaithe móibíleacha.
+
+## Leaganú API
 
 Éascaítear leaganacha éagsúla API le haghaidh gach API REST. Is ionann seo agus a rá go bhféadfadh níos mó ná leagan amháin de gach API a bheith inrochtana ag an am céanna. D'fhéadfadh leaganacha nua API acmhainní nó feidhmiúlachtaí breise a chur ar fáil ach seans go dteastóidh comhréir dhifriúil iarratais uathu i gcomparáid le leaganacha níos sine. Léiríonn an dara paraiméadar cosáin in URL an iarratais an spriocleagan API:  
 
