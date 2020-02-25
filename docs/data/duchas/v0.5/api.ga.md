@@ -12,7 +12,7 @@ public: true
 
 ## Réamhrá
 
-Cuireadh tionscadal Dúchas ar bun chun tús a chur le digitiú [Chnuasach Bhéaloideas Éireann](https://www.ucd.ie/irishfolklore/en) (CBÉ), atá á choinneáil sa Choláiste Ollscoile, Baile Átha Cliath, Éire. Cuireadh torthaí na hoibre go dtí seo ar fáil go poiblí ar [www.duchas.ie](https://www.duchas.ie) agus tá siad á gcartlannú faoi láthair ag [Leabharlann Dhigiteach UCD](https://digital.ucd.ie/) chun iad a chaomhnú. Cuireann grúpa taighde Gaois de chuid [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), Ollscoil Chathair Bhaile Átha Cliath, an réiteach teicniúil seo ar fáil. Déantar cur síos sa doiciméad seo ar Chomhéadan Feidhmchláir (API) gréasánbhunaithe a nochtann an t-ábhar foilsithe ó iarratais chláir a dhéantar ar an mBailiúchán. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.      
+Cuireadh tionscadal Dúchas ar bun chun tús a chur le digitiú [Chnuasach Bhéaloideas Éireann](https://www.ucd.ie/irishfolklore/ga) (CBÉ), atá á choinneáil sa Choláiste Ollscoile, Baile Átha Cliath, Éire. Cuireadh torthaí na hoibre go dtí seo ar fáil go poiblí ar [www.duchas.ie](https://www.duchas.ie) agus tá siad á gcartlannú faoi láthair ag [Leabharlann Dhigiteach UCD](https://digital.ucd.ie/) chun iad a chaomhnú. Cuireann grúpa taighde Gaois de chuid [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), Ollscoil Chathair Bhaile Átha Cliath, an réiteach teicniúil seo ar fáil. Déantar cur síos sa doiciméad seo ar Chomhéadan Feidhmchláir (API) gréasánbhunaithe a nochtann an t-ábhar foilsithe ó iarratais chláir a dhéantar ar an mBailiúchán. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.      
 
 ### Cnuasach Bhéaloideas Éireann agus na bailiúcháin
 
@@ -59,10 +59,10 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
 | GET         | `/api/v0.5/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
 | GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
-| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de theidil ábhair (topaicí) i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/en/tpc/cbeg) le Seán Ó Súilleabháin. |
+| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de theidil ábhair (topaicí) i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
 | GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhair lámhscríbhinne agus meiteashonraí gaolmhara.*** |
 | GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhair lámhscríbhinne agus meiteashonraí achoimre. |
-| GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/en/tpc/cbes).
+| GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
 | GET         | `/api/v0.5/counties`          | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le contaetha na hÉireann. |
 | GET         | `/api/v0.5/countries`         | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le tíortha. |
 
