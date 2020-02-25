@@ -52,8 +52,8 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | `CategoryID`  | teaghrán        | Scag de réir aitheantóir na catagóire áite, lena n-áirítear aonad riaracháin nó gné gheografach. |
 | `GlossaryID`  | slánuimhir      | Scag de réir aitheantóir an iontrála gluaise. |
 | `ExcludeStreets` | Boole          | Má tá sé fíor, ná cuir áiteanna a bhfuil `CategoryID` de `SR` (sráideanna) ón tacar torthaí leo. D'fhéadfadh sráideanna cur go mór le méid an tacair thorthaí agus, dá bharr sin, d'fhéadfadh sé cur leis an aga freagartha a bhaineann le háiteanna a chuimsíonn ceantair mhóra uirbeacha. |
-| `Latitude`    | float           | Scag de réir comhordanáid dhomhanleithid. Caithfear é a úsáid i gcomhar le luach `Longitude`. |
-| `Longitude`   | float           | Scag de réir comhordanáid dhomhanfhaid. Caithfear é a úsáid i gcomhar le luach `Latitude`. |
+| `Latitude`    | float           | Scag de réir comhordanáid domhanleithid. Caithfear é a úsáid i gcomhar le luach `Longitude`. |
+| `Longitude`   | float           | Scag de réir comhordanáid domhanfhaid. Caithfear é a úsáid i gcomhar le luach `Latitude`. |
 | `Accurate`    | Boole           | Má tá sé fíor, ná cuir ach áiteanna a gcreidtear go bhfuil a gcuid comhordanáidí geografacha beacht ar ais. Má tá sé bréagach, ná cuir ach áiteanna a bhfuarthas a gcuid comhordanáidí geografacha trí eachtarshuí ó áiteanna in aice láimhe ar ais. |
 | `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15000 an t-uasmhéid do gha ar bith.Filleann sé ar 300 go huathoibríoch. |
 | `Query`       | teaghrán        | Scaig de réir téarma(í) cuardaigh. Tá cuardaigh théacs íogair ó thaobh an tsínte fhada de; mar shampla, faightear torthaí difriúla ó na téarmaí cuardaigh 'Rath' and 'Ráth'. Tabhair faoi deara nach bhfaightear ach meaitseálacha cruinne ar théarmaí iarratais trí chuardaigh théacs. D'fhéadfadh meaitseálacha páirteacha nó tuairimeacha a bheith sa réimse freagartha `SimilarNames`. |
