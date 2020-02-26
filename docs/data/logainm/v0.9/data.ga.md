@@ -10,7 +10,7 @@ public: true
 
 **Tabhair faoi deara:** Tá **leagan béite poiblí** de API Logainm ar fáil anois. Cé go bhfuil v0.9 API cobhsaí den chuid is mó, d'fhéadfaí athruithe briste a dhéanamh roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
 
-Déantar cur síos sa doiciméad seo ar struchtúr sonraí na dtorthaí a chuirtear ar fáil trí Chomhéadan Feidhmchláir (API) Logainm. Áis chuimsitheach bhainistíochta í seo chun sonraí logainmneacha agus taifid chartlainne a riar mar aon le taighde oifigeach logainmneacha Rialtas na hÉireann. Téigh i gcomhairle le [doiciméid an fhorbróra](../api) chun tuilleadh eolais a fháil ar API agus ar threoirlínte an fhorbróra.
+Déantar cur síos sa doiciméad seo ar struchtúr sonraí na dtorthaí a chuirtear ar fáil trí Chomhéadan Feidhmchláir (API) Logainm. Áis chuimsitheach bhainistíochta í seo chun sonraí logainmneacha agus taifid chartlainne a riar mar aon le taighde oifigeach logainmneacha Rialtas na hÉireann. Téigh i gcomhairle le [doiciméid an fhorbróra](../api) chun eolas ginearálta ar API agus treoirlínte an fhorbróra a fháil.
 
 ## `placeList`
 
