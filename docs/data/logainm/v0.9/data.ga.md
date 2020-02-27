@@ -78,7 +78,7 @@ Léiríonn sé logainm a bhaineann le háit amháin nó níos mó.
 | Ainm an airí    | Cineál              | Bunuimhreacht          | Cur síos                  |
 | :-------------- | :------------------ | :--------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin           | Aitheantóir an logainm. |
-| Language        | ISO 639-1 cód teanga | ceann ar bith nó ceann amháin          | Léiríonn sé teanga an logainm, má tá sé ar eolas againn. |
+| Language        | ISO 639-1 cód teanga | ceann ar bith nó ceann amháin          | Léiríonn sé teanga an logainm, má tá sé ar eolas. |
 | Wording         | teaghrán            | ceann amháin           | An logainm féin.     |
 | Genetive        | teaghrán            | ceann ar bith nó ceann amháin         | I gcás logainmneacha Gaeilge, sonraíonn sé seo foirm ghramadaí an logainm sa tuiseal ginideach.     |
 | Main            | Boole               | ceann amháin           | Má tá sé fíor, is é seo príomhainm/ainm canónta an logainm. Níl sé seo tábhachtach ach amháin má tá níos mó ná ainm amháin ag an áit sa teanga chéanna. |
@@ -168,8 +168,8 @@ Déanann sé cur síos ar thaifead scanta ó chartlann an Bhrainse Logainmneacha
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                     |
 | :-------------- | :------------------ | :------------------------------------ | :--------------------------- |
 | FileName        | teaghrán            | ceann amháin                          | Ainm an chomhaid íomhá.      |
-| LabelEN         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Béarla ar chatagóir na híomhá, má tá sé ar eolas againn. |
-| LabelGA         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Gaeilge ar chatagóir na híomhá, má tá sé ar eolas againn. |
+| LabelEN         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Béarla ar chatagóir na híomhá, má tá sé ar eolas. |
+| LabelGA         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Gaeilge ar chatagóir na híomhá, má tá sé ar eolas. |
 | Uri             | teaghrán            | ceann amháin                          | URI an íomhá.            |
 
 ### `resource`
@@ -265,7 +265,7 @@ Déanann sé cur síos ar chatagóir áite. Cuimsíonn catagóirí [aonaid riara
 | NameGA          | teaghrán            | ceann ar bith nó ceann amháin     | Ainm Gaeilge na catagóire. |
 | NamePluralEN    | teaghrán            | ceann ar bith nó ceann amháin     | Uimhir iolra ainm Béarla na catagóire. |
 | NamePluralGA    | teaghrán            | ceann ar bith nó ceann amháin     | Uimhir iolra ainm Gaeilge na catagóire. |
-| Count           | slánuimhir          | ceann ar bith nó ceann amháin     | Líon na logainmneacha a bhaineann leis an gcatagóir seo, má tá sé ar eolas againn. |
+| Count           | slánuimhir          | ceann ar bith nó ceann amháin     | Líon na logainmneacha a bhaineann leis an gcatagóir seo, má tá sé ar eolas. |
 
 ## `glossary`
 
@@ -277,4 +277,4 @@ Déanann sé cur síos ar thacar d'fhocail ghaolmhara a fhaightear go minic i lo
 | Headword        | teaghrán            | ceann amháin                             | Ceannfhocal na hiontrála gluaise. |
 | Translation     | teaghrán            | ceann ar bith nó ceann amháin            | Aistriúchán Béarla ar cheannfhocal na gluaise. |
 | Forms           | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Litrithe eile ar cheannfhocal na gluaise. |
-| Count           | slánuimhir          | ceann ar bith nó ceann amháin            | Líon na logainmneacha a bhaineann leis an iontráil ghluaise seo, má tá sé ar eolas againn. |
+| Count           | slánuimhir          | ceann ar bith nó ceann amháin            | Líon na logainmneacha a bhaineann leis an iontráil ghluaise seo, má tá sé ar eolas. |
