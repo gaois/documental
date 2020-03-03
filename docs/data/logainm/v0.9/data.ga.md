@@ -34,7 +34,7 @@ Tá an oibiacht `place` i gcroílár API Logainm: léiríonn sí suíomh geograf
 | DateCreated     | ISO 8601 datetime   | ceann amháin                         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin        | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil.  |
 | Permalink       | teaghrán            | ceann amháin                         | Hipearnasc statach buan ina bhféadfadh léitheoir daonna tuilleadh eolais a fháil ar an áit. Téann sé seo go dtí an leagan Gaeilge nó Béarla de leathanach eolais na háite go huathoibríoch. |
-| Featured        | ISO 8601 datetime   | ceann ar bith nó ceann amháin nó go leor | Seasann sé seo don dáta nó do na dátaí nuair a úsáideadh an áit seo mar logainm an lae ar an suíomh gréasáin [logainm.ie](https://www.logainm.ie), má úsáideadh é. |
+| Featured        | ISO 8601 datetime   | ceann ar bith nó ceann amháin nó go leor | Seasann sé seo don dáta nó do na dátaí nuair a úsáideadh an áit seo mar logainm an lae ar an suíomh gréasáin [logainm.ie](https://www.logainm.ie), má úsáideadh í. |
 | Cluster         | [`cluster`](#cluster) | ceann ar bith nó ceann amháin | Meiteashonraí a léiríonn grúpa áiteanna, a bhfuil an áit seo mar chuid de, a roinneann logainmneacha agus atá comhshuite nó atá gar dá chéile. |
 | Placenames      | [`placename`](#placename) | ceann amháin no go leor | Logainm amháin nó níos mó, agus meiteashonraí gaolmhara, a thugtar ar an áit seo. |
 | Glossary        | [`glossary`](#glossary) | ceann ar bith nó ceann amháin | Déanann sé cur síos ar fhocail a fhaightear go minic i logainmneacha na hÉireann agus atá i logainmneacha a bhaineann leis an áit seo. |
