@@ -59,7 +59,7 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
 | GET         | `/api/v0.5/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
 | GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
-| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de theidil ábhair (topaicí) i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
+| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair (topaicí) i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
 | GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhair lámhscríbhinne agus meiteashonraí gaolmhara.*** |
 | GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhair lámhscríbhinne agus meiteashonraí achoimre. |
 | GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
