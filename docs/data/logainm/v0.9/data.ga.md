@@ -140,7 +140,7 @@ Léiríonn sé péire comhordanáidí geografacha.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                       |
 | :-------------- | :------------------ | :------------------ | :----------------------------- |
-| Latitude        | dúbailte            | ceann amháin        | An chomhordanáid domhanleithid |
+| Latitude        | dúbailte            | ceann amháin        | An chomhordanáid domhanleithid. |
 | Longitude       | dúbailte            | ceann amháin        | An chomhordanáid domhanfhaid.  |
 
 ### `gridReference`
