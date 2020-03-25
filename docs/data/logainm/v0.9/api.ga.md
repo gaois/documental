@@ -8,7 +8,7 @@ order: 1
 public: true
 ---
 
-**Tabhair faoi deara:** Tá **leagan béite poiblí** de API Logainm ar fáil anois. Cé go bhfuil v0.9 API cobhsaí den chuid is mó, d'fhéadfaí athruithe briste a dhéanamh roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
+**Tabhair faoi deara:** Tá **leagan béite poiblí** de API Logainm ar fáil anois. Cé go bhfuil v0.9 API cobhsaí den chuid is mó, d'fhéadfaí athruithe briste tarlú roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
 
 ## Réamhrá
 
@@ -20,7 +20,7 @@ Téigh i gcomhairle leis an [treoir maidir le cur chun siúil](/en/data/getting-
 
 ## Cosáin acmhainne
 
-Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm an an phríomhshuímh ghréasáin. Liostaítear gach cosán iarratais atá ar fáil faoi láthair thíos. Tá [foclóir sonraí](../sonraí) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
+Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm ar an phríomhshuímh ghréasáin. Liostaítear gach cosán iarratais atá ar fáil faoi láthair thíos. Tá [foclóir sonraí](../sonraí) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
 
 | Modh        | Cosán                         | Acmhainn                  |
 | :---------- | :---------------------------- | :------------------------ |
@@ -48,14 +48,14 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 
 | Ainm          | Cineál          | Cur síos    |
 | :------------ | :-------------- | :------------- |
-| `PlaceID`     | slánuimhir      | Scag de réir aitheantóra áite. Mar shampla, tagtar ar gach áit i gContae Dhún na nGall ach `PlaceID` de `100013` a chur isteach. |
+| `PlaceID`     | slánuimhir      | Scag de réir aitheantóir áite. Mar shampla, tagtar ar gach áit i gContae Dhún na nGall ach `PlaceID` de `100013` a chur isteach. |
 | `CategoryID`  | teaghrán        | Scag de réir aitheantóir na catagóire áite, lena n-áirítear aonad riaracháin nó gné gheografach. |
-| `GlossaryID`  | slánuimhir      | Scag de réir aitheantóir an iontrála gluaise. |
-| `ExcludeStreets` | Boole          | Má tá sé fíor, ná cuir áiteanna a bhfuil `CategoryID` de `SR` (sráideanna) ón tacar torthaí leo. D'fhéadfadh sráideanna cur go mór le méid an tacair thorthaí agus, dá bharr sin, d'fhéadfadh sé cur leis an aga freagartha a bhaineann le háiteanna a chuimsíonn ceantair mhóra uirbeacha. |
+| `GlossaryID`  | slánuimhir      | Scag de réir aitheantóir na hiontrála gluaise. |
+| `ExcludeStreets` | Boole          | Má tá sé fíor, ná cuir áiteanna a bhfuil `CategoryID` de `SR` (sráideanna) ón tacar torthaí leo. D'fhéadfadh sráideanna cur go mór le méid an tacair torthaí agus, dá bharr sin, d'fhéadfadh sé cur leis an aga freagartha a bhaineann le háiteanna a gcuimsítear iontu ceantair mhóra uirbeacha. |
 | `Latitude`    | float           | Scag de réir comhordanáid domhanleithid. Caithfear é a úsáid i gcomhar le luach `Longitude`. |
 | `Longitude`   | float           | Scag de réir comhordanáid domhanfhaid. Caithfear é a úsáid i gcomhar le luach `Latitude`. |
 | `Accurate`    | Boole           | Má tá sé fíor, ná cuir ach áiteanna a gcreidtear go bhfuil a gcuid comhordanáidí geografacha beacht ar ais. Má tá sé bréagach, ná cuir ach áiteanna a bhfuarthas a gcuid comhordanáidí geografacha trí eachtarshuí ó áiteanna in aice láimhe ar ais. |
-| `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15000 an t-uasmhéid do gha ar bith.Filleann sé ar 300 go huathoibríoch. |
+| `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15000 an t-uasmhéid do gha ar bith. Filleann sé ar 3000 go huathoibríoch. |
 | `Query`       | teaghrán        | Scaig de réir téarma(í) cuardaigh. Tá cuardaigh théacs íogair ó thaobh an tsínte fhada de; mar shampla, faightear torthaí difriúla ó na téarmaí cuardaigh 'Rath' and 'Ráth'. Tabhair faoi deara nach bhfaightear ach meaitseálacha cruinne ar théarmaí iarratais trí chuardaigh théacs. D'fhéadfadh meaitseálacha páirteacha nó tuairimeacha a bheith sa réimse freagartha `SimilarNames`. |
 | `Gaeltacht`   | Boole           | Má tá sé fíor, ná cuir ach áiteanna atá i gceantar Gaeltachta ar ais. Má tá sé bréagach, ná cuir áiteanna atá i gceantair Ghaeltachta san áireamh sa tacar torthaí. |
 | `PostOffice`  | Boole           | Má tá sé fíor, ná cuir ach áiteanna ina bhfuil nó ina raibh oifig an phoist ar ais.Má tá sé bréagach, ná cuir áiteanna ina bhfuil nó ina raibh oifig an phoist san áireamh sa tacar torthaí. |
