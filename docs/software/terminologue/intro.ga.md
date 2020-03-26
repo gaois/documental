@@ -8,7 +8,7 @@ toc: false
 public: true
 ---
 
-Gheobhaidh tú anseo na doiciméid theicniúla ar fad a bhaineann le córas bainistíochta téarmaíochta [Terminologue](https://www.terminologue.org/). Má theastaíonn uait a bheith ag tincéireacht le cód foinseach Terminologue, tuiscint a fháil ar an gcaoi a n-oibríonn sé nó d'ásc féin de Terminologue a rith ar do fhreastalaí féin, ba cheart duit an t-ábhar seo a léamh.  
+Gheobhaidh tú anseo na doiciméid theicniúla ar fad a bhaineann le córas bainistíochta téarmaíochta [Terminologue](https://www.terminologue.org/). Má theastaíonn uait a bheith ag tincéireacht le cód foinseach Terminologue, tuiscint a fháil ar an gcaoi a n-oibríonn sé nó d'ásc féin de Terminologue a rith ar d'fhreastalaí féin, ba cheart duit an t-ábhar seo a léamh.  
 
 Mura bhfuil uait ach Terminologue a *úsáid*, áfach, níl an t-ábhar seo oiriúnach duit. Ba cheart duit dul go [www.terminologue.org](https://www.terminologue.org/) agus [Treoir úsáideora Terminologue](https://www.terminologue.org/docs/intro.ga/) a léamh.  
 
