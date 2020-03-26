@@ -10,11 +10,11 @@ toc: false
 public: true
 ---
 
-Mínítear sa doiciméad **(1)** seo na rudaí a chaithfidh tú a dhéanamh chun tús a chur le suiteáil áitiúil de Terminologue ar do ríomhaire féin le haghaidh forbartha nó tástála, agus **(2)** tugann sé tuilleadh ábhar léitheoireachta duit má theastaíonn uait an chaoi a n-oibríonn Terminologue go hinmheánach agus/nó an chaoi a gcumraítear ar fhreastalaí táirgthe é a thuiscint.  
+Mínítear sa doiciméad **(1)** seo na rudaí a chaithfidh tú a dhéanamh chun tús a chur le suiteáil áitiúil de Terminologue ar do ríomhaire féin le haghaidh forbairt nó tástáil, agus **(2)** tugann sé tuilleadh ábhair léitheoireachta duit má theastaíonn uait an chaoi a n-oibríonn Terminologue go hinmheánach agus/nó an chaoi a gcumraítear ar fhreastalaí táirgthe é a thuiscint.  
 
 ## Cúpla rud a chaithfidh tú a thuiscint ar dtús
 
-Tá Terminologue gréasánbhunaithe. Ciallaíonn sé seo go ritheann Terminologue ar fhreastalaí agus úsáideann daoine brabhsálaithe gréasáin chun rochtain a fháil air tríd an idirlíon, cosúil le suíomh gréasáin ar bith eile. Sa doiciméad seo, mínímid an bealach a gcumraítear Terminologue ar do ríomhaire féin, agus do ríomhaire á úsáid agat amhail is gur freastalaí é, le haghaidh forbartha agus tástála.
+Tá Terminologue gréasánbhunaithe. Ciallaíonn sé seo go ritheann Terminologue ar fhreastalaí agus úsáideann daoine brabhsálaithe gréasáin chun rochtain a fháil air tríd an idirlíon, cosúil le suíomh gréasáin ar bith eile. Sa doiciméad seo, mínímid an bealach a gcumraítear Terminologue ar do ríomhaire féin, agus do ríomhaire á úsáid agat amhail is gur freastalaí é, le haghaidh forbairt agus tástáil.
 
 Tá cúl Terminologue (= na píosaí a ritheann ar an bhfreastalaí) scríofa in [Node.js](https://nodejs.org/). Ciallaíonn sé seo gurb ionann an cód foinseach agus JavaScript (taobh freastalaí) agus go ritheann sé ar bheagnach gach córas oibriúcháin, lena n-áirítear GNU/Linux agus Microsoft Windows. An t-aon réamhriachtanas a bhaineann leis seo ná Node.js a shuiteáil ar do ríomhaire. Aimseoidh agus suiteálfaidh Bainisteoir Pacáiste Node.js gach réamhriachtanas agus gach spleáchas eile go huathoibríoch agus é á chumrú agat.  
 
@@ -24,7 +24,7 @@ Maidir le sonraí a stóráil ar an bhfreastalaí, lena n-áirítear gach bunach
 
 1. Suiteáil [Node.js](https://nodejs.org/) ar do ríomhaire.
 
-2. Íoslódáil gach rud ón stór agus cuir i gcomhadlann ar do ríomhaire iad. Tabharfaidh tú faoi deara go bhfaightear na rudaí a d’íoslódáil tú i bhfochomhadlanna éagsula, agus is iad `data` (an áit a gcoinníonn Terminologue a mbunachair shonraí) agus `website` (an áit a a bhfuil fíorshuíomh gréasáin Terminologue) na fochomhadlanna is tábhachtaí. 
+2. Íoslódáil gach rud ón stór agus cuir i gcomhadlann ar do ríomhaire iad. Tabharfaidh tú faoi deara go bhfaightear na rudaí a d’íoslódáil tú i bhfochomhadlanna éagsula, agus is iad `data` (an áit a gcoinníonn Terminologue a bhunachair sonraí) agus `website` (an áit a a bhfuil fíorshuíomh gréasáin Terminologue) na fochomhadlanna is tábhachtaí. 
 
 3. Ach an teirminéal (má tá tú ar GNU/Linux) nó an leid ordaithe (má tá tú ar Microsoft Windows) a úsáid, téigh chuig an bhfochomhadlann `website` agus rith  `npm install`. Lainseálfaidh sé seo Bainisteoir Pacáiste Node.js (NPM) a íoslódálfaidh agus a shuiteálfaidh (sa chomhadlann `website/node_modules`) gach spleáchas a theastaíonn ó Terminologue. D’fhéadfadh sé seo cúpla nóiméad a ghlacadh.
 
