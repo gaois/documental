@@ -60,10 +60,10 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | `Gaeltacht`   | Boole           | Má tá sé fíor, ná cuir ach áiteanna atá i gceantar Gaeltachta ar ais. Má tá sé bréagach, ná cuir áiteanna atá i gceantair Ghaeltachta san áireamh sa tacar torthaí. |
 | `PostOffice`  | Boole           | Má tá sé fíor, ná cuir ach áiteanna ina bhfuil nó ina raibh oifig an phoist ar ais.Má tá sé bréagach, ná cuir áiteanna ina bhfuil nó ina raibh oifig an phoist san áireamh sa tacar torthaí. |
 | `NorthernIreland` | Boole          | Má tá sé fíor, ná cuir ach áiteanna atá i dTuaisceart Éireann ar ais. Má tá sé bréagach, ná cuir áiteanna atá i dTuaisceart Éireann san áireamh sa tacar torthaí. |
-| `CreatedBefore` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `CreatedSince` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedBefore` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedSince` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 
 ## Sórtáil
 
