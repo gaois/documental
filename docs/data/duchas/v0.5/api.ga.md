@@ -16,23 +16,23 @@ Cuireadh tionscadal Dúchas ar bun chun tús a chur le digitiú [Chnuasach Bhéa
 
 ### Cnuasach Bhéaloideas Éireann agus na bailiúcháin
 
-Tá sonraí ó thrí cinn de na cúig phríomhbhailiúchán béaloidis atá ag Cnuasach Bhéaloideas Éireann ar fáil tríd an ardán seo faoi láthair. Ach tuiscint a bheith agat ar a bhfuil sna bailiúcháin seo, cabhróidh sé leat úsáid a bhaint as an API. Tabhair faoi deara go dtagraítear do na bunachair shonraí a bhaineann leis na bailiúcháin seo i ngearrscríobh go minic ach acrainmneacha leithéid CBÉS, CBÉG, srl a úsáid. Cruthaítear na hacrainmneacha seo de ghnáth ón ainm Gaeilge *Cnuasach Bhéaloideas Éireann* agus litir amháin ina dhiaidh a sheasann don bhunachar sonraí atá i gceist. Tagraíonn CBÉ do Phríomhbhailiúchán Lámhscríbhinní Chnuasach Bhéaloideas Éireann.  
+Tá sonraí ó thrí cinn de na cúig phríomhbhailiúchán béaloidis atá ag Cnuasach Bhéaloideas Éireann ar fáil tríd an ardán seo faoi láthair. Ach tuiscint a bheith agat ar a bhfuil sna bailiúcháin seo, cabhróidh sé leat úsáid a bhaint as an API. Tabhair faoi deara go dtagraítear do na bunachair sonraí a bhaineann leis na bailiúcháin seo i ngearrscríobh go minic ach acrainmneacha leithéid CBÉS, CBÉG, srl a úsáid. Cruthaítear na hacrainmneacha seo de ghnáth ón ainm Gaeilge *Cnuasach Bhéaloideas Éireann* agus litir amháin ina dhiaidh sin a sheasann don bhunachar sonraí atá i gceist. Tagraíonn CBÉ do Phríomhbhailiúchán Lámhscríbhinní Chnuasach Bhéaloideas Éireann.  
 
 #### An Príomhbhailiúchán Lámhscríbhinní (CBÉ)
 
-Tá 2,400 imleabhar ceangailte d'abhar a bailíodh ó 1932 i leith sa Phríomhbhailiúchán Lámhscríbhinní. Thiomsaigh bailitheoirí lánaimseartha agus páirtaimseartha an chuid is mó de na himleabhair faoi choimirce Choimisiún Béaloideasa Éireann (1935-1971). Tá thart ar dhá thrian den ábhar as Gaeilge agus cuimsítear gach gné de thraidisiún béil na hÉireann. Tá digitiú á dhéanamh ar an mBailiúchán seo faoi láthair agus foilsíodh tuairim is 70 imleabhar ar líne go dtí seo.  
+Tá 2,400 imleabhar ceangailte le hábhar a bailíodh ó 1932 i leith sa Phríomhbhailiúchán Lámhscríbhinní. Thiomsaigh bailitheoirí lánaimseartha agus páirtaimseartha an chuid is mó de na himleabhair faoi choimirce Choimisiún Béaloideasa Éireann (1935-1971). Tá thart ar dhá thrian den ábhar as Gaeilge agus cuimsítear ann gach gné de thraidisiún béil na hÉireann. Tá digitiú á dhéanamh ar an mBailiúchán seo faoi láthair agus foilsíodh tuairim is 70 imleabhar ar líne go dtí seo.  
 
 #### Bailiúchán na Scol (CBÉS)
 
-Thiomsaigh daltaí as 5,000 bunscoil i Saorstát Éireann tuairim is 740,000 leathanach (288,000 leathanach i mbunchóipleabhair na ndaltaí; 451,000 leathanach in imleabhair cheangailte), de bhéaloideas agus de sheanchas áitiúil idir 1937 agus 1939. Tugadh *Scéim na Scol* ar an scéim seo. Os cionn leathmhilliún leathanach lámhscríbhinne a bhí mar thoradh ar an scéim, ar a dtugtar ‘Bailiúchán na Scol’ go hiondúil. Tá 1,128 imleabhar, iad uimhrithe agus ceangailte, i mBailiúchán na Scol agus digitíodh iad ar fad.
+Thiomsaigh daltaí as 5,000 bunscoil i Saorstát Éireann tuairim is 740,000 leathanach (288,000 leathanach i mbunchóipleabhair na ndaltaí; 451,000 leathanach in imleabhair cheangailte), de bhéaloideas agus de sheanchas áitiúil idir 1937 agus 1939. Tugadh *Scéim na Scol* ar an scéim seo. Os cionn leathmhilliún leathanach lámhscríbhinne a bhí mar thoradh ar an scéim, ar a dtugtar ‘Bailiúchán na Scol’ go hiondúil. Tá 1,128 n-imleabhar, iad uimhrithe agus ceangailte, i mBailiúchán na Scol agus digitíodh iad ar fad.
 
 #### An Bailiúchán Grianghraf (CBÉG)
 
-Tá suas le 80,000 grianghraf i mbailiúchán grianghraf Chnuasach Bhéaloideas Éireann, a bhformhór ó thréimhse Choimisiún Béaloideasa Éireann (1935-70) agus a chomharba, lena n-áirítear foireann CBÉ. Tá caomhnú agus digitiú an bhailiúcháin ar siúl i gcónaí; cuireadh 10,000 íomhá ar fáil ar líne den chéad uair.
+Tá suas le 80,000 grianghraf i mbailiúchán grianghraf Chnuasach Bhéaloideas Éireann, a bhformhór ó thréimhse Choimisiún Béaloideasa Éireann (1935-70) agus a chomharba, lena n-áirítear foireann CBÉ. Bíonn caomhnú agus digitiú an bhailiúcháin ar siúl i gcónaí; cuireadh 10,000 íomhá ar fáil ar líne den chéad uair.
 
 #### An Bunachar Daoine (CBÉD)
 
-Aithnítear daoine a ainmnítear laistigh de mheiteashonraí CBÉ agus CBÉG ach tagairt a dhéanamh d'oibiachtaí sa bhunachar sonraí seo. Ní mhapálann CBÉD go díreach le bailiúchán fisiciúil ar bith de chuid CBÉ. Ina áit sin, ós rud é go luaitear go leor daoine sna bailiúcháin éagsúla de chuid CBÉ – tá roinnt grianghrafadóirí in CBÉG ina mbailitheoirí in CBÉ, mar shampla – tá sé i gceist ag an mBunachar Daoine a bheith ina fhoinse aonair fírinne le haghaidh meiteashonraí pearsanta ar fud an tacair iomláin shonraí. Faoi láthair, cuimsíonn an Bunachar Daoine gach duine atá i gcodanna digitithe in CBÉ agus CBÉG. De bharr scóip thionscadal digitithe Bhailiúchán na Scol, ní raibh sé indéanta go dtí seo tacar normalaithe meiteashonraí pearsanta a bhaint; táthar ag súil go dtabharfar faoin obair seo arís amach anseo, áfach.  
+Aithnítear daoine a ainmnítear laistigh de mheiteashonraí CBÉ agus CBÉG ach tagairt a dhéanamh d'oibiachtaí sa bhunachar sonraí seo. Ní mhapálann CBÉD go díreach le bailiúchán fisiciúil ar bith de chuid CBÉ. Ina áit sin, ós rud é go luaitear go leor daoine sna bailiúcháin éagsúla de chuid CBÉ – tá roinnt grianghrafadóirí in CBÉG ina mbailitheoirí in CBÉ, mar shampla – tá sé i gceist ag an mBunachar Daoine a bheith ina fhoinse aonair fírinne le haghaidh meiteashonraí pearsanta ar fud an tacair iomláin sonraí. Faoi láthair, cuimsíonn an Bunachar Daoine gach duine atá i gcodanna digitithe in CBÉ agus CBÉG. De bharr scóip thionscadal digitithe Bhailiúchán na Scol, ní raibh sé indéanta go dtí seo tacar normalaithe meiteashonraí pearsanta a bhaint; táthar ag súil go dtabharfar faoin obair seo arís amach anseo, áfach.  
 
 Tá tuilleadh eolais faoi CBÉ agus faoi na bailiúcháin ar fáil [anseo](https://www.duchas.ie/ga/info/cbe). 
 
@@ -42,26 +42,26 @@ Téigh i gcomhairle leis an [treoir maidir le cur chun siúil](/ga/data/getting-
 
 ## Pribhléidí rochtana API
 
-Freastalaíonn API Dúchas ar chineálacha éagsúla tomhaltóirí, lena n-áirítear úsáideoirí poiblí, úsáideoirí cartlainne agus cliaint inmheánacha. Mar thoradh air seo, tugtar cead rochtana do gach úsáideoir API—a aithnítear óna eochair API—de réir ár dTéarmaí Seirbhíse. Tá rochtain ag tomhaltóirí faoi phribhléid ar ábhar nach bhfuil réidh go fóill, nó a mheastar a bheith mí-oiriúnach, le foilsiú, agus ar mheiteashonraí inmheánach eagarthóireachta. Is féidir leo freisin torthaí iarratais a scagadh de réir paraiméadair áirithe bhreise. Sna doiciméid a bhaineann leis an API, tugtar 'Faoi Phribhléid' ar mheiteashonraí agus ar pharaiméadair iarratais nach bhfuil ar fáil do thomhaltóirí poiblí. Má tá ceist ar bith agat maidir le do chuid pribhléidí reatha rochtana, [déan teagmháil linn](mailto:gaois@dcu.ie) le do thoil.  
+Freastalaíonn API Dúchas ar chineálacha éagsúla tomhaltóirí, lena n-áirítear úsáideoirí poiblí, úsáideoirí cartlainne agus cliaint inmheánacha. Mar thoradh air seo, tugtar cead rochtana do gach úsáideoir API—a aithnítear óna eochair API—de réir ár dTéarmaí Seirbhíse. Tá rochtain ag tomhaltóirí faoi phribhléid ar ábhar nach bhfuil réidh go fóill, nó a mheastar a bheith mí-oiriúnach, le foilsiú, agus ar mheiteashonraí inmheánacha eagarthóireachta. Is féidir leo freisin torthaí iarratais a scagadh de réir paraiméadair áirithe bhreise. Sna doiciméid a bhaineann leis an API, tugtar 'Faoi Phribhléid' ar mheiteashonraí agus ar pharaiméadair iarratais nach bhfuil ar fáil do thomhaltóirí poiblí. Má tá ceist ar bith agat maidir le do chuid pribhléidí reatha rochtana, [déan teagmháil linn](mailto:gaois@dcu.ie) le do thoil.  
 
 ## Cosáin acmhainne
 
-Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúla atá iarcheangailte le URL an phríomhshuímh ghréasáin. Liostaítear na cosáin iarratais ar fad atá ar fáil faoi láthair thíos. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
+Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uathúla atá iarcheangailte le URL an phríomhshuímh gréasáin. Liostaítear na cosáin iarratais ar fad atá ar fáil faoi láthair thíos. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
 
 | Modh        | Cosán                         | Bailiúchán     | Acmhainn                          |
 | :---------- | :---------------------------- | :------------- | :-------------------------------- |
 | GET         | `/api`                        | N/A            | Meiteashonraí ginearálta API.     |
 | GET         | `/api/v0.5`                   | N/A            | Meiteashonraí ginearálta API.     |
-| GET         | `/api/v0.5/cbe`               | CBÉ            | Liosta imleabhair lámhscríbhinne agus meiteashonraí gaolmhara.* |
-| GET         | `/api/v0.5/cbe/volumes`       | CBÉ            | Innéacs imleabhair lámhscríbhinne agus meiteashonraí achoimre. |
+| GET         | `/api/v0.5/cbe`               | CBÉ            | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.* |
+| GET         | `/api/v0.5/cbe/volumes`       | CBÉ            | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
 | GET         | `/api/v0.5/cbed`              | CBÉD           | Liosta daoine agus meiteashonraí gaolmhara. |
 | GET         | `/api/v0.5/cbed/{id}`         | CBÉD           | Meiteashonraí a bhaineann le duine ar leith. |
 | GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
 | GET         | `/api/v0.5/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
 | GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
 | GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair (topaicí) i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
-| GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhair lámhscríbhinne agus meiteashonraí gaolmhara.*** |
-| GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhair lámhscríbhinne agus meiteashonraí achoimre. |
+| GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.*** |
+| GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
 | GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
 | GET         | `/api/v0.5/counties`          | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le contaetha na hÉireann. |
 | GET         | `/api/v0.5/countries`         | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le tíortha. |
@@ -87,7 +87,7 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | Ainm          | Cineál           | Cur síos       |
 | :------------ | :--------------- | :------------- |
 | `Status`      | slánuimhir       | Scag de réir an stádais eagarthóireachta (0-4). **(Faoi Phribhléid)** |
-| `VolumeNumber` | teaghrán        | Scag de réir thagairt chartlainne an imleabhair lámhscríbhinne (m.sh. '0154') |
+| `VolumeNumber` | teaghrán        | Scag de réir thagairt cartlainne an imleabhair lámhscríbhinne (m.sh. '0154') |
 | `VolumeID`    | slánuimhir       | Scag de réir aitheantóir an imleabhair lámhscríbhinne. |
 | `PageID`      | slánuimhir       | Scag de réir aitheantóir leathanaigh na lámhscríbhinne. |
 | `PartID`      | slánuimhir       | Scag de réir aitheantóir coda na lámhscríbhinne. |
@@ -104,12 +104,12 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | `DateFrom`    | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta ina diaidh. |
 | `DateTo`      | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta roimhe sin. |
 | `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (GARLUACH, MEASTACHÁN, IN AMHRAS). |
-| `CreatedBefore` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `CreatedSince` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedBefore` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedSince` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 
-**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir an chaighdeáin [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-2, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.
+**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir chaighdeán [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-2, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.
 
 **\*\*Tabhair faoi deara:** Glacann paraiméadair `DateFrom` agus `DateTo` le blianta i bhformáid `YYYY` amháin faoi láthair.
 
@@ -118,7 +118,7 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | Ainm          | Cineál           | Cur síos       |
 | :------------ | :--------------- | :------------- |
 | `Status`      | slánuimhir       | Scag de réir an stádais eagarthóireachta (0-4). **(Faoi Phribhléid)** |
-| `VolumeNumber` | teaghrán        | Scag de réir thagairt chartlainne an imleabhair lámhscríbhinne (m.sh. '0154') |
+| `VolumeNumber` | teaghrán        | Scag de réir thagairt cartlainne an imleabhair lámhscríbhinne (m.sh. '0154') |
 | `VolumeID`    | slánuimhir       | Scag de réir aitheantóir an imleabhair lámhscríbhinne. |
 | `PageID`      | slánuimhir       | Scag de réir aitheantóir leathanaigh na lámhscríbhinne. |
 | `PartID`      | slánuimhir       | Scag de réir aitheantóir coda na lámhscríbhinne. |
@@ -133,10 +133,10 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | `PlaceID`     | slánuimhir       | Scag de réir áite ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
 | `TopicID`     | slánuimhir       | Scag de réir topaice ach aitheantóir CBÉS topaice a úsáid. |
 | `Language`    | teaghrán         | Scag míreanna de réir teanga ach cód teanga ISO 639-1 a úsáid. |
-| `CreatedBefore` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `CreatedSince` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedBefore` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. Áirítear leis seo tras-scríbhinní nua nó nuashonraithe leathanaigh. |
-| `ModifiedSince` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. Áirítear leis seo tras-scríbhinní nua nó nuashonraithe leathanaigh. |
+| `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedBefore` | am-dháta aISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. Áirítear leis seo tras-scríbhinní nua nó nuashonraithe leathanaigh. |
+| `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. Áirítear leis seo tras-scríbhinní nua nó nuashonraithe leathanaigh. |
 
 #### An Bailiúchán Grianghraf (CBÉG)
 
@@ -152,17 +152,17 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | `RelevantPersonID` | slánuimhir       | Scag de réir aitheantóir CBÉD an duine. |
 | `CountyID`    | slánuimhir       | Scag de réir contae ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
 | `PlaceID`     | slánuimhir       | Scag de réir áite ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
-| `Country`     | ISO 3166 cód tíre* | Scag de réir tíre ach cód ISO a úsáid (e.g. DE, US, GB-ENG). |
+| `Country`     | cód tíre ISO 3166* | Scag de réir tíre ach cód ISO a úsáid (e.g. DE, US, GB-ENG). |
 | `GeoNameID`   | slánuimhir       | Scag de réir áite ach aitheantóir [GeoName](https://www.geonames.org) a úsáid.  |
 | `DateFrom`    | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta ina diaidh. |
 | `DateTo`      | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta roimhe sin. |
 | `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (GARLUACH, MEASTACHÁN, IN AMHRAS). |
-| `CreatedBefore` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `CreatedSince` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedBefore` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedSince` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 
-**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir an chaighdeáin [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-1, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.  
+**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir chaighdeán [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-1, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.  
 
 **\*\*Tabhair faoi deara:** Glacann paraiméadair `DateFrom` agus `DateTo` le blianta i bhformáid `YYYY` amháin faoi láthair.
 
@@ -180,16 +180,16 @@ Téitear isteach ar acmhainní a chuireann an API ar fáil trí chosáin uathúl
 | `Occupation`  | teaghrán         | Scag de réir gairme (m.sh. IASC, FEIRM). |
 | `BirthDateFrom` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bhreithe seo nó le blianta ina diaidh. |
 | `BirthDateTo` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bhreithe seo nó le blianta roimhe sin. |
-| `BirthDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta bhreithe (GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `BirthDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta breithe (GARLUACH, MEASTACHÁN, IN AMHRAS). |
 | `DeathDateFrom` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bháis seo nó le blianta ina diaidh. |
 | `DeathDateTo` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bháis seo nó le blianta roimhe sin. |
-| `DeathDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta bháis (GARLUACH, MEASTACHÁN, IN AMHRAS). |
-| `CreatedBefore` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `CreatedSince` | ISO 8601 datetime | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedBefore` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
-| `ModifiedSince` | ISO 8601 datetime | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `DeathDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta báis (GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
+| `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 
-**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir an chaighdeáin [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-1, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.  
+**\*Tabhair faoi deara:** Bíonn na cóid tíre, a bhfuil dhá litir iontu agus a nglacann an paraiméadar `Country` leo, de réir chaighdeán [ISO 3166-1](https://www.iso.org/iso-3166-country-codes.html). Glactar le ceithre chód bhreise ISO 3166-1, áfach, chun idirdhealú idir Sasana, Tuaisceart Éireann, Albain, agus an Bhreatain Bheag a éascú. Seo a leanas na cóid faoi seach: `GB-ENG`, `GB-NIR`, `GB-SCT` agus `GB-WLS`.  
 
 **\*\*Tabhair faoi deara:** Glacann paraiméadair `DateFrom` agus `DateTo` le blianta i bhformáid `YYYY` amháin faoi láthair.
 
