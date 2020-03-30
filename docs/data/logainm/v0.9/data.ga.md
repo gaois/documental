@@ -8,9 +8,9 @@ order: 2
 public: true
 ---
 
-**Tabhair faoi deara:** Tá **leagan béite poiblí** de API Logainm ar fáil anois. Cé go bhfuil v0.9 API cobhsaí den chuid is mó, d'fhéadfaí athruithe briste a dhéanamh roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
+**Tabhair faoi deara:** Tá **leagan béite poiblí** de API Logainm ar fáil anois. Cé go bhfuil v0.9 API cobhsaí den chuid is mó, d'fhéadfaí athruithe briste tarlú roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
 
-Déantar cur síos sa doiciméad seo ar struchtúr sonraí na dtorthaí a chuirtear ar fáil trí Chomhéadan Feidhmchláir (API) Logainm. Áis chuimsitheach bhainistíochta í seo chun sonraí logainmneacha agus taifid chartlainne a riar mar aon le taighde oifigeach logainmneacha Rialtas na hÉireann. Téigh i gcomhairle le [doiciméid an fhorbróra](../api) chun eolas ginearálta ar API agus treoirlínte an fhorbróra a fháil.
+Déantar cur síos sa doiciméad seo ar struchtúr sonraí na dtorthaí a chuirtear ar fáil trí Chomhéadan Feidhmchláir (API) Logainm. Áis chuimsitheach bhainistíochta í seo chun sonraí logainmneacha agus taifid chartlainne a riar mar aon le taighde logainmneacha Rialtas na hÉireann. Téigh i gcomhairle le [doiciméid an fhorbróra](../api) chun eolas ginearálta ar API agus treoirlínte an fhorbróra a fháil.
 
 ## `placeList`
 
@@ -20,8 +20,8 @@ Gheofar oibiacht `placeList` ón gcuid is mó d'iarratais API. Tá liosta ina bh
 | :-------------- | :------------------ | :------------------ | :--------------------- |
 | TotalCount      | slánuimhir          | ceann amháin        | Líon iomlán na dtaifead áite a aisghabhadh. |
 | Places          | [`place`](#place)     | ceann ar bith nó ceann amháin nó go leor | Na taifid áite a aisghabhadh. |
-| SimilarNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha a bhfuil an litriú atá orthu cosúil le téacs an iarratais (más cuardach téacs atá i gceist). Mar shampla, má chuardaíonn tú 'Ballybunion', molfar 'Ballybunnion'. |
-| RelatedNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha atá bainteach le téacs an iarratais. Mar shampla, má chuardaíonn tú 'Lismore', molfar 'Lismore and Mocollop', 'Lismore Demesne', agus 'Lismore Road' i liosta na logainmneacha gaolmhara. |
+| SimilarNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha a bhfuil an litriú atá orthu cosúil le téacs an iarratais (más cuardach téacs atá i gceist). Mar shampla, má chuardaíonn tú 'Ballybunion,' molfar 'Ballybunnion.' |
+| RelatedNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha atá bainteach le téacs an iarratais. Mar shampla, má chuardaíonn tú 'Lismore,' molfar 'Lismore and Mocollop,' 'Lismore Demesne' agus 'Lismore Road' i liosta na logainmneacha gaolmhara. |
 
 ## `place`
 
@@ -31,15 +31,15 @@ Tá an oibiacht `place` i gcroílár API Logainm: léiríonn sí suíomh geograf
 | :-------------- | :------------------ | :----------------------------------- | :------------------------- |
 | ID              | slánuimhir          | ceann amháin                         | Aitheantóir áite ar leith. |
 | ReplacementID   | slánuimhir          | ceann ar bith nó ceann amháin        | Má tá an luach seo socraithe, cumascadh an taifead áite a iarradh le taifead eile sa bhunachar sonraí. Is é an luach an t-aitheantóir ionaid taifid. |
-| DateCreated     | ISO 8601 datetime   | ceann amháin                         | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin        | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601   | ceann amháin                         | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin        | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | Permalink       | teaghrán            | ceann amháin                         | Hipearnasc statach buan ina bhféadfadh léitheoir daonna tuilleadh eolais a fháil ar an áit. Téann sé seo go dtí an leagan Gaeilge nó Béarla de leathanach eolais na háite go huathoibríoch. |
-| Featured        | ISO 8601 datetime   | ceann ar bith nó ceann amháin nó go leor | Seasann sé seo don dáta nó do na dátaí nuair a úsáideadh an áit seo mar logainm an lae ar an suíomh gréasáin [logainm.ie](https://www.logainm.ie), má úsáideadh í. |
+| Featured        | am-dháta ISO 8601   | ceann ar bith nó ceann amháin nó go leor | Seasann sé seo don dáta nó do na dátaí nuair a úsáideadh an áit seo mar logainm an lae ar an suíomh gréasáin [logainm.ie](https://www.logainm.ie), má úsáideadh í. |
 | Cluster         | [`cluster`](#cluster) | ceann ar bith nó ceann amháin | Meiteashonraí a léiríonn grúpa áiteanna, a bhfuil an áit seo mar chuid de, a roinneann logainmneacha agus atá comhshuite nó atá gar dá chéile. |
 | Placenames      | [`placename`](#placename) | ceann amháin no go leor | Logainm amháin nó níos mó, agus meiteashonraí gaolmhara, a thugtar ar an áit seo. |
 | Glossary        | [`glossary`](#glossary) | ceann ar bith nó ceann amháin | Déanann sé cur síos ar fhocail a fhaightear go minic i logainmneacha na hÉireann agus atá i logainmneacha a bhaineann leis an áit seo. |
 | Categories        | [`category`](#category) | ceann ar bith nó ceann amháin nó go leor | Déanann sé cur síos ar chatagóirí a bhaineann leis an áit seo. Ní bhaineann níos mó ná catagóir amháin le háiteanna ach amháin i gcásanna eisceachtúla. |
-| IncludedIn      | [`placeSummary`](#placeSummary) | ceann ar bith nó ceann amháin nó go leor | Eolas achomair maidir leis na haonaid riaracháin (contaetha, paróistí sibhialta, srl.) a chuimsíonn an áit seo. |
+| IncludedIn      | [`placeSummary`](#placeSummary) | ceann ar bith nó ceann amháin nó go leor | Eolas achomair maidir leis na haonaid riaracháin (contaetha, paróistí sibhialta, srl.) a gcuimsítear iontu an áit seo. |
 | Includes        | [`category`](#category) | ceann ar bith nó ceann amháin nó go leor | Déanann sé cur síos ar chatagóirí áite atá laistigh de theorainneacha na háite seo. |
 | Geography       | [`geography`](#geography) | ceann amháin no go leor | Suíomh geografach na háite ó thaobh comhordanáidí domhanleithid agus domhanfhaid de. |
 | GridReferences  | [`gridReference`](#gridReference) | ceann ar bith nó ceann amháin nó go leor | Suíomh geografach na háite i gcomhordanáidí [Chóras Tagraíochta Eangaí na hÉireann](https://www.osi.ie/resources/reference-information-2/irish-grid-reference-system/). |
@@ -78,7 +78,7 @@ Léiríonn sé logainm a bhaineann le háit amháin nó níos mó.
 | Ainm an airí    | Cineál              | Bunuimhreacht          | Cur síos                  |
 | :-------------- | :------------------ | :--------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin           | Aitheantóir an logainm. |
-| Language        | ISO 639-1 cód teanga | ceann ar bith nó ceann amháin          | Léiríonn sé teanga an logainm, má tá sé ar eolas. |
+| Language        | cód teanga ISO 639-1 | ceann ar bith nó ceann amháin          | Léiríonn sé teanga an logainm, má tá sé ar eolas. |
 | Wording         | teaghrán            | ceann amháin           | An logainm féin.     |
 | Genetive        | teaghrán            | ceann ar bith nó ceann amháin         | I gcás logainmneacha Gaeilge, sonraíonn sé seo foirm ghramadaí an logainm sa tuiseal ginideach.     |
 | Main            | Boole               | ceann amháin           | Má tá sé fíor, is é seo príomhainm/ainm canónta an logainm. Níl sé seo tábhachtach ach amháin má tá níos mó ná ainm amháin ag an áit sa teanga chéanna. |
@@ -112,7 +112,7 @@ Ainm scoite a d'fhéadfaí a úsáid chun logainmneacha níos faide a chumadh.
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Text            | teaghrán            | ceann amháin        | Téacs an ainm.            |
-| Disambiguates   | Boole               | ceann amháin        | Má tá sé fíor, cuireann an t-ainm seo cineál uathimdhealaithe éign ar fáil maidir leis an bpríomhlogainm. D'fhéadfadh `subName` imdhealaithe, mar shampla, idirdhealú a dhéanamh idir an príomhlogainm agus ainmneacha eile atá cosúil leis. |
+| Disambiguates   | Boole               | ceann amháin        | Má tá sé fíor, cuireann an t-ainm seo cineál uath-imdhealaithe éign ar fáil maidir leis an bpríomhlogainm. D'fhéadfadh `subName` imdhealaithe, mar shampla, idirdhealú a dhéanamh idir an príomhlogainm agus ainmneacha eile atá cosúil leis. |
 
 ### `placeSummary`
 
@@ -131,7 +131,7 @@ Léiríonn sé suíomh geografach i gcomhordanáidí domhanleithid agus domhanfh
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
-| Accurate        | Boole               | ceann amháin        | Léiríonn sé an gcreidtear go bhfuil na comhordanáidí beacht nó nach gcreidtear. Is ionann comhordanáidí míchruinne agus comhordanáidí a fuarthas trí eachtarshuí ó áiteanna in aice láimhe. |
+| Accurate        | Boole               | ceann amháin        | Léiríonn sé cé acu a chreidtear go bhfuil na comhordanáidí beacht nó nach gcreidtear. Is ionann comhordanáidí míchruinne agus comhordanáidí a fuarthas trí eachtarshuí ó áiteanna in aice láimhe. |
 | Coordinates     | [`coordinates`](#coordinates) | ceann amháin nó go leor        | Péire amháin comhordanáidí domhanleithid agus domhanfhaid nó níos mó. Léiríonn péire amháin comhordanáidí an chuid is mó de na háiteanna. D'fhéadfadh dhá phéire nó níos mó a bheith ag gnéithe áirithe geografacha, áfach, go háirithe aibhneacha nó oileáin. |
 
 ### `coordinates`
@@ -212,7 +212,7 @@ Cuireann sé nasc ar fáil le sonraí gaolmhara in acmhainn sheachtrach.
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Type            | teaghrán            | ceann amháin        | Cineál na hacmhainne seachtraí. Áirítear le hacmhainní seachtracha [OSI](https://www.osi.ie/), [Logainmneacha Thuaisceart Éireann](http://www.placenamesni.org/), [Wikipedia](https://www.wikipedia.org/), [Geonames](http://www.geonames.org/), srl. |
-| Target          | teaghrán            | ceann amháin        | Sprioc an naisc. D'fhéadfadh URI, URL, nó aitheantóir eile a bheith i gceist leis seo, ag brath ar an gcineál acmhainne atá ann. |
+| Target          | teaghrán            | ceann amháin        | Sprioc an naisc. D'fhéadfadh URI, URL nó aitheantóir eile a bheith i gceist leis seo, ag brath ar an gcineál acmhainne atá ann. |
 
 #### `Type`
 
@@ -248,7 +248,7 @@ Cuireann sé nasc ar fáil le sonraí béaloidis ó [dúchas.ie](https://www.duc
 
 ### `sameAs`
 
-Sonraíonn sé comhthagart d'áit ar leith i dtacair shonraí seachas Bunachar Logainmneacha na hÉireann. I gcomhréir le míniú [SameAs](https://www.w3.org/TR/owl-ref/) Ointeolaíocht OWL.
+Sonraíonn sé comhthagairt d'áit ar leith i dtacair sonraí seachas Bunachar Logainmneacha na hÉireann. I gcomhréir le míniú [SameAs](https://www.w3.org/TR/owl-ref/) Ointeolaíocht OWL.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
@@ -269,7 +269,7 @@ Déanann sé cur síos ar chatagóir áite. Cuimsíonn catagóirí [aonaid riara
 
 ## `glossary`
 
-Déanann sé cur síos ar thacar d'fhocail ghaolmhara a fhaightear go minic i logainmneacha na hÉireann. D'fhéadfadh iontráil ghluaise amháin nó níos mó teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí teacht ar liosta tagartha d'oibiachtaí `glossary` ón [gcríochphointe] API cuí(./README.md#resource-paths).
+Déanann sé cur síos ar thacar d'fhocail ghaolmhara a fhaightear go minic i logainmneacha na hÉireann. D'fhéadfadh iontráil gluaise amháin nó níos mó teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí liosta tagartha d'oibiachtaí `glossary` ón [gcríochphointe] API cuí(./README.md#resource-paths) a fháil.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
