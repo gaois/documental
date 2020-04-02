@@ -81,8 +81,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Title           | teaghrán              | ceann ar bith nó ceann amháin            | Teideal na míre, má chuirtear ar fáil é. |
 | Extract         | teaghrán              | ceann ar bith nó ceann amháin            | Sliocht gairid ó théacs na míre. Cuirtear ar fáil de ghnáth é mura féidir airí `title` a shonrú. |
 | Pages           | slánuimhir            | ceann amháin nó go leor                  | Sonraíonn sé aitheantóir(í) an leathanaigh a bhaineann leis an mír. |
-| FirstPageID     | slánuimhir            | ceann amháin                             | Aithníonn sé an an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID` |
-| LastPageID      | slánuimhir            | ceann amháin                             | Aithníonn sé an an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID` |
+| FirstPageID     | slánuimhir            | ceann amháin                             | Aithníonn sé an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID` |
+| LastPageID      | slánuimhir            | ceann amháin                             | Aithníonn sé an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID` |
 | ContentType     | teaghrán              | ceann ar bith nó ceann amháin            | [`contentType`](#contentType) na míre den lámhscríbhinn |
 | ContentModes    | teaghrán              | ceann ar bith nó ceann amháin nó go leor | Seasann sé do [`contentMode`](#contentMode) nó do mhodh(anna) scríbhneoireachta na míre den lámhscríbhinn   |
 | ContentScripts  | ISO 15924 cód scripte | ceann ar bith nó ceann amháin nó go leor | Seasann sé do scripteanna scríbhneoireachta na míre den lámhscríbhinn |
@@ -198,8 +198,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Title           | teaghrán               | ceann ar bith nó ceann amháin         | Teideal na míre, má chuirtear ar fáil é. |
 | Extract         | teaghrán               | ceann ar bith nó ceann amháin         | Sliocht gairid ó théacs na míre. Cuirtear ar fáil de ghnáth é mura féidir airí `title` a shonrú. |
 | Pages           | slánuimhir             | ceann amháin nó go leor               | Sonraíonn sé aitheantóir(í) an leathanaigh a bhaineann leis an mír. |
-| FirstPageID     | slánuimhir             | ceann amháin                          | Aithníonn sé an an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID`  |
-| LastPageID      | slánuimhir             | ceann amháin                          | Aithníonn sé an an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID`  |
+| FirstPageID     | slánuimhir             | ceann amháin                          | Aithníonn sé an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID`  |
+| LastPageID      | slánuimhir             | ceann amháin                          | Aithníonn sé an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID`  |
 | Topics          | [`topic`](#schools-collection-topic) | ceann ar bith nó ceann amháin    | Topaic nó topaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes) a bhaineann leis an mír seo.  |
 | Languages       | cód teanga ISO 639-1   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(theangacha) scríbhneoireachta na míre den lámhscríbhinn |
 | Counties        | [`county`](#county)    | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae nó do chontaetha riaracháin in Éirinn a bhaineann leis an mír den lámhscríbhinn seachas na contaetha a bhaineann leis an scoil nó le háit chónaithe an fhaisnéiseora. |
@@ -250,7 +250,7 @@ De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé ind�
 
 Déanann sé cur síos ar scoil a ghlac páirt i scéim bailithe *Scéim na Scol*.
 
-| Ainm an airí    | Cineál              | Cardinality                           | Description               |
+| Ainm an airí    | Cineál              | Bunuimhreacht                           | Cur Síos               |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
 | Name            | teaghrán            | ceann amháin                          | Ainm na scoile.           |
 | RollNumber      | teaghrán            | ceann ar bith nó ceann amháin         | Uimhir rolla na Roinne Oideachais de chuid na scoile. |
@@ -273,7 +273,7 @@ D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais
 
 ### `photograph`
 
-| Property name   | Type                | Cardinality                              | Description               |
+| Ainm an airí   | Cineál                | Bunuimhreacht                              | Cur síos               |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir an ghrianghraif (uathúil laistigh de bhailiúchán). |
 | DateCreated     | ISO 8601 datetime   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
