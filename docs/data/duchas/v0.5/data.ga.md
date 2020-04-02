@@ -25,8 +25,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Ainm an airí    | Cineál              | Bunuimhreacht                           | Cur síos                  |
 | :-------------- | :------------------ | :-------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                            | Aitheantóir an imleabhair (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann ar bith nó ceann amháin           | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin           | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna agus ar mhíreanna na lámhscríbhinne, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin.  |
+| DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna agus ar mhíreanna na lámhscríbhinne, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin.  |
 | VolumeNumber    | teaghrán            | ceann ar bith nó ceann amháin           | Uimhir thagartha chartlainne CBÉ an imleabhair. |
 | Status          | slánuimhir          | ceann amháin                            | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi Phribhléid)**  |
 | Pages           | [`page`](#main-manuscript-page)     | ceann amháin                          | Meiteashonraí a dhéanann cur síos ar leathanaigh fhisiciúla an imleabhair. |
@@ -37,8 +37,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Ainm an airí    | Cineál              | Bunuimhreacht                           | Cur síos                  |
 | :-------------- | :------------------ | :-------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                            | Aitheantóir an leathanaigh (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann ar bith nó ceann amháin           | An dáta agus an tam a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin           | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | PageNumber      | teaghrán            | ceann amháin                            | Uimhir an leathanaigh.     |
 | ListingOrder    | teaghrán            | ceann amháin                            | Ord liostaithe an leathanaigh laistigh den bhailiúchán. Bíonn sé seo díreach mar an gcéanna le huimhir an leathanaigh atá scríofa ar an leathanach féin de ghnáth, ach ní bhíonn sé amhlaidh i gcónaí. |
 | TitlePage       | Boole               | ceann ar bith nó ceann amháin           | Léiríonn sé gur leathanach teidil é seo a bhaineann le cuid de lámhscríbhinn. |
@@ -50,8 +50,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir            | ceann amháin                             | Aitheantóir na coda (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | ListingOrder    | teaghrán              | ceann amháin                             | Ord liostaithe na coda den lámhscríbhinn laistigh den imleabhair. |
 | TitlePages      | slánuimhir            | ceann ar bith nó ceann amháin nó go leor | Seasann sé do leathanaigh theidil a bhaineann leis an gcuid den lámhscríbhinn. D’fhéadfadh teideal ginearálta, eolas ar bhailitheoirí nó focail réamhráiteacha eile a bheith ar na leathanaigh theidil. |
 | Date            | [`date`](#date)       | ceann ar bith nó ceann amháin            | Meiteashonraí a bhaineann leis an dáta nó leis an tréimhse inar tiomsaíodh an chuid den lámhscríbhinn, má tá sé ar eolas. |
@@ -72,9 +72,9 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir            | ceann amháin                             | Aitheantóir na míre (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | ISO 8601 datetime     | ceann ar bith nó ceann amháin            | Seasann sé don dáta a úsáideadh an mhír mar [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
+| DateCreated     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| EditorsPick     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Seasann sé don dáta a úsáideadh an mhír mar [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
 | Sensitive       | Boole                 | ceann amháin                             | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi Phribhléid)** |
 | ListingOrder    | teaghrán              | ceann ar bith nó ceann amháin            | Ord liostaithe na míre laistigh den lámhscríbhinn ina bhfaightear í. Cinntear ord na míreanna, ar an gcéad ásc, ach uimhir thosaigh an leathanaigh a úsáid ach d’fhéadfaí an t-airí `listingOrder` a úsáid, mar shampla, chun ord dhá mhír, nó níos mó, ar leathanach amháin a léiriú. |
 | Date            | [`date`](#date)       | ceann ar bith nó ceann amháin            | Meiteashonraí a bhaineann leis an dáta nó leis an tréimhse inar tiomsaíodh an mhír den lámhscríbhinn, má tá sé ar eolas. |
@@ -142,8 +142,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                          | Aitheantóir an imleabhair (uathúil laistigh de bhailiúchán).  |
-| DateCreated     | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna na lámhscríbhinne, ar mhíreanna na lámhscríbhinne, agus ar thras-scríbhinní nua nó nuashonraithe  leathanaigh, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin. |
+| DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna na lámhscríbhinne, ar mhíreanna na lámhscríbhinne, agus ar thras-scríbhinní nua nó nuashonraithe  leathanaigh, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin. |
 | VolumeNumber    | teaghrán            | ceann ar bith nó ceann amháin         | Uimhir thagartha chartlainne CBÉ an imleabhair. |
 | Status          | slánuimhir          | ceann amháin                          | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi Phribhléid)**  |
 | Type            | teaghrán            | ceann amháin                          | Déanann sé idirdhealú idir an [cineál](#type) imleabhair de chuid Bhailiúchán na Scol atá ann. |
@@ -163,8 +163,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                          | Aitheantóir an leathanaigh (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | PageNumber      | teaghrán            | ceann amháin                          | Uimhir an leathanaigh.     |
 | ListingOrder    | teaghrán            | ceann amháin                          | Ord liostaithe an leathanaigh laistigh den bhailiúchán. Bíonn sé seo díreach mar an gcéanna le huimhir an leathanaigh atá scríofa ar an leathanach féin de ghnáth, ach ní bhíonn sé amhlaidh i gcónaí. |
 | TitlePage       | Boole               | ceann ar bith nó ceann amháin         | Léiríonn sé gur leathanach teidil é seo a bhaineann le cuid de lámhscríbhinn. |
@@ -177,8 +177,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir na coda (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | ListingOrder    | teaghrán            | ceann amháin                             | Ord liostaithe na coda den lámhscríbhinn laistigh den imleabhair. |
 | TitlePages      | slánuimhir          | ceann ar bith nó ceann amháin nó níos mó | Seasann sé do leathanaigh theidil a bhaineann leis an gcuid den lámhscríbhinn. De ghnáth, bíonn eolas ar an scoil agus ar an gceantar áitiúil ar na leathanaigh theidil. |
 | School          | [`school`](#school) | ceann ar bith nó ceann amháin            | Meiteashonraí a dhéanann cur síos ar an scoil a bhaineann leis an gcuid den lámhscríbhinn. |
@@ -190,9 +190,9 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Ainm an airí    | Cineál                 | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :--------------------- | :------------------------------------ | :------------------------ |
 | ID              | slánuimhir             | ceann amháin                          | Aitheantóir na míre (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime      | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime      | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | ISO 8601 datetime      | ceann ar bith nó ceann amháin         | Seasann sé don dáta a úsáideadh an mhír mar [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
+| DateCreated     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| EditorsPick     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Seasann sé don dáta a úsáideadh an mhír mar [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
 | Sensitive       | Boole                  | ceann amháin                          | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi Phribhléid)** |
 | ListingOrder    | teaghrán               | ceann ar bith nó ceann amháin         | Ord liostaithe na míre laistigh den lámhscríbhinn ina bhfaightear í. Cinntear ord na míreanna, ar an gcéad ásc, ach uimhir thosaigh an leathanaigh a úsáid ach d’fhéadfaí an t-airí `listingOrder` a úsáid, mar shampla, chun ord dhá mhír, nó níos mó, ar leathanach amháin a léiriú. |
 | Title           | teaghrán               | ceann ar bith nó ceann amháin         | Teideal na míre, má chuirtear ar fáil é. |
@@ -276,9 +276,9 @@ D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais
 | Ainm an airí   | Cineál                | Bunuimhreacht                              | Cur síos               |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir an ghrianghraif (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | ISO 8601 datetime   | ceann ar bith nó ceann amháin            | Seasann sé don dáta a úsáideadh an mhír mar  [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
+| DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
+| EditorsPick     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Seasann sé don dáta a úsáideadh an mhír mar  [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
 | ReferenceNumber | teaghrán            | ceann ar bith nó ceann amháin            | Tagairt chartlainne CBÉ an ghrianghraif.      |
 | Status          | slánuimhir          | ceann amháin                             | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi Phribhléid)**  |
 | Sensitive       | Boole               | ceann amháin                             | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi Phribhléid)**  |
@@ -469,7 +469,7 @@ Baineann roinnt eintiteas le bailiúcháin éagsúla. Déantar cur síos orthu t
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| IsoDate         | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `Year`, `Month` agus `Day` thíos i bhfoirm theaghrán ISO 8601 datetime. |
+| IsoDate         | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `Year`, `Month` agus `Day` thíos i bhfoirm theaghrán am-dháta ISO 8601. |
 | IsoStartDate    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodStartYear`, `PeriodStartMonth` agus `PeriodStartDay` thíos chun an dáta tosaigh a léiriú in eatramh ama. |
 | IsoEndDate      | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodEndYear`, `PeriodEndMonth` agus `PeriodEndDay` thíos chun an dáta deiridh a léiriú in eatramh ama. |
 | IsoDuration     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Léiríonn sé an tréimhse ama idir na hairíonna `IsoStartDate` agus `IsoEndDate` , más cuí. |
