@@ -17,7 +17,7 @@ Is féidir go leor d’iompraíocht shuiteáil Terminologue a chumrú ach eagart
 "readonly": false
 ```
 
-Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair théarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin aon rud a shábháil. Léireofar ceannscríbhinn “inléite amháin” in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
+Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair théarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin in ann aon rud a shábháil. Léireofar ceannscríbhinn “inléite amháin” in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
 
 ---
 
@@ -27,7 +27,7 @@ Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléit
 "port": 80
 ```
 
-Is ionann `baseUrl` agus an URL a thugann rochtain don phobal ar do shuiteáil. I mód táirgthe, beidh tú ag iarraidh é seo a athrú i bhfíor-URL atá le feiceáil go poiblí, amhail `https://terminologue.mycompany.com/`. 
+Is ionann `baseUrl` agus an URL a thugann rochtain don phobal ar do shuiteáil. I mód táirgthe, beidh tú ag iarraidh é seo a athrú i bhfíor-URL a bheidh le feiceáil go poiblí, amhail `https://terminologue.mycompany.com/`. 
 
 Caithfear cosán an URL, amhail `/`, a chur san áireamh mar chuid de `baseUrl` **agus** a thabhairt as féin mar `rootPath`. Mar shampla, má tá do shuiteáil ar fáil don phobal faoin URL `http://www.mycompany.com/terminologue/`, ba chóir go mbeadh na nithe seo a leanas agat:
 
@@ -60,7 +60,7 @@ Is iad seo ainmneacha logála isteach na "bhforúsáideoirí": úsáideoirí a b
 "trackingCode": ""
 ```
 
-Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsáid chun staitisticí ar thrácht ar shuíomh gréasáin a bhailiú, is féidir leat an cód HTML a chur anseo agus cuirfidh Terminologue isteach ag deireadh (roimh `</body>`) leathanaigh HTML atá le feiceáil go poiblí é. 
+Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsáid chun staitisticí ar thrácht ar shuíomh gréasáin a bhailiú, is féidir leat an cód HTML a chur anseo agus cuirfidh Terminologue isteach ag deireadh (roimh `</body>`) gach leathanaigh HTML, atá le feiceáil go poiblí, é. 
 
 ---
 
