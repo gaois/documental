@@ -63,8 +63,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | Informants      | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine nó do dhaoine óna bhfuarthas ábhar agus an chuid den lámhscríbhinn á tiomsú. |
 | RelevantPersons | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine nó do dhaoine a ndéantar tagairt dóibh laistigh den chuid den lámhscríbhinn, nó a bhaineann léi.  |
 | ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonráíonn sé [stádas](#extraInfoStatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA` . |
-| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail shaorthéacs ar an gcuid den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
-| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail shaorthéacs ar an gcuid den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an gcuid den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an gcuid den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 | Items           | [`item`](#item)       | ceann ar bith nó ceann amháin nó go leor | Meiteashonraí a dhéanann cur síos ar mhíreanna scoite atá sa chuid den lámhscríbhinn. |
 
 ### An Príomhbhailiúchán `item`
@@ -86,7 +86,7 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | ContentType     | teaghrán              | ceann ar bith nó ceann amháin            | [`contentType`](#contentType) na míre den lámhscríbhinn |
 | ContentModes    | teaghrán              | ceann ar bith nó ceann amháin nó go leor | Seasann sé do [`contentMode`](#contentMode) nó do mhodh(anna) scríbhneoireachta na míre den lámhscríbhinn   |
 | ContentScripts  | ISO 15924 cód scripte | ceann ar bith nó ceann amháin nó go leor | Seasann sé do scripteanna scríbhneoireachta na míre den lámhscríbhinn |
-| Languages       | ISO 639-1 cód teanga  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(acha) scríbhneoireachta na míre den lámhscríbhinn |
+| Languages       | cód teanga ISO 639-1  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(acha) scríbhneoireachta na míre den lámhscríbhinn |
 | Counties        | [`county`](#county)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae nó do chontaetha riaracháin in Éirinn a bhaineann leis an mír den lámhscríbhinn. |
 | LocationsIreland | [`locationIreland`](#locationIreland)  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna in Éirinn a bhaineann leis an mír den lámhscríbhinn. |
 | Countries       | [`country`](#country) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do thír nó do thíortha, seachas Éire, a bhaineann leis an mír den lámhscríbhinn. |
@@ -96,8 +96,8 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar an
 | RelevantPersons | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine nó do dhaoine a ndéantar tagairt dóibh laistigh den mhír den lámhscríbhinn, nó a bhaineann léi.  |
 | LinkedItems     | [`ManuscriptItemLink`](#manuscriptItemLink) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do mhír amháin nó níos mó de lámhscríbhinn a bhaineann go díreach leis an mír seo. Nascann caidreamh seicheamhach na míreanna le chéile de ghnáth (m.sh. tagann na míreanna eile roimh nó i ndiaidh na míre reatha i scéalta leanúnacha nó gaolmhara). | 
 | ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extraInfoStatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA` . **(Faoi Phribhléid)** |
-| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail shaorthéacs ar an mír den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
-| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail shaorthéacs ar an mír den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 
 #### `contentType`
 
@@ -201,7 +201,7 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | FirstPageID     | slánuimhir             | ceann amháin                          | Aithníonn sé an an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID`  |
 | LastPageID      | slánuimhir             | ceann amháin                          | Aithníonn sé an an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID`  |
 | Topics          | [`topic`](#schools-collection-topic) | ceann ar bith nó ceann amháin    | Topaic nó topaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes) a bhaineann leis an mír seo.  |
-| Languages       | ISO 639-1 cód teanga   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(theangacha) scríbhneoireachta na míre den lámhscríbhinn |
+| Languages       | cód teanga ISO 639-1   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(theangacha) scríbhneoireachta na míre den lámhscríbhinn |
 | Counties        | [`county`](#county)    | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae nó do chontaetha riaracháin in Éirinn a bhaineann leis an mír den lámhscríbhinn seachas na contaetha a bhaineann leis an scoil nó le háit chónaithe an fhaisnéiseora. |
 | LocationsIreland | [`locationIreland`](#locationIreland)  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna in Éirinn a bhaineann leis an mír den lámhscríbhinn, seachas na suíomhanna a bhaineann leis an scoil nó le háit chónaithe an fhaisnéiseora. |
 | Collectors      | [`person`](#schools-collection-person) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine nó do dhaoine a bhfuil baint acu leis mír den lámhscríbhinn a bhailiú. |
