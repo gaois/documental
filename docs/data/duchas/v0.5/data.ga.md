@@ -324,7 +324,7 @@ D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais
 
 Sonraíonn sé stádas foilsithe an réimse `archivedDescription`.
 
-| Value           | Description               |
+| Luach           | Cur síos               |
 | :-------------- | :------------------------ |
 | EDIT            | Níl an réimse `ArchivedDescription` oiriúnach le foilsiú. |
 | PUB             | Tá an réimse `ArchivedDescription` oiriúnach le foilsiú. |
@@ -397,8 +397,8 @@ D'fhéadfaí oibiacht `person` amháin nó níos mó a fháil ó iarratais ar an
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir an duine (uathúil laistigh de bhailiúchán). |
-| DateCreated     | ISO 8601 datetime   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin            | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil.  |
+| DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an iontráil.  |
 | Names           | [`name`](#name)     | ceann amháin nó go leor                  | Ainmneacha a bhaineann leis an duine.  |
 | Gender          | teaghrán            | ceann ar bith nó ceann amháin            | Inscne an duine (`b` or `f`). |
 | AinmID          | slánuimhir          | ceann ar bith nó ceann amháin            | Aitheantóir uathúil an duine i mbunachar sonraí [ainm.ie](https://www.ainm.ie). |
@@ -425,7 +425,7 @@ D'fhéadfaí oibiacht `person` amháin nó níos mó a fháil ó iarratais ar an
 
 ### `occupation`
 
-| Ainm an airí    | Cineál              | Cardinality         | Description               |
+| Ainm an airí    | Cineál              | Bunuimhreacht         | Cur síos               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | ID              | teaghrán            | Ainm na gairme        | Aitheantóir uathúil na gairme. |
 | NameEN          | teaghrán            | ceann amháin        | Ainm na gairme (i mBéarla). |
@@ -449,8 +449,8 @@ Baineann roinnt eintiteas le bailiúcháin éagsúla. Déantar cur síos orthu t
 | LogainmID       | slánuimhir          | ceann amháin                 | Aitheantóir uathúil an chontae i mbunachar sonraí [logainm.ie](https://www.logainm.ie). |
 | NameEN          | teaghrán            | ceann amháin                 | Ainm Béarla an chontae. |
 | NameGA          | teaghrán            | ceann amháin                 | Ainm Gaeilge an chontae. |
-| QualifiedNameEN | teaghrán            | ceann amháin                 | Ainm Béarla an chontae, a bhfuil an cáilitheoir "Co. " mar réimír leis. |
-| QualifiedNameGA | teaghrán            | ceann amháin                 | Ainm Gaeilge an chontae, a bhfuil an cáilitheoir "Co. " mar réimír leis  and ar ar cuireadh an cás agus an t-infhilleadh ceart gramadaí i bhfeidhm. |
+| QualifiedNameEN | teaghrán            | ceann amháin                 | Ainm Béarla an chontae, a bhfuil an cáilitheoir "Co." mar réimír leis. |
+| QualifiedNameGA | teaghrán            | ceann amháin                 | Ainm Gaeilge an chontae, a bhfuil an cáilitheoir "Co." mar réimír leis agus ar cuireadh an cás agus an t-infhilleadh ceart gramadaí i bhfeidhm. |
 | Coordinates     | [`coordinates`](#coordinates) | ceann amháin                 | Tacar comhordanáidí geografacha a bhaineann leis an gcontae. |
 
 ### `country`
@@ -469,19 +469,19 @@ Baineann roinnt eintiteas le bailiúcháin éagsúla. Déantar cur síos orthu t
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| IsoDate         | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `Year`, `Month` agus `Day` thíos i bhfoirm theaghrán ISO 8601 datetime. |
-| IsoStartDate    | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodStartYear`, `PeriodStartMonth` agus `PeriodStartDay` thíos chun an dáta tosaigh a léiriú in eatramh ama. |
-| IsoEndDate      | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodEndYear`, `PeriodEndMonth` agus `PeriodEndDay` thíos chun an dáta deiridh a léiriú in eatramh ama. |
-| IsoDuration     | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | Léiríonn sé an tréimhse ama idir na hairíonna `IsoStartDate` agus `IsoEndDate` , más cuí. |
+| IsoDate         | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `Year`, `Month` agus `Day` thíos i bhfoirm theaghrán ISO 8601 datetime. |
+| IsoStartDate    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodStartYear`, `PeriodStartMonth` agus `PeriodStartDay` thíos chun an dáta tosaigh a léiriú in eatramh ama. |
+| IsoEndDate      | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodEndYear`, `PeriodEndMonth` agus `PeriodEndDay` thíos chun an dáta deiridh a léiriú in eatramh ama. |
+| IsoDuration     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Léiríonn sé an tréimhse ama idir na hairíonna `IsoStartDate` agus `IsoEndDate` , más cuí. |
 | Accuracy        | teaghrán            | ceann ar bith nó ceann amháin         | Léiríonn sé cruinneas an eolais ar an dáta ach foclóir caighdeánach de chuid [MODS](http://www.loc.gov/standards/mods/) (Scéimre um Chur Síos ar Oibiachtaí Meiteashonraí) maidir leis an gcáilitheoir dáta a úsáid. |
 | Year            | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain i bhformáid `YYYY`. |
 | Month           | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire (luachanna 1-12). |
 | Day             | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don lá den mhí (luachanna 1-31). |
 | PeriodStartYear | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain tosaigh in eatramh ama i bhformáid `YYYY` . |
-| PeriodStartMonth | slánuimhir         | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire thosaigh (luachanna 1-12) in eatramh ama. |
+| PeriodStartMonth | slánuimhir         | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire tosaigh (luachanna 1-12) in eatramh ama. |
 | PeriodStartDay  | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don lá tosaigh den mhí (luachanna 1-31) in eatramh ama. |
-| PeriodEndYear   | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain dheiridh in eatramh ama i bhformáid `YYYY` . |
-| PeriodEndMonth  | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire dheiridh (luachanna 1-12) in eatramh ama. |
+| PeriodEndYear   | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain deiridh in eatramh ama i bhformáid `YYYY` . |
+| PeriodEndMonth  | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire deiridh (luachanna 1-12) in eatramh ama. |
 | PeriodEndDay    | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don lá deiridh den mhí (luachanna 1-31) in eatramh ama. |
 
 #### `Accuracy`
@@ -521,10 +521,10 @@ Tras-scríbhinn d’ábhar ar leathanach lámhscríbhinne a chuir baill den tion
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
 | ID              | slánuimhir          | ceann amháin                          | Aitheantóir uathúil na tras-scríbhinne. |
-| DateCreated     | ISO 8601 datetime   | ceann amháin                          | An dáta agus an t-am a cruthaíodh an tras-scríbhinn.  |
-| DateModified    | ISO 8601 datetime   | ceann ar bith nó ceann amháin         | An dáta agus an t-am den mhionathrú is déanaí a rinneadh ar an tras-scríbhinn.  |
+| DateCreated     | am-dháta ISO 8601   | ceann amháin                          | An dáta agus an t-am a cruthaíodh an tras-scríbhinn.  |
+| DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an tras-scríbhinn.  |
 | ItemID          | slánuimhir          | ceann amháin                          | Aithníonn sé `item` na lámhscríbhinne a tras-scríobhadh. |
-| Approved        | Boole               | ceann amháin                          | Léiríonn sé ar faomhadh an tras-scríbhinn le haghaidh foilsithe nó nár faomhadh. Ní fhaomhtar tras-scríbhinní ó bhaill shóisearacha de Mheitheal Dúchas.ie go ndéanann ball d’fhoireann eagarthóireachta Dúchas athbhreithniú orthu. **(Faoi Phribhléid)** |
+| Approved        | Boole               | ceann amháin                          | Léiríonn sé ar faomhadh an tras-scríbhinn le haghaidh foilsiú nó nár faomhadh. Ní fhaomhtar tras-scríbhinní ó bhaill shóisearacha de Mheitheal Dúchas.ie go ndéanann ball d’fhoireann eagarthóireachta Dúchas athbhreithniú orthu. **(Faoi Phribhléid)** |
 | Moderated       | Boole               | ceann amháin                          | Léiríonn sé an ndearna ball d'fhoireann eagarthóireachta Dúchas athbhreithniú ar an tras-scríbhinn nó nach ndearna. **(Faoi Phribhléid)** |
 | Text            | teaghrán            | ceann amháin                          | Téacs na tras-scríbhinne. |
 | Transcribers    | [`transcriber`](#transcriber) | ceann ar bith nó ceann amháin nó go leor | Meiteashonraí a bhaineann le hoibrithe deonacha a chuir leis an tras-scríbhinn. Bíonn an luach seo folamh má rinne rannpháirtithe anaithnide an tras-scríbhinn. |
