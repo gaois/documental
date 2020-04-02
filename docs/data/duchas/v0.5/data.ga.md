@@ -209,7 +209,7 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 
 ### Bailiúchán na Scol `person`
 
-De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé indéanta go fóill tacar normalaithe meiteashonraí pearsanta a bhaint. Ina ionad sin, bhí sé mar aidhm ag céimeanna tosaigh an tionscadail eolas a fháil ar na daoine a dtagraítear dóibh laistigh den bhailiúchán 'mar ata'. Mar sin, tá seans ann go ndéanfaí tagairt don duine céanna le níos mó ná eintiteas `person` amháin.
+De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé indéanta go fóill tacar normalaithe meiteashonraí pearsanta a bhaint. Ina ionad sin, bhí sé mar aidhm ag céimeanna tosaigh an tionscadail eolas a fháil ar na daoine a dtagraítear dóibh laistigh den bhailiúchán 'mar ata'. Mar sin de, tá seans ann go ndéanfaí tagairt don duine céanna le níos mó ná eintiteas `person` amháin.
 
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
@@ -217,7 +217,7 @@ De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé ind�
 | Names           | [`name`](#name)       | ceann amháin nó go leor                  | Ainmneacha a bhaineann leis an duine.  |
 | Gender          | teaghrán              | ceann ar bith nó ceann amháin            | Inscne an duine (`b` or `f`). |
 | Age             | [`age`](#schools-collection-age) | ceann ar bith nó ceann amháin  | Meiteashonraí maidir le haois an duine. |
-| AddressesIreland | [`locationIreland`](#locationIreland) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó doshuíomhanna in Éirinn a thugtar mar sheoladh an duine.. |
+| AddressesIreland | [`locationIreland`](#locationIreland) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna in Éirinn a thugtar mar sheoladh an duine.. |
 | Occupations     | teaghrán              | ceann ar bith nó ceann amháin nó go leor | Gairmeacha a bhaineann leis an duine. Níl na gairmeacha nasctha le foclóir rialaithe: taifeadann siad gairmeacha an duine de réir mar a scríobhadh síos iad agus d’fhéadfadh siad a bheith i mBéarla nó i nGaeilge. |
 | CollectorRelationship | teaghrán          | ceann ar bith nó ceann amháin         | Más faisnéiseoir é an duine seo, léiríonn an t-airí seo an caidreamh (teaghlaigh nó eile) atá ag an bhfaisnéiseoir maidir leis an duine a bhailíonn an t-ábhar. |
 
