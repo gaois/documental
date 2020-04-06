@@ -9,7 +9,7 @@ order: 4
 public: true
 ---
 
-Is féidir go leor d’iompraíocht shuiteáil Terminologue a chumrú ach eagarthóireacht a dhéanamh ar an gcomhad `siteconfig.json`. Mínítear sa doiciméad seo a bhfuil i gceist leis na socruithe ar fad. *Tabhair faoi deara: caithfidh tú an feidhmchlár a atosú gach uair a dhéanann tú athruithe.*
+Is féidir go leor iompraíocht suiteála Terminologue a chumrú ach eagarthóireacht a dhéanamh ar an gcomhad `siteconfig.json`. Mínítear sa doiciméad seo a bhfuil i gceist leis na socruithe ar fad. *Tabhair faoi deara: caithfidh tú an feidhmchlár a atosú gach uair a dhéanann tú athruithe.*
 
 ---
 
@@ -17,7 +17,7 @@ Is féidir go leor d’iompraíocht shuiteáil Terminologue a chumrú ach eagart
 "readonly": false
 ```
 
-Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair théarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin in ann aon rud a shábháil. Léireofar ceannscríbhinn “inléite amháin” in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
+Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair téarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin in ann aon rud a shábháil. Léireofar ceannscríbhinn “inléite amháin” in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
 
 ---
 
@@ -52,7 +52,7 @@ Is é seo an cosán a théann chuig an gcomhadlann `data` (an áit a gcoinníonn
 "admins": ["root@localhost"]
 ```
 
-Is iad seo ainmneacha logála isteach na "bhforúsáideoirí": úsáideoirí a bhfuil pribhléidí speisialta acu sa tsuiteáil seo de Terminologue. Seo a leanas na pribhléidí speisialta: bíonn rochtain iomlán, inscríofa agat ar gach rud i ngach bunachar téarmaíochta, agus feiceann tú nasc ar an leathanach baile le cuid de Terminologue inar féidir leat cuntais úsáideoirí a riar.
+Is iad seo ainmneacha logáil isteach na "bhforúsáideoirí": úsáideoirí a bhfuil pribhléidí speisialta acu sa tsuiteáil seo de Terminologue. Seo a leanas na pribhléidí speisialta: bíonn rochtain iomlán, inscríofa agat ar gach rud i ngach bunachar téarmaíochta, agus feiceann tú nasc ar an leathanach baile le cuid de Terminologue inar féidir leat cuntais úsáideoirí a riar.
 
 ---
 
@@ -81,7 +81,7 @@ Caithfidh na nithe seo a leanas a bheith ann le haghaidh gach teanga UI a liosta
 - Comhad ina bhfuil teaghráin logánaithe le haghaidh leabharlann Screenful, amhail `website/libs/screenful/screenful-loc-en.js`.
 - Comhad ina bhfuil teaghráin logánaithe atá sainiúil do Terminologue, amhail `website/localizer/en.js`.
 
-Mar sin, má theastaíonn uait teanga nua a chur leis, seo a leanas na rudaí a chaithfidh tú a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
+Mar sin de, má theastaíonn uait teanga nua a chur leis, seo a leanas na rudaí a chaithfidh tú a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
 
 ---
 
@@ -156,4 +156,4 @@ Ord aibítre réamhshocraithe. Úsáidfidh Terminologue é seo mura shonraigh ú
 }
 ```
 
-Is gné í seo a ligeann duit bunachair théarmaíochta ar leith a chumrú ionas go bhforleatar láithreach gach athrú a dhéanann úsáideoirí i mbunachar sonraí eile in Microsoft SQL Server. Is ionann an eochair (amhail `"mytermbase"`) agus ainm an bhunachair téarmaíochta in Terminologue agus is ionann an luach agus teaghrán ceangail le haghaidh bhunachar sonraí Microsoft SQL Server.
+Is gné í seo a ligeann duit bunachair téarmaíochta ar leith a chumrú ionas go bhforleatar láithreach gach athrú a dhéanann úsáideoirí i mbunachar sonraí eile in Microsoft SQL Server. Is ionann an eochair (amhail `"mytermbase"`) agus ainm an bhunachair téarmaíochta in Terminologue agus is ionann an luach agus teaghrán ceangail le haghaidh bunachar sonraí Microsoft SQL Server.
