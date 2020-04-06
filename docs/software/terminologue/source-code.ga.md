@@ -9,7 +9,7 @@ order: 3
 public: true
 ---
 
-Is éard atá sa doiciméad seo ná turas treoraithe trí bhonnchód Terminologue. Tá sé i gceist aige cabhrú leat tuiscint a fháil ar an gcaoi a n-oibríonn Terminologue ar an taobh istigh le gur féidir leat fadhbanna a aithint, fabhtanna a réiteach agus tuilleadh forbartha a dhéanamh ar Terminologue.  
+Is éard atá sa doiciméad seo ná turas treoraithe trí bhonnchód Terminologue. Tá sé i gceist aige cabhrú leat tuiscint a fháil ar an gcaoi a n-oibríonn Terminologue ar an taobh istigh le gur féidir leat fadhbanna a aithint, fabhtanna a réiteach agus tuilleadh forbairt a dhéanamh ar Terminologue.  
 
 ## A bhfuil laistigh de Terminologue
 
@@ -19,7 +19,7 @@ Nuair a sheolann Terminologue leathanaigh ghréasáin chuig an gcliant, déanann
 
 Scríobhtar codanna taoibh freastalaí Terminologue in HTML, JavaScript agus CSS atá “beagnach glan”. Is éard atá i gceist le “beagnach glan” ná nach n-úsáidimid creat “uilechuimsitheach” ar bith agus nach n-úsáidimid aon rud óna dteastódh iarphróiseáil nó tiomsú sula gcuirtear ar fáil don chliant é. Úsáidimid scripteanna agus stílbhileoga taoibh freastalaí ar a dtugtar [Screenful](https://github.com/michmech/screenful), áfach, agus cuireann siad seo go leor den fheidhmiúlacht taoibh freastalaí ar fáil dúinn. Is feidhmchláir aon leathanaigh iad an chuid is mó de na leathanaigh ghréasáin a fheiceann an t-úsáideoir in Terminologue: cuirtear an leathanach gréasáin ar fáil don bhrabhsálaí agus de réir mar a idirghníomhaíonn an t-úsáideoir le giuirléidí éagsúla ar scáileán, seolann Screenful iarratais AJAX chuig an bhfreastalaí agus faigheann sé freagairtí uaidh. Scríobhtar na sonraí ar fad a shreabhann idir an cliant agus an freastalaí i bhformáid JSON.  
 
-Is i bhformáid JSON a stóráiltear sonraí go hinmheánach i mbunachair shonraí ar an bhfreastalaí. Maidir le stóras cúil, úsáideann Terminologue [SQLite](https://www.sqlite.org/index.html), atá ina inneall bunachar sonraí comhadbhunaithe. Is ionann gach bunachar sonraí in Terminologue agus comhad sa chóras comhad a bhíonn á oscailt agus á dhúnadh ag SQLite de réir mar is gá. 
+Is i bhformáid JSON a stóráiltear sonraí go hinmheánach i mbunachair sonraí ar an bhfreastalaí. Maidir le stóras cúil, úsáideann Terminologue [SQLite](https://www.sqlite.org/index.html), atá ina inneall bunachair sonraí comhadbhunaithe. Is ionann gach bunachar sonraí in Terminologue agus comhad sa chóras comhad a bhíonn á oscailt agus á dhúnadh ag SQLite de réir mar is gá. 
 
 ## `terminologue.js`
 
@@ -29,7 +29,7 @@ Is féidir cúl Terminologue a thosú (i measc bealaí eile) ach `node terminolo
 
 2. Úsáideann sé modhanna ar nós `app.post()` agus `app.get()` chun an oibiacht seo a chur le líon mór láimhseálaithe le haghaidh na gcríochphointí éagsúla URL a d’fhéadfadh an t-úsáideoir a aimsiú. Is feidhm de chuid JavaScript é láimhseálaí agus ritheann Node.js é nuair a bhaineann iarratas HTTP an freastalaí amach. De ghnáth, próiseálann láimhseálaí na sonraí a tháinig leis an iarratas agus seolann sé rud éigin ar ais, mar shampla leathanach gréasáin nó oibiacht JSON.
 
-3. Ag deireadh an chomhaid mar sin, glaonn sé `app.listen()`. Insíonn sé seo do Node.js éisteacht le haghaidh iarratais HTTP a thagann isteach. Ón bpointe seo, ritheann Node.js a láimhseálaí gach uair a fhaigheann an freastalaí iarratas HTTP a mheaitseálann ceann de na críochphointí a cruthaíodh i gcéim 2 thuas. Leanann Node.js air ag éisteacht agus ag rith láimhseálaithe go gcríochnófar an feidhmchlár.
+3. Ag deireadh an chomhaid mar sin, glaonn sé `app.listen()`. Insíonn sé seo do Node.js éisteacht le haghaidh iarratais HTTP a thagann isteach. Ón bpointe seo, ritheann Node.js a láimhseálaí gach uair a fhaigheann an freastalaí iarratas HTTP a mheaitseálann ceann de na críochphointí a cruthaíodh i gcéim 2 thuas. Leanann Node.js air ag éisteacht leis agus ag rith láimhseálaithe go gcríochnófar an feidhmchlár.
 
 Ar ndóigh, bíonn gach láimhseálaí difriúil, ach déanann siad rudaí cosúil leis na nithe seo a leanas de ghnáth:
 
@@ -37,7 +37,7 @@ Ar ndóigh, bíonn gach láimhseálaí difriúil, ach déanann siad rudaí cosú
 
 - Nasc le bunachar téarmaíochta (is ionann bunachar téarmaíochta in Terminologue agus bunachar sonraí SQLite) a oscailt ach `ops.getDB()` a ghlaoch.
 
-- Fáil amach an bhfuil an cliant logáilte isteach agus an bhfuil rochtain aige ar an mbunachar téarmaíochta nó nach bhfuil, ach `ops.verifyLoginAndTermbaseAccess()`, nó rud éigin cosúil leis sin, a ghlaoch. 
+- Fáil amach an bhfuil an cliant logáilte isteach agus an bhfuil rochtain aige/aici ar an mbunachar téarmaíochta nó nach bhfuil, ach `ops.verifyLoginAndTermbaseAccess()`, nó rud éigin cosúil leis sin, a ghlaoch. 
 
 - Roinnt sonraí a léamh nó a scríobh ó/i mbunachar téarmaíochta (= bunachar sonraí SQLite) ach modhanna amhail `ops.entryRead()`, `ops.entrySave()` agus go leor modhanna eile a ghlaoch. 
 
@@ -61,7 +61,7 @@ Aimsítear na leathanaigh HTML ar fad a chuirtear ar fáil don chliant sa chomha
 
 Cuireann Screenful roinnt **cineálacha leathanaigh** ar fáil dúinn a mbainimid úsáid astu in Terminologue. Mar shampla:
 
-- Is feidhmchlár aon leathanaigh a dhéanann bainistiú ar an bpróiseas logála isteach é an cineál leathanaigh `Screenful.Login`.  
+- Is feidhmchlár aon leathanaigh a dhéanann bainistiú ar an bpróiseas logáil isteach é an cineál leathanaigh `Screenful.Login`.  
 
 - Is feidhmchlár aon leathanaigh é an cineál leathanaigh `Screenful.Make` agus is féidir le húsáideoir idirghníomhú leis chun bunachar sonraí nua a chruthú. Úsáidimid ar Terminologue é chun an próiseas a bhaineann le bunachar nua téarmaíochta a chruthú a bhainistiú.  
 
@@ -69,14 +69,14 @@ Cuireann Screenful roinnt **cineálacha leathanaigh** ar fáil dúinn a mbainimi
 
 - Is feidhmchlár aon leathanaigh é an cineál leathanaigh `Screenful.Editor` ina bhfuil tú in ann eagarthóireacht a dhéanamh ar iontráil ar leith. Tagann cnaipí leis le haghaidh iontrálacha a oscailt, a dhúnadh, a scriosadh agus mar sin de. Úsáidimid ar thaobh na láimhe deise de scáileán eagarthóireachta an bhunachair sonraí é (an áit a bhfuil sé leabaithe mar IFRAME), chomh maith le cúpla áit eile in Terminologue. 
 
-Fógraítear gach leathanach gréasáin de chuid Terminologue an cineál leathanaigh atá ann ach na comhaid ábhartha JavaScript agus CSS a iniamh. Mar shampla, fógraítear ar leathanach logála isteach Terminologue (`website/views/sitewide/login.ejs`) gur leathanach den chineál `Screenful.Login` é mar seo a leanas:
+Fógraítear gach leathanach gréasáin de chuid Terminologue an cineál leathanaigh atá ann ach na comhaid ábhartha JavaScript agus CSS a iniamh. Mar shampla, fógraítear ar leathanach logáil isteach Terminologue (`website/views/sitewide/login.ejs`) gur leathanach den chineál `Screenful.Login` é mar seo a leanas:
 
 ```html
 <script type="text/javascript" src="../libs/screenful/screenful-login.js"></script>
 <link type="text/css" rel="stylesheet" href="../libs/screenful/screenful-login.css" />
 ```
 
-Cuireann sé na paraiméadair bhreise seo ar fáil ansin a insíonn do Screenful (1) an URL ar cheart dó an t-iarratas logála isteach a sheoladh chuige agus (2) an áit ar cheart dó an t-úsáideoir a atreorú má éiríonn leis an logáil isteach: 
+Cuireann sé na paraiméadair bhreise seo ar fáil ansin a insíonn do Screenful (1) an URL ar cheart dó an t-iarratas logáil isteach a sheoladh chuige agus (2) an áit ar cheart dó an t-úsáideoir a atreorú má éiríonn leis an logáil isteach: 
 
 ```html
 <script type="text/javascript">
@@ -144,7 +144,7 @@ Aimsítear an cód seo sa chomhadlann `website/widgets`:
 
 - Úsáidtear `pretty-public.js` agus `pretty-public.css` le clómhaisiú a dhéanamh i gcomhéadan poiblí an bhunachair téarmaíochta.
 
-Baineann feidhm le gach comhad JavaScript ar a dtugtar `entry()` a thógann iontráil téarmeolaíochta in JSON (a fuarthas ó bhunachar téarmaíochta ar an bhfreastalaí) agus a aschuireann HTML. In `pretty-small.js` agus `pretty-large.js`, ritheann Screenful an fheidhm `entry()` ar an taobh cliaint nuair a chaithfidh sé iontráil a léiriú ar an scáileán. In `pretty-public.js`, ritheann Node.js an fheidhm `entry()` ar an taobh cliaint agus seolann sé an t-aschur chuig ar gcliant mar chuid de leathanach HTML.
+Baineann feidhm le gach comhad JavaScript ar a dtugtar `entry()` a thógann iontráil téarmeolaíochta in JSON (a fuarthas ó bhunachar téarmaíochta ar an bhfreastalaí) agus a aschuireann HTML. In `pretty-small.js` agus `pretty-large.js`, ritheann Screenful an fheidhm `entry()` ar an taobh cliaint nuair a chaithfidh sé iontráil a léiriú ar an scáileán. In `pretty-public.js`, ritheann Node.js an fheidhm `entry()` ar an taobh cliaint agus seolann sé an t-aschur chuig ár gcliant mar chuid de leathanach HTML.
 
 ## Conclúid
 
