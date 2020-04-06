@@ -1,12 +1,12 @@
 ---
-title: Cur Chun Siúil le hacmhainní sonraí oscailte Gaois
-shortTitle: Cur Chun Siúil
-description: Eolas a theastaíonn sula n-idirghníomhaítear le hacmhainní sonraí oscailte Gaois
+title: Buntreoir maidir le hacmhainní sonraí oscailte Gaois a úsáid
+shortTitle: Buntreoir
+description: Eolas a theastaíonn sula mbaintear leas as acmhainní sonraí oscailte Gaois
 keywords: Gaois, API, fíordheimhniú, téarmaí, Fiontar & Scoil na Gaeilge, DCU
 public: true
 ---
 
-Tá [grúpa taighde Gaois](https://www.gaois.ie) ag [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, ag cur roinnt acmhainní sonraí oscailte ar fáil don phobal. Áirítear leo Comhéadain Feidhmchláir RESTful agus déantáin eile sonraí, [Innéacs Sloinnte Éireannacha](https://docs.gaois.ie/en/data/surnames), a cuireadh le chéile i gcomhar le páirtithe na dtionscadal, san áireamh. Eisítear gach ceann de na hacmhainní seo faoi choinníollacha sonracha ceadúnaithe: léigh an t-eolas cuí ceadúnaithe, atá ar fáil ar an suíomh gréasáin seo sna doiciméid a ghabhann le gach acmhainn, sula mbaineann tú úsáid as na sonraí.  
+Tá [grúpa taighde Gaois](https://www.gaois.ie) ag [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, i gcomhar lena pháirtnéirí tionscadail, ag cur roinnt acmhainní sonraí oscailte ar fáil don phobal. Áirítear leo Comhéadain Feidhmchláir a bhaineann leas as cur chuige REST agus déantáin eile sonraí. Eisítear gach ceann de na hacmhainní seo faoi choinníollacha sonracha ceadúnaithe: léigh an t-eolas cuí ceadúnaithe, atá ar fáil ar an suíomh gréasáin seo sna doiciméid a ghabhann le gach acmhainn, sula mbaineann tú úsáid as na sonraí.  
 
 Tá leagan béite poiblí de [API Logainm](/en/data/logainm/v0.9/api) ar fáil anois agus tugann sé seo rochtain chláir ar Bhunachar Logainmneacha na hÉireann do dhaoine. Tá ardfhorbairt á déanamh ar API eile a bhaineann le tionscadal [Dúchas](/en/data/duchas/v0.5/api) faoi láthair agus tá leagan réamheisiúna ar fáil anois. Táthar ag súil go gcuirfear tuilleadh acmhainní ar fáil amach anseo. 
 

@@ -6,7 +6,7 @@ keywords: Gaois, API, authentication, terms, Fiontar & Scoil na Gaeilge, DCU
 public: true
 ---
 
-The [Gaois research group](https://www.gaois.ie) at [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, is making a number of open data resources available to the public. These include RESTful Application Programming Interfaces (APIs) and other data artifacts, such as the [Irish Surnames Index](https://docs.gaois.ie/en/data/surnames), produced in collaboration with our project partners. Each of these resources is released under specific licencing conditions⁠: please read the appropriate licencing information, available with the documentation for each resource on this website, before making use of the data.
+The [Gaois research group](https://www.gaois.ie) at [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, in collaboration with its project partners, is making a number of open data resources available to the public. These include RESTful Application Programming Interfaces (APIs) and other data artifacts. Each of these resources is released under specific licencing conditions⁠: please read the appropriate licencing information, which accompanies the documentation for each resource on this website, before making use of the data.
 
 The [Logainm API](/en/data/logainm/v0.9/api) is now in public beta release and provides programmatic access to the Placenames Database of Ireland. Another API for the [Dúchas](/en/data/duchas/v0.5/api) project is currently in advanced development and a prerelease version is now available. It is hoped to make further resources available in the future.
 
