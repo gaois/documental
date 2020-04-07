@@ -155,7 +155,7 @@ D'fhéadfaí oibiacht `volume` amháin nó níos mó a fháil ó iarratais ar Bh
 | Luach           | Cur síos                  |
 | :-------------- | :------------------------ |
 | bound-volume    | Tá codanna a bhí scartha ar dtús ach a ceanglaíodh le chéile san imleabhar. |
-| copybook-package | Tá na bunchóipleabhair a d’úsáid na páistí chun ábhair béaloidis a thras-scríobh san imleabhar.. |
+| copybook-package | Tá na bunchóipleabhair a d’úsáid na páistí chun ábhair béaloidis a thras-scríobh san imleabhar. |
 | volume          | Tá an t-imleabhar ar aon dul leis na himleabhair a cruthaíodh mar chuid de scéim bailithe *Scéim na Scol*. |
 
 ### Bailiúchán na Scol `page`
