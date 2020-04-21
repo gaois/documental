@@ -11,8 +11,8 @@ Logálaí simplí iarratais is féidir a chumrú le haghaidh fheidhmchláir ASP.
 
 ## Stádas an phacáiste
 
-| Pacáiste | NuGet Stable | NuGet Prerelease | Íoslódálacha |
-| -------- | ------------ | ----------------- | --------- |
+| Pacáiste | Cobhsaí NuGet | Réamheisiúint NuGet | Íoslódálacha |
+| -------- | ------------- | ------------------- | --------- |
 | Gaois.QueryLogger | N/A | [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Gaois.QueryLogger.svg)](https://www.nuget.org/packages/Gaois.QueryLogger/) | [![NuGet](https://img.shields.io/nuget/dt/Gaois.QueryLogger.svg)](https://www.nuget.org/packages/Gaois.QueryLogger/) |
 | Gaois.QueryLogger.AspNetCore | N/A | [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Gaois.QueryLogger.AspNetCore.svg)](https://www.nuget.org/packages/Gaois.QueryLogger.AspNetCore/) | [![NuGet](https://img.shields.io/nuget/dt/Gaois.QueryLogger.AspNetCore.svg)](https://www.nuget.org/packages/Gaois.QueryLogger.AspNetCore/) |
 
