@@ -42,7 +42,7 @@ De rogha air sin, lódáil an chumraíocht ó do chomhad `appsettings.json`:
 services.AddQueryLogger(configuration.GetSection("QueryLogger"));
 ```
 
-…Or you can mix the two approaches:
+…Nó is féidir leat an dá chur chuige a mheascadh:
 
 ```csharp
 services.AddQueryLogger(configuration.GetSection("QueryLogger"), settings =>
@@ -194,7 +194,6 @@ services.AddQueryLogger(settings =>
 });
 ```
 
-At present the available anonymisation levels are **None** (no anonymisation is applied) and **Partial** (the last octet of an IPv4 client IP address or the last 80 bits of an IPv6 address are removed).
 Faoi láthair, is ionann na leibhéil anaithnidithe atá ar fáil agus **Dada** (níor cuireadh anaithnidiú i bhfeidhm) agus **Páirteach** (baintear an t-ochtréad deireanach de sheoladh IPv4 an chliaint nó na 80 giotán deireanach de sheoladh IPv6).
 
 Is féidir leat cosc a chur leis an logálaí seoltaí IP a bhailiú ar an gcéad dul síos ach an socrú `StoreClientIPAddress` a chumrú:
