@@ -71,7 +71,7 @@ _queryLogger.Log(query);
 
 ### Iarratas a logáil
 
-Glacann an modh `Log()` le go leor oibiachtaí `Query` objects mar pharaiméadair.
+Glacann an modh `Log()` le go leor oibiachtaí `Query` mar pharaiméadair.
 
 Úsáid shamplach:
 
@@ -87,9 +87,9 @@ var query = new Query()
 _queryLogger.Log(query);
 ```
 
-Faigheann an leabharlann airíonna `Host` an tsuímh ghréasáin agus `IPAddress` an chliaint ón gcomhthéacs HTTP go huathoibríoch. Mar an gcéanna, mura sonraíonn tú airí `QueryID` (i bhfoirm GUID), cruthófar ceann duit. Is féidir leat aon cheann de na luachanna seo a pobalaíodh go huathoibríoch a fhorscríobh ach an t-airí ábhartha a shonrú san oibiacht `Query`, áfach. Féach an liosta iomlán de shonraí iarratais is féidir a shonrú [anseo](../data). 
+Faigheann an leabharlann airíonna `Host` an tsuímh gréasáin agus `IPAddress` an chliaint ón gcomhthéacs HTTP go huathoibríoch. Mar an gcéanna, mura sonraíonn tú airí `QueryID` (i bhfoirm GUID), cruthófar ceann duit. Is féidir leat aon cheann de na luachanna seo a pobalaíodh go huathoibríoch a fhorscríobh ach an t-airí ábhartha a shonrú san oibiacht `Query`, áfach. Féach an liosta iomlán de shonraí iarratais is féidir a shonrú [anseo](../data). 
 
-Is ionann an modh Log() agus ‘fire-and-forget’: cuirtear iarratais go sioncronach le ciú logálaí atá snáithe-oiriúnach agus déantar próiseáil go haisioncronach orthu i snáithe eile agus an patrún Táirgeora-Tomhaltóra á chur i bhfeidhm. Ciallaíonn sé seo nach gcuireann logáil aon taca le haga freagartha an fhreastalaí i ndáiríre. Ag an am céanna, cruthaíodh Gaois.QueryLogger agus lamháltas lochtanna agus láimhseáil earráide ar intinn againn: foghlaim níos mó faoi [anseo](../faulttolerance). 
+Is ionann an modh Log() agus ‘fire-and-forget’: cuirtear iarratais go sioncronach le ciú logálaí atá snáithe-oiriúnach agus déantar próiseáil go haisioncronach orthu i snáithe eile agus an patrún Táirgeora-Tomhaltóra á chur i bhfeidhm. Ciallaíonn sé sin nach gcuireann logáil aon taca le haga freagartha an fhreastalaí i ndáiríre. Ag an am céanna, cruthaíodh Gaois.QueryLogger agus lamháltas lochtanna agus láimhseáil earráide ar intinn againn: tuilleadh faisnéise [anseo](../faulttolerance). 
 
 ### Iarratais ghaolmhara a chomhcheangal
 
@@ -160,7 +160,7 @@ Féach an liosta iomlán de shocruithe is féidir a chumrú [anseo](../configura
 
 ### An logálaí iarratais a chumasú/a dhíchumasú go huilíoch
 
-Cumasaítear an logálaí iarratais de réir réamhshocraithe. D’fhéadfadh ócáidí nó timpeallachtaí áirithe a bheith ann, le haghaidh tástála nó cuspóirí eile, áfach, inar mhaith leat an logálaí iarratais a dhíchumasú gan gach ordú iarratais a thimfhilleadh ina loighic choinníollach féin. Chun freastal air seo, díchumasaigh an logálaí iarratais go huilíoch laistigh de d’fheidhmchláir ach `IsEnabled` a shocrú ag `false`.
+Cumasaítear an logálaí iarratais de réir réamhshocraithe. D’fhéadfadh ócáidí nó timpeallachtaí áirithe a bheith ann, le haghaidh tástáil nó cuspóirí eile, áfach, inar mhaith leat an logálaí iarratais a dhíchumasú gan gach ordú iarratais a thimfhilleadh ina loighic choinníollach féin. Chun freastal air seo, díchumasaigh an logálaí iarratais go huilíoch laistigh de d’fheidhmchláir ach `IsEnabled` a shocrú ag `false`.
 
 ```csharp
 services.AddQueryLogger(settings =>
@@ -194,7 +194,7 @@ services.AddQueryLogger(settings =>
 });
 ```
 
-Faoi láthair, is ionann na leibhéil anaithnidithe atá ar fáil agus **Dada** (níor cuireadh anaithnidiú i bhfeidhm) agus **Páirteach** (baintear an t-ochtréad deireanach de sheoladh IPv4 an chliaint nó na 80 giotán deireanach de sheoladh IPv6).
+Faoi láthair, is ionann na leibhéil anaithnidithe atá ar fáil agus **Dada** (níor cuireadh anaithnidiú i bhfeidhm) agus **Páirteach** (baintear an t-ochtréad deireanach de sheoladh IPv4 an chliaint nó an 80 giotán deireanach de sheoladh IPv6).
 
 Is féidir leat cosc a chur leis an logálaí seoltaí IP a bhailiú ar an gcéad dul síos ach an socrú `StoreClientIPAddress` a chumrú:
 
@@ -209,4 +209,4 @@ Nuair a shocraítear `StoreClientIPAddress` ag **bréagach**, taifeadfar an luac
 
 ## Logálaithe comhiomlánaithe iarratais agus anailís logálaí
 
-In [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), DCU, comhiomlánaímid sonraí achoimre ó thábla an logálaí iarratais go míosúil agus stórálaimid i dtábla bunachar sonraí eile iad. Chuireamar struchtúr an tábla le chéile agus stórálamar gnásanna a bhainistíonn an próiseas seo atá ar fáil i bhfillteán na [scripteanna](https://github.com/gaois/Gaois.QueryLogger/tree/master/scripts) i stór GitHub Gaois.QueryLogger sa chás go mbeidh aon duine eile ag iarraidh úsáid a bhaint astu. Tá eintiteas `AggregratedQueryLog` ag Gaois.QueryLogger chomh maith a chomhfhreagraíonn d’iontrálacha i dtábla comhiomlánaithe an logálaí. Faightear cuid de na hiarratais níos ginearálta SQL a úsáidimid chun sonraí logálaí a achoimriú agus a anailísiú i bhfillteán na scripteanna.  
+In [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), DCU, comhiomlánaímid sonraí achoimre ó thábla an logálaí iarratais go míosúil agus stórálaimid i dtábla bunachair sonraí eile iad. Chuireamar struchtúr an tábla le chéile agus stórálamar gnásanna a bhainistíonn an próiseas seo atá ar fáil i bhfillteán na [scripteanna](https://github.com/gaois/Gaois.QueryLogger/tree/master/scripts) i stór GitHub Gaois.QueryLogger sa chás go mbeidh aon duine eile ag iarraidh úsáid a bhaint astu. Tá eintiteas `AggregratedQueryLog` ag Gaois.QueryLogger chomh maith a chomhfhreagraíonn d’iontrálacha i dtábla comhiomlánaithe an logálaí. Faightear cuid de na hiarratais níos ginearálta SQL a úsáidimid chun sonraí logálaí a achoimriú agus a anailísiú i bhfillteán na scripteanna.  
