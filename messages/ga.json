@@ -36,9 +36,9 @@
             "surnames": "Innéacs Sloinnte",
             "surnamesBlurb": "Sonraí maidir le sloinnte Éireannacha i bhformáid XML",
             "terminologueBlurb": "Uirlis fhoinse-oscailte néalbhunaithe chun bunachair téarmaíochta a bhainistiú",
-            "geoNames2SqlBlurb": "Bunachar SQL a chruthú agus a nuashonrú le sonraí gasaitéir GeoNames",
+            "geoNames2SqlBlurb": "Uirlis chun bunachair SQL a dhíorthaítear ó shonraí Gasaitéir GeoNames a chruthú agus a nuashonrú",
             "localizerBlurb": "Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core",
-            "queryLoggerBlurb": "Logálaí iarratais simplí so-chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core",
+            "queryLoggerBlurb": "Logálaí iarratais simplí so‑chumraithe i gcomhair feidhmchláir ASP.NET agus ASP.NET Core",
             "documentalBlurb": "Ardán chun doiciméadacht theicniúil ilteangach a fhoilsiú"
         }
     },

@@ -36,7 +36,7 @@
             "surnames": "Surnames Index",
             "surnamesBlurb": "An index of Irish surname data in XML format",
             "terminologueBlurb": "A cloud-based, open-source terminology management tool",
-            "geoNames2SqlBlurb": "Build and maintain a SQL database using GeoNames Gazetteer data",
+            "geoNames2SqlBlurb": "A tool to build and maintain SQL databases derived from GeoNames Gazetteer data",
             "localizerBlurb": "A toolkit for creating multilingual web applications on ASP.NET Core",
             "queryLoggerBlurb": "A simple, configurable query logger for ASP.NET and ASP.NET Core applications",
             "documentalBlurb": "A multilingual technical documentation platform"
