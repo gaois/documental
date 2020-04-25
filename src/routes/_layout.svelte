@@ -1,6 +1,8 @@
 <script context="module">
 	export async function preload(page, session) {
-		if (!!session.analyticsId) return { analyticsId: session.analyticsId };
+		if (!!session.analyticsId) {
+			return { analyticsId: session.analyticsId };
+		}
 	};
 </script>
 
