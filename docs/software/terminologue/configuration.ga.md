@@ -146,7 +146,7 @@ Is iad seo na ceadúnais faoina bhfuil úsáideoirí in ann bunachar téarmaíoc
 ]
 ```
 
-Ord aibítre réamhshocraithe. Úsáidfidh Terminologue é seo mura shonraigh úsáideoir ord difriúil liostaithe le haghaidh teanga sa bhunachar téarmaíochta.
+Ord aibítre réamhshocraithe. Úsáidfidh Terminologue é seo murar shonraigh úsáideoir ord difriúil liostaithe le haghaidh teanga sa bhunachar téarmaíochta.
 
 ---
 
