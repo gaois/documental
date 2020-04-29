@@ -6,7 +6,7 @@ order: 4
 public: true
 ---
 
-Is féidir na socruithe thíos a chumrú le bheith in oiriúint do do chuid riachtanais. Is féidir leat an logálaí iarratais a chumrú i gcód (ASP.NET Core amháin) nó i gcomhad cumraíochta d’fheidhmchláir. Féach an doiciméadacht a bhaineann le [ASP.NET Framework](../net461) agus le [ASP.NET Core](../netcore) chun teacht ar eolas ar chur i bhfeidhm an logálaí i do sprioc-chreatlach.
+Is féidir na socruithe thíos a chumrú le bheith in oiriúint do do chuid riachtanais féin. Is féidir leat an logálaí iarratais a chumrú i gcód (ASP.NET Core amháin) nó i gcomhad cumraíochta d’fheidhmchláir. Féach an doiciméadacht a bhaineann le [ASP.NET Framework](../net461) agus le [ASP.NET Core](../netcore) chun teacht ar eolas ar chur i bhfeidhm an logálaí i do sprioc-chreatlach.
 
 ## Barrleibhéal
 
@@ -28,7 +28,7 @@ Is féidir na socruithe thíos a chumrú le bheith in oiriúint do do chuid riac
 
 **ConnectionString** (`string`): An teaghrán ceangail do do stóras sonraí de chuid SQL Server.
 
-**ConnectionStringName** (`string`, **ASP.NET Framework only**): Ainm an teaghráin cheangail a úsáidtear ó chumraíocht an fheidhmchláir, m.sh. an eochair a bhaineann le hiontráil ar leith sa chuid `ConnectionStrings` den chomhad Web.config de chuid feidhmchláir. 
+**ConnectionStringName** (`string`, **ASP.NET Framework only**): Ainm an teaghráin cheangail a úsáidtear ó chumraíocht an fheidhmchláir, e.g. an eochair a bhaineann le hiontráil ar leith sa chuid `ConnectionStrings` den chomhad Web.config de chuid feidhmchláir. 
 
 **MaxQueueSize** (`integer`, réamhshocrú: **1000**): Uasmhéid fhéideartha chiú an logálaí iarratais. Nuair a bhaintear uasmhéid an chiú amach, cuileálfar iontrálacha sa chiú ar bhonn is túisce isteach is túisce amach. Ba cheart duit méid an chiú a shocrú i dtaca leis na hacmhainní atá ar fáil ar do chóras. Ach logálaithe a stóráil i gciú sula maireann sonraí, laghdaítear an seans go gcaillfidh tú sonraí mar gheall ar cheist seachadta faoi IOPS an bhunachair sonraí, mar shampla.
 
@@ -55,6 +55,7 @@ Is féidir na socruithe thíos a chumrú le bheith in oiriúint do do chuid riac
 **SMTPPassword** (`string`): Pasfhocal an SMTP a úsáidfear, má tá fíordheimhniú á dhéanamh agat.
 
 **SMTPEnableSSL** (`bool`, réamhshocrú: **false**): SSL a úsáid agus rud á sheoladh trí SMTP agat, nó gan é a úsáid.
+
 ## ExcludedIPAddresses
 
 Ní logálfar iarratais a bhaineann leis na seoltaí IP sa liosta seo. Tá sé úsáideach, mar shampla, le cinntiú nach logálfar iarratais ó ransaitheoir ionsaitheach gréasáin.
