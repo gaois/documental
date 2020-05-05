@@ -8,15 +8,15 @@ order: 1
 public: true
 ---
 
-**Note:** The Logainm API in now in **public beta release**. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
+**Note:** The Logainm API is now in **public beta release**. While the v0.9 API is generally stable, breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
 ## Introduction
 
-The Placenames Database of Ireland was created by the Gaois research group at [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/gaeilge/index.shtml) in collaboration with [The Placenames Branch](https://www.chg.gov.ie/gaeltacht/the-irish-language/the-placenames-branch/) (Department of Culture, Heritage and the Gaeltacht). This is a comprehensive management system for data, archival records and placenames research conducted by the State. It is a public resource for Irish people at home and abroad, and for all those who appreciate the rich heritage of Irish placenames. The database has been accessible via the [logainm.ie](https://www.logainm.ie) public website since 2008. This documentation describes a web-based Application Programming Interface (API) that exposes the database contents to programmatic queries. A [data dictionary](../data) is available to assist users in parsing results returned by the API.
+The Placenames Database of Ireland was created by the Gaois research group in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/gaeilge/index.shtml) in collaboration with [The Placenames Branch](https://www.chg.gov.ie/gaeltacht/the-irish-language/the-placenames-branch/) (Department of Culture, Heritage and the Gaeltacht). This is a comprehensive management system for data, archival records and placenames research conducted by the State. It is a public resource for Irish people at home and abroad, and for all those who appreciate the rich heritage of Irish placenames. The database has been accessible via the [logainm.ie](https://www.logainm.ie) public website since 2008. This documentation describes a web-based Application Programming Interface (API) that exposes the database contents to programmatic queries. A [data dictionary](../data) is available to assist users in parsing results returned by the API.
 
 ## General API information
 
-Please consult the [getting started guide](/en/data/getting-started) for Gaois Open Data resources before reading the rest of the documentation for the Logainm API. The getting started guide describes how to obtain your unique user credentials as well as providing important general usage information.
+Please consult the [getting started guide](/en/data/getting-started) for Gaois open data resources before reading the rest of the documentation for the Logainm API. The getting started guide describes how to obtain your unique user credentials as well as providing important general usage information.
 
 ## Resource paths
 
@@ -27,9 +27,9 @@ The resources provided by the API are accessed via unique paths appended to the 
 | GET         | `/api`                        | General API metadata.     |
 | GET         | `/api/v0.9`                   | List of places and associated metadata.**\*** |
 | GET         | `/api/v0.9/{id}`              | Metadata associated with an individual place. |
-| GET         | `/api/v0.9/administrative-units` | Reference list of metadata associated with [Irish administrative units](https://www.logainm.ie/en/inf/help-categs). The unit identifers in this list can be used to filter places by `CategoryID`. |
-| GET         | `/api/v0.9/features`          | Reference list of metadata associated with geographical features. The feature identifers in this list can be used to filter places by `CategoryID`. |
-| GET         | `/api/v0.9/glossary`          | Reference list of [words commonly found in Irish placenames](https://www.logainm.ie/en/gls/) and associated metadata. The glossary identifers in this list can be used to filter places by `GlossaryID`. |
+| GET         | `/api/v0.9/administrative-units` | Reference list of metadata associated with [Irish administrative units](https://www.logainm.ie/en/inf/help-categs). The unit identifiers in this list can be used to filter places by `CategoryID`. |
+| GET         | `/api/v0.9/features`          | Reference list of metadata associated with geographical features. The feature identifiers in this list can be used to filter places by `CategoryID`. |
+| GET         | `/api/v0.9/glossary`          | Reference list of [words commonly found in Irish placenames](https://www.logainm.ie/en/gls/) and associated metadata. The glossary identifiers in this list can be used to filter places by `GlossaryID`. |
 | GET         | `/api/v0.9/counties`          | Reference list of metadata associated with counties. The place identifiers in this list can be used to filter places by `PlaceID`. |
 
 **\*** Requests to the `/api/v0.9/` endpoint must be filtered by at least one of the following parameters: `PlaceID`, `CategoryID`, `GlossaryID`, or a pair of `Longitude` and `Latitude` parameters.
@@ -53,11 +53,11 @@ Use these query parameters to filter the results returned by the API.
 | `Latitude`    | float         | Filter by latitudinal coordinate. Must be used in conjunction with a `Longitude` value. |
 | `Longitude`   | float         | Filter by longitudinal coordinate. Must be used in conjunction with a `Latitude` value. |
 | `Accurate`    | boolean       | If true, only return places whose geographic coordinates are believed to be precise. If false, only return places whose geographic coordinates were obtained by extrapolation from neighbouring places. |
-| `Radius`      | integer       | Specifies the radius size for a geographic query in metres. The maximum radius is 15000. Defaults to 3000 metres. |
-| `Query`       | string        | Filter by search term(s). Textual searches are accent sensitive; for example, the search terms 'Rath' and 'Ráth' each return different sets of results. Note that textual searches currently only retrieve exact matches for query terms. Partial or speculative matches may be detailed in the `SimilarNames` response field. |
-| `Gaeltacht`   | boolean       | If true, only return places which are in a Gaeltacht area. If false, exlude places in Gaeltacht areas from the result set. |
-| `PostOffice`  | boolean       | If true, only return places in which there is or once was a post office. If false, exlude places in which there is or once was a post office from the result set. |
-| `NorthernIreland` | boolean       | If true, only return places which are in Northern Ireland. If false, exlude places which are in Northern Ireland from the result set. |
+| `Radius`      | integer       | Specifies the radius size for a geographic query in metres. The maximum radius is 15,000. Defaults to 3,000 metres. |
+| `Query`       | string        | Filter by search term(s). Textual searches are accent sensitive, for example, the search terms 'Rath' and 'Ráth' each return different sets of results. Note that textual searches currently only retrieve exact matches for query terms. Partial or speculative matches may be detailed in the `SimilarNames` response field. |
+| `Gaeltacht`   | boolean       | If true, only return places which are in a Gaeltacht area. If false, exclude places in Gaeltacht areas from the result set. |
+| `PostOffice`  | boolean       | If true, only return places in which there is, or once was, a post office. If false, exclude places in which there is, or once was, a post office from the result set. |
+| `NorthernIreland` | boolean       | If true, only return places which are in Northern Ireland. If false, exclude places which are in Northern Ireland from the result set. |
 | `CreatedBefore` | ISO 8601 datetime | Retrieve records created before a given date in `YYYY-MM-DD` format. |
 | `CreatedSince` | ISO 8601 datetime | Retrieve records created after a given date in `YYYY-MM-DD` format. |
 | `ModifiedBefore` | ISO 8601 datetime | Retrieve records last updated before a given date in `YYYY-MM-DD` format. |
@@ -65,7 +65,7 @@ Use these query parameters to filter the results returned by the API.
 
 ## Sorting
 
-Where data relating to more than one place are returned in response to a query they are sorted by place identifier, in ascending order. The only exception to this are geographic queries, where the `Latitude` and `Longitude` query parameters are specified, in which case case places are listed in order of proximity to the specified coordinates, with the nearest places listed first.
+Where data relating to more than one place is returned in response to a query they are sorted by place identifier, in ascending order. The only exception to this are geographic queries, where the `Latitude` and `Longitude` query parameters are specified, in which case case places are listed in order of proximity to the specified coordinates, with the nearest places listed first.
 
 ## Illustrative examples
 
