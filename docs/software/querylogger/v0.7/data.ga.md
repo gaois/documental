@@ -16,21 +16,21 @@ Tá an oibiacht `Query` i gcroílár Gaois.QueryLogger. Iompraíonn oibiachtaí 
 
 **QueryCategory** (`string`): Ceanglaíonn sé an t-iarratas le catagóir a shonraigh an feidhmchlár. Tá sé úsáideach, mar shampla, má tá cineálacha éagsúla cuardaigh agat laistigh d’fheidhmchlár amháin (roghnach).
 
-**QueryTerms** (`string`): Téarma(í) an iarratais nó comhthéacs téacs an iarratais (roghnach). 
+**QueryTerms** (`string`): Téarma(í) an iarratais nó comhthéacs théacs an iarratais (roghnach). 
 
 **QueryText** (`string`): Téacs lom an iarratais, amhail teaghrán iarratais nó réimse foirme POST-ed (roghnach).
 
-**Host** (`string`): Fearann óstach an fheidhmchláir, e.g. www.example.com. Gheofar go huathoibríoch ón gcomhthéacs reatha HTTP é mura sonraítear a mhalairt.
+**Host** (`string`): Fearann óstach an fheidhmchláir, e.g. www.example.com. Gheofar go huathoibríoch ón gcomhthéacs reatha HTTP é mura sonrófar a mhalairt.
 
-**IPAddress** (`string`): Seoladh IP an chliaint. Gheofar go huathoibríoch ón gcomhthéacs reatha HTTP é mura sonraítear a mhalairt.
+**IPAddress** (`string`): Seoladh IP an chliaint. Gheofar go huathoibríoch ón gcomhthéacs reatha HTTP é mura sonrófar a mhalairt.
 
-**ExecutedSuccessfully** (`bool`, réamhshocrú: **true**): Taifeadann sé ar éirigh leis an iarratas rith nó nár éirigh.
+**ExecutedSuccessfully** (`bool`, réamhshocrú: **true**): Taifeadann sé cé acu a d'éirigh leis an iarratas rith nó nár éirigh.
 
 **ExecutionTime** (`int?`): Aga rite an iarratais i milleasoicindí (roghnach). 
 
 **ResultCount** (`int?`): Comhaireamh na dtorthaí a chuir an t-iarratas ar ais (roghnach).
 
-**LogDate** (`DateTime`): Dáta agus am logáil an iarratais. Ginfear luach go huathoibríoch don airí seo nuair a logálfar é mura sonraítear a mhalairt. 
+**LogDate** (`DateTime`): Dáta agus am logáil an iarratais. Ginfear luach go huathoibríoch don airí seo nuair a logálfar é mura sonrófar a mhalairt. 
 
 **JsonData** (`string`): Sonraí breise a thaifeadadh i bhformáid JSON. Tá sé úsáideach chun sonraí sainiúla feidhmchláir nó iarratais a stóráil i dtimpeallacht ilfheidhmchláir, mar shampla.
 
