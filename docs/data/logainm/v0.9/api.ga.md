@@ -12,7 +12,7 @@ public: true
 
 ## Réamhrá
 
-Chruthaigh grúpa taighde Gaois in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/gaeilge/index.shtml) Bunachar Logainmneacha na hÉireann i gcomhar leis [an mBrainse Logainmneacha](https://www.chg.gov.ie/gaeltacht/the-irish-language/the-placenames-branch/) (An Roinn Cultúir, Oidhreachta agus Gaeltachta). Áis chuimsitheach bhainistíochta í seo chun sonraí agus taifid chartlainne, mar aon le taighde logainmneacha an Stáit, a riar. Áis don phobal atá inti, d'Éireannaigh sa bhaile agus thar lear, agus spreagann sí spéis i saibhreas agus i saíocht logainmneacha na hÉireann. Seoladh an bunachar sonraí ar shuíomh gréasáin poiblí [logainm.ie](https://www.logainm.ie) in 2008. Déantar cur síos sa doiciméad seo ar Chomhéadan Feidhmchláir (API) gréasánbhunaithe a nochtann a bhfuil sa bhunachar sonraí d'iarratais chláir. Tá [foclóir sonraí](https://docs.gaois.ie/ga/data/logainm/v0.9/data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
+Chruthaigh grúpa taighde Gaois in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/gaeilge/index.shtml) Bunachar Logainmneacha na hÉireann i gcomhar leis [an mBrainse Logainmneacha](https://www.chg.gov.ie/gaeltacht/the-irish-language/the-placenames-branch/) (An Roinn Cultúir, Oidhreachta agus Gaeltachta). Áis chuimsitheach bhainistíochta í seo chun sonraí agus taifid chartlainne, mar aon le taighde logainmneacha an Stáit, a riar. Áis don phobal atá inti, d'Éireannaigh sa bhaile agus thar lear, agus spreagann sí spéis i saibhreas agus i saíocht logainmneacha na hÉireann. Seoladh an bunachar sonraí ar shuíomh gréasáin poiblí [logainm.ie](https://www.logainm.ie) in 2008. Déantar cur síos sa doiciméad seo ar Chomhéadan Feidhmchláir (API) gréasánbhunaithe a nochtann a bhfuil sa bhunachar sonraí d'iarratais chláir. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
  
 ## Eolas ginearálta faoi API
 
@@ -20,7 +20,7 @@ Téigh i gcomhairle leis an [treoir maidir le cur chun siúil](/ga/data/getting-
 
 ## Cosáin acmhainne
 
-Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm ar an bpríomhshuíomh gréasáin. Liostaítear thíos gach cosán iarratais atá ar fáil faoi láthair. Tá [foclóir sonraí](https://docs.gaois.ie/ga/data/logainm/v0.9/data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
+Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm ar an bpríomhshuíomh gréasáin. Liostaítear thíos gach cosán iarratais atá ar fáil faoi láthair. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
 
 | Modh        | Cosán                         | Acmhainn                  |
 | :---------- | :---------------------------- | :------------------------ |
