@@ -22,12 +22,13 @@
         "surnames": "Innéacs Sloinnte"
     },
     "home": {
+        "groupName": "grúpa taighde Gaois",
         "heading": "Doiciméadacht Gaois",
         "moreInfo": "Cuir eolas ar Gaois",
         "openData": "Sonraí Oscailte",
         "software": "Bogearraí",
         "title": "Doiciméadacht theicniúil",
-        "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil ar fáil i gcomhair acmhainní sonraí oscailte agus bogearraí atá forbartha ag {link}, Fiontar agus Scoil na Gaeilge, DCU.",
+        "tagline": "Cuireann docs.gaois.ie doiciméadacht theicniúil ar fáil i gcomhair acmhainní sonraí oscailte agus bogearraí atá forbartha ag {link}, Fiontar & Scoil na Gaeilge, DCU.",
         "sections": {
             "gettingStarted": "Buntreoir",
             "gettingStartedBlurb": "Treoir ghinearálta chun acmhainní sonraí oscailte atá forbartha ag Gaois a úsáid",
