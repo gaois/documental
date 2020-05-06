@@ -15,7 +15,7 @@ public: true
 
 - Tá [Comhroinnt Sócmhainní Thras-Fhoinse](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS) cumasaithe i gcás API Logainm anois.
 
-### Changed
+### Athruithe
 
 - Leasaíodh [an bhuntreoir](/ga/data/getting-started) leis na forbairtí i dtaca le CORS a chur in iúl.
 
@@ -36,7 +36,7 @@ public: true
 
 - Cuireadh na paraiméadair iarratais `Page` agus `PerPage` ar fáil chun uimhriú leathanach a éascú i gcás tacar torthaí a bhaineann le háiteanna.
 - Cuireadh na hairíonna `TotalPages`, `CurrentPage` agus `CountPerPage` leis an oibiacht `placeList` agus iad le léiriú agus uimhriú leathanach i bhfeidhm ar an tacar torthaí.
-- Breis teachtaireachtaí earráide cairdiúla a bhaineann leis an uimhriú (m.sh. i gcás earráidí nuair atá innéacs as raon).
+- Breis teachtaireachtaí earráide cairdiúla a bhaineann leis an uimhriú (e.g. i gcás earráidí nuair atá innéacs as raon).
 
 ### Athruithe
 
