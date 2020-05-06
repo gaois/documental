@@ -8,9 +8,9 @@ order: 2
 public: true
 ---
 
-**Note:** The Logainm API in now in **public beta release**. While the v0.9 API is generally stable breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
+**Note:** The Logainm API is now in **public beta release**. While the v0.9 API is generally stable, breaking changes are possible in advance of a v1.0 release. We welcome feedback at <gaois@dcu.ie>.
 
-This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines please consult the [developer documentation](../api).
+This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines, please consult the [developer documentation](../api).
 
 ## `placeList`
 
@@ -21,37 +21,37 @@ Most API queries will return a `placeList` object. This contains a list of one o
 | TotalCount      | integer             | one                 | The total count of place records retrieved. |
 | Places          | [`place`](#place)     | none or one or many | The retrieved place records. |
 | SimilarNames    | string              | none or one or many | A set of names which have a similar spelling to the query text (if performing a textual search). For example, if searching for 'Ballybunion', 'Ballybunnion' will be suggested. |
-| RelatedNames    | string              | none or one or many | A set of names which are related to the query text (if performing a textual search). For example, if searching for 'Lismore', the list of related names will suggest 'Lismore and Mocollop', 'Lismore Demesne', agus 'Lismore Road'. |
+| RelatedNames    | string              | none or one or many | A set of names which are related to the query text (if performing a textual search). For example, if searching for 'Lismore', the list of related names will suggest 'Lismore and Mocollop', 'Lismore Demesne' and 'Lismore Road'. |
 
 ## `place`
 
-The `place` object is at the core of the Logainm API: it represents a geographic location and includes associated toponymic, lexical, and other metadata. Queries specifying a place identifer in the request path will retrieve a single `place` object (if one exists) while broader queries may return one or more `place` objects in the response body.
+The `place` object is at the core of the Logainm API. It represents a geographic location and includes associated toponymic, lexical and other metadata. Queries specifying a place identifer in the request path will retrieve a single `place` object (if one exists) while broader queries may return one or more `place` objects in the response body.
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | ID              | integer             | one                 | The unique place identifier. |
-| ReplacementID   | integer             | none or one         | If this value is set the requested place record has been merged into another record in the database. The value is the replacement record identifier. |
+| ReplacementID   | integer             | none or one         | If this value is set, the requested place record has been merged into another record in the database. The value is the replacement record identifier. |
 | DateCreated     | ISO 8601 datetime   | one                 | The date and time of entry creation.  |
 | DateModified    | ISO 8601 datetime   | none or one         | The date and time of most recent modification to entry.  |
 | Permalink       | string              | one                 | A permanent static hyperlink where a human reader can find more information about the place. This automatically redirects to the Irish or English version of the place information page. |
-| Featured        | ISO 8601 datetime   | none or one or many | Denotes the date or dates on which this place was featured as the place of the day on the [logainm.ie](https://www.logainm.ie) website, if featured. |
+| Featured        | ISO 8601 datetime   | none or one or many | Denotes the date, or dates, on which this place was featured as the 'placename of the day' on [logainm.ie](https://www.logainm.ie), if featured. |
 | Cluster         | [`cluster`](#cluster) | none or one | Metadata representing a group of places, of which this place is a member, that share placenames and are colocated or are proximate to each other. |
 | Placenames      | [`placename`](#placename) | one or many | One or more placenames, and associated metadata, that are given to this place. |
 | Glossary        | [`glossary`](#glossary) | none or one | Describes words commonly found in Irish placenames and that are present in placenames associated with this place. |
 | Categories        | [`category`](#category) | none or one or many | Describes the categories associated with this place. Only in exceptional cases will places have more than one category. |
-| IncludedIn      | [`placeSummary`](#placeSummary) | none or one or many | Summary information regarding the administrative units (counties, civil parishes, etc.) which include this place. |
+| IncludedIn      | [`placeSummary`](#placesummary) | none or one or many | Summary information regarding the administrative units (counties, civil parishes, etc.) which include this place. |
 | Includes        | [`category`](#category) | none or one or many | Describes the place categories included within the bounds of this place. |
 | Geography       | [`geography`](#geography) | none or one | Geographical location of the place expressed in terms of latitudinal and longitudinal coordinates. |
-| GridReferences  | [`gridReference`](#gridReference) | none or one or many | Geographical location of the place expressed in terms of [Irish Grid Reference System](https://www.osi.ie/resources/reference-information-2/irish-grid-reference-system/) coordinates. |
-| Gaeltacht       | [`placeProperty`](#placeProperty) | none or one         | Indicates whether the place is in the Gaeltacht. |
-| PostOffice      | [`placeProperty`](#placeProperty) | none or one         | Indicates whether there is or was once a post office in this place. |
-| NorthernIreland | [`placeProperty`](#placeProperty) | none or one         | Indicates whether this place is in Northern Ireland. |
+| GridReferences  | [`gridReference`](#gridreference) | none or one or many | Geographical location of the place expressed in terms of [Irish Grid Reference System](https://www.osi.ie/resources/reference-information-2/irish-grid-reference-system/) coordinates. |
+| Gaeltacht       | [`placeProperty`](#placeproperty) | none or one         | Indicates whether the place is in the Gaeltacht. |
+| PostOffice      | [`placeProperty`](#placeproperty) | none or one         | Indicates whether there is, or was once, a post office in this place. |
+| NorthernIreland | [`placeProperty`](#placeproperty) | none or one         | Indicates whether this place is in Northern Ireland. |
 | Images          | [`image`](#image)   | none or one or many | Describes one or more scanned records from the Placenames Branch archive relating to this place. |
 | Resources       | [`resource`](#resource) | none or one or many | Describes one or more toponomy resources available on [logainm.ie](https://www.logainm.ie) relating to this place. |
 | Links           | [`link`](#link) | none or one or many | Provides one or more links to related data in external resources. External resources include [OSI](https://www.osi.ie/), [Placenames Northern Ireland](http://www.placenamesni.org/), [Wikipedia](https://www.wikipedia.org/), [Geonames](http://www.geonames.org/), etc. |
-| BornHere        | [`biographyLink`](#biographyLink) | none or one or many | Provides links to biographical data from [ainm.ie](https://www.ainm.ie) for any persons born in this place, if available. |
-| Folklore        | [`folkloreLink`](#folkloreLink) | none or one or many | Provides links to folkloric data from [dúchas.ie](https://www.logainm.ie) associated with this place, if available. |
-| SameAs          | [`sameAs`](#sameAs) | none or one or many | Specifies one or more co-references to this place in data sets other than the Placenames Database of Ireland. Consistent with OWL Web Ontology [SameAs](https://www.w3.org/TR/owl-ref/) definition. |
+| BornHere        | [`biographyLink`](#biographylink) | none or one or many | Provides links to biographical data from [ainm.ie](https://www.ainm.ie) for any persons born in this place, if available. |
+| Folklore        | [`folkloreLink`](#folklorelink) | none or one or many | Provides links to folkloric data from [dúchas.ie](https://www.duchas.ie) associated with this place, if available. |
+| SameAs          | [`sameAs`](#sameas) | none or one or many | Specifies one or more co-references to this place in data sets other than the Placenames Database of Ireland. Consistent with OWL Web Ontology [SameAs](https://www.w3.org/TR/owl-ref/) definition. |
 
 ### `cluster`
 
@@ -60,7 +60,7 @@ Metadata representing a group of places that share placenames and are colocated 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | FocusID         | integer             | one                 | Identifies the place that forms the 'focus' of the cluster. It may represent the place category most readily associated with a particular placename or feature the richest set of metadata among all the cluster members. |
-| Members         | [`clusterMember`](#clusterMember) | one or many         | Represents the individual places that make up the cluster. |
+| Members         | [`clusterMember`](#clustermember) | one or many         | Represents the individual places that make up the cluster. |
 
 ### `clusterMember`
 
@@ -84,7 +84,7 @@ Describes a toponym associated with one or more places.
 | Main            | boolean             | one                 | If true this is the place's main/canonical name. This is only important if the place has more than one name in the same language. |
 | Acceptability   | [`acceptability`](#acceptability) | none or one         | Indicates the research and approval status of the placename. |
 | Audio           | [`audio`](#audio)   | none or one         | Describes an audio file providing an indicative pronunciation of the placename. |
-| SubNames        | [`subName`](#subName) | none or many       | A list of two or more discrete placenames. Provided when the parent placename is composed of two more or more names that are conjoined, e.g. [Rathgarvan or Clifden](https://www.logainm.ie/26783.aspx), or when part of the parent placename fulfils a qualifying or disambiguating role. |
+| SubNames        | [`subName`](#subname) | none or many       | A list of two or more discrete placenames. Provided when the parent placename is composed of two more or more names that are conjoined, e.g. '[Rathgarvan or Clifden](https://www.logainm.ie/26783.aspx)', or when part of the parent placename fulfils a qualifying or disambiguating role. |
 
 ### `acceptability`
 
@@ -107,12 +107,12 @@ Describes an audio file providing an indicative pronunciation of a placename.
 
 ### `subName`
 
-A discrete name which may used in composing longer placenames.
+A discrete name which may be used in composing longer placenames.
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Text            | string              | one                 | The text of the name.     |
-| Disambiguates   | boolean             | one                 | If true, this name provides some form of disambiguation in respect of the parent placename. A disambiguating `subName` might, for example, distinguish the parent placename from other, similar names. |
+| Disambiguates   | boolean             | one                 | If true, this name provides some form of disambiguation in respect of the parent placename. A disambiguating `subName` might, for example, distinguish the parent placename from other similar names. |
 
 ### `placeSummary`
 
@@ -132,7 +132,7 @@ Expresses a geographical location in terms of latitudinal and longitudinal coord
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Accurate        | boolean             | one                 | Indicates whether the coordinates are believed to be precise. Inaccurate coordinates are those that have been obtained by extrapolation from neighbouring places. |
-| Coordinates     | [`coordinates`](#coordinates) | one or many        | One or more pairs of latitudinal and longitudinal coordinates. Most places are represented by a single pair of coordinates. However, certain geographical features, such as rivers or islands, in particular, may have two or more pairs. |
+| Coordinates     | [`coordinates`](#coordinates) | one or many        | One or more pairs of latitudinal and longitudinal coordinates. Most places are represented by a single pair of coordinates. However, certain geographical features, such as rivers or islands in particular, may have two or more pairs. |
 
 ### `coordinates`
 
@@ -197,7 +197,7 @@ This possible values of the `TypeID` property are as follows:
 
 ### `supplier`
 
-Metadata regarding the publisher/supplier of a toponmy resource.
+Metadata regarding the publisher/supplier of a toponomy resource.
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
@@ -212,7 +212,7 @@ Provides a link to related data in an external resource.
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Type            | string              | one                 | The external resource type. External resources include [OSI](https://www.osi.ie/), [Placenames Northern Ireland](http://www.placenamesni.org/), [Wikipedia](https://www.wikipedia.org/), [Geonames](http://www.geonames.org/), etc. |
-| Target          | string              | one                 | The link target. This may be a URI, URL, or other identifier, depending on the resource type. |
+| Target          | string              | one                 | The link target. This may be a URI, URL or other identifier, depending on the resource type. |
 
 #### `Type`
 
@@ -256,7 +256,7 @@ Specifies a co-reference to a particular place in data sets other than the Place
 
 ## `category`
 
-Describes a place category. Categories encompass both [administrative units](https://www.logainm.ie/en/inf/help-categs) and geographical features. One or more categories may be returned as part of a `place` object or a reference list of `category` objects may be obtained from the appropriate API [endpoint](./README.md#resource-paths).
+Describes a place category. Categories encompass both [administrative units](https://www.logainm.ie/en/inf/help-categs) and geographical features. One or more categories may be returned as part of a `place` object, or a reference list of `category` objects may be obtained from the appropriate API [endpoint](/en/data/logainm/v0.9/api/#resource-paths).
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
@@ -269,7 +269,7 @@ Describes a place category. Categories encompass both [administrative units](htt
 
 ## `glossary`
 
-Describes a set of related words commonly found in Irish placenames. One or more glossary entries may be returned as part of a `place` object or a reference list of `glossary` objects may be obtained from the appropriate API [endpoint](./README.md#resource-paths).
+Describes a set of related words commonly found in Irish placenames. One or more glossary entries may be returned as part of a `place` object, or a reference list of `glossary` objects may be obtained from the appropriate API [endpoint](/en/data/logainm/v0.9/api/#resource-paths).
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
