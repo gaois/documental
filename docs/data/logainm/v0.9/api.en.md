@@ -65,7 +65,7 @@ Use these query parameters to filter the results returned by the API.
 
 ## Sorting
 
-Where data relating to more than one place is returned in response to a query they are sorted by place identifier, in ascending order. The only exception to this are geographic queries, where the `Latitude` and `Longitude` query parameters are specified, in which case case places are listed in order of proximity to the specified coordinates, with the nearest places listed first.
+Where data relating to more than one place is returned in response to a query it is sorted by place identifier, in ascending order. The only exception to this are geographic queries, where the `Latitude` and `Longitude` query parameters are specified, in which case places are listed in order of proximity to the specified coordinates, with the nearest places listed first.
 
 ## Illustrative examples
 
