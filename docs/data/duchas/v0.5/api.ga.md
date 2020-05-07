@@ -59,7 +59,7 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
 | GET         | `/api/v0.5/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
 | GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
-| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair ([topaicí](https://www.duchas.ie/ga/tpc/cbeg)) i *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
+| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair ([topaicí](https://www.duchas.ie/ga/tpc/cbeg)) in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
 | GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.*** |
 | GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
 | GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
@@ -68,7 +68,7 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 
 **\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbe` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`,`CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
 
-**\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbeg` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `CountyID`, `PlaceID`, , `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` nó `PersonID`.
+**\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbeg` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` nó `PersonID`.
 
 **\*\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbes` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`, `SchoolCountyID`, `SchoolPlaceID`, `TeacherID`, `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
 
