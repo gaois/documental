@@ -256,7 +256,7 @@ Sonraíonn sé comhthagairt d'áit ar leith i dtacair sonraí seachas Bunachar L
 
 ## `category`
 
-Déanann sé cur síos ar chatagóir áite. Cuimsíonn catagóirí [aonaid riaracháin](https://www.logainm.ie/ga/inf/help-categs) agus gnéithe geografacha. D'fhéadfadh catagóir amháin, nó níos mó, teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí teacht ar liosta tagartha d'oibiachtaí `category` ón [gcríochphointe](/ga/data/logainm/v0.9/api/#resource-paths) API cuí.
+Déanann sé cur síos ar chatagóir áite. Cuimsíonn catagóirí [aonaid riaracháin](https://www.logainm.ie/ga/inf/help-categs) agus gnéithe geografacha. D'fhéadfadh catagóir amháin, nó níos mó, teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí teacht ar liosta tagartha d'oibiachtaí `category` ón [gcríochphointe](/ga/data/logainm/v0.9/api/#cosain-acmhainne) API cuí.
  
 | Ainm an airí    | Cineál              | Bunuimhreacht                     | Cur síos                  |
 | :-------------- | :------------------ | :-------------------------------- | :------------------------ |
@@ -269,7 +269,7 @@ Déanann sé cur síos ar chatagóir áite. Cuimsíonn catagóirí [aonaid riara
 
 ## `glossary`
 
-Déanann sé cur síos ar thacar d'fhocail ghaolmhara a fhaightear go minic i logainmneacha na hÉireann. D'fhéadfadh iontráil gluaise amháin, nó níos mó, teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí liosta tagartha d'oibiachtaí `glossary` ón [gcríochphointe](/ga/data/logainm/v0.9/api/#resource-paths) API cuí a fháil.
+Déanann sé cur síos ar thacar d'fhocail ghaolmhara a fhaightear go minic i logainmneacha na hÉireann. D'fhéadfadh iontráil gluaise amháin, nó níos mó, teacht ar ais mar chuid d'oibiacht `place` nó d'fhéadfaí liosta tagartha d'oibiachtaí `glossary` ón [gcríochphointe](/ga/data/logainm/v0.9/api/#cosain-acmhainne) API cuí a fháil.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
