@@ -17,7 +17,7 @@ Is féidir go leor iompraíocht suiteála Terminologue a chumrú ach eagarthóir
 "readonly": false
 ```
 
-Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair téarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin in ann aon rud a shábháil. Léireofar ceannscríbhinn “inléite amháin” in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
+Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléite amháin, mar shampla nuair atá cothabháil freastalaí á déanamh agat. Beidh codanna a bhfuil fáil orthu go poiblí fós ar fáil, lena n-áirítear bunachair téarmaíochta atá le feiceáil go poiblí, ach ní bheidh úsáideoirí in ann logáil isteach, agus ní bheidh aon úsáideoir atá logáilte isteach cheana féin in ann aon rud a shábháil. Léireofar ceannscríbhinn 'inléite amháin' in aice le lógó Terminologue ar gach leathanach chun é seo a chur in iúl d’úsáideoirí.  
 
 ---
 
@@ -52,7 +52,7 @@ Is é seo an cosán a théann chuig an gcomhadlann `data` (an áit a gcoinníonn
 "admins": ["root@localhost"]
 ```
 
-Is iad seo ainmneacha logáil isteach na "bhforúsáideoirí": úsáideoirí a bhfuil pribhléidí speisialta acu sa tsuiteáil seo de Terminologue. Seo a leanas na pribhléidí speisialta: bíonn rochtain iomlán, inscríofa agat ar gach rud i ngach bunachar téarmaíochta, agus feiceann tú nasc ar an leathanach baile le cuid de Terminologue inar féidir leat cuntais úsáideoirí a riar.
+Is iad seo ainmneacha logáil isteach na 'bhforúsáideoirí' - úsáideoirí a bhfuil pribhléidí speisialta acu sa tsuiteáil seo de Terminologue. Seo a leanas na pribhléidí speisialta: bíonn rochtain iomlán, inscríofa agat ar gach rud i ngach bunachar téarmaíochta agus feiceann tú nasc ar an leathanach baile le cuid de Terminologue inar féidir leat cuntais úsáideoirí a riar.
 
 ---
 
@@ -60,7 +60,7 @@ Is iad seo ainmneacha logáil isteach na "bhforúsáideoirí": úsáideoirí a b
 "trackingCode": ""
 ```
 
-Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsáid chun staitisticí ar thrácht ar shuíomh gréasáin a bhailiú, is féidir leat an cód HTML a chur anseo agus cuirfidh Terminologue isteach ag deireadh (roimh `</body>`) gach leathanaigh HTML, atá le feiceáil go poiblí, é. 
+Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsáid chun staitisticí tráchta ar shuíomh gréasáin a bhailiú, is féidir leat an cód HTML a chur anseo agus cuirfidh Terminologue isteach ag deireadh (roimh `</body>`) gach leathanaigh HTML, atá le feiceáil go poiblí, é. 
 
 ---
 
@@ -74,14 +74,14 @@ Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsá
 "uilangDefault": "en"
 ```
 
-Is iad seo na teangacha UI a fheictear i ngiuirléid an mhalartóra teanga sa chúinne ag barr an scáileáin ar dheis, agus an teanga réamhshocraithe a úsáidtear le haghaidh úsáideoirí nua. Is féidir leat na socruithe seo a úsáid chun an teanga réamhshocraithe a athrú, ord na dteangacha i ngiuirléid an mhalartóra a athrú, nó teangacha áirithe a dhíchumasú.
+Is iad seo na teangacha UI a fheictear i ngiuirléid an mhalartóra teanga sa chúinne ag barr an scáileáin ar dheis, mar aon leis an teanga réamhshocraithe a úsáidtear le haghaidh úsáideoirí nua. Is féidir leat na socruithe seo a úsáid chun an teanga réamhshocraithe a athrú, ord na dteangacha i ngiuirléid an mhalartóra a athrú nó teangacha áirithe a dhíchumasú.
 
 Caithfidh na nithe seo a leanas a bheith ann le haghaidh gach teanga UI a liostaítear anseo:
 
 - Comhad ina bhfuil teaghráin logánaithe le haghaidh leabharlann Screenful, amhail `website/libs/screenful/screenful-loc-en.js`.
 - Comhad ina bhfuil teaghráin logánaithe atá sainiúil do Terminologue, amhail `website/localizer/en.js`.
 
-Mar sin de, má theastaíonn uait teanga nua a chur leis, seo a leanas na rudaí a chaithfidh tú a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
+Mar sin de, má theastaíonn uait teanga nua a chur leis, seo hiad na rudaí a chaithfidh tú a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
 
 ---
 
