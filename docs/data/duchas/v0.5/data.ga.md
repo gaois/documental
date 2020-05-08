@@ -83,8 +83,8 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | Pages           | slánuimhir            | ceann amháin nó go leor                  | Sonraíonn sé aitheantóir(í) an leathanaigh a bhaineann leis an mír. |
 | FirstPageID     | slánuimhir            | ceann amháin                             | Aithníonn sé an leathanach tosaigh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `LastPageID`. |
 | LastPageID      | slánuimhir            | ceann amháin                             | Aithníonn sé an leathanach deiridh a bhaineann leis an mír. Tabhair faoi deara mura gcuimsíonn an mhír níos mó ná leathanach amháin, beidh an luach céanna uirthi agus atá ar `FirstPageID`. |
-| ContentType     | teaghrán              | ceann ar bith nó ceann amháin            | [`contenttype`](#contentType) na míre den lámhscríbhinn. |
-| ContentModes    | teaghrán              | ceann ar bith nó ceann amháin nó go leor | Seasann sé do [`contentmode`](#contentMode) nó do mhodh(anna) scríbhneoireachta na míre den lámhscríbhinn.   |
+| ContentType     | teaghrán              | ceann ar bith nó ceann amháin            | [`contenttype`](#contenttype) na míre den lámhscríbhinn. |
+| ContentModes    | teaghrán              | ceann ar bith nó ceann amháin nó go leor | Seasann sé do [`contentmode`](#contentmode) nó do mhodh(anna) scríbhneoireachta na míre den lámhscríbhinn.   |
 | ContentScripts  | ISO 15924 cód scripte | ceann ar bith nó ceann amháin nó go leor | Seasann sé do scripteanna scríbhneoireachta na míre den lámhscríbhinn. |
 | Languages       | cód teanga ISO 639-1  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do theanga(cha) scríbhneoireachta na míre den lámhscríbhinn. |
 | Counties        | [`county`](#county)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae, nó do chontaetha, riaracháin in Éirinn a bhaineann leis an mír den lámhscríbhinn. |
@@ -95,7 +95,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | Informants      | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, óna bhfuarthas ábhar agus an mhír den lámhscríbhinn á tiomsú. |
 | RelevantPersons | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, a ndéantar tagairt dóibh laistigh den mhír den lámhscríbhinn, nó a bhaineann léi.  |
 | LinkedItems     | [`ManuscriptItemLink`](#manuscriptitemlink) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do mhír amháin, nó níos mó, de lámhscríbhinn a bhaineann go díreach leis an mír seo. Nascann caidreamh seicheamhach na míreanna le chéile de ghnáth (e.g. tagann na míreanna eile roimh an mír reatha nó i ndiaidh na míre reatha i scéalta leanúnacha nó gaolmhara). | 
-| ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extrainfostatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA` . **(Faoi phribhléid)** |
+| ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extrainfostatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA`. **(Faoi phribhléid)** |
 | ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 | ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 
@@ -254,7 +254,7 @@ Déanann sé cur síos ar scoil a ghlac páirt i scéim bailithe *Scéim na Scol
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
 | Name            | teaghrán            | ceann amháin                          | Ainm na scoile.           |
 | RollNumber      | teaghrán            | ceann ar bith nó ceann amháin         | Uimhir rolla na Roinne Oideachais de chuid na scoile. |
-| Locations       | [`locationIreland`](#locationIreland) | ceann ar bith nó ceann amháin nó go leor | Suíomh nó suíomhanna a bhaineann leis an scoil. |
+| Locations       | [`locationIreland`](#locationireland) | ceann ar bith nó ceann amháin nó go leor | Suíomh, nó suíomhanna, a bhaineann leis an scoil. |
 
 ### Bailiúchán na Scol `topic`
 
@@ -269,7 +269,7 @@ Léiríonn sé topaic ó [Chlár Ábhar Bhailiúchán na Scol](https://www.ducha
 
 ## An Bailiúchán Grianghraf (CBÉG)
 
-D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais ar an mBailiúchán Grianghraf. Déantar cur síos san eolas thíos ar airíonna an chineáil oibiachta seo.
+D’fhéadfaí oibiacht `photograph` amháin, nó níos mó, a fháil ó iarratais ar an mBailiúchán Grianghraf. Déantar cur síos san eolas thíos ar airíonna an chineáil oibiachta seo.
 
 ### `photograph`
 
@@ -278,7 +278,7 @@ D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir an ghrianghraif (uathúil laistigh de bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Seasann sé don dáta ar úsáideadh an mhír mar  [rogha an eagarthóra](https://www.duchas.ie/ga/ftr/) ar shuíomh gréasáin dúchas.ie, má úsáideadh í. |
+| EditorsPick     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Seasann sé don dáta ar úsáideadh an mhír mar  '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
 | ReferenceNumber | teaghrán            | ceann ar bith nó ceann amháin            | Tagairt chartlainne CBÉ an ghrianghraif.      |
 | Status          | slánuimhir          | ceann amháin                             | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi phribhléid)**  |
 | Sensitive       | Boole               | ceann amháin                             | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi phribhléid)**  |
@@ -286,21 +286,21 @@ D’fhéadfaí oibiacht `photograph` amháin nó níos mó a fháil ó iarratais
 | Copyright       | teaghrán            | ceann ar bith nó ceann amháin            | Seasann sé do shealbhóir [cóipchirt](#copyright) na hiontrála.  |
 | Condition       | slánuimhir          | ceann ar bith nó ceann amháin            | Seasann sé do [bhail](#condition) nó do shoiléire iomlán na híomhá digitithe a bhaineann leis an iontráil seo.  |
 | ConditionDescription | teaghrán              | ceann ar bith nó ceann amháin         | Tráchtaireacht bhreise ar bhail na híomhá, más cuí.  |
-| HandbookTopic   | [`handbookTopic`](#handbookTopic)     | ceann ar bith nó ceann amháin         | Seasann sé don cheannteideal (topaic) gaolmhar ábhair i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
+| HandbookTopic   | [`handbookTopic`](#handbooktopic)     | ceann ar bith nó ceann amháin         | Seasann sé don cheannteideal ([topaic](https://www.duchas.ie/ga/tpc/cbeg)) gaolmhar ábhair in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
 | Date            | [`date`](#date)     | ceann ar bith nó ceann amháin            | Meiteashonraí a bhaineann leis an dáta ar glacadh an grianghraf. |
 | Photographer    | [`person`](#person) | ceann ar bith nó ceann amháin            | Seasann sé don duine a ghlac an grianghraf. |
 | RelevantPersons | [`person`](#person) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhaoine atá le feiceáil sa ghrianghraf, nó atá bainteach ar bhealach eile leis. |
-| Counties        | [`county`](#county) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae nó do chontaetha riaracháin in Éirinn inar glacadh an grianghraf. |
-| LocationsIreland | [`locationIreland`](#locationIreland)  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna in Éirinn a bhaineann leis an ngrianghraf. |
-| Countries       | [`country`](#country) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do thír nó do thíortha, seachas Éire, a bhaineann leis an ngrianghraf. |
-| LocationsAbroad | [`locationAbroad`](#locationAbroad) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna lasmuigh d'Éirinn a bhaineann leis an ngrianghraf. |
-| ArchivedDescriptionStatus | teaghrán        | ceann ar bith nó ceann amháin         | Sonraíonn sé [stádas](#archivedDescriptionStatus) foilsithe an réimse `ArchivedDescription`. **(Faoi phribhléid)**  |
+| Counties        | [`county`](#county) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae, nó do chontaetha, riaracháin in Éirinn inar glacadh an grianghraf. |
+| LocationsIreland | [`locationIreland`](#locationireland)  | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh, nó do shuíomhanna, in Éirinn a bhaineann leis an ngrianghraf. |
+| Countries       | [`country`](#country) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do thír, nó do thíortha, seachas Éire, a bhaineann leis an ngrianghraf. |
+| LocationsAbroad | [`locationAbroad`](#locationabroad) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh, nó do shuíomhanna, lasmuigh d'Éirinn a bhaineann leis an ngrianghraf. |
+| ArchivedDescriptionStatus | teaghrán        | ceann ar bith nó ceann amháin         | Sonraíonn sé [stádas](#archiveddescriptionstatus) foilsithe an réimse `ArchivedDescription`. **(Faoi phribhléid)**  |
 | ArchivedDescription | teaghrán             | ceann ar bith nó ceann amháin         | Cur síos cartlainne saorthéacs ar an ngrianghraf. Iompórtáladh ón gcóras bainistíochta sonraí de chuid CBÉ a bhí ann roimhe seo é ag tús an phróisis digitithe. |
-| ExtraInfoStatus | teaghrán            | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extraInfoStatus) na réimsí `ExtraInfoEN` agus `ExtraInfoGA`. **(Faoi phribhléid)** |
+| ExtraInfoStatus | teaghrán            | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extrainfostatus) na réimsí `ExtraInfoEN` agus `ExtraInfoGA`. **(Faoi phribhléid)** |
 | ExtraInfoEN     | teaghrán            | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an ngrianghraf (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas í. |
 | ExtraInfoGA     | teaghrán            | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an ngrianghraf (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas í. |
 | Formats         | [`format`](#format)             | ceann ar bith nó ceann amháin nó go leor  | Déanann sé cur síos ar fhormáid na híomhá fisiciúla atá ag CBÉ agus a bhaineann leis an iontráil. |
-| ArchivedInfo    | [`archivedInfo`](#archivedInfo)      | ceann ar bith nó ceann amháin         | Cuimsíonn sé an t-eolas cartlainne a iompórtáladh ón gcóras bainistíochta sonraí de chuid CBÉ a bhí ann roimhe seo ag tús an phróisis digitithe. **(Faoi phribhléid)** |
+| ArchivedInfo    | [`archivedInfo`](#archivedinfo)      | ceann ar bith nó ceann amháin         | Cuimsíonn sé an t-eolas cartlainne a iompórtáladh ón gcóras bainistíochta sonraí de chuid CBÉ a bhí ann roimhe seo ag tús an phróisis digitithe. **(Faoi phribhléid)** |
 | Digitization    | [`digitization`](#digitization)      | ceann ar bith nó ceann amháin         | Meiteashonraí a bhaineann le digitiú íomhá nó íomhánna na cartlainne a bhaineann leis an iontráil. |
 
 #### `copyright`
@@ -331,7 +331,7 @@ Sonraíonn sé stádas foilsithe an réimse `archivedDescription`.
 
 ### `handbookTopic`
 
-Seasann sé do cheannteideal (topaic) ábhair i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. Bhí sé mar chleachtas ag CBÉ grianghraif in CBÉG a cheangal le topaic sa *Láimh-leabhar* agus is ionann ID na topaice sa *Láimh-leabhar* agus an chéad deighleán de `ReferenceNumber` an ghrianghraif.  
+Seasann sé do cheannteideal ([topaic](https://www.duchas.ie/ga/tpc/cbeg)) ábhair in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. Bhí sé mar chleachtas ag CBÉ grianghraif in CBÉG a cheangal le topaic sa lámhleabhar agus is ionann ID na topaice sa lámhleabhar agus an chéad deighleán de `ReferenceNumber` an ghrianghraif.  
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
@@ -345,15 +345,15 @@ Seasann sé do cheannteideal (topaic) ábhair i [*Láimh-leabhar béaloideasa*](
 
 | Ainm an airí    | Cineál                 | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :--------------------- | :------------------------------------ | :------------------------ |
-| Quantity        | slánuimhir             | ceann ar bith nó ceann amháin         | An Méid íomhánna san fhormáid seo atá ag CBÉ. |
-| Color           | teaghrán               | ceann ar bith nó ceann amháin         | Seasann sé do chineál datha na híomhá. |
+| Quantity        | slánuimhir             | ceann ar bith nó ceann amháin         | An méid íomhánna san fhormáid seo atá ag CBÉ. |
+| Color           | teaghrán               | ceann ar bith nó ceann amháin         | Cineál datha na híomhá. |
 | ColorComment    | teaghrán               | ceann ar bith nó ceann amháin         | Tráchtaireacht bhreise maidir le cineál datha na híomhá. |
 | Dimensions      | teaghrán               | ceann ar bith nó ceann amháin         | Toisí na híomhá fisiciúla. |
-| DimensionsComment | teaghrán              | ceann ar bith nó ceann amháin         | Teachtaireacht bhreise maidir le toisí na híomhá. |
+| DimensionsComment | teaghrán              | ceann ar bith nó ceann amháin         | Tráchtaireacht bhreise maidir le toisí na híomhá. |
 | Medium          | teaghrán               | ceann ar bith nó ceann amháin         | Meán na híomhá. |
-| MediumComment   | teaghrán               | ceann ar bith nó ceann amháin         | Teachtaireacht bhreise maidir le meán na híomhá. |
-| Physical        | teaghrán               | ceann ar bith nó ceann amháin         | Seasann sé do charachtar fisiciúil na híomhá. |
-| PhysicalComment | teaghrán               | ceann ar bith nó ceann amháin         | Teachtaireacht bhreise maidir le carachtar fisiciúil na híomhá. |
+| MediumComment   | teaghrán               | ceann ar bith nó ceann amháin         | Tráchtaireacht bhreise maidir le meán na híomhá. |
+| Physical        | teaghrán               | ceann ar bith nó ceann amháin         | Carachtar fisiciúil na híomhá. |
+| PhysicalComment | teaghrán               | ceann ar bith nó ceann amháin         | Tráchtaireacht bhreise maidir le carachtar fisiciúil na híomhá. |
 
 ### `archivedInfo`
 
@@ -361,9 +361,9 @@ Mar chuid de thionscadal Dúchas, ionghabhadh meiteashonraí grianghraf ón gcó
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| Copyright       | teaghrán            | ceann ar bith nó ceann amháin         | Seasann sé do shealbhóir cóipchirt an ghrianghraif. |
-| Condition       | teaghrán            | ceann ar bith nó ceann amháin         | Seasann sé do bhail fhisiciúil an ghrianghraif. |
-| Topic           | teaghrán            | ceann ar bith nó ceann amháin         | Seasann sé do cheannteideal (topaic) gaolmhar ábhair i [*Láimh-leabhar béaloideasa*](https://www.duchas.ie/ga/tpc/cbeg) le Seán Ó Súilleabháin. |
+| Copyright       | teaghrán            | ceann ar bith nó ceann amháin         | Sealbhóir cóipchirt an ghrianghraif. |
+| Condition       | teaghrán            | ceann ar bith nó ceann amháin         | Bail fhisiciúil an ghrianghraif. |
+| Topic           | teaghrán            | ceann ar bith nó ceann amháin         | Ceannteideal ([topaic](https://www.duchas.ie/ga/tpc/cbeg)) gaolmhar ábhair in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
 | Date            | teaghrán            | ceann ar bith nó ceann amháin         | An dáta ar glacadh an grianghraf. |
 | Photographer    | teaghrán            | ceann ar bith nó ceann amháin         | Ainm an ghrianghrafadóra. |
 | Location        | teaghrán            | ceann ar bith nó ceann amháin         | An áit ar glacadh an grianghraf. |
@@ -373,7 +373,7 @@ Mar chuid de thionscadal Dúchas, ionghabhadh meiteashonraí grianghraf ón gcó
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
-| DateCaptured    | teaghrán            | ceann amháin        | Seasann sé don dáta ar digitíodh an íomhá. |
+| DateCaptured    | teaghrán            | ceann amháin        | An dáta ar digitíodh an íomhá. |
 | Operator        | teaghrán            | ceann amháin        | Ainm an oibritheora atá freagrach. **(Faoi phribhléid)** |
 | CaptureDevice   | teaghrán            | ceann amháin        | An gléas gabhála a úsáideadh. |
 | CaptureSoftware | teaghrán            | ceann amháin        | Na bogearraí gabhála a úsáideadh. |
@@ -390,7 +390,7 @@ Mar chuid de thionscadal Dúchas, ionghabhadh meiteashonraí grianghraf ón gcó
 
 ## An Bunachar Daoine (CBÉD)
 
-D'fhéadfaí oibiacht `person` amháin nó níos mó a fháil ó iarratais ar an mBunachar Daoine. Déantar cur síos san eolas thíos ar airíonna an chineáil oibiachta seo
+D'fhéadfaí oibiacht `person` amháin, nó níos mó, a fháil ó iarratais ar an mBunachar Daoine. Déantar cur síos san eolas thíos ar airíonna an chineáil oibiachta seo
 
 ### `person`
 
@@ -400,34 +400,34 @@ D'fhéadfaí oibiacht `person` amháin nó níos mó a fháil ó iarratais ar an
 | DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | Names           | [`name`](#name)     | ceann amháin nó go leor                  | Ainmneacha a bhaineann leis an duine.  |
-| Gender          | teaghrán            | ceann ar bith nó ceann amháin            | Inscne an duine (`b` or `f`). |
+| Gender          | teaghrán            | ceann ar bith nó ceann amháin            | Inscne an duine (`b` nó `f`). |
 | AinmID          | slánuimhir          | ceann ar bith nó ceann amháin            | Aitheantóir uathúil an duine i mbunachar sonraí [ainm.ie](https://www.ainm.ie). |
 | ViafID          | slánuimhir          | ceann ar bith nó ceann amháin            | Aitheantóir uathúil an duine i mbunachar sonraí [VIAF](https://viaf.org/). |
 | BirthDate       | [`date`](#date)     | ceann ar bith nó ceann amháin            | Dáta breithe an duine. |
 | DeathDate       | [`date`](#date)     | ceann ar bith nó ceann amháin            | Dáta báis an duine. |
 | BirthCounty     | [`county`](#county) | ceann ar bith nó ceann amháin            | An contae inar rugadh an duine, má rugadh in Éirinn  é/í. |
-| BirthPlaceIreland | [`locationIreland`](#locationIreland) | ceann ar bith nó ceann amháin         | An áit ar rugadh an duine, má rugadh in Éirinn é/í.  |
+| BirthPlaceIreland | [`locationIreland`](#locationireland) | ceann ar bith nó ceann amháin         | An áit ar rugadh an duine, má rugadh in Éirinn é/í.  |
 | BirthCountry    | [`country`](#country) | ceann ar bith nó ceann amháin         | An tír inar rugadh an duine, má rugadh lasmuigh d'Éirinn é/í.  |
-| BirthPlaceAbroad | [`locationAbroad`](#locationAbroad) | ceann ar bith nó ceann amháin         | An áit ar rugadh an duine, má rugadh lasmuigh d'Éirinn é/í. |
-| Counties        | [`county`](#county) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae nó do chontaetha riaracháin in Éirinn a bhaineann leis an duine. |
-| AddressesIreland | [`locationIreland`](#locationIreland) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna in Éirinn a bhaineann leis an duine. |
-| Countries       | [`country`](#country) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do thír nó do thíortha, seachas Éire, a bhaineann leis an duine. |
-| AddressesAbroad | [`locationAbroad`](#locationAbroad) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh nó do shuíomhanna lasmuigh d'Éirinn a bhaineann leis an duine. |
+| BirthPlaceAbroad | [`locationAbroad`](#locationabroad) | ceann ar bith nó ceann amháin         | An áit ar rugadh an duine, má rugadh lasmuigh d'Éirinn é/í. |
+| Counties        | [`county`](#county) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do chontae, nó do chontaetha, riaracháin in Éirinn a bhaineann leis an duine. |
+| AddressesIreland | [`locationIreland`](#locationireland) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh, nó do shuíomhanna, in Éirinn a bhaineann leis an duine. |
+| Countries       | [`country`](#country) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do thír, nó do thíortha, seachas Éire, a bhaineann leis an duine. |
+| AddressesAbroad | [`locationAbroad`](#locationabroad) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do shuíomh, nó do shuíomhanna, lasmuigh d'Éirinn a bhaineann leis an duine. |
 | Occupations     | [`occupation`](#occupation) | ceann ar bith nó ceann amháin nó go leor | Gairmeacha a bhaineann leis an duine. |
 
 ### `name`
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| FirstNames      | teaghrán            | ceann ar bith nó ceann amháin         | Céadainm(neacha), agus lárainmneacha nó leasainm más mian leat, an duine. |
+| FirstNames      | teaghrán            | ceann ar bith nó ceann amháin         | Céadainm(neacha), agus lárainm(neacha) nó leasainm(neacha), an duine. |
 | Surname         | teaghrán            | ceann ar bith nó ceann amháin         | An sloinne atá ar dhuine.       |
-| FullName        | teaghrán            | ceann amháin                          | Ainm iomlán an duine, lena n-áirítear céadainmneacha agus sloinne. |
+| FullName        | teaghrán            | ceann amháin                          | Ainm iomlán an duine, lena n-áirítear céadainm(neacha) agus sloinne. |
 
 ### `occupation`
 
 | Ainm an airí    | Cineál              | Bunuimhreacht         | Cur síos               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
-| ID              | teaghrán            | Ainm na gairme        | Aitheantóir uathúil na gairme. |
+| ID              | teaghrán            | ceann amháin        | Aitheantóir uathúil na gairme. |
 | NameEN          | teaghrán            | ceann amháin        | Ainm na gairme (i mBéarla). |
 | NameGA          | teaghrán            | ceann amháin        | Ainm na gairme (i nGaeilge). |
 
@@ -472,12 +472,12 @@ Baineann roinnt eintiteas le bailiúcháin éagsúla. Déantar cur síos orthu t
 | IsoDate         | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `Year`, `Month` agus `Day` thíos i bhfoirm theaghrán am-dháta ISO 8601. |
 | IsoStartDate    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodStartYear`, `PeriodStartMonth` agus `PeriodStartDay` thíos chun an dáta tosaigh a léiriú in eatramh ama. |
 | IsoEndDate      | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Comhiomlánaíonn sé luachanna na n-airíonna `PeriodEndYear`, `PeriodEndMonth` agus `PeriodEndDay` thíos chun an dáta deiridh a léiriú in eatramh ama. |
-| IsoDuration     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Léiríonn sé an tréimhse ama idir na hairíonna `IsoStartDate` agus `IsoEndDate` , más cuí. |
+| IsoDuration     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Léiríonn sé an tréimhse ama idir na hairíonna `IsoStartDate` agus `IsoEndDate`, más cuí. |
 | Accuracy        | teaghrán            | ceann ar bith nó ceann amháin         | Léiríonn sé cruinneas an eolais ar an dáta ach foclóir caighdeánach de chuid [MODS](http://www.loc.gov/standards/mods/) (Scéimre um Chur Síos ar Oibiachtaí Meiteashonraí) maidir leis an gcáilitheoir dáta a úsáid. |
 | Year            | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain i bhformáid `YYYY`. |
 | Month           | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire (luachanna 1-12). |
 | Day             | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don lá den mhí (luachanna 1-31). |
-| PeriodStartYear | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain tosaigh in eatramh ama i bhformáid `YYYY` . |
+| PeriodStartYear | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain tosaigh in eatramh ama i bhformáid `YYYY`. |
 | PeriodStartMonth | slánuimhir         | ceann ar bith nó ceann amháin         | Seasann sé don mhí féilire tosaigh (luachanna 1-12) in eatramh ama. |
 | PeriodStartDay  | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don lá tosaigh den mhí (luachanna 1-31) in eatramh ama. |
 | PeriodEndYear   | slánuimhir          | ceann ar bith nó ceann amháin         | Seasann sé don bhliain deiridh in eatramh ama i bhformáid `YYYY` . |
@@ -512,11 +512,11 @@ Léiríonn an t-airí seo cruinneas an eolais ar an dáta ach foclóir caighdeá
 | NameEN          | teaghrán            | ceann amháin                 | Ainm an tsuímh (i mBéarla). |
 | NameGA          | teaghrán            | ceann amháin                 | Ainm an tsuímh (i nGaeilge). |
 | Coordinates     | [`coordinates`](#coordinates) | ceann amháin                 | Comhordanáidí geografacha an tsuímh. |
-| Counties        | [`county`](#county) | ceann amháin nó go leor         | An contae nó na contaetha ina bhfuil an suíomh. |
+| Counties        | [`county`](#county) | ceann amháin nó go leor         | An contae, nó na contaetha, ina bhfuil an suíomh. |
 
 ### `transcript`
 
-Tras-scríbhinn d’ábhar ar leathanach lámhscríbhinne a chuir baill den tionscadal tras-scríofa pobail [Meitheal Dúchas.ie](https://www.duchas.ie/ga/meitheal/) . Cuirtear an t-ábhar tras-scríofa ar fáil faoi réir cheadúnas [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) .
+Tras-scríbhinn d’ábhar ar leathanach lámhscríbhinne a chuir baill den tionscadal tras-scríofa pobail [Meitheal Dúchas.ie](https://www.duchas.ie/ga/meitheal/) ar fáil. Cuirtear an t-ábhar tras-scríofa ar fáil faoi réir cheadúnas [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
