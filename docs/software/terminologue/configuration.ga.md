@@ -29,7 +29,7 @@ Is féidir leat an socrú seo a úsáid chun do shuiteáil a chur i mód inléit
 
 Is ionann `baseUrl` agus an URL a thugann rochtain don phobal ar do shuiteáil. I mód táirgthe, beidh tú ag iarraidh é seo a athrú i bhfíor-URL a bheidh le feiceáil go poiblí, amhail `https://terminologue.mycompany.com/`. 
 
-Caithfear cosán an URL, amhail `/`, a chur san áireamh mar chuid de `baseUrl` **agus** a thabhairt as féin mar `rootPath`. Mar shampla, má tá do shuiteáil ar fáil don phobal faoin URL `http://www.mycompany.com/terminologue/`, ba chóir go mbeadh na nithe seo a leanas agat:
+Caithfear cosán an URL, amhail `/`, a chur san áireamh mar chuid de `baseUrl` **agus** a thabhairt as féin mar `rootPath`. Mar shampla, má tá do shuiteáil ar fáil don phobal faoin URL `http://www.mycompany.com/terminologue/`, ba chóir go mbeadh na rudaí seo a leanas agat:
 
 ```json
 "baseUrl": "http://www.mycompany.com/terminologue/",
@@ -74,14 +74,14 @@ Má theastaíonn uait seirbhís ar nós Google Analytics nó StatCounter a úsá
 "uilangDefault": "en"
 ```
 
-Is iad seo na teangacha UI a fheictear i ngiuirléid an mhalartóra teanga sa chúinne ag barr an scáileáin ar dheis, mar aon leis an teanga réamhshocraithe a úsáidtear le haghaidh úsáideoirí nua. Is féidir leat na socruithe seo a úsáid chun an teanga réamhshocraithe a athrú, ord na dteangacha i ngiuirléid an mhalartóra a athrú nó teangacha áirithe a dhíchumasú.
+Is iad seo na teangacha UI a fheictear i ngiuirléid an mhalartóra teanga sa chúinne ag barr an scáileáin ar dheis, agus an teanga réamhshocraithe a úsáidtear le haghaidh úsáideoirí nua. Is féidir leat na socruithe seo a úsáid chun an teanga réamhshocraithe a athrú, ord na dteangacha i ngiuirléid an mhalartóra a athrú nó teangacha áirithe a dhíchumasú.
 
-Caithfidh na nithe seo a leanas a bheith ann le haghaidh gach teanga UI a liostaítear anseo:
+Caithfidh na rudaí seo a leanas a bheith ann le haghaidh gach teanga UI a liostaítear anseo:
 
 - Comhad ina bhfuil teaghráin logánaithe le haghaidh leabharlann Screenful, amhail `website/libs/screenful/screenful-loc-en.js`.
 - Comhad ina bhfuil teaghráin logánaithe atá sainiúil do Terminologue, amhail `website/localizer/en.js`.
 
-Mar sin de, má theastaíonn uait teanga nua a chur leis, seo hiad na rudaí a chaithfidh tú a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
+Mar sin de, má theastaíonn uait teanga nua a chur leis, caithfidh tú na rudaí thuasluaite a sholáthar. Má tá Terminologue á logánú i dteanga nua agat, b’fhéidir go roinnfeá é ach é a chur isteach i stór Terminologue (mar iarratas ar tharraingt).
 
 ---
 
@@ -128,7 +128,7 @@ Má tá na socruithe seo in easnamh nó neamhbhailí, ní tharlóidh aon rud tub
 }
 ```
 
-Is iad seo na ceadúnais faoina bhfuil úsáideoirí in ann bunachar téarmaíochta a chur ar fáil don phobal. Nuair a chuireann úsáideoir bunachar téarmaíochta ar fáil go poiblí, beidh orthu ceann amháin de na nithe seo a leanas a roghnú.
+Is iad seo na ceadúnais faoina bhfuil úsáideoirí in ann bunachar téarmaíochta a chur ar fáil don phobal. Nuair a chuireann úsáideoir bunachar téarmaíochta ar fáil go poiblí, beidh orthu ceann amháin de na rudaí thuasluaite a roghnú.
 
 ---
 
@@ -156,4 +156,4 @@ Ord aibítre réamhshocraithe. Úsáidfidh Terminologue é seo murar shonraigh �
 }
 ```
 
-Is gné í seo a ligeann duit bunachair téarmaíochta ar leith a chumrú ionas go bhforleatar láithreach gach athrú a dhéanann úsáideoirí i mbunachar sonraí eile in Microsoft SQL Server. Is ionann an eochair (amhail `"mytermbase"`) agus ainm an bhunachair téarmaíochta in Terminologue agus is ionann an luach agus teaghrán ceangail le haghaidh bunachar sonraí Microsoft SQL Server.
+Is gné í seo a ligeann duit bunachair téarmaíochta ar leith a chumrú ionas go bhforleatar láithreach gach athrú a dhéanann úsáideoirí i mbunachar sonraí eile in Microsoft SQL Server. Is ionann an eochair (amhail `mytermbase`) agus ainm an bhunachair téarmaíochta in Terminologue, agus is ionann an luach agus teaghrán ceangail le haghaidh bunachar sonraí Microsoft SQL Server.
