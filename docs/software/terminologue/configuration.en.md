@@ -17,7 +17,7 @@ Much of the behaviour of your Terminologue installation can be configured by edi
 "readonly": false
 ```
 
-You can use this setting to switch your installation into read-only mode, for example while you're doing server maintenance. Any publicly accessible parts of the website will still be available, including any publicly visible termbases, but users will not be able to log in, and those who are logged in already will not be able to save anything. A small "read-only" caption will be shown beside the Terminologue logo on each page to communicate this to users.
+You can use this setting to switch your installation into read-only mode, for example, while you're doing server maintenance. Any publicly accessible parts of the website will still be available, including any publicly visible termbases, but users will not be able to log in, and those who are logged in already will not be able to save anything. A small 'read-only' caption will be shown beside the Terminologue logo on each page to communicate this to users.
 
 ---
 
@@ -52,7 +52,7 @@ This is the path to the `data` directory (where Terminologue keeps all its datab
 "admins": ["root@localhost"]
 ```
 
-These are the login names of "superusers": users who have special privileges in this Terminologue installation. The special privileges are: you have full, writable access to everything in every termbase, and you see a link on the home to a section of Terminologue where you can administer user accounts.
+These are the login names of 'superusers' - users who have special privileges in this Terminologue installation. The special privileges are: you have full, writable access to everything in every termbase and you see a link on the home to a section of Terminologue where you can administer user accounts.
 
 ---
 
@@ -60,7 +60,7 @@ These are the login names of "superusers": users who have special privileges in 
 "trackingCode": ""
 ```
 
-If you want to use a service like Google Analytics or StatCounter to collect statistics about website traffic, you can put the HTML code here and Terminologue will insert into at the end (before `</body>`) of every publicly visible HTML page.
+If you want to use a service like Google Analytics or StatCounter to collect statistics about website traffic, you can put the HTML code here and Terminologue will insert it at the end (before `</body>`) of every publicly visible HTML page.
 
 ---
 
@@ -76,12 +76,12 @@ If you want to use a service like Google Analytics or StatCounter to collect sta
 
 These are the UI languages that appear in the language switcher widget at the top right corner of every screen, and the default language used for new users. You can use these settings to change the default language, to change the order of languages in the switcher widget, or to disable some languages.
 
-For every UI languages listed here the following things need to exist:
+For every UI language listed here, the following things need to exist:
 
 - A file containing localized strings for the Screenful library, such as `website/libs/screenful/screenful-loc-en.js`.
 - A file containing Terminologue-specific localized strings, such as `website/localizer/en.js`.
 
-So, if you want to add a new language, these are the things you need to supply. If you are localizing Terminologue into a new language, please consider sharing it with the world by submitting it to Terminologue's repository (as a pull request).
+Therefore, if you want to add a new language, these are the things you need to supply. If you are localizing Terminologue into a new language, please consider sharing it with the world by submitting it to Terminologue's repository (as a pull request).
 
 ---
 
@@ -156,4 +156,4 @@ The default alphabetical order. Terminologue will use this if a user has not spe
 }
 ```
 
-This is a feature which lets you configure specific termbases such that all changes users make to them are immediately propagated into another database in Microsoft SQL Server. The key (such as `"mytermbase"`) is the name of the termbase in Terminologue and the value is a connection string for the Microsoft SQL Server database.
+This is a feature that lets you configure specific termbases so that all changes users make to them are immediately propagated into another database in Microsoft SQL Server. The key (such as `mytermbase`) is the name of the termbase in Terminologue and the value is a connection string for the Microsoft SQL Server database.
