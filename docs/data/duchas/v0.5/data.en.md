@@ -378,7 +378,7 @@ As part of the Dúchas project, photograph metadata from the NFC's previous data
 | CaptureDevice   | string              | one                 | The capture device used. |
 | CaptureSoftware | string              | one                 | The capture software used. |
 | SourceCondition | string              | one                 | The condition of the physical source image. |
-| CopyNote        | string              | one                 | ? |
+| CopyNote        | string              | one                 | Copy made of the original image (yes or no). |
 | MimeType        | string              | one                 | The [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) type of the digitized image. |
 | ImageBitDepth   | string              | one                 | The bit depth of the digitized image. |
 | ImageEditor     | string              | one                 | The image editing software used. |
