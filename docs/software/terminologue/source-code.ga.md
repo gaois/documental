@@ -13,11 +13,11 @@ Is éard atá sa doiciméad seo ná turas treoraithe trí bhonnchód Terminologu
 
 ## A bhfuil laistigh de Terminologue
 
-Mar is eol duit faoin am seo, is dócha, scríobhtar cúl Terminologue in [Node.js](https://nodejs.org/). Ciallaíonn sé seo gurb ionann é agus taobh freastalaí JavaScript. Chomh maith le Node.js, baineann Terminologue úsáid as an gcreat [Express](https://expressjs.com/). Is creat beag é Express a chabhraíonn linn críochphointí éagsúla URL a chumrú ar an bhfreastalaí agus a insíonn do Node.js na rudaí ba chóir dó a dhéanamh nuair a aimsíonn úsáideoir ceann de na críochphointí seo. Má tá cur amach agat ar Node.js agus ar Express, beidh sé seo an-sothuigthe. Mura bhfuil cur amach agat orthu ach má tá eolas agat ar theicneolaíocht forbartha gréasáin eile, ba chóir go mbeifeá in ann na prionsabail a bhaineann lena bhfuil i gceist sa doiciméad seo againn a leanúint. 
+Mar is eol duit faoin am seo, is dócha, scríobhtar cúl Terminologue in [Node.js](https://nodejs.org/). Ciallaíonn sé seo gurb ionann é agus taobh freastalaí JavaScript. Chomh maith le Node.js, baineann Terminologue úsáid as an gcreat [Express](https://expressjs.com/). Is creat beag é Express a chabhraíonn linn críochphointí éagsúla URL a chumrú ar an bhfreastalaí agus a insíonn do Node.js na rudaí ba chóir dó a dhéanamh nuair a aimsíonn úsáideoir ceann de na críochphointí seo. Má tá cur amach agat ar Node.js agus ar Express, beidh sé seo an-sothuigthe. Mura bhfuil cur amach agat orthu ach má tá eolas agat ar theicneolaíocht forbartha gréasáin eile, ba chóir go mbeifeá in ann na prionsabail a bhaineann lena bhfuil i gceist sa doiciméad seo a leanúint. 
 
-Nuair a sheolann Terminologue leathanaigh ghréasáin chuig an gcliant, déanann sé formáidiú orthu ach úsáid a bhaint as inneall formáidithe ar a dtugtar [EJS](https://ejs.co/). Tá comhréir EJS cosúil le ASP agus le ASP.NET: cuirtear `<%` agus `%>` timpeall ar chód taoibh freastalaí, agus scríobhtar an chuid eile i ngnáth-HTML.  
+Nuair a sheolann Terminologue leathanaigh ghréasáin chuig an gcliant, déanann sé formáidiú orthu ach úsáid a bhaint as inneall formáidithe ar a dtugtar [EJS](https://ejs.co/). Tá comhréir EJS cosúil le ASP agus le ASP.NET: cuirtear `<%` agus `%>` timpeall ar chód taoibh freastalaí agus scríobhtar an chuid eile i ngnáth-HTML.  
 
-Scríobhtar codanna taoibh freastalaí Terminologue in HTML, JavaScript agus CSS atá “beagnach glan”. Is éard atá i gceist le “beagnach glan” ná nach n-úsáidimid creat “uilechuimsitheach” ar bith agus nach n-úsáidimid aon rud óna dteastódh iarphróiseáil nó tiomsú sula gcuirtear ar fáil don chliant é. Úsáidimid scripteanna agus stílbhileoga taoibh freastalaí ar a dtugtar [Screenful](https://github.com/michmech/screenful), áfach, agus cuireann siad seo go leor den fheidhmiúlacht taoibh freastalaí ar fáil dúinn. Is feidhmchláir aon leathanaigh iad an chuid is mó de na leathanaigh ghréasáin a fheiceann an t-úsáideoir in Terminologue: cuirtear an leathanach gréasáin ar fáil don bhrabhsálaí agus de réir mar a idirghníomhaíonn an t-úsáideoir le giuirléidí éagsúla ar scáileán, seolann Screenful iarratais AJAX chuig an bhfreastalaí agus faigheann sé freagairtí uaidh. Scríobhtar na sonraí ar fad a shreabhann idir an cliant agus an freastalaí i bhformáid JSON.  
+Scríobhtar codanna taoibh freastalaí Terminologue in HTML, JavaScript agus CSS atá “beagnach glan”. Is éard atá i gceist le “beagnach glan” ná nach n-úsáidimid creat “uilechuimsitheach” ar bith agus nach n-úsáidimid aon rud óna dteastódh iarphróiseáil nó tiomsú sula gcuirtear ar fáil don chliant é. Úsáidimid scripteanna agus stílbhileoga taoibh freastalaí ar a dtugtar [Screenful](https://github.com/michmech/screenful), áfach, agus cuireann siad seo go leor den fheidhmiúlacht taoibh freastalaí ar fáil dúinn. Is feidhmchláir aon leathanaigh iad an chuid is mó de na leathanaigh ghréasáin a fheiceann an t-úsáideoir in Terminologue. Cuirtear an leathanach gréasáin ar fáil don bhrabhsálaí agus de réir mar a idirghníomhaíonn an t-úsáideoir le giuirléidí éagsúla ar scáileán, seolann Screenful iarratais AJAX chuig an bhfreastalaí agus faigheann sé freagairtí uaidh. Scríobhtar na sonraí ar fad a shreabhann idir an cliant agus an freastalaí i bhformáid JSON.  
 
 Is i bhformáid JSON a stóráiltear sonraí go hinmheánach i mbunachair sonraí ar an bhfreastalaí. Maidir le stóras cúil, úsáideann Terminologue [SQLite](https://www.sqlite.org/index.html), atá ina inneall bunachair sonraí comhadbhunaithe. Is ionann gach bunachar sonraí in Terminologue agus comhad sa chóras comhad a bhíonn á oscailt agus á dhúnadh ag SQLite de réir mar is gá. 
 
@@ -49,9 +49,9 @@ Ar ndóigh, bíonn gach láimhseálaí difriúil, ach déanann siad rudaí cosú
 
 Glaonn an chuid is mó de láimhseálaithe in `terminologue.js` feidhmeanna ón oibiacht `ops`, ar a dtugtar sainmhíniú sa chomhad `ops.js`. Sa chomhad seo, faightear an chuid is mó den chód íseal-leibhéil a dhéanann ionramháil ar rónna agus ar cholúin. Dá mbeadh freastalaí bunachar sonraí ar leith á úsáid againn seachas SQLite, gheofaí an chuid is mó den chód seo i ngnásanna stóráilte. Tá SQLite á úsáid againn, áfach, agus níl ann do ghnásanna stóráilte in SQLite, agus tá `ops.js` againn dá bharr. 
 
-Cuireann an comhad `ops.js` líon mór feidhmeanna ar fáil. Bíonn beagnach gach feidhm *aisioncronach*: ní chuireann siad aon luach ar ais ach, ina áit sin, tógann siad *feidhm aisghlaoite* mar cheann dá n-argóintí agus, nuair a chuireann siad a gcuid oibre i gcrích, ritheann siad an t-aisghlao chun smacht a thabhairt ar ais don láimhseálaí HTTP in `terminologue.js`. I dtaca le Node.js, cuirtear aisghlaonna thart ann (seachas luachanna a chur ar ais). 
+Cuireann an comhad `ops.js` líon mór feidhmeanna ar fáil. Bíonn beagnach gach feidhm *aisioncronach*, ní chuireann siad aon luach ar ais. Ina áit sin, tógann siad *feidhm aisghlaoite* mar cheann dá n-argóintí agus, nuair a chuireann siad a gcuid oibre i gcrích, ritheann siad an t-aisghlao chun smacht a thabhairt ar ais don láimhseálaí HTTP in `terminologue.js`. I dtaca le Node.js, cuirtear aisghlaonna thart ann (seachas luachanna a chur ar ais). 
 
-Nuair a léann feidhm ó bhunachar sonraí SQLite nó nuair a scríobhann sé ann, léiríonn oibiacht ar a dtugtar `db` an bunachar sonraí. D'eascair an oibiacht seo as argóint i láimhseálaí `terminologue.js`. Baineann modhanna léi ar nós `db.run()` agus `db.get` a thógann ráitis SQL agus a ritheann ar an mbunachar sonraí iad. Bíonn na modhanna seo aisioncronach freisin, agus cuirimid ar ais trí aisghlaonna iad. Mar sin, baineann leibhéil éagsúla leis an gcód taoibh freastalaí in Terminologue ina leabaítear aisghlaonna in aisghlaonna, agus leabaítear na haisghlaonna sin in aisghlaonna eile. Is mar seo a dhéantar rudaí in Node.js.
+Nuair a léann feidhm ó bhunachar sonraí SQLite nó nuair a scríobhann sé ann, léiríonn oibiacht ar a dtugtar `db` an bunachar sonraí. D'eascair an oibiacht seo as argóint i láimhseálaí `terminologue.js`. Baineann modhanna léi ar nós `db.run()` agus `db.get` a thógann ráitis SQL agus a ritheann ar an mbunachar sonraí iad. Bíonn na modhanna seo aisioncronach freisin agus cuirimid ar ais trí aisghlaonna iad. Mar sin, baineann leibhéil éagsúla leis an gcód taoibh freastalaí in Terminologue ina leabaítear aisghlaonna in aisghlaonna, agus leabaítear na haisghlaonna sin in aisghlaonna eile. Is mar seo a dhéantar rudaí in Node.js.
 
 Tá deireadh na treorach achoimre seo ar chód taoibh freastalaí Terminologue buailte linn. Táimid chun súil a chaitheamh ar an gcód taoibh cliaint anois.  
 
@@ -69,14 +69,14 @@ Cuireann Screenful roinnt **cineálacha leathanaigh** ar fáil dúinn a mbainimi
 
 - Is feidhmchlár aon leathanaigh é an cineál leathanaigh `Screenful.Editor` ina bhfuil tú in ann eagarthóireacht a dhéanamh ar iontráil ar leith. Tagann cnaipí leis le haghaidh iontrálacha a oscailt, a dhúnadh, a scriosadh agus mar sin de. Úsáidimid ar thaobh na láimhe deise de scáileán eagarthóireachta an bhunachair sonraí é (an áit a bhfuil sé leabaithe mar IFRAME), chomh maith le cúpla áit eile in Terminologue. 
 
-Fógraítear gach leathanach gréasáin de chuid Terminologue an cineál leathanaigh atá ann ach na comhaid ábhartha JavaScript agus CSS a iniamh. Mar shampla, fógraítear ar leathanach logáil isteach Terminologue (`website/views/sitewide/login.ejs`) gur leathanach den chineál `Screenful.Login` é mar seo a leanas:
+Fógraítear ar gach leathanach gréasáin de chuid Terminologue an cineál leathanaigh atá ann ach na comhaid ábhartha JavaScript agus CSS a iniamh. Mar shampla, fógraítear ar leathanach logáil isteach Terminologue (`website/views/sitewide/login.ejs`) gur leathanach den chineál `Screenful.Login` é mar seo a leanas:
 
 ```html
 <script type="text/javascript" src="../libs/screenful/screenful-login.js"></script>
 <link type="text/css" rel="stylesheet" href="../libs/screenful/screenful-login.css" />
 ```
 
-Cuireann sé na paraiméadair bhreise seo ar fáil ansin a insíonn do Screenful (1) an URL ar cheart dó an t-iarratas logáil isteach a sheoladh chuige agus (2) an áit ar cheart dó an t-úsáideoir a atreorú má éiríonn leis an logáil isteach: 
+Cuireann sé na paraiméadair bhreise seo ar fáil ansin a insíonn do Screenful (i) an URL ar cheart dó an t-iarratas logáil isteach a sheoladh chuige, agus (ii) an áit ar cheart dó an t-úsáideoir a atreorú má éiríonn leis an logáil isteach: 
 
 ```html
 <script type="text/javascript">
@@ -85,7 +85,7 @@ Screenful.Login.redirectUrl="<%=redirectUrl%>";
 </script>
 ```
 
-Déantar doiciméadú in Screenful ar an iarratas AJAX a sheolann Screenful ón gcliant chuig ár bhfreastalaí, agus ar an bhfreagairt a sheolann ár bhfreastalaí ar ais chuig an gcliant. Mar shampla, seolann an cliant iarratas ar nós `Screenful.Login.loginUrl`, agus insíonn sé seo dúinn go dteastaíonn ón úsáideoir `someone@example.com` logáil isteach:
+Déantar doiciméadú in Screenful ar an iarratas AJAX a sheolann Screenful ón gcliant chuig ár bhfreastalaí, agus ar an bhfreagairt a sheolann ár bhfreastalaí ar ais chuig an gcliant. Mar shampla, seolann an cliant iarratas ar nós `Screenful.Login.loginUrl` agus insíonn sé seo dúinn go dteastaíonn ón úsáideoir `someone@example.com` logáil isteach:
 
 ```json
 {
@@ -112,11 +112,11 @@ Nó d’fhéadfadh ár bhfreastalaí freagairt mar seo a thabhairt, a thabharfai
 
 Is mar seo a oibríonn Screenful agus is mar seo a mbainimid úsáid as gach áit in Terminologue, fiú ar chineálacha leathanaigh atá an-chasta, cosúil le scáileán eagarthóireachta an bhunachair sonraí. Fógraímid i gcónaí go mbaineann leathanach gréasáin ar leith le cineál áirithe leathanaigh de chuid Screenful agus cinntímid ansin go bhfuil na críochphointí againn do na ceangail éagsúla taoibh freastalaí a theastaíonn ón gcineál leathanaigh sin. 
 
-Aimsítear cóip Terminologue de Screenful in `website/libs/screenful`. Níor cheart duit eagarthóireacht a dhéanamh ar aon rud sa chomhadlann sin. Má theastaíonn uait athruithe a dhéanamh ar Screenful, smaoinigh ar iarratas ar tharraingt a sheoladh chuig [stór] Screenful (https://github.com/michmech/screenful) ina áit sin. 
+Aimsítear cóip Terminologue de Screenful in `website/libs/screenful`. Níor cheart duit eagarthóireacht a dhéanamh ar aon rud sa chomhadlann sin. Má theastaíonn uait athruithe a dhéanamh ar Screenful, smaoinigh ar iarratas ar tharraingt a sheoladh chuig [stór](https://github.com/michmech/screenful) Screenful ina áit sin. 
 
 ## Eagarthóireacht a dhéanamh ar na hiontrálacha: `fy.js`
 
-Tá an cód a dhéanann eagarthóireacht ar iontráil téarmeolaíochta ar leith ar cheann de na smutáin is casta a bhaineann le cód taoibh freastalaí JavaScript in Terminologue. Léirítear aschur an chóid ar an bpríomhscáileán eagarthóireachta, tar éis don úsáideoir cliceáil ar an gcnaipe *Eagarthóireachta*, mar fhoirm chasta HTML ina bhfuil táib ag an mbarr (DOM, TRM srl.).
+Tá an cód a dhéanann eagarthóireacht ar iontráil téarmeolaíochta ar leith ar cheann de na smutáin is casta a bhaineann le cód taoibh freastalaí JavaScript in Terminologue. Léirítear aschur an chóid ar an bpríomhscáileán eagarthóireachta, tar éis don úsáideoir cliceáil ar an gcnaipe 'Eagarthóireacht', mar fhoirm chasta HTML ina bhfuil cluaisín ag an mbarr (DOM, TRM srl.).
 
 Aimsítear an comhad JavaScript seo sa chomhad `website/libs/fy/fy.js` agus déantar formáidiú ar an HTML a aschuireann sé de réir stílbhileoige sa chomhad `website/libs/fy/fy.css`. Baineann dhá phríomhaidhm leis:
 
@@ -130,9 +130,9 @@ Glaonn Screenful (is é an cineál leathanaigh `Screenful.Editor` a dhéanann é
 
 Gné chasta eile a bhaineann le cód JavaScript ná an cód a dhéanann formáidiú nó clómhaisiú ar na hiontrálacha téarmeolaíochta. Tá trí áit ann ina ndéantar é seo:  
 
-- Ar thaobh na láimhe clé den scáileán eagarthóireachta san áit a liostáiltear na hiontrálacha. Déantar clómhaisiú ar gach iontráil anseo i bhfoirm ghiorraithe.
+- Ar thaobh na láimhe clé den scáileán eagarthóireachta san áit a liostaítear na hiontrálacha. Déantar clómhaisiú ar gach iontráil anseo i bhfoirm ghiorraithe.
 
-- Ar thaobh na láimhe deise den scáileán eagarthóireachta san áit a ndéantar clómhaisiú ar iontráil ar leith i bhfoirm iomlán. Cliceálann an t-úsáideoir ar an gcnaipe *eagarthóireachta* le féachaint ar an iontráil ar a ndearnadh clómhaisiú nó le heagarthóireacht a dhéanamh uirthi le `fy.js`.  
+- Ar thaobh na láimhe deise den scáileán eagarthóireachta san áit a ndéantar clómhaisiú ar iontráil ar leith i bhfoirm iomlán. Cliceálann an t-úsáideoir ar an gcnaipe 'Eagarthóireacht' le féachaint ar an iontráil ar a ndearnadh clómhaisiú nó le heagarthóireacht a dhéanamh uirthi le `fy.js`.  
 
 - I gcomhéadan poiblí an bhunachair téarmaíochta (má tá an bunachar téarmaíochta le feiceáil go poiblí) san áit a léirítear na hiontrálacha ina bhfoirm iomlán a mbíonn na sonraí ar fad leo. Bíonn roinnt difríochtaí beaga ann, áfach, idir é seo agus an chaoi a léirítear sa chomhéadan eagarthóireachta iad.  
 
@@ -148,4 +148,4 @@ Baineann feidhm le gach comhad JavaScript ar a dtugtar `entry()` a thógann iont
 
 ## Conclúid
 
-Is dócha gur leor sin ag an bpointe seo. Tá súil againn gur tugadh achoimre duit sa doiciméad seo (1) ar chód taoibh freastalaí Terminologue agus (2) ar chuid de na codanna níos casta de chód taoibh cliaint Terminologue. 
+Is dócha gur leor sin ag an bpointe seo. Tá súil againn gur tugadh achoimre duit sa doiciméad seo ar (i) chód taoibh freastalaí Terminologue, agus (ii) chuid de na codanna níos casta de chód taoibh cliaint Terminologue. 
