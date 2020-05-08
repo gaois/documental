@@ -6,11 +6,11 @@ github: https://github.com/gaois/GeoNames2Sql
 public: true
 ---
 
-GeoNames2Sql is a tool built by the [Gaois research group](https://www.gaois.ie) at Fiontar & Scoil na Gaeilge, Dublin City University, Ireland to import Gazetteer data from the [GeoNames geographical database](http://www.geonames.org/) and store it in a SQL Server instance. It is essentially an abstraction over the [NGeoNames](https://github.com/RobThree/NGeoNames) library, adding a Command-line Interface and the tools to generate a SQL database. GeoNames2Sql is implemented in C# as a .NET Core 2.1 Console Application, meaning it can run cross-platform. This implementation presumes a SQL Server data store but it should be relatively simple to implement providers for PostgreSQL or other relational database types.
+GeoNames2Sql is a tool built by the [Gaois research group](https://www.gaois.ie) in Fiontar & Scoil na Gaeilge, DCU to import Gazetteer data from the [GeoNames geographical database](http://www.geonames.org/) and store it in a SQL Server instance. It is essentially an abstraction over the [NGeoNames](https://github.com/RobThree/NGeoNames) library, adding a Command-line Interface and the tools to generate a SQL database. GeoNames2Sql is implemented in C# as a .NET Core 2.1 Console Application, meaning it can run cross-platform. This implementation presumes a SQL Server data store but it should be relatively simple to implement providers for PostgreSQL or other relational database types.
 
 ## Status
 
-This application addresses the requirements of the Gaois research group. It is not, as yet, comprehensive for all other use cases. The output data set includes tables for (1) GeoNames, (2) alternate names, and (3) country info. There is not, at this time, provision for feature codes, admin codes, time zones and the other reference lists included in the full GeoNames data set as these items fall outside the scope of our requirements. These items may be included in the future, if the need arises, and we also welcome pull requests from other users.
+This application addresses the requirements of the Gaois research group. It is not, as yet, comprehensive for all other use cases. The output data set includes tables for GeoNames, alternate names and country info. There is not, at this time, provision for feature codes, admin codes, time zones and the other reference lists included in the full GeoNames data set as these items fall outside the scope of our requirements. These items may be included in the future, if the need arises, and we also welcome pull requests from other users.
 
 ## Installation and setup
 
@@ -42,7 +42,7 @@ This will output a collection of dynamic linked libraries (.dll files) and an ap
 
 ## Usage
 
-GeoNames2Sql allows you to compose the contents of your output database. For example, you may not need in-depth coverage of all countries in the world; or, you may only need a subset of alternate language data. The exact makeup of the target database can be specified within the configuration file.
+GeoNames2Sql allows you to compose the contents of your output database. For example, you may not need in-depth coverage of all countries in the world or you may only need a subset of alternate language data. The exact makeup of the target database can be specified within the configuration file.
 
 ### Configuration
 
@@ -66,11 +66,11 @@ The table below outlines the configuration properties.
 
 | Key | Description |
 | --- | ----------- |
-| **ConnectionString** | SQL Server database connection string | Note that a connection string for a Sqlite DB must include the `Data Source=` prefix |
+| **ConnectionString** | SQL Server database connection string. | Note that a connection string for a Sqlite DB must include the `Data Source=` prefix |
 | **DataDirectory** | Where you intend to store the raw data dump files which will be downloaded from the GeoNames data store prior to database insert. |
 | **GeoNames:AllCountries** | If true, GeoNames data will be retrieved for all countries in the GeoNames Gazetteer. If true, neither the `CitiesMinimumPopulation` nor `Countries` values need be specified. |
 | **GeoNames:AlternateNamesLanguages** | Specify the languages for which you wish to have alternate toponymic names. Provide a comma-separated array of ISO two-letter language codes. If empty, no alternate languages data will be downloaded. |
-| **GeoNames:CitiesMinimumPopulation** | If set, GeoNames data will be retrieved for all cities with at least the minimum population specified. The possible values are **500**, **1000**, **5000** or **15000**. |
+| **GeoNames:CitiesMinimumPopulation** | If set, GeoNames data will be retrieved for all cities with at least the minimum population specified. The possible values are **500**, **1,000**, **5,000** or **15,000**. |
 | **GeoNames:Countries** | If set, GeoNames data pertaining to the specified countries will be retrieved. Provide a comma-separated array of ISO Alpha-2 country codes. |
 | **GeoNames:CountryInfo** | If true, the CountryInfo table will be populated. |
 
@@ -101,4 +101,4 @@ The program will start, validate your configuration and describe the makeup of t
 
 ### Updating the database
 
-The GeoNames Gazetteer is updated on an ongoing basis and you may want to periodically bring the data in your SQL database up to speed with the latest changes. To do this, simply re-run the program. GeoNames2Sql will merge any updated data into the current database in a performant manner: no valid pre-existing data are thrown away and the process should not place any undue load on the target database, even in production environments. If you wish to alter the makeup of your target database—for example, to include data from additional countries or extra alternate languages—you only need to update the configuration file accordingly.
+The GeoNames Gazetteer is updated on an ongoing basis and you may want to periodically bring the data in your SQL database up to speed with the latest changes. To do this, simply re-run the program. GeoNames2Sql will merge any updated data into the current database in a performant manner: no valid pre-existing data are thrown away and the process should not place any undue load on the target database, even in production environments. If you wish to alter the makeup of your target database, for example, to include data from additional countries or extra alternate languages, you only need to update the configuration file accordingly.
