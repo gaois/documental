@@ -6,11 +6,11 @@ github: https://github.com/gaois/GeoNames2Sql
 public: true
 ---
 
-Is uirlis é GeoNames2Sql a chuir [grúpa taighde Gaois](https://www.gaois.ie) ag Fiontar & Scoil na Gaeilge, Ollscoil Chathair Bhaile Átha Cliath, Éire le chéile chun sonraí an Ghasaitéir a iompórtáil ó [bhunachar sonraí geografach GeoNames](http://www.geonames.org/) agus a stóráil in ásc SQL Server. Is éard atá ann, go bunúsach, ná asbhaint thar leabharlann [NGeoNames](https://github.com/RobThree/NGeoNames), lena gcuirtear Comhéadan Líne na nOrduithe agus na huirlisí chun bunachar sonraí SQL a ghiniúint. Cuirtear GeoNames2Sql i bhfeidhm in C# mar Fheidhmchlár Consóil .NET Core 2.1. Ciallaíonn sé seo gur feidhmchlár trasardáin é. Glacann an cur i bhfeidhm stóras sonraí SQL Server ach ba chóir go mbeadh sé sách simplí soláthraithe a chur i bhfeidhm le haghaidh PostgreSQL nó cineálacha eile bunachar sonraí coibhneasta. 
+Is uirlis é GeoNames2Sql a chuir [grúpa taighde Gaois](https://www.gaois.ie) in Fiontar & Scoil na Gaeilge, DCU le chéile chun sonraí an Ghasaitéir a iompórtáil ó [bhunachar sonraí geografach GeoNames](http://www.geonames.org/) agus a stóráil in ásc SQL Server. Is éard atá ann, go bunúsach, ná asbhaint thar leabharlann [NGeoNames](https://github.com/RobThree/NGeoNames), lena gcuirtear Comhéadan Líne na nOrduithe agus na huirlisí chun bunachar sonraí SQL a ghiniúint. Cuirtear GeoNames2Sql i bhfeidhm in C# mar Fheidhmchlár Consóil .NET Core 2.1. Ciallaíonn sé seo gur feidhmchlár trasardáin é. Glacann an cur i bhfeidhm stóras sonraí SQL Server ach ba chóir go mbeadh sé sách simplí soláthraithe a chur i bhfeidhm le haghaidh PostgreSQL nó cineálacha eile bunachar sonraí coibhneasta. 
 
 ## Stádas
 
-Téann an feidhmchlár seo i bhfeidhm le riachtanais ghrúpa taighde Gaois. Níl sé cuimsitheach do gach cás úsáide eile go fóill. Cuimsíonn an tacar sonraí aschuir táblaí a bhaineann le (1) GeoNames, (2) ainmneacha malartacha, agus (3) eolas ar an tír. Níl aon soláthar ann faoi láthair do ghnéchóid, cóid riaracháin, amchriosanna nó liostaí tagartha eile atá i dtacar sonraí GeoNames mar nach gcuimsítear i scóip ár gcuid riachtanas iad. D’fhéadfaí na míreanna seo a chur san áireamh amach anseo, más gá, agus cuirimid fáilte freisin roimh iarratais ar tharraingt ó úsáideoirí eile.
+Téann an feidhmchlár seo i ngleic le riachtanais ghrúpa taighde Gaois. Níl sé cuimsitheach do gach cás úsáide eile go fóill. Cuimsíonn an tacar sonraí aschuir táblaí a bhaineann le GeoNames, ainmneacha malartacha agus eolas ar an tír. Níl aon soláthar ann faoi láthair do ghnéchóid, cóid riaracháin, amchriosanna nó liostaí tagartha eile atá i dtacar sonraí GeoNames mar nach gcuimsítear i scóip ár gcuid riachtanas iad. D’fhéadfaí na míreanna seo a chur san áireamh amach anseo, más gá, agus cuirimid fáilte freisin roimh iarratais ar tharraingt ó úsáideoirí eile.
 
 ## Suiteáil agus cumraíocht
 
@@ -30,7 +30,7 @@ Clónáil an stór ar do mheaisín:
 git clone https://github.com/gaois/GeoNames2Sql
 ```
 
-Ansin, foilsigh tionscadal .NET Core in `src/GeoNames2Sql`, agus sonraigh an timpeallacht ama rite atá mar sprioc agat, m.sh.:
+Ansin, foilsigh tionscadal .NET Core in `src/GeoNames2Sql`, agus sonraigh an timpeallacht ama rite atá mar sprioc agat, e.g.:
 
 ```cmd
 dotnet publish -r win10-x64
@@ -42,11 +42,11 @@ Aschuirfidh sé seo bailiúchán de leabharlanna nasctha dinimiciúla (comhaid .
 
 ## Úsáid
 
-Ligeann GeoNames2Sql duit ábhar do bhunachair sonraí aschuir a chumadh. Mar shampla, seans nach dteastóidh clúdach domhain ar thíortha an domhain uait; nó b’fhéidir nach mbeidh uait ach sonraí teanga eile. Is féidir leagan amach beacht an spriocbhunachair sonraí a shonrú laistigh den chomhad cumraíochta.
+Ligeann GeoNames2Sql duit ábhar do bhunachair sonraí aschuir a chumadh. Mar shampla, seans nach dteastóidh clúdach domhain ar thíortha an domhain uait nó b’fhéidir nach mbeidh uait ach sonraí teanga eile. Is féidir leagan amach beacht an spriocbhunachair sonraí a shonrú laistigh den chomhad cumraíochta.
 
 ### Cumraíocht
 
-Úsáid an comhad **appsettings.json** chun do spriocbhunachar sonraí a chumrú, m.sh.:
+Úsáid an comhad **appsettings.json** chun do spriocbhunachar sonraí a chumrú, e.g.:
 
 ```json
 {
@@ -66,11 +66,11 @@ Tugtar achoimre sa tábla thíos ar na hairíonna cumraíochta.
 
 | Eochair | Cur síos |
 | ------- | -------- |
-| **ConnectionString** | Teaghrán ceangail bhunachar sonraí SQL Server | Tabhair faoi deara go gcaithfidh réimír `Data Source=` a bheith le teaghrán ceangail BS Sqlite. |
+| **ConnectionString** | Teaghrán ceangail bhunachar sonraí SQL Server. | Tabhair faoi deara go gcaithfidh réimír `Data Source=` a bheith le teaghrán ceangail BS Sqlite. |
 | **DataDirectory** | An áit a bhfuil sé i gceist agat comhaid dumpála na sonraí loma a stóráil. Íoslódálfar na comhaid seo ó stóras sonraí GeoNames sula gcuirfear isteach sa bhunachar sonraí iad. |
 | **GeoNames:AllCountries** | Má tá sé fíor, aisghabhfar sonraí GeoNames do gach tír i nGasaitéar GeoNames. Má tá sé fíor, ní chaithfear na luachanna `CitiesMinimumPopulation` nó `Countries` a shonrú. |
 | **GeoNames:AlternateNamesLanguages** | Sonraigh na teangacha ina mbeidh logainmneacha malartacha agat. Tabhair eagar camógdheighilte de chóid teanga dhá litir ISO. Má tá sé folamh, ní íoslódálfar sonraí teangacha malartacha. |
-| **GeoNames:CitiesMinimumPopulation** | Má tá sé socraithe, aisghabhfar sonraí GeoNames do gach cathair ina bhfuil an t-íosdaonra sonraithe ar a laghad. Is iad **500**, **1000**, **5000** nó **15000** na luachanna féideartha. |
+| **GeoNames:CitiesMinimumPopulation** | Má tá sé socraithe, aisghabhfar sonraí GeoNames do gach cathair ina bhfuil an t-íosdaonra sonraithe ar a laghad. Is iad **500**, **1,000**, **5,000** nó **15,000** na luachanna féideartha. |
 | **GeoNames:Countries** | Má tá sé socraithe, aisghabhfar sonraí GeoNames a bhaineann leis na tíortha sonraithe. Tabhair eagar camógdheighilte de chóid tíortha ISO Alpha-2. |
 | **GeoNames:CountryInfo** | Má tá sé fíor, pobalófar an tábla CountryInfo. |
 
@@ -85,7 +85,7 @@ Pointí eile le lua:
 
 - Ní bheidh ort comhaid dumpála na sonraí loma de chuid GeoNames a aisghabháil. Déanfaidh an feidhmchlár é seo duit. Sonraíonn tú an `DataDirectory` ina stórálfar na comhaid seo dá bharr sin.
 - Faightear cuid de théacschomhaid loma GeoNames idir 0.5-2.5GB dízipeáilte, ag brath ar an gcumraíocht a roghnaíonn tú. Cinntigh go bhfuil dóthain spás diosca ar an tiomántán ina bhfuil do `DataDirectory`.
-- Athraíonn an t-am a thógann sé an bunachar sonraí a phobalú de réir na cumraíochta, m.sh. an bhfuil gach tír nó fothacar tíortha sonraithe nó nach bhfuil, cá mhéad teangacha malartacha atá sonraithe, srl.
+- Athraíonn an t-am a thógann sé an bunachar sonraí a phobalú de réir na cumraíochta, e.g. an bhfuil gach tír nó fothacar tíortha sonraithe nó nach bhfuil, cá mhéad teangacha malartacha atá sonraithe, etc.
 
 ### An bunachar sonraí a phobalú
 
@@ -101,4 +101,4 @@ Cuirfear tús leis an ríomhchlár, bailíochtaigh do chumraíocht agus déan cu
 
 ### An bunachar sonraí a nuashonrú
 
-Déantar nuashonrú ar Ghasaitéar GeoNames ar bhonn leanúnach agus seans go mbeidh tú ag iarraidh na sonraí sa bhunachar sonraí SQL a thabhairt suas chun dáta leis na hathruithe is déanaí go tréimhsiúil. D’fhonn seo a dhéanamh, athrith an ríomhchlár. Cumascfaidh GeoNames2Sql sonraí nuashonraithe sa bhunachar sonraí reatha ar bhealach feidhmiúil: ní chaitear sonraí bailí atá ann cheana amach agus níor chóir go gcuirfeadh an próiseas ualach iomarcach ar an spriocbhunachar sonraí, fiú i dtimpeallachtaí táirgthe. Más mian leat leagan amach do spriocbhunachair sonraí a athrú—mar shampla, chun sonraí ó thíortha breise nó teangacha breise malartacha a chur san áireamh—ní chaithfidh tú ach an comhad cumraíochta a nuashonrú dá réir sin. 
+Déantar nuashonrú ar Ghasaitéar GeoNames ar bhonn leanúnach agus seans go mbeidh tú ag iarraidh na sonraí sa bhunachar sonraí SQL a thabhairt suas chun dáta leis na hathruithe is déanaí go tréimhsiúil. D’fhonn seo a dhéanamh, athrith an ríomhchlár. Cumascfaidh GeoNames2Sql sonraí nuashonraithe sa bhunachar sonraí reatha ar bhealach feidhmiúil: ní chaitear sonraí bailí atá ann cheana amach agus níor chóir go gcuirfeadh an próiseas ualach iomarcach ar an spriocbhunachar sonraí, fiú i dtimpeallachtaí táirgthe. Más mian leat leagan amach do spriocbhunachair sonraí a athrú, mar shampla, chun sonraí ó thíortha breise nó teangacha breise malartacha a chur san áireamh, ní chaithfidh tú ach an comhad cumraíochta a nuashonrú dá réir sin. 
