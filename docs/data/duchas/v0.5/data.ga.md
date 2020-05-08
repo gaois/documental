@@ -378,7 +378,7 @@ Mar chuid de thionscadal Dúchas, ionghabhadh meiteashonraí grianghraf ón gcó
 | CaptureDevice   | teaghrán            | ceann amháin        | An gléas gabhála a úsáideadh. |
 | CaptureSoftware | teaghrán            | ceann amháin        | Na bogearraí gabhála a úsáideadh. |
 | SourceCondition | teaghrán            | ceann amháin        | Bail na híomhá fisiciúla foinsí. |
-| CopyNote        | teaghrán            | ceann amháin        | ? |
+| CopyNote        | teaghrán            | ceann amháin        | Cóip déanta den bhuníomhá (tá nó níl). |
 | MimeType        | teaghrán            | ceann amháin        | An cineál [MIME](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) atá san íomhá dhigitithe. |
 | ImageBitDepth   | teaghrán            | ceann amháin        | Doimhneacht datha na híomhá digitithe. |
 | ImageEditor     | teaghrán            | ceann amháin        | Bogearraí eagarthóireachta íomhánna a úsáideadh. |
