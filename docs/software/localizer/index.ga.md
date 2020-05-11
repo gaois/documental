@@ -9,23 +9,23 @@ public: true
 
 **Tabhair faoi deara:** Is **leagan réamheisiúna** é seo ar mhaithe le tástáil. Bí ag súil le roinnt athruithe briste agus le modhanna athainmnithe API sula mbeidh eisiúint 1.0 againn. 
 
-Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core. Cuireann sé meánearraí logánaithe is féidir a chumrú ar fáil, lena n-áirítear bailíochtóirí chultúr an iarratais, bainistíocht fianán, láimhseálaithe eisceachtaí, agus rialacha maidir le URL a athscríobh. Timfhilleann agus breisíonn siad feidhmeanna dúchasacha [domhandaithe agus logánaithe](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1) na creatlaí chun an dua a bhaint de shuíomhanna gréasáin logánaithe a thógáil.
+Foireann uirlisí i dtaca le feidhmchláir ghréasáin ilteangacha a thógáil ar ASP.NET Core atá anseo. Cuireann sé meánearraí logánaithe is féidir a chumrú ar fáil, lena n-áirítear bailíochtóirí chultúr an iarratais, bainistíocht fianán, láimhseálaithe eisceachtaí agus rialacha maidir le URL a athscríobh. Timfhilleann agus breisíonn siad feidhmeanna dúchasacha [domhandaithe agus logánaithe](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1) na creatlaí chun an dua a bhaint de shuíomhanna gréasáin logánaithe a thógáil.
 
-Forbraíodh an leabharlann ag [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), Ollscoil Chathair Bhaile Átha Cliath, Éire, áit a n-úsáidimid í chun feidhmchláir ghréasáin ilteangacha dár gcuid féin a thógáil.
+D'fhorbair [Gaois](https://www.gaois.ie), Fiontar & Scoil na Gaeilge, DCU an leabharlann agus tá sí in úsáid againn chun feidhmchláir ghréasáin ilteangacha dár gcuid féin a thógáil.
 
 ## Gnéithe
 
 Cuireann an leabharlann feidhmiúlacht ar an bpointe boise ar fáil a cheadaíonn duit:
 
-- Cultúr an iarratais a fháil ó pharaiméadair chosán URL amhail `www.mymultilingualapp.com/en-GB/about/` agus `www.mymultilingualapp.com/ga/about/`
-- Fianáin agus ceanntásca HTTP `Accept-Language` a úsáid chun tátal a bhaint as an gcultúr atá ón úsáideoir nuair a thugann siad cuairt ar leathanach baile an tsuímh gréasáin, m.sh. `www.mymultilingualapp.com`, áit nach bhfaightear aon pharaiméadar cosáin
-- Iarratais ar chultúir gan tacaíocht a láimhseáil, ach leathanach earráide 404 a chur ar ais nó an t-úsáideoir a atreorú chuig leathanach sa teanga réamhshocraithe
-- Gan róid áirithe a chur faoi thionchar na meánearraí logánaithe
-- Socruithe a bhaineann le fianáin logánaithe a bhainistiú agus a chumrú ionas go bhféadfaí roghanna teanga an úsáideora a choinneáil le linn na seisiún brabhsála
-- A chinneadh ar chóir go n-atreorófaí na húsáideoirí chuig URL logánaithe nuair a dhéanann siad iarratas ar leathanach baile an tsuímh gréasáin don chéad uair
-- Cásanna a láimhseáil ina dteastaíonn uait cód teanga ISO sa URL ina bhfuil dhá nó trí litir a mhapáil go hinmheánach le réigiún nó le fochlib breisithe teanga
+- Cultúr an iarratais a fháil ó pharaiméadair chosán URL amhail `www.mymultilingualapp.com/en-GB/about/` agus `www.mymultilingualapp.com/ga/about/`.
+- Fianáin agus ceanntásca HTTP `Accept-Language` a úsáid chun tátal a bhaint as an gcultúr atá ón úsáideoir nuair a thugann siad cuairt ar leathanach baile an tsuímh gréasáin, e.g. `www.mymultilingualapp.com`, áit nach bhfaightear aon pharaiméadar cosáin.
+- Iarratais ar chultúir gan tacaíocht a láimhseáil, ach leathanach earráide 404 a chur ar ais nó an t-úsáideoir a atreorú chuig leathanach sa teanga réamhshocraithe.
+- Gan róid áirithe a chur faoi thionchar na meánearraí logánaithe.
+- Socruithe a bhaineann le fianáin logánaithe a bhainistiú agus a chumrú ionas go bhféadfaí roghanna teanga an úsáideora a choinneáil le linn na seisiún brabhsála.
+- A chinneadh ar chóir go n-atreorófaí na húsáideoirí chuig URL logánaithe nuair a dhéanann siad iarratas ar leathanach baile an tsuímh gréasáin don chéad uair.
+- Cásanna a láimhseáil ina dteastaíonn uait cód teanga ISO sa URL ina bhfuil dhá nó trí litir a mhapáil go hinmheánach le réigiún nó le fochlib breisithe teanga.
 
-Is féidir an chuid is mó de na gnéithe seo a chumrú: cuirtear réamhshocruithe ciallmhara ar fáil, ach is féidir leat na cineálacha atreoruithe a úsáidtear, cá fhad sula dtéann fianáin as feidhm srl., a shonrú. Smaoiníodh ar SEO agus an leabharlann á dearadh, agus tugann an tsuiteáil réamhshocraithe réiteach optamach logánaithe dúinn maidir leis an innéacsú a dhéanann na príomhinnill chuardaigh. Oibríonn na meánearraí logánaithe go maith fiú nuair a ritear i gcomhadlann fhíorúil iad. 
+Is féidir an chuid is mó de na gnéithe seo a chumrú: cuirtear réamhshocruithe ciallmhara ar fáil, ach is féidir leat na cineálacha atreoruithe a úsáidtear, tréimhse bhailí fianán logánaithe, etc., a shonrú. Smaoiníodh ar SEO agus an leabharlann á dearadh, agus tugann an tsuiteáil réamhshocraithe réiteach optamach logánaithe dúinn maidir leis an innéacsú a dhéanann na príomhinnill chuardaigh. Oibríonn na meánearraí logánaithe go maith, fiú nuair a ritear i gcomhadlann fhíorúil iad. 
 
 ## Suiteáil agus cumraigh
 
@@ -39,7 +39,7 @@ In **Startup.cs**, cuir an treoir `using Gaois.Localizer` ag barr an chomhaid. D
 
 ### Cumraíocht bhunúsach
 
-1. Cuir na meánearraí `app.UseLocalizer()` leis an modh *cumraíochta* áit ar bith tar éis `app.UseStaticFiles` (má tá siad ann) agus roimh `app.UseMvc()`, mar seo a leanas:  
+1. Cuir na meánearraí `app.UseLocalizer()` leis an modh *Configure* áit ar bith tar éis `app.UseStaticFiles` (má tá siad ann) agus roimh `app.UseMvc()`, mar seo a leanas:  
 
 ```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -135,10 +135,10 @@ Liostaítear sna hathróga `supportedCultures` na teangacha agus na cineálacha 
 
 Parsálann na meánearraí logánaithe an t-iarratas HTTP agus cuireann siad sprioc-chultúr ar ais de réir na gcritéar seo a leanas:
 
-1. Paraiméadar chosán an chultúir, i.e. [clib teanga IETF] (https://en.wikipedia.org/wiki/IETF_language_tag), in URL an iarratais (m.sh. an paraiméadar 'ga-IE' in `www.mymultilingualapp.com/ga-IE/`)
-2. Bíonn fianán cultúir san iarratas a fuarthas ón suíomh gréasáin roimhe seo (féach [thíos](#localisation-cookies))
-3. Shonraigh an t-úsáideoir an teanga atá uaidh sa bhrabhsálaí (a fuarthas tríd an gceanntásc HTTP `Accept-Language`) a mheaitseálann ceann de chultúir an fheidhmchláir a dtacaítear leo
-4. An teanga réamhshocraithe a sonraíodh sa tseirbhís `RequestLocalizationOptions`
+1. Paraiméadar chosán an chultúir, i.e. [clib teanga IETF](https://en.wikipedia.org/wiki/IETF_language_tag), in URL an iarratais (e.g. an paraiméadar 'ga-IE' in `www.mymultilingualapp.com/ga-IE/`).
+2. Bíonn fianán cultúir san iarratas a fuarthas ón suíomh gréasáin roimhe seo (féach [thíos](#fianain-loganaithe)).
+3. Shonraigh an t-úsáideoir an teanga atá uaidh sa bhrabhsálaí (a fuarthas tríd an gceanntásc HTTP `Accept-Language`) a mheaitseálann ceann de chultúir an fheidhmchláir a dtacaítear leo.
+4. An teanga réamhshocraithe a sonraíodh sa tseirbhís `RequestLocalizationOptions`.
 
 Úsáidfear an chéad chritéar a chuireann toradh neamhnialasach ar ais. Mar sin de, taispeánfar leathanach sa Rúisis d’úsáideoir a théann isteach in `www.mymultilingualapp.com/ru-RU/`, is cuma na socruithe brabhsálaí atá aige. Taispeánfar leathanach sa Bhéarla d’úsáideoir a roghnaíonn `en` mar a theanga roghnaithe agus a thugann cuairt ar `www.mymultilingualapp.com`.
 
@@ -160,15 +160,15 @@ Déanfaidh an feidhmchlár iarracht anois an dara paraiméadar cosáin san iarra
 
 ### Focal faoi SEO
 
-Is dócha gurb é seo an ghné is teanntásaí den leabharlann seo, agus tugtar tús áite i gcónaí do chultúr a fhaightear ó pharaiméadar cosáin URL i bhfianán cliaint nó i socruithe ceanntáisc HTTP. Má thugann úsáideoir cuairt ar `www.mymultilingualapp.com/en-GB/` agus más é Béarla na Stát Aontaithe (en-US) a theanga roghnaithe don bhrabhsálaí, gheobhaidh sé an leathanach i mBéarla na Ríochta Aontaithe (en-GB) fós, ar choinníoll go dtacaítear leis an gcultúr seo laistigh den fheidhmchlár. Ciallaíonn sé seo: (1) faigheann úsáideoirí an leathanach lena raibh siad ag súil nuair a chliceáil siad ar an URL, agus; (2) is féidir le ransaitheoirí cuardaigh URL a cheangal le hábhar logánaithe go hiontaofa. Creidimid go bhfuil sé seo barrmhaith do SEO agus d’eispéireas an úsáideora. Ach an leathanach a oscailt, ba chóir go mbeadh úsáideoirí in ann teangacha a athrú dá ndeoin féin trí mhalartóir tiomnaithe teanga sa UI. 
+Is dócha gurb é seo an ghné is teanntásaí den leabharlann seo, agus tugtar tús áite i gcónaí do chultúr a fhaightear ó pharaiméadar cosáin URL i bhfianán cliaint nó i socruithe ceanntáisc HTTP. Má thugann úsáideoir cuairt ar `www.mymultilingualapp.com/en-GB/` agus más é Béarla na Stát Aontaithe (en-US) a theanga roghnaithe don bhrabhsálaí, gheobhaidh sé an leathanach i mBéarla na Ríochta Aontaithe (en-GB) fós, ar choinníoll go dtacaítear leis an gcultúr seo laistigh den fheidhmchlár. Ciallaíonn sé seo (i) go bhfaigheann úsáideoirí an leathanach lena raibh siad ag súil nuair a chliceáil siad ar an URL, agus (ii) gur féidir le ransaitheoirí cuardaigh URL a cheangal le hábhar logánaithe go hiontaofa. Creidimid go bhfuil sé seo barrmhaith do SEO agus d’eispéireas an úsáideora. Ach an leathanach a oscailt, ba chóir go mbeadh úsáideoirí in ann teangacha a athrú dá ndeoin féin trí mhalartóir tiomnaithe teanga sa UI. 
 
 ## Cultúir gan tacaíocht
 
 Cad a tharlaíonn nuair a ionchuireann úsáideoir URL ina bhfuil cultúr gan tacaíocht? Mar shampla, má thacaíonn do shuíomh le hábhar sa Spáinnis agus sa Phortaingéilis, ach tugann an t-úsáideoir fochlib don réigiún `fr-FR` sa URL. Go hinmheánach, caithfidh na meánearraí logánaithe `CultureNotFoundException` sa chás seo. Cuireann Gaois.Localizer dhá bhealach ar fáil chun an earráid seo a láimhseáil.
 
-### Cód stádais 404 Not Found a chur ar ais
+### Cód stádais '*404 Not Found*' a chur ar ais
 
-De réir réamhshocraithe, cuirfear cód stádais HTTP 404 Not Found ar ais mar fhreagrairt ar iarratas ar chultúr gan tacaíocht agus taispeánfar teachtaireacht oiriúnach don úsáideoir, ar choinníoll gur cumraíodh ród don leathanach earráide. Seans gurb é seo an cur chuige is fearr maidir le SEO. Ní bheidh amhras ar bith ar innill chuardaigh nach bhfuil ábhar ar fáil ag an URL a iarradh.  
+De réir réamhshocraithe, cuirfear cód stádais HTTP '*404 Not Found*' ar ais mar fhreagrairt ar iarratas ar chultúr gan tacaíocht agus taispeánfar teachtaireacht oiriúnach don úsáideoir, ar choinníoll gur cumraíodh ród don leathanach earráide. Seans gurb é seo an cur chuige is fearr maidir le SEO. Ní bheidh amhras ar bith ar innill chuardaigh nach bhfuil ábhar ar fáil ag an URL a iarradh.  
 
 ### An t-úsáideoir a atreorú chuig leathanach sa chultúr réamhshocraithe
 
@@ -184,7 +184,7 @@ services.AddLocalizer(options =>
 
 #### An t-athródaire a chumrú
 
-Is féidir leat tuilleadh cumraíochta a dhéanamh ar an ródaire le gur féidir leis cód stádais difriúil HTTO a sheoladh sa fhreagairt nó atreoruithe a ródú ar chosán ar leith. 
+Is féidir leat tuilleadh cumraíochta a dhéanamh ar an ródaire le gur féidir leis cód stádais difriúil HTTP a sheoladh sa fhreagairt nó atreoruithe a ródú ar chosán ar leith. 
 
 ```csharp
 services.AddLocalizer(options =>
@@ -209,7 +209,7 @@ services.AddLocalizer(options =>
 });
 ```
 
-Úsáidtear teaghráin regex chun sainmhíniú a thabhairt ar chosáin. Cuirtear róid a thosaíonn le `/error`, m.sh. `/Error` nó `/error/{0}/`,  leis an liosta eisiaimh de réir réamhshocraithe chun fadhbanna i dtaca le ródú ciorclach a sheachaint nuair a chaitear  `CultureNotFoundException`. 
+Úsáidtear teaghráin regex chun sainmhíniú a thabhairt ar chosáin. Cuirtear róid a thosaíonn le `/error`, e.g. `/Error` nó `/error/{0}/`,  leis an liosta eisiaimh de réir réamhshocraithe chun fadhbanna i dtaca le ródú ciorclach a sheachaint nuair a chaitear  `CultureNotFoundException`. 
 
 ## Fianáin logánaithe
 
@@ -223,11 +223,11 @@ services.AddLocalizer(options =>
 });
 ```
 
-Cinnteoidh meánearraí na bhfianán logánaithe go dtaispeántar do shuíomh i gcultúr roghnaithe an úsáideora gach uair a thugann sé cuairt ar an leathanach baile. Ná déan dearmad, áfach, go dtugann na huirlisí logánaithe [tús áite don chultúr i bparaiméadair chosáin URL ar aon socrú eile] (#a-word-about-seo), mar sin de, má leanann an t-úsáideoir nasc chuig leathanach i gcultúr ar leith, ní chuirfear fianáin logánaithe san áireamh. 
+Cinnteoidh meánearraí na bhfianán logánaithe go dtaispeántar do shuíomh i gcultúr roghnaithe an úsáideora gach uair a thugann sé cuairt ar an leathanach baile. Ná déan dearmad, áfach, go dtugann na huirlisí logánaithe [tús áite don chultúr i bparaiméadair chosáin URL ar aon socrú eile](#a-word-about-seo), mar sin de, má leanann an t-úsáideoir nasc chuig leathanach i gcultúr ar leith, ní chuirfear fianáin logánaithe san áireamh. 
 
 ### Na fianáin logánaithe a chumrú
 
-Más mian leat, is féidir tuilleadh cumraíochta a dhéanamh ar shocruithe na bhfianán logánaithe, rud a cheadóidh duit dáta éaga an fhianáin agus an bhfuil an fianán riachtanach d’fheidhmiú an fheidhmchláir nó nach bhfuil a shonrú. Is iad `1 year` agus `false` na luachanna réamhshocraithe faoi seach. Ba chóir an t-airí `IsEssential` a chumrú maidir le do pholasaithe príobháideachais agus cosanta sonraí. Má tá sé fíor, d’fhéadfaí seiceálacha ar an bpolasaí toilithe a sheachaint.
+Más mian leat, is féidir tuilleadh cumraíochta a dhéanamh ar shocruithe na bhfianán logánaithe, rud a cheadóidh duit dáta éaga an fhianáin agus an bhfuil an fianán riachtanach d’fheidhmiú an fheidhmchláir, nó nach bhfuil, a shonrú. Is iad `1 year` agus `false` na luachanna réamhshocraithe, faoi seach. Ba chóir an t-airí `IsEssential` a chumrú maidir le do pholasaithe príobháideachais agus cosanta sonraí. Má tá sé fíor, d’fhéadfaí seiceálacha ar an bpolasaí toilithe a sheachaint.
 
 ```csharp
 services.AddLocalizer(options =>
@@ -241,7 +241,7 @@ services.AddLocalizer(options =>
 
 ## Atreorú an leathanaigh lamairne
 
-Nuair a thugann úsáideoir cuairt ar leathanach baile suímh gréasáin, m.sh. `www.mymultilingualapp.com`, d’fhéadfadh sé a bheith inmhianaithe uaireanta an t-úsáideoir a atreorú chuig URL a bhaineann le leagan logánaithe den leathanach go huathoibríoch, m.sh. `www.mymultilingualapp.com/es`. Ní hionann é seo agus an iompraíocht réamhshocraithe a bhaineann le Gaois.Localizer a úsáid ar chúiseanna SEO (féach thíos) ach aithnímid gur cás coiteann úsáide é. Chun atreorú an leathanaigh lamairne a chur ar siúl, cumraigh an modh *AddLocalizer* in **Startup.cs**:
+Nuair a thugann úsáideoir cuairt ar leathanach baile suímh gréasáin, e.g. `www.mymultilingualapp.com`, d’fhéadfadh sé a bheith inmhianaithe uaireanta an t-úsáideoir a atreorú chuig URL a bhaineann le leagan logánaithe den leathanach go huathoibríoch, e.g. `www.mymultilingualapp.com/es`. Ní hionann é seo agus an iompraíocht réamhshocraithe a bhaineann le Gaois.Localizer a úsáid ar chúiseanna SEO (féach thíos) ach aithnímid gur cás coiteann úsáide é. Chun atreorú an leathanaigh lamairne a chur ar siúl, cumraigh an modh *AddLocalizer* in **Startup.cs**:
 
 ```csharp
 services.AddLocalizer(options =>
@@ -251,7 +251,7 @@ services.AddLocalizer(options =>
 });
 ```
 
-Aithníonn URL an atreoraithe socruithe a cumraíodh sa tseirbhís [`Microsoft.AspNetCore.Routing.RouteOptions`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.routeoptions?view=aspnetcore-2.1) go huathoibríoch i dtaca le slais chun deiridh a iarcheangal leis an URL ginte nó gan í a iarcheangal.
+Aithníonn URL an atreoraithe na socruithe a cumraíodh sa tseirbhís [`Microsoft.AspNetCore.Routing.RouteOptions`](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.routing.routeoptions?view=aspnetcore-2.1) go huathoibríoch, i dtaca le slais chun deiridh a iarcheangal leis an URL ginte nó gan í a iarcheangal.
 
 ### Focal eile faoi SEO
 
@@ -260,13 +260,13 @@ Is féidir glacadh le cuir chuige éagsula agus leathanach baile an tsuímh gré
 - Scrúdaíonn roinnt suíomhanna gréasáin (mar shampla, [mozilla.org](https://www.mozilla.org/)) roghanna teanga an bhrabhsálaí agus cuireann siad atreorú (buan) 301 i bhfeidhm. Tá sé seo go breá má tá tú sách cinnte go rachaidh an chuid is mó d’úsáideoirí isteach san fheidhmchlár i dteanga amháin. Taiscfidh go leor brabhsálaithe atreoruithe 301 go deo, áfach. Má nuashonraíonn an t-úsáideoir socruithe an bhrabhsálaí – nó má dhéanann sé rochtain ar an ríomhaire in áit phoiblí, amhail scoil nó leabharlann – tabharfaidh an brabhsálaí chuig an gcéad leagan logánaithe den suíomh a osclaíodh sa bhrabhsálaí sin i gcónaí é. 
 - Cuireann go leor suíomhanna gréasáin eile atreoruithe 302 i bhfeidhm ar na cúiseanna thuas, is dócha. Níl sé soiléir, áfach, an dtugann príomhransaitheoirí gréasáin aird ar leathanaigh ar a bhfuil atreoruithe 302 nó nach dtugann, agus seans nach n-oirfidh sé seo do SEO.
 
-Is é an cur chuige réamhshocraithe a bhaineann le leabharlann Gaois.Localizer a úsáid dá bharr seo ná nach n-atreoraítear an t-úsáideoir (i.e. fanann an t-úsáideoir ar `example.com`), cé go logánófar an t-eolas ar an gcultúr de réir na gcritéar [thuas](#getting-the-request-culture). Sílimid go mbaineann na torthaí is fearr leis seo ó thaobh SEO agus eispéireas an úsáideora de.
+Is é an cur chuige réamhshocraithe a bhaineann le leabharlann Gaois.Localizer a úsáid dá bharr seo ná nach n-atreoraítear an t-úsáideoir (i.e. fanann an t-úsáideoir ar `example.com`), cé go logánófar an t-eolas ar an gcultúr de réir na gcritéar [thuas](#cultur-an-iarratais-a-fhail). Sílimid go mbaineann na torthaí is fearr leis seo ó thaobh SEO agus eispéireas an úsáideora de.
 
 ## Rogha na clibe teanga
 
-Tá an leabharlann il-oiriúnach maidir le [clib theanga IETF](https://en.wikipedia.org/wiki/IETF_language_tag) a úsáideann tú sa URL chun an sprioc-chultúr a léiriú. Úsáideann na samplaí sa doiciméad seo fochlibeanna réigiúin amhail `ga-IE`, `en-GB`, `pt-BR`, srl. Is fearr le go leor feidhmchlár cóid teanga ISO ina bhfuil dhá litir ar nós `ga`, `en`, `fr`. Is féidir leat ceachtar de na cineálacha clibe a shonrú in athróg na gcultúr a dtacaítear leo de `RequestLocalizationOptions` in **Startup.cs**. 
+Tá an leabharlann il-oiriúnach maidir le [clib theanga IETF](https://en.wikipedia.org/wiki/IETF_language_tag) a úsáideann tú sa URL chun an sprioc-chultúr a léiriú. Úsáideann na samplaí sa doiciméad seo fochlibeanna réigiúin amhail `ga-IE`, `en-GB`, `pt-BR`, etc. Is fearr le go leor feidhmchlár cóid teanga ISO ina bhfuil dhá litir amhail `ga`, `en`, `fr`. In athróg na gcultúr a dtacaítear leo, a bhaineann le `RequestLocalizationOptions` in **Startup.cs**, is féidir ceachtar de na cineálacha clibe seo a shonrú. 
 
-Má roghnaíonn tú cóid teanga dhá litir, d’fhéadfadh sé a bheith úsáideach fochlibeanna réigiúin nó fochlibeanna breisithe teanga a stóráil a mhapálann le do chóid teanga – mar shampla, nuair a chuireann tú sonraí logchaighdeáin ar fáil i meitichlibeanna [Open Graph](http://ogp.me/). Éascaíonn Gaois.Localizer é seo ach cead a thabhairt duit roghanna chultúr an róid a chumrú sa mhodh *cumraíochta* de **Startup.cs**:
+Má roghnaíonn tú cóid teanga dhá litir, d’fhéadfadh sé a bheith úsáideach fochlibeanna réigiúin nó fochlibeanna breisithe teanga a stóráil a mhapálann le do chóid teanga – mar shampla, nuair a chuireann tú sonraí logchaighdeáin ar fáil i meitichlibeanna [Open Graph](http://ogp.me/). Éascaíonn Gaois.Localizer é seo ach cead a thabhairt duit roghanna chultúr an róid a chumrú sa mhodh *Configure* de **Startup.cs**:
 
 ```csharp
 services.AddLocalizer(options =>
@@ -304,7 +304,7 @@ Is féidir rochtain a fháil ar na clibeanna mapáilte áit éigin eile san fhei
 
 Más mian leat aistriú ó scéim URL a d’úsáid clibeanna teanga dhá litir (amhail `example.com/es`) chuig scéim a úsáideann logchaighdeáin réigiúnacha (amhail `example.com/es-ES`), tá prótacal úsáideach atreoraithe ar fáil in Gaois.Localizer a bhaineann leas as meánearraí athscríofa dúchasacha an URL de chuid ASP.NET Core chun an obair chrua a dhéanamh duit.
 
-Ar dtús, cumraigh an modh *AddLocalizer* mar a dhéantar cur síos air sa [mhír roimhe seo](#language-tag-choice):
+Ar dtús, cumraigh an modh *AddLocalizer* mar a dhéantar cur síos air sa [mhír roimhe seo](#rogha-na-clibe-teanga):
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -347,11 +347,11 @@ Atreorófar gach iarratas ar `www.mymultilingualapp.com/ga/about/` go huathoibr�
 
 ## Modhanna cabhracha
 
-Aimsítear modhanna breisithe in Gaois.Localizer chomh maith a chuidíonn le tascanna a bhaineann le logánú.
+Aimsítear modhanna breisithe in Gaois.Localizer chomh maith, a chuidíonn le tascanna a bhaineann le logánú.
 
 ### GetDisplayUrl()
 
-Breisíonn an modh seo an modh [GetDisplayUrl()](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.extensions.urihelper.getdisplayurl?view=aspnetcore-2.2) agus ligeann sé seo duit paraiméadar cosáin URL (má tá sé ann) a athchur de réir innéacs.
+Breisíonn an modh seo an modh [*GetDisplayUrl()*](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.extensions.urihelper.getdisplayurl?view=aspnetcore-2.2) agus ligeann sé seo duit paraiméadar cosáin URL (má tá sé ann) a athchur de réir innéacs.
 
 ### GetEncodedUrl()
 
