@@ -182,8 +182,8 @@ Queries to the Schools' Collection may return one or more `volume` objects. The 
 | ListingOrder    | string              | one                 | The listing order of the manuscript part within the volume. |
 | TitlePages      | integer             | none or one or more | Denotes title pages associated with the manuscript part. Title pages typically contain information about the participating school and the local area. |
 | School          | [`school`](#school) | none or one         | Metadata that describe the school associated with the manuscript part. |
-| Teachers        | [`person`](#schools-collection-item) | none or one or many | Denotes a school teacher or teachers involved in collating the material within the manuscript part. |
-| Items           | [`item`](#item)     | none or one or many | Metadata describing the discrete items which compose the manuscript part. |
+| Teachers        | [`person`](#schools-collection-person) | none or one or many | Denotes a school teacher or teachers involved in collating the material within the manuscript part. |
+| Items           | [`item`](#schools-collection-item)     | none or one or many | Metadata describing the discrete items which compose the manuscript part. |
 
 ### Schools' Collection `item`
 
@@ -346,8 +346,8 @@ Denotes a subject heading (topic) in Seán Ó Súilleabháin's [*A Handbook of I
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Quantity        | integer             | none or one         | The quantity of images in this format held by NFC. |
-| Color           | string              | none or one         | The image color type. |
-| ColorComment    | string              | none or one         | Additional commentary regarding the image color type. |
+| Color           | string              | none or one         | The image colour type. |
+| ColorComment    | string              | none or one         | Additional commentary regarding the image colour type. |
 | Dimensions      | string              | none or one         | The dimensions of the physical image. |
 | DimensionsComment | string              | none or one         | Additional commentary regarding the image dimensions. |
 | Medium          | string              | none or one         | The image medium. |
@@ -449,8 +449,8 @@ A number of entities are common to multiple collections. These are described bel
 | LogainmID       | integer             | one                 | The county's unique identifier in the [logainm.ie](https://www.logainm.ie) database. |
 | NameEN          | string              | one                 | The county's English-language name. |
 | NameGA          | string              | one                 | The county's Irish-language name. |
-| QualifiedNameEN | string              | one                 | The county's English-language name, prefixed with "Co." qualifier. |
-| QualifiedNameGA | string              | one                 | The county's Irish-language name, prefixed with "Co." qualifier and having the correct grammatical case and inflection applied. |
+| QualifiedNameEN | string              | one                 | The county's English-language name, prefixed with 'Co.' qualifier. |
+| QualifiedNameGA | string              | one                 | The county's Irish-language name, prefixed with 'Co.' qualifier and having the correct grammatical case and inflection applied. |
 | Coordinates     | [`coordinates`](#coordinates) | one                 | A set of geographic coordinates associated with the county. |
 
 ### `country`
