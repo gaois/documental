@@ -140,7 +140,7 @@ This code lives in the `website/widgets` directory:
 
 - `pretty-small.js` and `pretty-small.css` are for pretty-printing in the entry list on the left-hand side of the editing screen.
 
-- `pretty-large.js` and `pretty-large.css` are for pretty-printing on on the right-hand side of the editing screen.
+- `pretty-large.js` and `pretty-large.css` are for pretty-printing on the right-hand side of the editing screen.
 
 - `pretty-public.js` and `pretty-public.css` are for pretty-printing in the public interface of a termbase.
 
