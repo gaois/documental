@@ -7,7 +7,7 @@ order: 1
 public: true
 ---
 
-Logálaí simplí iarratais is féidir a chumrú le haghaidh fheidhmchláir ASP.NET agus ASP.NET Core. Is é an logálaí iarratais a úsáideann [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), Ollscoil Chathair Bhaile Átha Cliath, Éire chun staitisticí cuardaigh maidir le SQL Server a logáil é. Is leabharlann [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) é Gaois.QueryLogger agus tacaíonn sé le feidhmchláir a tógadh le ASP.NET Framework 4.6.1 agus le ASP.NET Core 2.1 nó níos airde.
+Logálaí simplí iarratais is féidir a chumrú le haghaidh fheidhmchláir ASP.NET agus ASP.NET Core. Is é an logálaí iarratais a úsáideann [Gaois](https://www.gaois.ie), Fiontar & Scoil na Gaeilge, DCU chun staitisticí cuardaigh maidir le SQL Server a logáil é. Is leabharlann [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) é Gaois.QueryLogger agus tacaíonn sé le feidhmchláir a tógadh le ASP.NET Framework 4.6.1 agus le ASP.NET Core 2.1 nó níos airde.
 
 ## Stádas an phacáiste
 
