@@ -16,7 +16,7 @@ Documental requires documentation to be written in Markdown. Markdown is just pl
 
 ## Folder structure
 
-All documentaion is contained in the `docs` folder. As an editor, you will be able to complete all of your work here. A typical `docs` folder structure looks something like this:
+All documentation is contained in the `docs` folder. As an editor, you will be able to complete all of your work here. A typical `docs` folder structure looks something like this:
 
 ```
 - docs
@@ -32,7 +32,7 @@ All documentaion is contained in the `docs` folder. As an editor, you will be ab
       - intro.en.md
 ```
 
-There is a parent `docs` folder. Within that folder there are two **categories** of documentation, `data` (Open Data) and `software` (Software). Each of these folders contains one or more **resources**. A resource is a collection of of one or more **documents** relating to particular service or piece of software. If we look in the `software` folder we see a resource called `terminologue` (Terminologue) which in turn contains several documents.
+There is a parent `docs` folder. Within that folder there are two **categories** of documentation, `data` (Open Data) and `software` (Software). Each of these folders contains one or more **resources**. A resource is a collection of one or more **documents** relating to a particular service or piece of software. If we look in the `software` folder we see a resource called `terminologue` (Terminologue) which in turn contains several documents.
 
 If we turn to the `data` folder and the `logainm` (Logainm API) resource we see its direct child is a **version** folder, `v0.9`. The documents in this folder relate to version 0.9 of the API. Certain resources may have multiple versions and documentation specific to those versions.
 
@@ -46,15 +46,15 @@ As you might have gathered from the previous section, Markdown files in Document
 [slug].[locale].md
 ```
 
-- **.md** is file extension ('md' for **M**ark**d**own).
+- **.md** is the file extension ('md' for **M**ark**d**own).
 - The **locale** uses an ISO language code to represent the language in which the document is written, e.g. `en` for English and `ga` for Gaeilge (Irish).
 - The **slug** is a unique name for your file.
 
-A **slug** can be the same as a document title but you must follow a number of rules:
+A **slug** can be the same as a document title but it must follow a number of rules:
 
 1. Use only lowercase letters.
 2. Replace spaces with hyphens (`-`).
-3. Do not use any accents (á, é, ó, etc.) or special characters such as `!`, `?`, or `#`.
+3. Do not use any accents (á, é, ó, etc.) or special characters such as `!`, `?` or `#`.
 
 Here are some valid filenames in Documental:
 
@@ -74,14 +74,14 @@ Now that you have a file prepared it's time to write some documentation. Each do
 
 ### Writing metadata
 
-As you probably know, metadata are data which describe other data. The metadata in Documental documents describe the content of the document (discussed in the next section). We write metadata at the very top of the document, before anything else, in what we call a *metadata header*. Here's an example:
+As you probably know, metadata is data which describes other data. The metadata in Documental documents describes the content of the document (discussed in the next section). We write metadata at the very top of the document, before anything else, in what we call a *metadata header*. Here's an example:
 
 ```yaml
 ---
 title: Logainm Application Programming Interface (Version 0.9)
 shortTitle: API
 description: Developer documentation for the Logainm API
-keywords: Logainm, API, placenames, toponmy, onomastics, Irish language
+keywords: Logainm, API, placenames, toponymy, onomastics, Irish language
 resource: Logainm
 order: 1
 public: true
@@ -124,10 +124,10 @@ public:
 | `keywords` | Yes | A comma-separated list of keywords relating to the document content. |
 | `resource` | No | The name of the resource with which the document is associated. Will be displayed before the document title in the browser tab.  |
 | `github` | No | The URL of a [GitHub](https://github.com/) repository associated with the document. |
-| `npm` | No | The URL of a [NPM](https://www.npmjs.com/) package associated with the document. |
+| `npm` | No | The URL of an [NPM](https://www.npmjs.com/) package associated with the document. |
 | `nuget` | No | The URL of a [NuGet](https://www.nuget.org/) package associated with the document. |
 | `order` | No | A number representing the ascending order in which documents associated with a single resource will be displayed in the navigation. |
-| `toc` | No | If this key is given a value of `false` no table of contents will be displayed with the document. If not set the value is presumed to be `true`. |
+| `toc` | No | If this key is given a value of `false`, no table of contents will be displayed with the document. If not set, the value is presumed to be `true`. |
 | `public` | Yes | Must be present and must be given a value of `true` in order for the document to be accessible via the public website. |
 
 Note that not all fields are required. However, if you want your document to be available to the public you must add a key-value pair of `public: true`.
@@ -138,7 +138,7 @@ The remainder of the document is content written in Markdown. For questions rega
 
 - Use headings. Headings give structure to content and make it easier to read, particularly in a digital context where there are no pages to subdivide the text.
 - Provided that the `toc` metadatum has not been set to `false` (see above), Documental will use the headings in a given document to automatically generate a table of contents. This table of contents is displayed on the right-hand side of the page on desktop screens and is accessible by pressing a button on mobile devices.
-- Computer code, as well as values consumed by or output from computer programs, are usually represented in Markdown by enclosing them in backticks (<code>`</code>). Typically, you do not translate text in code blocks as, while the text might use English-language words or phrases, it is usually specific to the  vocabulary and syntax of the programming language in question.
+- Computer code, as well as values consumed by or output from computer programs, is usually represented in Markdown by enclosing it in backticks (<code>`</code>). Typically, you do not translate text in code blocks as, while the text might use English-language words or phrases, it is usually specific to the  vocabulary and syntax of the programming language in question.
 
 Finally, probably the best way to learn is by looking at pre-existing examples. Take a look at the files in the `docs` folder and see how they are displayed on the [docs.gaois.ie](https://docs.gaois.ie) website.
 
