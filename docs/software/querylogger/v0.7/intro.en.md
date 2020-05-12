@@ -7,7 +7,7 @@ order: 1
 public: true
 ---
 
-A simple, configurable query logger for ASP.NET and ASP.NET Core applications. It is the query logger used by [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), Dublin City University, Ireland to log search statistics to SQL Server. Gaois.QueryLogger is a [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) library and it supports applications built with ASP.NET Framework 4.6.1 and ASP.NET Core 2.1 or higher.
+A simple, configurable query logger for ASP.NET and ASP.NET Core applications. It is the query logger used by [Gaois](https://www.gaois.ie),Fiontar & Scoil na Gaeilge, DCU to log search statistics to SQL Server. Gaois.QueryLogger is a [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard) library and it supports applications built with ASP.NET Framework 4.6.1 and ASP.NET Core 2.1 or higher.
 
 ## Package status
 
@@ -19,7 +19,7 @@ A simple, configurable query logger for ASP.NET and ASP.NET Core applications. I
 ## Features
 
 - Log query terms and associated metadata to SQL Server.
-- Metadata include a unique query ID, application name, query category, host server, client IP address, query execution success, query execution duration, result count, and datetime information.
+- Metadata includes a unique query ID, application name, query category, host server, client IP address, query execution success, query execution duration, result count and datetime information.
 - Queries can share a GUID, meaning you can group multiple associated queries.
 - Add custom metadata to your logs. We use this to store application-specific data in a multi-application log.
 - By default, the library partially anonymises user IP addresses by removing the last octet of IPv4 client IP addresses or the last 80 bits of an IPv6 address. This setting can be turned off.
