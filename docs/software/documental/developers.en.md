@@ -10,7 +10,7 @@ public: true
 
 Documental is a [Node.js](https://nodejs.org/) application written in JavaScript. It can run on a server, dynamically serving content, or it can be used as a [static site generator](https://www.staticgen.com/about). This is explained further in the [deployment](../deployment) section. All website content is stored on disk in the form of Markdown files and there are no databases or other types of data store.
 
-The software works on all popular operating systems: the only prerequisite is to install Node.js on your computer. All other dependencies will be detected and installed automatically by the Node.js Package Manager (NPM) during setup. Documental is built using [Svelte](https://svelte.dev/), a component framework similar to React, and [Sapper](https://sapper.svelte.dev/), an application framework powered by Svelte. Please consult the documentation for these frameworks as regards any application-level questions you might have as such information is outside the scope of this article.
+The software works on all popular operating systems: the only prerequisite is to install Node.js on your computer. All other dependencies will be detected and installed automatically by the Node.js Package Manager (NPM) during setup. Documental is built using [Svelte](https://svelte.dev/), a component framework similar to React, and [Sapper](https://sapper.svelte.dev/), an application framework powered by Svelte. Please consult the documentation for these frameworks as regards any application-level questions you might have, as such information is outside the scope of this article.
 
 ## Getting started
 
