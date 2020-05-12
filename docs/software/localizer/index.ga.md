@@ -223,7 +223,7 @@ services.AddLocalizer(options =>
 });
 ```
 
-Cinnteoidh meánearraí na bhfianán logánaithe go dtaispeántar do shuíomh i gcultúr roghnaithe an úsáideora gach uair a thugann sé cuairt ar an leathanach baile. Ná déan dearmad, áfach, go dtugann na huirlisí logánaithe [tús áite don chultúr i bparaiméadair chosáin URL ar aon socrú eile](#a-word-about-seo), mar sin de, má leanann an t-úsáideoir nasc chuig leathanach i gcultúr ar leith, ní chuirfear fianáin logánaithe san áireamh. 
+Cinnteoidh meánearraí na bhfianán logánaithe go dtaispeántar do shuíomh i gcultúr roghnaithe an úsáideora gach uair a thugann sé cuairt ar an leathanach baile. Ná déan dearmad, áfach, go dtugann na huirlisí logánaithe [tús áite don chultúr i bparaiméadair chosáin URL ar aon socrú eile](#focal-faoi-seo), mar sin de, má leanann an t-úsáideoir nasc chuig leathanach i gcultúr ar leith, ní chuirfear fianáin logánaithe san áireamh. 
 
 ### Na fianáin logánaithe a chumrú
 
