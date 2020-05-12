@@ -6,7 +6,7 @@ order: 5
 public: true
 ---
 
-The `Query` object is at the heart of Gaois.QueryLogger. `Query` objects carry the query data that will be logged to your data store. Gaois.QueryLogger will auto-populate certain query data, such as the application host or client IP, prior to logging while other data need to be specified by your application. All default behaviours can be overridden, however. The rest of this document describes the various properties available for storing your query data as well as methods that can be called on the `Query` object.
+The `Query` object is at the heart of Gaois.QueryLogger. `Query` objects carry the query data that will be logged to your data store. Gaois.QueryLogger will auto-populate certain query data, such as the application host or client IP, prior to logging while other data needs to be specified by your application. All default behaviours can be overridden. The rest of this document describes the various properties available for storing your query data as well as methods that can be called on the `Query` object.
 
 ## Data
 
@@ -24,7 +24,7 @@ The `Query` object is at the heart of Gaois.QueryLogger. `Query` objects carry t
 
 **IPAddress** (`string`): The client IP address. Will be automatically obtained from the current HTTP context if not otherwise specified.
 
-**ExecutedSuccessfully** (`bool`, default: **true**): Records whether the query executed successfully.
+**ExecutedSuccessfully** (`bool`, default: `true`): Records whether the query executed successfully.
 
 **ExecutionTime** (`int?`): The query execution time in milliseconds (optional).
 
