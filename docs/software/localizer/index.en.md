@@ -9,23 +9,23 @@ public: true
 
 **Note:** This is a **prerelease version** for testing purposes. Expect some breaking changes and renamed API methods before we reach a 1.0 release.
 
-A toolkit for creating multilingual web applications on ASP.NET Core. It offers a suite of configurable localisation middleware, including request culture validators, cookie management, exception handlers, and URL rewriting rules, that wrap and extend the framework's native [globalisation and localisation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1) functions to take the pain out of building localised websites.
+This is a toolkit for creating multilingual web applications on ASP.NET Core. It offers a suite of configurable localisation middleware, including request culture validators, cookie management, exception handlers and URL rewriting rules, that wrap and extend the framework's native [globalisation and localisation](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1) functions to take the pain out of building localised websites.
 
-The library was developed at [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), Dublin City University, Ireland where we use it to build our own multilingual web applications.
+The library was developed by [Gaois](https://www.gaois.ie), Fiontar & Scoil na Gaeilge, DCU where we use it to build our own multilingual web applications.
 
 ## Features
 
 The library provides out-of-the-box functionality that allows you to:
 
-- Get the request culture from URL path parameters such as `www.mymultilingualapp.com/en-GB/about/` and `www.mymultilingualapp.com/ga/about/`
+- Get the request culture from URL path parameters such as `www.mymultilingualapp.com/en-GB/about/` and `www.mymultilingualapp.com/ga/about/`.
 - Use cookies and HTTP `Accept-Language` headers to infer the user's desired culture when they visit the website homepage, e.g. `www.mymultilingualapp.com`, where no path parameters are present.
-- Handle requests to unsupported cultures, either by returning a 404 error page or redirecting the user to a page in the default language
-- Exclude certain routes from being affected by the localisation middleware
-- Manage and configure settings related to localisation cookies, so that the user's language preferences can be persisted across browsing sessions
-- Decide if users should be redirected to a localised URL when they first request the website homepage
-- Handle scenarios where you wish to internally map a two- or three-letter ISO language code in the URL to a region or an extended language subtag
+- Handle requests to unsupported cultures, either by returning a 404 error page or redirecting the user to a page in the default language.
+- Exclude certain routes from being affected by the localisation middleware.
+- Manage and configure settings related to localisation cookies, so that the user's language preferences can be persisted across browsing sessions.
+- Decide if users should be redirected to a localised URL when they first request the website homepage.
+- Handle scenarios where you wish to internally map a two- or three-letter ISO language code in the URL to a region or an extended language subtag.
 
-Most of these features are configurable: sensible defaults are supplied, but you get to specify which types of redirects to use, how long before cookies expire, etc. The library was also designed very much with SEO in mind, and the default setup offers an optimal localisation solution when it comes to being indexed by major search engines. The localizer middleware plays nice even when the application is run in a virtual directory.
+Most of these features are configurable: sensible defaults are supplied, but you get to specify which types of redirects to use, how long before cookies expire, etc. The library was also designed very much with SEO in mind and the default setup offers an optimal localisation solution when it comes to being indexed by major search engines. The localizer middleware plays nice, even when the application is run in a virtual directory.
 
 ## Install and setup
 
@@ -135,10 +135,10 @@ The `supportedCultures` variables lists the languages and culture types we wish 
 
 The localizer middleware parses the HTTP request and returns a target culture according to the following criteria:
 
-1. The presence of a culture path parameter, i.e. an [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag), in the request URL (e.g. the 'ga-IE' parameter in `www.mymultilingualapp.com/ga-IE/`)
-2. The request contains a culture cookie previously obtained from the website (see [below](#localisation-cookies))
-3. The user has specified a desired language in their browser (obtained via the HTTP `Accept-Language` header) that matches one of the application's supported cultures
-4. The default language specified in the `RequestLocalizationOptions` service
+1. The presence of a culture path parameter, i.e. an [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag), in the request URL (e.g. the 'ga-IE' parameter in `www.mymultilingualapp.com/ga-IE/`).
+2. The request contains a culture cookie previously obtained from the website (see [below](#localisation-cookies)).
+3. The user has specified a desired language in their browser (obtained via the HTTP `Accept-Language` header) that matches one of the application's supported cultures.
+4. The default language specified in the `RequestLocalizationOptions` service.
 
 The first criterion to return a non-null result will be used. Thus, a user who accesses `www.mymultilingualapp.com/ru-RU/` will be shown a page in Russian, regardless of their browser settings. A user who has selected `en` as their preferred language in their browser and visits `www.mymultilingualapp.com` will be shown a page in English, etc.
 
@@ -160,15 +160,15 @@ Now, the application will attempt to use the second path parameter in the reques
 
 ### A word about SEO
 
-In what is probably the most opinionated feature of this library, preference is always given to a culture obtained from a URL path parameter over client cookie or HTTP header settings. This means that if a user visits `www.mymultilingualapp.com/en-GB/` and their preferred browser language is US English (en-US) they will still receive the page in United Kingdom English (en-GB), provided this is a supported culture within the application. This means that: (1) users get the page they expected to open when they clicked the URL, and; (2) search crawlers can reliably associate URLs with localised content. We believe this is optimal for SEO and for user experience. Having opened the page, users should be able to voluntarily switch languages via a dedicated language switcher in the UI.
+In what is probably the most opinionated feature of this library, preference is always given to a culture obtained from a URL path parameter over client cookie or HTTP header settings. This means that if a user visits `www.mymultilingualapp.com/en-GB/` and their preferred browser language is US English (en-US) they will still receive the page in United Kingdom English (en-GB), provided this is a supported culture within the application. This means that (i) users get the page they expected to open when they clicked the URL, and (ii) search crawlers can reliably associate URLs with localised content. We believe this is optimal for SEO and for user experience. Having opened the page, users should be able to voluntarily switch languages via a dedicated language switcher in the UI.
 
 ## Unsupported cultures
 
 What happens when a user inputs a URL that contains an unsupported culture? For instance, if your site supports Spanish and Portugese content, but the user supplies an `fr-FR` region subtag in the URL. Internally, the localization middleware will throw a `CultureNotFoundException` in this scenario. Gaois.Localizer offers two ways to handle this error.
 
-### Return a 404 Not Found status code
+### Return a '404 Not Found' status code
 
-By default, a request to an unsupported culture will cause a 404 Not Found HTTP status code to be returned in the response and the user will be shown an appropriate message, provided that an error page route has been configured. This may be the ideal approach in terms of SEO. Search engines will be in no doubt that content is not available at the requested URL.
+By default, a request to an unsupported culture will cause a '404 Not Found' HTTP status code to be returned in the response and the user will be shown an appropriate message, provided that an error page route has been configured. This may be the ideal approach in terms of SEO. Search engines will be in no doubt that content is not available at the requested URL.
 
 ### Redirect the user to a page in the default culture
 
@@ -184,7 +184,7 @@ services.AddLocalizer(options =>
 
 #### Configure the rerouter
 
-You can further configure the reouter to send a different HTTP status code in the response or to have redirects routed to a particular path.
+You can further configure the rerouter to send a different HTTP status code in the response or to have redirects routed to a particular path.
 
 ```csharp
 services.AddLocalizer(options =>
@@ -209,11 +209,11 @@ services.AddLocalizer(options =>
 });
 ```
 
-Paths are defined in the form of regex strings. Routes beginning with `/error`, e.g. `/Error` or `/error/{0}/`, are added by default to the exlusion list in order to prevent circular routing issues when a `CultureNotFoundException` is thrown.
+Paths are defined in the form of regex strings. Routes beginning with `/error`, e.g. `/Error` or `/error/{0}/`, are added by default to the exclusion list in order to prevent circular routing issues when a `CultureNotFoundException` is thrown.
 
 ## Localisation cookies
 
-When a user visits your website, they may decide to select another language via a language switcher or similar UI facility. It can be useful to store the user's preference in a cookie so that the application will 'remember' their choice and the user can pick up where they left off on their next visit. Fortunately, ASP.NET Core has a built-in [provider](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1#set-the-culture-programmatically) to append culture cookies to the HTTP response. Gaois.Localizer wraps this provider in some useful logic that lives in the request execution pipeline: thus foregoing the need for POST requests or additional controllers to programatically set and update the user's language preferences. All you need to do is configure the *AddLocalizer* method in **Startup.cs**:
+When a user visits your website, they may decide to select another language via a language switcher or similar UI facility. It can be useful to store the user's preference in a cookie so that the application will remember their choice and the user can pick up where they left off on their next visit. Fortunately, ASP.NET Core has a built-in [provider](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/localization?view=aspnetcore-2.1#set-the-culture-programmatically) to append culture cookies to the HTTP response. Gaois.Localizer wraps this provider in some useful logic that lives in the request execution pipeline, thus foregoing the need for POST requests or additional controllers to programatically set and update the user's language preferences. All you need to do is configure the *AddLocalizer* method in **Startup.cs**:
 
 ```csharp
 services.AddLocalizer(options =>
@@ -227,7 +227,7 @@ The localisation cookies middleware will ensure that your site is displayed in t
 
 ### Configure the localisation cookies
 
-Optionally, you can further configure the localisation cookies settings, allowing you to specify both the cookie expiration date and whether the cookie is essential for the application to function. The default values are `1 year` and `false` respectively. The `IsEssential` property should be configured with respect to your privacy and data protection policies. If true then consent policy checks may be bypassed.
+Optionally, you can further configure the localisation cookies settings, allowing you to specify both the cookie expiration date and whether the cookie is essential for the application to function. The default values are `1 year` and `false`, respectively. The `IsEssential` property should be configured with respect to your privacy and data protection policies. If true, then consent policy checks may be bypassed.
 
 ```csharp
 services.AddLocalizer(options =>
@@ -241,7 +241,7 @@ services.AddLocalizer(options =>
 
 ## Landing page redirection
 
-When a user visits a website's homepage, e.g. `www.mymultilingualapp.com`, it may sometimes be desirable to automatically redirect them to the URL for a localised version of that page, e.g `www.mymultilingualapp.com/es`. This is not the default behaviour when using Gaois.Localizer for reasons of SEO (see below) but we recongise that it is a common use case. To turn on landing page redirection, again just configure the *AddLocalizer* method in **Startup.cs**:
+When a user visits a website's homepage, e.g. `www.mymultilingualapp.com`, it may sometimes be desirable to automatically redirect them to the URL for a localised version of that page, e.g. `www.mymultilingualapp.com/es`. This is not the default behaviour when using Gaois.Localizer for reasons of SEO (see below) but we recognise that it is a common use case. To turn on landing page redirection, again just configure the *AddLocalizer* method in **Startup.cs**:
 
 ```csharp
 services.AddLocalizer(options =>
@@ -257,16 +257,16 @@ The redirect URL automatically respects settings configured in the [`Microsoft.A
 
 Numerous approaches can be taken when localising a website's homepage. Some websites will evaluate a user's preferred language and redirect them to a new URL, such as moving from `example.com` to `example.com/es`. This can be problematic, however, due to the nature of HTTP redirects and how they interact with the browser:
 
-- Some websites (for example, [mozilla.org](https://www.mozilla.org/)) examine the browser's language preferences and implement a 301 (permanent) redirect. This is fine if you are reasonably certain that most users will access the application in one language only. However, many browsers indefinitely cache 301 redirects, meaning that even if the user later updates their browser settings—or they access the computer in a public location such as a school or a library— the browser will always take them to the first localised version of the site that was opened in that browser.
+- Some websites (for example, [mozilla.org](https://www.mozilla.org/)) examine the browser's language preferences and implement a 301 (permanent) redirect. This is fine if you are reasonably certain that most users will access the application in one language only. However, many browsers indefinitely cache 301 redirects, meaning that even if the user later updates their browser settings — or they access the computer in a public location such as a school or a library — the browser will always take them to the first localised version of the site that was opened in that browser.
 - Many other websites implement 302 redirects, likely for the reasons described above. However, it is unclear whether some major web crawlers pay attention to pages with 302 redirects and this may not be ideal for SEO.
 
-That is why the default approach using the Gaois.Localizer library is not to redirect the user (i.e. the user stays on `example.com`) though the culture information will still be localised according to the criteria outlined [above](#getting-the-request-culture). We feel this gives optimal results both in terms of SEO and user experience.
+That is why the default approach using the Gaois.Localizer library is not to redirect the user (i.e. the user stays on `example.com`), though the culture information will still be localised according to the criteria outlined [above](#getting-the-request-culture). We feel this gives optimal results both in terms of SEO and user experience.
 
 ## Language tag choice
 
-The library is agnostic as to which type of [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) you use in your URL to signify the target culture. The examples in this documentation use region subtags such as `ga-IE`, `en-GB`, `pt-BR`, etc. Many applications prefer ISO two-letter language codes like `ga`, `en`, `fr`. You can specify either type of tag in the supported cultures variable of your `RequestLocalizationOptions` in **Startup.cs**.
+The library is agnostic as to which type of [IETF language tag](https://en.wikipedia.org/wiki/IETF_language_tag) you use in your URL to signify the target culture. The examples in this documentation use region subtags such as `ga-IE`, `en-GB`, `pt-BR`, etc. Many applications prefer ISO two-letter language codes such as `ga`, `en`, `fr`. You can specify either type of tag in the supported cultures variable of your `RequestLocalizationOptions` in **Startup.cs**.
 
-If you do opt for two-letter language codes it can often be helpful to store a set of region or extended language subtags that map to your language codes—for example, when supplying locale data in [Open Graph](http://ogp.me/) meta tags. Gaois.Localizer facilitates this by allowing you to configure the route culture options in the *Configure* method of **Startup.cs**:
+If you do opt for two-letter language codes it can often be helpful to store a set of region or extended language subtags that map to your language codes — for example, when supplying locale data in [Open Graph](http://ogp.me/) meta tags. Gaois.Localizer facilitates this by allowing you to configure the route culture options in the *Configure* method of **Startup.cs**:
 
 ```csharp
 services.AddLocalizer(options =>
@@ -277,7 +277,7 @@ services.AddLocalizer(options =>
 });
 ```
 
-The mapped tags can then be accessed elswhere in the application, and an `InferLocaleFromLanguage()` convenience function is provided to output the correct locale or region subtag when given a corresponding language code.
+The mapped tags can then be accessed elsewhere in the application, and an `InferLocaleFromLanguage()` convenience function is provided to output the correct locale or region subtag when given a corresponding language code.
 
 Example usage (Razor view):
 
@@ -351,7 +351,7 @@ Gaois.Localizer also contains extension methods that aid common localisation-rel
 
 ### GetDisplayUrl()
 
-This method extends the [GetDisplayUrl()](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.extensions.urihelper.getdisplayurl?view=aspnetcore-2.2) method, allowing you to replace a URL path parameter (if present) by index.
+This method extends the [*GetDisplayUrl()*](https://docs.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.http.extensions.urihelper.getdisplayurl?view=aspnetcore-2.2) method, allowing you to replace a URL path parameter (if present) by index.
 
 ### GetEncodedUrl()
 
