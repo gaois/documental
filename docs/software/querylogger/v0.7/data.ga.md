@@ -6,7 +6,7 @@ order: 5
 public: true
 ---
 
-Tá an oibiacht `Query` i gcroílár Gaois.QueryLogger. Iompraíonn oibiachtaí `Query` sonraí an iarratais a logálfar i do stóras sonraí. Pobalóidh Gaois.QueryLogger sonraí áirithe iarratais go huathoibríoch, amhail óstach an fheidhmchláir nó IP an chliaint, roimh logáil ach caithfidh d’fheidhmchlár sonraí eile a shonrú. Is féidir gach iompraíocht réamhshocraithe a shárú, áfach. Déantar cur síos sa chuid eile den doiciméad seo ar na hairíonna éagsúla atá ar fáil chun sonraí d’iarratais a stóráil agus ar mhodhanna a d’fhéadfaí a ghlaoch ar an oibiacht `Query`. 
+Tá an oibiacht `Query` i gcroílár Gaois.QueryLogger. Iompraíonn oibiachtaí `Query` sonraí an iarratais a logálfar i do stóras sonraí. Pobalóidh Gaois.QueryLogger sonraí áirithe iarratais go huathoibríoch, amhail óstach an fheidhmchláir nó IP an chliaint, roimh logáil ach caithfidh d’fheidhmchlár sonraí eile a shonrú. Is féidir gach iompraíocht réamhshocraithe a shárú. Déantar cur síos sa chuid eile den doiciméad seo ar na hairíonna éagsúla atá ar fáil chun sonraí d’iarratais a stóráil agus ar mhodhanna a d’fhéadfaí a ghlaoch ar an oibiacht `Query`. 
 
 ## Sonraí
 
@@ -24,7 +24,7 @@ Tá an oibiacht `Query` i gcroílár Gaois.QueryLogger. Iompraíonn oibiachtaí 
 
 **IPAddress** (`string`): Seoladh IP an chliaint. Gheofar go huathoibríoch ón gcomhthéacs reatha HTTP é mura sonrófar a mhalairt.
 
-**ExecutedSuccessfully** (`bool`, réamhshocrú: **true**): Taifeadann sé cé acu a d'éirigh leis an iarratas rith nó nár éirigh.
+**ExecutedSuccessfully** (`bool`, réamhshocrú: `true`): Taifeadann sé cé acu a d'éirigh leis an iarratas rith nó nár éirigh.
 
 **ExecutionTime** (`int?`): Aga rite an iarratais i milleasoicindí (roghnach). 
 
