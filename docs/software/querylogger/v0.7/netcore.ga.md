@@ -26,7 +26,7 @@ Cuir an pacáiste NuGet [Gaois.QueryLogger.AspNetCore](https://www.nuget.org/pac
 dotnet add package Gaois.QueryLogger.AspNetCore
 ```
 
-Ansin, in **Startup.cs**, cumraigh modh na *SeirbhísíCumraíochta* ach glaoch a chur le `services.AddQueryLogger()`. Beidh ort ainm feidhmchláir agus teaghrán ceangail don stóras sonraí de chuid SQL Server a roghnaíonn tú a chur leis:
+Ansin, in **Startup.cs**, cumraigh modh na *ConfigureServices* ach glaoch a chur le `services.AddQueryLogger()`. Beidh ort ainm feidhmchláir agus teaghrán ceangail don stóras sonraí de chuid SQL Server a roghnaíonn tú a chur leis:
 
 ```csharp
 services.AddQueryLogger(settings =>
@@ -42,7 +42,7 @@ De rogha air sin, lódáil an chumraíocht ó do chomhad `appsettings.json`:
 services.AddQueryLogger(configuration.GetSection("QueryLogger"));
 ```
 
-…Nó is féidir leat an dá chur chuige a mheascadh:
+Nó is féidir leat an dá chur chuige a mheascadh:
 
 ```csharp
 services.AddQueryLogger(configuration.GetSection("QueryLogger"), settings =>
@@ -55,7 +55,7 @@ Is féidir leat an treoir `using Gaois.QueryLogger` a chur le comhad C# ar bith 
 
 ## Úsáid
 
-Cuirtear Gaois.QueryLogger i bhfeidhm in ASP.NET Core ach gnásanna molta na creatlaí maidir le [hinteilgean spléachas] (https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) a úsáid. Cuir inteilgean an logálaí iarratais chuig cruthaitheoir aicme tríd an gcomhéadan `IQueryLogger`:
+Cuirtear Gaois.QueryLogger i bhfeidhm in ASP.NET Core ach gnásanna molta na creatlaí maidir le [hinteilgean spléachas](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection) a úsáid. Cuir inteilgean an logálaí iarratais chuig cruthaitheoir aicme tríd an gcomhéadan `IQueryLogger`:
 
 ```csharp
 private readonly IQueryLogger _queryLogger;
@@ -89,11 +89,11 @@ _queryLogger.Log(query);
 
 Faigheann an leabharlann airíonna `Host` an tsuímh gréasáin agus `IPAddress` an chliaint ón gcomhthéacs HTTP go huathoibríoch. Mar an gcéanna, mura sonraíonn tú airí `QueryID` (i bhfoirm GUID), cruthófar ceann duit. Is féidir leat aon cheann de na luachanna seo a pobalaíodh go huathoibríoch a fhorscríobh ach an t-airí ábhartha a shonrú san oibiacht `Query`, áfach. Féach an liosta iomlán de shonraí iarratais is féidir a shonrú [anseo](../data). 
 
-Is ionann an modh Log() agus ‘fire-and-forget’: cuirtear iarratais go sioncronach le ciú logálaí atá snáithe-oiriúnach agus déantar próiseáil go haisioncronach orthu i snáithe eile agus an patrún Táirgeora-Tomhaltóra á chur i bhfeidhm. Ciallaíonn sé sin nach gcuireann logáil aon taca le haga freagartha an fhreastalaí i ndáiríre. Ag an am céanna, cruthaíodh Gaois.QueryLogger agus lamháltas lochtanna agus láimhseáil earráide ar intinn againn: tuilleadh faisnéise [anseo](../faulttolerance). 
+Is ionann an modh `Log()` agus *fire-and-forget*, cuirtear iarratais go sioncronach le ciú logálaí atá snáithe-oiriúnach agus déantar próiseáil go haisioncronach orthu i snáithe eile agus an patrún Táirgeora-Tomhaltóra á chur i bhfeidhm. Ciallaíonn sé sin nach gcuireann logáil aon taca le haga freagartha an fhreastalaí i ndáiríre. Ag an am céanna, cruthaíodh Gaois.QueryLogger agus lamháltas lochtanna agus láimhseáil earráide ar intinn againn. Tuilleadh faisnéise [anseo](../faulttolerance). 
 
 ### Iarratais ghaolmhara a chomhcheangal
 
-Más mian leat iarratais ghaolmhara a chur i ngrúpa le chéile—mar shampla, iarratais dhifriúla chuardaigh a ritheadh ar leathanach amháin—sann an t-airí `QueryID` céanna do gach ceann de na hiarratais ghaolmhara:
+Más mian leat iarratais ghaolmhara a chur i ngrúpa le chéile — mar shampla, iarratais dhifriúla chuardaigh a ritheadh ar leathanach amháin — sann an t-airí `QueryID` céanna do gach ceann de na hiarratais ghaolmhara:
 
 ```csharp
 var queryID = Guid.NewGuid();
@@ -194,7 +194,7 @@ services.AddQueryLogger(settings =>
 });
 ```
 
-Faoi láthair, is ionann na leibhéil anaithnidithe atá ar fáil agus **Dada** (níor cuireadh anaithnidiú i bhfeidhm) agus **Páirteach** (baintear an t-ochtréad deireanach de sheoladh IPv4 an chliaint nó an 80 giotán deireanach de sheoladh IPv6).
+Faoi láthair, is ionann na leibhéil anaithnidithe atá ar fáil agus `None` (níor cuireadh anaithnidiú i bhfeidhm) agus `Partial` (baintear an t-ochtréad deireanach de sheoladh IPv4 an chliaint nó an 80 giotán deireanach de sheoladh IPv6).
 
 Is féidir leat cosc a chur leis an logálaí seoltaí IP a bhailiú ar an gcéad dul síos ach an socrú `StoreClientIPAddress` a chumrú:
 
@@ -205,8 +205,8 @@ services.AddQueryLogger(settings =>
     settings.StoreClientIPAddress = false;
 });
 ```
-Nuair a shocraítear `StoreClientIPAddress` ag **bréagach**, taifeadfar an luach **PRÍOBHÁIDEACH** sa cholún IPAddress de thábla an logálaí iarratais a bhaineann le do bhunachar sonraí. Má shocraítear `StoreClientIPAddress` ag **fíor**, ach mura féidir seoladh IP an chliaint a fháil ón gcomhthéacs HTTP ar chúis éigin, taifeadfar luach **ANAITHNID**.
+Nuair a shocraítear `StoreClientIPAddress` ag `false`, taifeadfar an luach `PRIVATE` sa cholún `IPAddress` de thábla an logálaí iarratais a bhaineann le do bhunachar sonraí. Má shocraítear `StoreClientIPAddress` ag `true`, ach mura féidir seoladh IP an chliaint a fháil ón gcomhthéacs HTTP ar chúis éigin, taifeadfar luach `UNKNOWN`.
 
 ## Logálaithe comhiomlánaithe iarratais agus anailís logálaí
 
-In [Fiontar & Scoil na Gaeilge](https://www.gaois.ie), DCU, comhiomlánaímid sonraí achoimre ó thábla an logálaí iarratais go míosúil agus stórálaimid i dtábla bunachair sonraí eile iad. Chuireamar struchtúr an tábla le chéile agus stórálamar gnásanna a bhainistíonn an próiseas seo atá ar fáil i bhfillteán na [scripteanna](https://github.com/gaois/Gaois.QueryLogger/tree/master/scripts) i stór GitHub Gaois.QueryLogger sa chás go mbeidh aon duine eile ag iarraidh úsáid a bhaint astu. Tá eintiteas `AggregratedQueryLog` ag Gaois.QueryLogger chomh maith a chomhfhreagraíonn d’iontrálacha i dtábla comhiomlánaithe an logálaí. Faightear cuid de na hiarratais níos ginearálta SQL a úsáidimid chun sonraí logálaí a achoimriú agus a anailísiú i bhfillteán na scripteanna.  
+In [Gaois](https://www.gaois.ie), Fiontar & Scoil na Gaeilge, DCU comhiomlánaímid sonraí achoimre ó thábla an logálaí iarratais go míosúil agus stórálaimid i dtábla bunachair sonraí eile iad. Chuireamar struchtúr an tábla le chéile agus stórálamar gnásanna a bhainistíonn an próiseas seo atá ar fáil i bhfillteán na [scripteanna](https://github.com/gaois/Gaois.QueryLogger/tree/master/scripts) i stór GitHub Gaois.QueryLogger sa chás go mbeidh aon duine eile ag iarraidh úsáid a bhaint astu. Tá eintiteas `AggregratedQueryLog` ag Gaois.QueryLogger chomh maith a chomhfhreagraíonn d’iontrálacha i dtábla comhiomlánaithe an logálaí. Faightear cuid de na hiarratais níos ginearálta SQL a úsáidimid chun sonraí logálaí a achoimriú agus a anailísiú i bhfillteán na scripteanna.  
