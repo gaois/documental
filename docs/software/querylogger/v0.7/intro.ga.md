@@ -22,13 +22,13 @@ Logálaí simplí iarratais is féidir a chumrú le haghaidh fheidhmchláir ASP.
 - Áirítear leis na meiteashonraí ID uathúil iarratais, ainm an iarratais, catagóir an iarratais, óstfhreastalaí, seoladh IP an chliaint, rath rith an iarratais, comhaireamh torthaí agus faisnéis am-dháta.  
 - Is féidir le hiarratais GUID a roinnt, agus ciallaíonn sé sin gur féidir leat iarratais éagsúla ghaolmhara a chur i ngrúpaí.
 - Meiteashonraí saincheaptha a chur le do chuid logálaithe. Úsáidimid é sin chun sonraí aonfheidhmeacha a stóráil i logálaí ilfheidhmchláir.
-- De réir réamhshocraithe, déanann an leabharlann seoltaí IP an úsaideora anaithnid ach an t-ochtréad deireanach de sheoltaí IPv4 an chliaint nó an 80 giotán deireanach de sheoladh IPv6 a bhaint. Is féidir an socrú seo a chasadh as.  
+- De réir réamhshocraithe, déanann an leabharlann seoltaí IP an úsaideora a anaithnidiú ach an t-ochtréad deireanach de sheoltaí IPv4 an chliaint, nó an 80 giotán deireanach de sheoladh IPv6, a bhaint. Is féidir an socrú seo a chasadh as.  
 - Feidhmíocht: ní chuireann logáil aon taca breise le hagaí freagartha an fhreastalaí.
 - Tá seirbhís fógraí ríomhphoist ag an logálaí a thabharfaidh foláireamh duit má tá aon earráid logála ann.
 
 ## Doiciméadacht
 
-Athraíonn suiteáil agus úsaid beagáinín de réir na sprioc-chreatlaí. Lean na naisc thíos chun an doiciméadacht ábhartha a fheiceáil. 
+Athraíonn suiteáil agus úsáid beagáinín de réir na sprioc-chreatlaí. Lean na naisc thíos chun an doiciméadacht ábhartha a fheiceáil. 
 
 - Léigh an doiciméadacht a bhaineann le ASP.NET Framework 4.6.1+ [anseo](../net461).
 - Léigh an doiciméadacht a bhaineann le ASP.NET Core 2.1+ [anseo](../netcore).
@@ -37,7 +37,7 @@ Tá tuilleadh doiciméadachta ar fáil freisin maidir le [roghanna cumraíochta]
 
 ## Cé atá á úsáid?
 
-Tá úsáid táirgeachta á baint as Gaois.QueryLogger ag [www.tearma.ie](https://www.tearma.ie), [www.duchas.ie](https://www.duchas.ie), [www.gaois.ie](https://www.gaois.ie), [www.ainm.ie](https://www.ainm.ie), [www.logainm.ie](https://www.logainm.ie), agus [meitheal.logainm.ie](https://meitheal.logainm.ie).
+Tá úsáid táirgeachta á baint as Gaois.QueryLogger ag [www.tearma.ie](https://www.tearma.ie), [www.duchas.ie](https://www.duchas.ie), [www.gaois.ie](https://www.gaois.ie), [www.ainm.ie](https://www.ainm.ie), [www.logainm.ie](https://www.logainm.ie) agus [meitheal.logainm.ie](https://meitheal.logainm.ie).
 
 ## Creidiúintí breise
 
