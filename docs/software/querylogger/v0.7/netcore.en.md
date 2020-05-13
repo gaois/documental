@@ -159,7 +159,7 @@ See the full list of configurable settings [here](../configuration). The rest of
 
 ### Globally enable/disable the query logger
 
-The query logger is enabled by default. However, there may be occasions or particular environments where, for testing or other purposes, you would prefer to disable the query logger without having to wrap each query command in its own conditional logic. To accommodate this, disable the query logger globally within your application by setting `IsEnabled` to `false`.
+The query logger is enabled by default. However, there may be occasions or particular environments where, for testing or other purposes, you would prefer to disable the query logger without having to wrap each query command in its own conditional logic. To accomodate this, disable the query logger globally within your application by setting `IsEnabled` to `false`.
 
 ```csharp
 services.AddQueryLogger(settings =>
