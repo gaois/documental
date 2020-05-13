@@ -36,7 +36,7 @@ Run the following command to start Documental in development mode:
 npm run dev
 ```
 
-Running the application in development mode gives you hot module reloading (changes you make in the editor are reflected in the browser immediately on save) and detailed info and error messages in the console. Prior to deploying the application to a server environment you will need to build the application in production mode. This is discussed in the [deployment](../deployment) section.
+Running the application in development mode gives you hot module reloading (changes you make in the editor are reflected in the browser immediately on save), detailed info and error messages in the console. Prior to deploying the application to a server environment, you will need to build the application in production mode. This is discussed in the [deployment](../deployment) section.
 
 ## Project structure
 
@@ -58,10 +58,10 @@ Modern JavaScript frameworks take a component-based approach to constructing an 
 Documental is organised around a few key concepts:
 
 1. **Locales**: This represents the user's localisation/internationalisation preferences, e.g. Gaeilge (Irish) or English.
-2. **Documentation categories**: In Documental, there are two categories—Open Data and Software—however more can be added.
+2. **Documentation categories**: In Documental, there are two categories — Open Data and Software — however more can be added.
 3. **Resources**: Resources are discrete collections of one or more documents associated with a piece of software, a service or data artifact.
 4. **Resource versions**: Documentation for particular resources may be versioned, usually with reference to the resource's own version number.
-5. **Documents**: A single page of documentation, particular to a specific category, locale, resource, and, optionally, resource version.
+5. **Documents**: A single page of documentation, particular to a specific category, locale, resource and, optionally, resource version.
 
 These concepts are reflected in the URLs used by the docs.gaois.ie website:
 
@@ -81,9 +81,9 @@ As stated above, not all resources are versioned:
 - **`software`**: The category is Software.
 - **`geonames2sql`**: The resource is GeoNames2Sql.
 
-If there is only one document associated with the resource a document slug is not required, as is the case in the previous example.
+If there is only one document associated with the resource, a document slug is not required, as is the case in the previous example.
 
-These concepts are also reflected in the naming of Svelte files in the `src/routes` directory. Please consult the Sapper documentation for information as regards how routing is handled.
+These concepts are also reflected in the naming of svelte files in the `src/routes` directory. Please consult the Sapper documentation for information as regards how routing is handled.
 
 ```
 - routes
@@ -96,13 +96,13 @@ These concepts are also reflected in the naming of Svelte files in the `src/rout
   - index
 ```
 
-Furthermore, as you can see in the documentation for [editors](../editors) the Markdown documentation files are largely organised around these concepts.
+Furthermore, as you can see in the documentation for [editors](../editors), the Markdown documentation files are largely organised around these concepts.
 
 ## Localisation
 
 Documental handles UI localisation via the [svelte-i18n](https://github.com/kaisermann/svelte-i18n) library. This uses the [ICU Message format](http://userguide.icu-project.org/formatparse/messages) to translate user-visible strings.
 
-Translations are stored in JSON files in the top-level `messages` folder. These files are named in the format `[locale].json`. By default the structure of the `messages` folder is as follows:
+Translations are stored in JSON files in the top-level `messages` folder. These files are named in the format `[locale].json`. By default, the structure of the `messages` folder is as follows:
 
 ```
 - messages
@@ -128,17 +128,17 @@ Translations can be nested within these JSON files according to any structure yo
 }
 ```
 
-There is no restriction on the extent to which objects can be nested within the translation file. We call a localised string in the UI using dot notation such as `$_('navigation.openData')` where `navigation.openData` return `Open Data` for an English-language locale or `Sonraí Oscailte` for an Irish-language locale, etc. 
+There is no restriction on the extent to which objects can be nested within the translation file. We call a localised string in the UI using dot notation such as `$_('navigation.openData')` where `navigation.openData` returns `Open Data` for an English-language locale or `Sonraí Oscailte` for an Irish-language locale, etc. 
 
-Of course, for larger blocks of text we can put localised content in separate (Markdown) files, as is the case with the main documentation content of the website which stored in the top-level `docs` folder.
+Of course, for larger blocks of text we can put localised content in separate (Markdown) files, as is the case with the main documentation content of the website which is stored in the top-level `docs` folder.
 
 ## Adding a new resource
 
-While editorial team members can [create and edit documents](../editors) within a particular resource, developer input is usually required to add a new resource or change how a resource is displayed in the navigation or on the homepage. The instructions below describe how to accomplish this.
+While editorial team members can [create and edit documents](../editors) within a particular resource, developer input is usually required to add a new resource, or to change how a resource is displayed in the navigation or on the homepage. The instructions below describe how to accomplish this.
 
 ### `docs` folder
 
-Each documentation resource requires a correspoding folder within the top-level `docs` directory. If you were creating an Open Data resource for a new API, for example, you might create a new folder at `docs/data/mynewapi`. If the API was versioned you might add a further subfolder at `docs/data/mynewapi/v1.0`. See the repository for existing examples. Note that this task could be carried out by a content editor provided they have a good understanding of the directory structure. 
+Each documentation resource requires a corresponding folder within the top-level `docs` directory. If you were creating an Open Data resource for a new API, for example, you might create a new folder at `docs/data/mynewapi`. If the API was versioned you might add a further subfolder at `docs/data/mynewapi/v1.0`. See the repository for existing examples. Note that this task could be carried out by a content editor provided they have a good understanding of the directory structure. 
 
 ### Navigation
 
@@ -175,14 +175,14 @@ The `<NavigationResource/>` component accepts a number of **props** (properties)
 
 | Prop | Description |
 | ---- | ---- |
-| **category** | The documentation category. `data` or `software`. |
+| **category** | The documentation category, `data` or `software`. |
 | **resource** | The resource slug. Corresponds to the name of the resource folder under `docs`. |
-| **heading**  | The resource title. If the resource has several documents this will be displayed above them in the navigation. |
+| **heading**  | The resource title. If the resource has several documents, this will be displayed above them in the navigation. |
 | **latestVersion** | If the resource is versioned, specify the latest version number here.  |
 | **index**    | The index is the 'homepage' of the resource. Pass the document slug of the first document to be displayed as the index value. Not required if the resource is a singleton. |
 | **singleton** | If specified, the resource contains only one document and you do not need to specify an `index` prop. |
 
-Don't forget that unless a document has a YAML header of `public: true` it will not be visibile in the navigation.
+Don't forget that unless a document has a YAML header of `public: true` it will not be visible in the navigation.
 
 ### Homepage
 
@@ -206,6 +206,6 @@ As with the navigation we need to add a component that will represent the new re
 | ---- | ---- |
 | **href** | The relative path or absolute URL of the resource. |
 | **heading** | A descriptive heading. |
-| **blurb** | A one- or two-sentence description of the resource. |
+| **blurb** | A 1-2 sentence description of the resource. |
 
 Note that you may want to pass [localized strings](#localisation) for some of the props.
