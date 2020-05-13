@@ -23,7 +23,7 @@ This produces an optimised version of your application that is ready for product
 
 ### Deploy to server
 
-You will then need to place the application on a server, either by FTP, RDP, automated script, or whatever your preferred method is.
+You will then need to place the application on a server, either by FTP, RDP, automated script or whatever your preferred method is.
 
 The following directories need to be deployed to the website root on your server environment:
 
@@ -39,7 +39,7 @@ We created the build output folder in the previous step. The `docs` directory co
 As regards subsequent deployments:
 
 - If only the documentation has been updated (i.e. no application code has changed) you only need to deploy the `docs` folder.
-- If you install or update any Node.js modules you will need to redeploy the `node_modules` directory.
+- If you install or update any Node.js modules, you will need to redeploy the `node_modules` directory.
 - Because Sapper uses a robust internal versioning system for application code, it is safe to merge subsequent deployments into the `__sapper__/build` folder as opposed to overwriting the folder. This also prevents users who are currently connected to the website from experiencing errors.
 
 ### Deploying to IIS with iisnode
