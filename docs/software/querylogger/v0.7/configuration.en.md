@@ -28,7 +28,7 @@ The settings below can be configured to suit your particular needs. You can conf
 
 **ConnectionString** (`string`): The connection string for your SQL Server data store.
 
-**ConnectionStringName** (`string`,**ASP.NET Framework only**): The name of the connection string to use from the application’s configuration, e.g. the key of a given entry in the `ConnectionStrings` section of an application's Web.config file.
+**ConnectionStringName** (`string`, **ASP.NET Framework only**): The name of the connection string to use from the application’s configuration, e.g. the key of a given entry in the `ConnectionStrings` section of an application's Web.config file.
 
 **MaxQueueSize** (`integer`, default: `1000`): The maximum possible size of the query log queue. Once the max queue size has been reached entries in the queue will be discarded on a First In, First Out basis. You should set the queue size with regard to the resources available on your system. Storing logs in queue prior to data persistence reduces the chance that you will lose data due to a passing database IOPs issue, for example.
 
