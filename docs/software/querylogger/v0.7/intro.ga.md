@@ -21,8 +21,8 @@ Logálaí simplí iarratais is féidir a chumrú le haghaidh fheidhmchláir ASP.
 - Téarmaí iarratais agus meiteashonraí gaolmhara a logáil le SQL Server.
 - Áirítear leis na meiteashonraí ID uathúil iarratais, ainm an iarratais, catagóir an iarratais, óstfhreastalaí, seoladh IP an chliaint, rath rith an iarratais, comhaireamh torthaí agus faisnéis am-dháta.  
 - Is féidir le hiarratais GUID a roinnt, agus ciallaíonn sé sin gur féidir leat iarratais éagsúla ghaolmhara a chur i ngrúpaí.
-- Meiteashonraí saincheaptha a chur le do chuid logálaithe. Úsáidimid é sin chun sonraí aonfheidhmeacha a stóráil i logálaí ilfheidhmchláir.
-- De réir réamhshocraithe, déanann an leabharlann seoltaí IP an úsaideora a anaithnidiú ach an t-ochtréad deireanach de sheoltaí IPv4 an chliaint, nó an 80 giotán deireanach de sheoladh IPv6, a bhaint. Is féidir an socrú seo a chasadh as.  
+- Meiteashonraí saincheaptha a chur le do chuid logálaithe. Úsáidimid é sin chun sonraí a bhaineann le feidhchlár faoi leith a stóráil i loga ilfheidhmchláir.
+- De réir réamhshocraithe, déanann an leabharlann seoltaí IP an úsaideora a anaithnidiú ach an t-ochtréad deireanach de sheoltaí IPv4 an chliaint, nó an 80 giotán deireanach de sheoladh IPv6, a bhaint. Is féidir an socrú seo a mhúchadh.  
 - Feidhmíocht: ní chuireann logáil aon taca breise le hagaí freagartha an fhreastalaí.
 - Tá seirbhís fógraí ríomhphoist ag an logálaí a thabharfaidh foláireamh duit má tá aon earráid logála ann.
 

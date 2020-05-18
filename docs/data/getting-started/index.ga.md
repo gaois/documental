@@ -8,17 +8,17 @@ public: true
 
 Tá [grúpa taighde Gaois](https://www.gaois.ie) in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, i gcomhar lenár bpáirtnéirí tionscadail, ag cur roinnt acmhainní sonraí oscailte ar fáil don phobal. Áirítear leo Comhéadain Feidhmchláir (API) a bhaineann leas as cur chuige REST agus déantáin eile sonraí. Eisítear gach ceann de na hacmhainní seo faoi choinníollacha sonracha ceadúnaithe: léigh an t-eolas cuí ceadúnaithe, atá ar fáil ar an suíomh gréasáin seo sna doiciméid a ghabhann le gach acmhainn, sula mbaineann tú úsáid as na sonraí.  
 
-Tá leagan béite poiblí de [API Logainm](/en/data/logainm/v0.9/api) ar fáil anois agus tugann sé seo rochtain chláir ar Bhunachar Logainmneacha na hÉireann. Tá ardfhorbairt á déanamh ar API eile a bhaineann le tionscadal [Dúchas](/en/data/duchas/v0.5/api) faoi láthair agus tá leagan réamheisiúna ar fáil anois. Táthar ag súil go gcuirfear tuilleadh acmhainní ar fáil amach anseo. 
+Tá leagan béite poiblí de [API Logainm](/en/data/logainm/v0.9/api) ar fáil anois agus tugann sé seo rochtain chláir ar Bhunachar Logainmneacha na hÉireann. Tá cuid mhór den obair chun API eile a bhaineann le tionscadal [Dúchas](/en/data/duchas/v0.5/api) a fhorbairt i gcrích faoi seo agus tá leagan réamheisiúna ar fáil anois. Táthar ag súil go gcuirfear tuilleadh acmhainní ar fáil amach anseo.
 
 Baineann patrúin choiteanna maidir le húsáid, fíordheimhniú, leaganú agus cosaint sonraí le comhéadain feidhmchláir Gaois. Déantar cur síos sa chuid eile den doiciméad seo ar na patrúin seo agus ba cheart iad a léamh sula leantar ar aghaidh go dtí na doiciméid ar leith a bhaineann le gach acmhainn.  
 
 ## Forléargas ar API
 
-Tugann Comhéadain Feidhmchláir Gaois rochtain ar roinnt achmhainní trí scéimre sainithe URL. Faightear rochtain ar acmhainní ar leith trí chosáin uathúla atá iarcheangailte leis an óst-suíomh gréasáin. I gcásanna áirithe, d'fhéadfaí na hacmhainní a thagann ar ais a scagadh ach paraiméadair roghnacha iarratais a úsáid. Má éiríonn leis an iarratas, cuirtear acmhainní ar ais i bhfoirm JSON. Mura n-éiríonn leis an iarratas rochtain a fháil ar acmhainn, gheofar, ar a laghad, cód stádais HTTP mar fhreagra ar an iarratas. Seo a leanas sampla d'iarratas bailí API:  
+Tugann Comhéadain Feidhmchláir Gaois rochtain ar roinnt acmhainní trí scéimre URL sainithe. Faightear rochtain ar acmhainní ar leith trí chosáin uathúla atá iarcheangailte leis an óstainm. I gcásanna áirithe, d'fhéadfaí na hacmhainní a thagann ar ais a scagadh ach paraiméadair roghnacha iarratais a úsáid. Má éiríonn leis an iarratas, cuirtear acmhainní ar ais i bhfoirm JSON. Mura n-éiríonn leis an iarratas rochtain a fháil ar acmhainn, gheofar, ar a laghad, cód stádais HTTP mar fhreagra ar an iarratas. Seo a leanas sampla d'iarratas bailí API:  
 
 > `https://www.logainm.ie/api/v0.9/1375542`
 
-Ní mór d'úsáideoirí nó d'fheidhmchláir (cliaint) a iarrann acmhainn trí API a n-aitheantas a fhíordheimhniú. Déantar é seo ach Eochair API a thabhairt le gach iarratas. Ní mór do gach cliant Eochair uathúil API a fháil sula n-idirghníomhaíonn sé/sí leis an gcomhéadan. Teastaíonn fíordheimhniú chun mí-úsáid seirbhíse a chosc agus chun staitisticí ginearálta úsáide a rianú. Faightear tuilleadh sonraí thíos.
+Ní mór d'úsáideoirí nó d'fheidhmchláir (cliaint) a iarrann acmhainn trí API a n-aitheantas a fhíordheimhniú. Déantar é seo ach Eochair API a thabhairt le gach iarratas. Ní mór do gach cliant Eochair uathúil API a fháil sula n-idirghníomhaíonn sé/sí leis an gcomhéadan. Teastaíonn fíordheimhniú chun mí-úsáid seirbhíse a chosc agus chun staitisticí ginearálta úsáide a rianú. Tá tuilleadh eolais thíos.
 
 Tá [Comhroinnt Sócmhainní Tras-Fhoinse](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) (CORS) cumasaithe i dtaca leis na comhéadain feidhmchláir de chuid Gaois a chuireann sonraí oscailte ar fáil. Fágann sé seo gur féidir na sonraí a úsáid i bhfeidhmchláir ar thaobh an chliaint agus ar bhrabhsálaithe móibíleacha.
 
@@ -28,11 +28,11 @@ Tá [Comhroinnt Sócmhainní Tras-Fhoinse](https://developer.mozilla.org/en-US/d
 
 > /api/**v0.9**/glossary
 
-Tacófar le leaganacha níos sine ar mhaithe le héascaíocht an fhorbróra: gan leaganú, d'fhéadfadh feidhmchláir spleácha de chuid cliant cliseadh de bharr athruithe rialta ar chomhréir API. Déanfaimid ár ndícheall acmhainní nua a chur leis an suíomh de réir a chéile agus ní chuirfimid athruithe briste i bhfeidhm ach amháin mura bhfuil aon rogha eile ann. Déantar leaganacha API trí [Leaganú Séimeantach 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) a úsáid agus leantar sonraíocht semver. Ar mhaithe le gontacht, áfach, ní léirítear ach pointí mórleaganacha agus mionleaganacha in aimsitheoirí aonfhoirmeacha acmhainne a bhaineann le hiarratais.
+Tacófar le leaganacha níos sine ar mhaithe le héascaíocht an fhorbróra: gan leaganú, d'fhéadfadh feidhmchláir spleácha de chuid cliant cliseadh de bharr athruithe ar chomhréir API. Déanfaimid ár ndícheall acmhainní nua a chur leis an suíomh de réir a chéile agus ní chuirfimid athruithe briste i bhfeidhm ach amháin mura bhfuil aon rogha eile ann. Déantar leaganacha API trí [Leaganú Séimeantach 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) a úsáid agus leantar sonraíocht semver. Ar mhaithe le gontacht, áfach, ní léirítear ach pointí mórleaganacha agus mionleaganacha in aimsitheoirí aonfhoirmeacha acmhainne a bhaineann le hiarratais.
 
-Tar éis tamaill, seans go mbeidh ort fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh Eochair API, cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
+Tar éis tamaill, seans go mbeidh go gcinnfear fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh Eochair API, cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
 
-**Tabhair faoi deara:** Ar mhaithe le tástáil amháin atá leaganacha réamheisiúna API (i.e. < v1.0) agus ní dhéanfar cothabháil orthu nuair a eiseofar v1.0.
+**Tabhair faoi deara:** Ar mhaithe le tástáil amháin atá leaganacha réamheisiúna API (i.e. < v1.0) agus ní dhéanfar cothabháil orthu tar éis do leagan 1.0 a bheith eisithe.
 
 ## Fíordheimhniú API 
 
@@ -40,7 +40,7 @@ Ní mór do chliaint a bhfuil acmhainn á hiarraidh acu tríd an API a n-aithean
 
 ### Conas Eochair API a fháil 
 
-Téigh chuig 'Mol Forbróra Gaois' ar [gaois.ie](https://www.gaois.ie/).  Logáil isteach nó cláraigh chun cuntas a chruthú agus gheobhaidh tú rochtain ar Eochair uathúil API.  
+Téigh chuig 'Mol Forbróra Gaois' ar [gaois.ie](https://www.gaois.ie/). Logáil isteach nó cláraigh chun cuntas a chruthú agus gheobhaidh tú rochtain ar Eochair uathúil API.  
 
 **Tabhair faoi deara:** Beidh an tseirbhís chlárúcháin ag teacht go luath. Idir an dá linn, déan teagmháil linn ag [gaois@dcu.ie](mailto:gaois@dcu.ie) chun d'Eochair API a iarraidh nó a athshocrú.  
 
@@ -60,7 +60,7 @@ Cuir an Eochair API i bparaiméadar `apiKey` um theaghrán iarratais GET:
 
 > `'https://www.logainm.ie/api/v0.9/1384618?apiKey=API_KEY_HERE'`
 
-**Tabhair faoi deara:** D'fhéadfaí paraiméadar iarratais GET a úsáid le haghaidh iarratas nach mbaineann le GET (POST agus PUT san áireamh).
+**Tabhair faoi deara:** Is féidir an paraiméadar iarratais GET seo a úsáid le haghaidh iarratas nach mbaineann le GET (POST agus PUT san áireamh).
 
 #### Fíordheimhniú Bunúsach HTTP
 
@@ -76,15 +76,15 @@ Cé go gcuireann HTTPS leibhéal suntasach slándála ar fáil, chuirfimis béim
 
 ## Cóid stádais HTTP
 
-Cuirfear an stádas a bhaineann le gach iarratas API in iúl trí chóid chaighdeánacha stádais HTTP ar an gcéad dul síos. Molaimid go láimhseálann aon fheidhmchlár a idirghníomhaíonn lenár gcomhéadain feidhmchláir na cóid stádais seo a leanas:
+Cuirfear an stádas a bhaineann le gach iarratas API in iúl ar an gcéad dul síos trí chóid chaighdeánacha stádais HTTP. Molaimid go láimhseálann aon fheidhmchlár a idirghníomhaíonn lenár gcomhéadain feidhmchláir na cóid stádais seo a leanas:
 
 | Cód   | Sainmhíniú                        | Tuilleadh eolais    |
 | :---- | :-------------------------------- | :------------------ |
 | 200   | OK                                | Cuirfear oibiacht JSON amháin nó níos mó ar ais. |
-| 400   | DROCHIARRATAS                     | Bhí comhréir an iarratais neamhbhailí — d'fhéadfaí oibiacht JSON a dhéanann cur síos ar an earráid a chur ar ais. |
+| 400   | DROCHIARRATAS                     | Bhí comhréir an iarratais neamhbhailí — b'fhéidir go gcuirfí oibiacht JSON a dhéanann cur síos ar an earráid ar ais. |
 | 401   | NEAMHÚDARAITHE                    | Níor cuireadh Eochair bhailí API ar fáil. |
 | 404   | NÍ bhFUARTHAS                     | Níl an acmhainn ann. |
-| 500   | EARRAID SA FHREASTALAÍ INMHEÁNACH | Déan teagmháil linn ag [gaois@dcu.ie](mailto:gaois@dcu.ie) agus an cosán iarratais á lua agat. |
+| 500   | EARRAID INMHEÁNACH SA FHREASTALAÍ | Déan teagmháil linn ag [gaois@dcu.ie](mailto:gaois@dcu.ie) agus an cosán iarratais á lua agat. |
 
 ## Coinneáil sonraí agus cosaint sonraí 
 

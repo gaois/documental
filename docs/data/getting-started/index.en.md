@@ -28,7 +28,7 @@ Multiple API versions are facilitated for all of our REST APIs. This means that 
 
 > /api/**v0.9**/glossary
 
-Older versions will be supported for developer convenience: without versioning, frequent changes to API syntax might cause dependent client applications to malfunction. We will endeavour to add new resources incrementally and will implement breaking changes only as a last resort. The API is versioned using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) and follows the semver specification. For brevity, however, only major and minor version points are reflected in request URLs.
+Older versions will be supported for developer convenience: without versioning, changes to API syntax might cause dependent client applications to malfunction. We will endeavour to add new resources incrementally and will implement breaking changes only as a last resort. The API is versioned using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) and follows the semver specification. For brevity, however, only major and minor version points are reflected in request URLs.
 
 After a period of time it may become necessary to deprecate older API versions for maintenance or performance reasons. When you register for your API Key, you will be asked if you are willing to receive communications from the Gaois research group from time to time. Agreeing to receive such communication means you will receive advance notice of any such changes.
 

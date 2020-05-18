@@ -25,11 +25,11 @@ Gheofar oibiacht `placeList` ón gcuid is mó d'iarratais API. Tá liosta ina bh
 
 ## `place`
 
-Tá an oibiacht `place` i gcroílár API Logainm. Léiríonn sí suíomh geografach agus áirítear léi meiteashonraí logainmníochta, léacsacha agus eile. Ach iarratas a dhéanamh ina sonraítear aitheantóir áite sa chosán iarratais, gheofar oibiacht `place` amháin (má tá ceann ann) agus d'fhéadfadh iarratais níos leithne oibiacht `place` amháin nó níos mó a thabhairt sa chorp freagartha.  
+Tá an oibiacht `place` i gcroílár API Logainm. Léiríonn sí suíomh geografach agus áirítear léi meiteashonraí logainmníochta, léacsacha agus eile. Ach iarratas a dhéanamh ina sonraítear aitheantóir áite sa chosán iarratais, gheofar oibiacht `place` amháin (má tá ceann ann) agus d'fhéadfadh iarratais níos leithne oibiacht `place` amháin nó níos mó a thabhairt sa chorp freagartha.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                        | Cur síos                  |
 | :-------------- | :------------------ | :----------------------------------- | :------------------------- |
-| ID              | slánuimhir          | ceann amháin                         | Aitheantóir áite ar leith. |
+| ID              | slánuimhir          | ceann amháin                         | Aitheantóir uathúil áite. |
 | ReplacementID   | slánuimhir          | ceann ar bith nó ceann amháin        | Má tá an luach seo socraithe, cumascadh an taifead áite a iarradh le taifead eile sa bhunachar sonraí. Is é an luach an t-aitheantóir ionaid taifid. |
 | DateCreated     | am-dháta ISO 8601   | ceann amháin                         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin        | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
@@ -43,9 +43,9 @@ Tá an oibiacht `place` i gcroílár API Logainm. Léiríonn sí suíomh geograf
 | Includes        | [`category`](#category) | ceann ar bith nó ceann amháin nó go leor | Déanann sé cur síos ar chatagóirí áite atá laistigh de theorainneacha na háite seo. |
 | Geography       | [`geography`](#geography) | ceann amháin nó go leor | Suíomh geografach na háite ó thaobh comhordanáidí domhanleithid agus domhanfhaid de. |
 | GridReferences  | [`gridReference`](#gridreference) | ceann ar bith nó ceann amháin nó go leor | Suíomh geografach na háite i gcomhordanáidí [Chóras Tagraíochta Eangaí na hÉireann](https://www.osi.ie/resources/reference-information-2/irish-grid-reference-system/). |
-| Gaeltacht       | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin         | Cuireann sé in iúl go bhfuil an áit sa Ghaeltacht. |
-| PostOffice      | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin         | Cuireann sé in iúl go bhfuil, nó go raibh, oifig an phoist san áit seo. |
-| NorthernIreland | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin         | Cuireann sé in iúl go bhfuil an áit i dTuaisceart Éireann. |
+| Gaeltacht       | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin | Cuireann sé in iúl go bhfuil an áit sa Ghaeltacht. |
+| PostOffice      | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin | Cuireann sé in iúl go bhfuil, nó go raibh, oifig an phoist san áit seo. |
+| NorthernIreland | [`placeProperty`](#placeproperty) | ceann ar bith nó ceann amháin | Cuireann sé in iúl go bhfuil an áit i dTuaisceart Éireann. |
 | Images          | [`image`](#image)   | ceann ar bith nó ceann amháin | Déanann sé cur síos ar thaifead amháin, nó níos mó, a scanadh ó chartlann an Bhrainse Logainmneacha a bhaineann leis an áit seo. |
 | Resources       | [`resource`](#resource) | ceann ar bith nó ceann amháin nó go leor | Déanann sé cur síos ar acmhainn logainmníochta amháin, nó níos mó, a bhaineann leis an áit seo agus atá ar fáil ar [logainm.ie](https://www.logainm.ie). |
 | Links           | [`link`](#link) | ceann ar bith nó ceann amháin nó go leor | Cuireann sé nasc amháin, nó níos mó, ar fáil le sonraí gaolmhara in acmhainní seachtracha. Áirítear le hacmhainní seachtracha [OSI](https://www.osi.ie/), [Logainmneacha Thuaisceart Éireann](http://www.placenamesni.org/), [Wikipedia](https://www.wikipedia.org/), [Geonames](http://www.geonames.org/), etc. |
@@ -84,7 +84,7 @@ Léiríonn sé logainm a bhaineann le háit amháin nó níos mó.
 | Main            | Boole               | ceann amháin           | Má tá sé fíor, is é seo príomhainm/ainm canónta an logainm. Níl sé seo tábhachtach ach amháin má tá níos mó ná ainm amháin ag an áit sa teanga chéanna. |
 | Acceptability   | [`acceptability`](#acceptability) | ceann ar bith nó ceann amháin         | Léiríonn sé stádas taighde agus faofa an logainm. |
 | Audio           | [`audio`](#audio)   | ceann ar bith nó ceann amháin         | Déanann sé cur síos ar chomhad fuaime ina ndéantar fuaimniú táscach ar an logainm. |
-| SubNames        | [`subName`](#subname) | ceann ar bith nó go leor      | Liosta de dhá logainm scoite nó níos mó. Cuirtear ar fáil é nuair atá dhá ainm nó níos mó atá cónasctha sa phríomhlogainm e.g. '[Rathgarvan or Clifden](https://www.logainm.ie/26783.aspx)',  nó nuair atá ról cáilithe nó imdhealaithe ag an bpríomhlogainm. |
+| SubNames        | [`subName`](#subname) | ceann ar bith nó go leor      | Liosta de dhá logainm scoite nó níos mó. Cuirtear ar fáil é nuair atá dhá ainm nó níos mó atá cónasctha sa phríomhlogainm e.g. '[Rathgarvan or Clifden](https://www.logainm.ie/26783.aspx)', nó nuair atá ról cáilithe nó imdhealaithe ag an bpríomhlogainm. |
 
 ### `acceptability`
 
@@ -170,7 +170,7 @@ Déanann sé cur síos ar thaifead scanta ó chartlann an Bhrainse Logainmneacha
 | FileName        | teaghrán            | ceann amháin                          | Ainm an chomhaid íomhá.      |
 | LabelEN         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Béarla ar chatagóir na híomhá, má tá sé ar eolas. |
 | LabelGA         | teaghrán            | ceann ar bith nó ceann amháin         | Cur síos Gaeilge ar chatagóir na híomhá, má tá sé ar eolas. |
-| Uri             | teaghrán            | ceann amháin                          | URI an íomhá.            |
+| Uri             | teaghrán            | ceann amháin                          | URI na híomhá.            |
 
 ### `resource`
 

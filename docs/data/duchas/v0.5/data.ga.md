@@ -24,7 +24,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                           | Cur síos                  |
 | :-------------- | :------------------ | :-------------------------------------- | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                            | Aitheantóir an imleabhair (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir          | ceann amháin                            | Aitheantóir an imleabhair (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna agus ar mhíreanna na lámhscríbhinne, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin.  |
 | VolumeNumber    | teaghrán            | ceann ar bith nó ceann amháin           | Uimhir tagartha cartlainne CBÉ an imleabhair. |
@@ -36,7 +36,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                           | Cur síos                  |
 | :-------------- | :------------------ | :-------------------------------------- | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                            | Aitheantóir an leathanaigh (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir          | ceann amháin                            | Aitheantóir an leathanaigh (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | PageNumber      | teaghrán            | ceann amháin                            | Uimhir an leathanaigh.     |
@@ -49,7 +49,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
-| ID              | slánuimhir            | ceann amháin                             | Aitheantóir na coda (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir            | ceann amháin                             | Aitheantóir na coda (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | ListingOrder    | teaghrán              | ceann amháin                             | Ord liostaithe na coda den lámhscríbhinn laistigh den imleabhair. |
@@ -63,15 +63,15 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | Informants      | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, óna bhfuarthas ábhar agus an chuid den lámhscríbhinn á tiomsú. |
 | RelevantPersons | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, a ndéantar tagairt dóibh laistigh den chuid den lámhscríbhinn, nó a bhaineann léi.  |
 | ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extrainfostatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA`. |
-| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an gcuid den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
-| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an gcuid den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an gcuid den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an gcuid den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 | Items           | [`item`](#an-priomhbhailiuchan-item)       | ceann ar bith nó ceann amháin nó go leor | Meiteashonraí a dhéanann cur síos ar mhíreanna scoite atá sa chuid den lámhscríbhinn. |
 
 ### An Príomhbhailiúchán `item`
 
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
-| ID              | slánuimhir            | ceann amháin                             | Aitheantóir na míre (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir            | ceann amháin                             | Aitheantóir na míre (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | EditorsPick     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
@@ -94,16 +94,16 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | Collectors      | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, a bhfuil baint acu leis an ábhar a bhailiú. |
 | Informants      | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, óna bhfuarthas ábhar agus an mhír den lámhscríbhinn á tiomsú. |
 | RelevantPersons | [`person`](#person)   | ceann ar bith nó ceann amháin nó go leor | Seasann sé do dhuine, nó do dhaoine, a ndéantar tagairt dóibh laistigh den mhír den lámhscríbhinn, nó a bhaineann léi.  |
-| LinkedItems     | [`ManuscriptItemLink`](#manuscriptitemlink) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do mhír amháin, nó níos mó, de lámhscríbhinn a bhaineann go díreach leis an mír seo. Nascann caidreamh seicheamhach na míreanna le chéile de ghnáth (e.g. tagann na míreanna eile roimh an mír reatha nó i ndiaidh na míre reatha i scéalta leanúnacha nó gaolmhara). | 
+| LinkedItems     | [`ManuscriptItemLink`](#manuscriptitemlink) | ceann ar bith nó ceann amháin nó go leor | Seasann sé do mhír amháin, nó níos mó, de lámhscríbhinn a bhaineann go díreach leis an mír seo. Nascann caidreamh seicheamhach na míreanna le chéile de ghnáth (e.g. tagann na míreanna eile roimh an mír reatha nó i ndiaidh na míre reatha i sraith scéalta leanúnacha nó gaolmhara). | 
 | ExtraInfoStatus | teaghrán              | ceann ar bith nó ceann amháin            | Sonraíonn sé [stádas](#extrainfostatus) foilsithe na réimsí `ExtraInfoEN` agus `ExtraInfoGA`. **(Faoi phribhléid)** |
-| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
-| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Focail saorthéacs ar an mír den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoEN     | teaghrán              | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an mír den lámhscríbhinn (i mBéarla). Scríobhadh mar chuid de thionscadal Dúchas iad. |
+| ExtraInfoGA     | teaghrán              | ceann ar bith nó ceann amháin            | Tráchtaireacht saorthéacs ar an mír den lámhscríbhinn (i nGaeilge). Scríobhadh mar chuid de thionscadal Dúchas iad. |
 
 #### `contentType`
 
 | Luach           | Cur síos                  |
 | :-------------- | :------------------------ |
-| SEAN            | Béaloideas.               |
+| SEAN            | Seanchas.                 |
 | CÍN-LAE         | Iontráil dialainne.       |
 | CEIST           | Ceistneoir.               |
 | COMH            | Comhfhreagras.            |
@@ -131,9 +131,9 @@ Seasann sé do chaidreamh díreach idir dhá am lámhscríbhinne. Nascann caidre
 
 Tá scéalta agus cuntais a ceanglaíodh ina n-imleabhair i mBailiúchán na Scol. Seasann eintiteas `volume` do gach imleabhar sa tacar sonraí agus seasann eintiteas `page` do gach leathanach. Tá tagairt i ngach eintiteas `page` freisin a aithníonn an íomhá scanta den leathanach. Le chéile, seasann eintitis `volume` agus `page` do **struchtúr fisiciúil** an bhailiúcháin. Tá **struchtúr loighciúil** ann chomh maith a anótálann agus a innéacsaíonn an struchtúr fisiciúil. Tá eintitis `part` agus `item` ann.   
 
-Seasann eintiteas `part` do chuid ar leith laistigh d'imleabhar lámhscríbhinne agus seans go raibh sé scartha ó ábhar eile san imleabhar ar dtús. Tagann sé le ball [`msPart`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#mspt) a shonraítear i dTreoirlínte P5 Text Encoding Initiative (TEI). I mBailiúchán na Scol, cuimsíonn `part` ábhar a bhailigh scoil amháin. I gcás scoileanna inar ghlac múinteoirí agus/nó grúpaí ranga éagsúla páirt i *Scéim na Scol*, d’fhéadfadh eintitis éagsúla `part` a bheith bainteach le scoil amháin. San API XML-bhunaithe a bhí ann roimhe seo, tagraíodh do mhíreanna lámhscríbhinne mar **chaibidlí**.
+Seasann eintiteas `part` do chuid ar leith laistigh d'imleabhar lámhscríbhinne agus seans go raibh sé scartha ó ábhar eile san imleabhar ar dtús. Tagann sé le ball [`msPart`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#mspt) a shonraítear i dTreoirlínte P5 Text Encoding Initiative (TEI). I mBailiúchán na Scol, cuimsíonn `part` ábhar a bhailigh scoil amháin. I gcás scoileanna inar ghlac múinteoirí agus/nó grúpaí ranga éagsúla páirt i *Scéim na Scol*, d’fhéadfadh eintitis éagsúla `part` a bheith bainteach le scoil amháin. San API XML-bhunaithe a bhí ann roimhe seo, tugadh **caibidlí** ar chodanna lámhscríbhinne.
 
-Seasann eintiteas `item` do shaothar scoite, ar nós scéil. Tagann sé le ball TEI [`msItem`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#mscoit). Tabhair faoi deara go bhfuil an mhapáil idir míreanna agus leathanaigh mórán le mórán: d'fhéadfadh mír roinnt leathanach a chuimsiú agus d'fhéadfadh leathanach roinnt míreanna a chur san áireamh. Tá sonraí mionsonraithe in eintiteas `item` ar na daoine a scríobh é, chomh maith leis an ábhar lena mbaineann sé agus sonraí eile. Sa bhailiúchán a bhí ann roimhe seo, tagraíodh do mhíreanna lámhscríbhinne API XML-bhunaithe mar **scéalta**.
+Seasann eintiteas `item` do shaothar scoite, ar nós scéil. Tagann sé le ball TEI [`msItem`](https://www.tei-c.org/release/doc/tei-p5-doc/en/html/MS.html#mscoit). Tabhair faoi deara go bhfuil an mhapáil idir míreanna agus leathanaigh mórán le mórán: d'fhéadfadh mír roinnt leathanach a chuimsiú agus d'fhéadfadh leathanach roinnt míreanna a chur san áireamh. Tá sonraí mionsonraithe in eintiteas `item` ar na daoine a scríobh é, chomh maith leis an ábhar lena mbaineann sé agus sonraí eile. San API XML-bhunaithe a bhí ann roimhe seo, tugadh **scéalta** ar mhíreanna lámhscríbhinne.
 
 D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar Bhailiúchán na Scol. Déantar cur síos san eolas thíos ar airíonna an chineáil oibiachta seo.
 
@@ -141,7 +141,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                          | Aitheantóir an imleabhair (uathúil laistigh de bhailiúchán).  |
+| ID              | slánuimhir          | ceann amháin                          | Aitheantóir an imleabhair (uathúil laistigh den bhailiúchán).  |
 | DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna na lámhscríbhinne, ar mhíreanna na lámhscríbhinne, agus ar thras-scríbhinní nua nó nuashonraithe  leathanaigh, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin. |
 | VolumeNumber    | teaghrán            | ceann ar bith nó ceann amháin         | Uimhir tagartha cartlainne CBÉ an imleabhair. |
@@ -162,13 +162,13 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                          | Aitheantóir an leathanaigh (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir          | ceann amháin                          | Aitheantóir an leathanaigh (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | PageNumber      | teaghrán            | ceann amháin                          | Uimhir an leathanaigh.     |
 | ListingOrder    | teaghrán            | ceann amháin                          | Ord liostaithe an leathanaigh laistigh den bhailiúchán. Bíonn sé seo díreach mar an gcéanna le huimhir an leathanaigh atá scríofa ar an leathanach féin de ghnáth, ach ní bhíonn sé amhlaidh i gcónaí. |
 | TitlePage       | Boole               | ceann ar bith nó ceann amháin         | Léiríonn sé gur leathanach teidil é seo a bhaineann le cuid de lámhscríbhinn. |
-| ImageFileName   | teaghrán            | ceann amháin                          | Ainm an chomhaid a athníonn an íomhá scanta den leathanach. |
+| ImageFileName   | teaghrán            | ceann amháin                          | Ainm an chomhaid a aithníonn an íomhá scanta den leathanach. |
 | Sensitive       | Boole               | ceann amháin                          | Má tá sé fíor, tá ábhar íogair ar an leathanach agus níor cheart é a chur ar fáil go poiblí. **(Faoi phribhléid)** |
 | Transcripts     | [`transcript`](#transcript) | ceann ar bith nó ceann amháin nó go leor | Tras-scríbhinn amháin, nó níos mó, den ábhar ar leathanach na lámhscríbhinne a chuir baill de thionscadal tras-scríofa [Meitheal Dúchas.ie](https://www.duchas.ie/ga/meitheal/) ar fáil. |
 
@@ -176,7 +176,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                             | Aitheantóir na coda (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir          | ceann amháin                             | Aitheantóir na coda (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | ListingOrder    | teaghrán            | ceann amháin                             | Ord liostaithe na coda den lámhscríbhinn laistigh den imleabhair. |
@@ -189,7 +189,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál                 | Bunuimhreacht                         | Cur síos               |
 | :-------------- | :--------------------- | :------------------------------------ | :------------------------ |
-| ID              | slánuimhir             | ceann amháin                          | Aitheantóir na míre (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir             | ceann amháin                          | Aitheantóir na míre (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | EditorsPick     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
@@ -209,7 +209,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 
 ### Bailiúchán na Scol `person`
 
-De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé indéanta go fóill tacar normalaithe meiteashonraí pearsanta a bhaint. Ina ionad sin, bhí sé mar aidhm ag céimeanna tosaigh an tionscadail eolas a fháil ar na daoine a dtagraítear dóibh laistigh den bhailiúchán 'mar ata'. Mar sin de, tá seans ann go ndéanfaí tagairt don duine céanna le níos mó ná eintiteas `person` amháin.
+De bharr scóip thionscadal digitithe Bhailiúchán na Scoil, ní raibh sé indéanta go fóill tacar normalaithe meiteashonraí pearsanta a asbhaint. Ina ionad sin, bhí sé mar aidhm ag céimeanna tosaigh an tionscadail eolas a fháil ar na daoine a dtagraítear dóibh laistigh den bhailiúchán 'mar atá'. Mar sin de, tá seans ann go ndéanfaí tagairt don duine céanna le níos mó ná eintiteas `person` amháin.
 
 | Ainm an airí    | Cineál                | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :-------------------- | :--------------------------------------- | :------------------------ |
@@ -258,7 +258,7 @@ Déanann sé cur síos ar scoil a ghlac páirt i scéim bailithe *Scéim na Scol
 
 ### Bailiúchán na Scol `topic`
 
-Léiríonn sé topaic ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes). Tabhair faoi deara go mbíonn na topaicí ordlathach agus go mbeidh sonraí i dtopaic ar leith a bhaineann le catagóirí réamhtheachtacha na topaice, má bhaineann sé le hábhar
+Léiríonn sé topaic ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes). Tabhair faoi deara go mbíonn na topaicí ordlathach agus go mbeidh sonraí i dtopaic ar leith a bhaineann le catagóirí réamhtheachtacha na topaice, má bhaineann sé le hábhar.
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                         | Cur síos                  |
 | :-------------- | :------------------ | :------------------------------------ | :------------------------ |
@@ -396,7 +396,7 @@ D'fhéadfaí oibiacht `person` amháin, nó níos mó, a fháil ó iarratais ar 
 
 | Ainm an airí    | Cineál              | Bunuimhreacht                            | Cur síos                  |
 | :-------------- | :------------------ | :--------------------------------------- | :------------------------ |
-| ID              | slánuimhir          | ceann amháin                             | Aitheantóir an duine (uathúil laistigh de bhailiúchán). |
+| ID              | slánuimhir          | ceann amháin                             | Aitheantóir an duine (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
 | Names           | [`name`](#name)     | ceann amháin nó go leor                  | Ainmneacha a bhaineann leis an duine.  |
@@ -538,7 +538,7 @@ Tras-scríbhinn d’ábhar ar leathanach lámhscríbhinne a chuir baill den tion
 
 ## Luachanna coiteanna
 
-Baineann roinnt airíonna a bhfuil luachanna caighdeánaithe orthu le bailiúcháin éagsúla. Déantar cur síos orthu thíos.   
+Baineann roinnt airíonna a bhfuil luachanna caighdeánaithe orthu le bailiúcháin éagsúla. Déantar cur síos orthu thíos.
 
 ### `status`
 
@@ -547,9 +547,9 @@ Sonraíonn sé stádas eagarthóireachta na hiontrála. Ní mheastar go bhfuil a
 | Luach           | Cur síos                  |
 | :-------------- | :------------------------ |
 | 0               | Ionghabhadh an iontráil le déanaí. |
-| 1               | Cuireadh an chéad tardhul eagarthóireachta i gcrích. |
+| 1               | Cuireadh an chéad scagadh eagarthóireachta i gcrích. |
 | 2               | Cuireadh an chéad seiceáil eagarthóireachta i gcrích. |
-| 3               | Cuireadh an dara tardhul eagarthóireachta i gcrích. |
+| 3               | Cuireadh an dara scagadh eagarthóireachta i gcrích. |
 | 4               | Cuireadh an dara seiceáil eagarthóireachta i gcrích. |
 
 ### `extraInfoStatus`
@@ -558,5 +558,5 @@ Sonraíonn sé stádas foilsithe an réimse `extraInfo`.
 
 | Luach           | Cur síos                  |
 | :-------------- | :------------------------ |
-| EDIT            | Níl an réimse `extraInfo`, má tá sé ann, oiriúnach le foilsiú . |
-| PUB             | Níl an réimse `extraInfo`, má tá sé ann, oiriúnach le foilsiú. |
+| EDIT            | Níl an réimse `extraInfo`, má tá sé ann, oiriúnach le foilsiú. |
+| PUB             | Tá an réimse `extraInfo`, má tá sé ann, oiriúnach le foilsiú. |

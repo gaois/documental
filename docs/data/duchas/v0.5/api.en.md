@@ -103,7 +103,7 @@ Use these query parameters to filter the results returned by the API.
 | `Language`    | string        | Filter items by language using ISO 639-1 language code |
 | `DateFrom`    | integer**     | Retrieve records associated with this year or later. |
 | `DateTo`      | integer**     | Retrieve records associated with this year or earlier. |
-| `DateAccuracy` | string       | Filter by accuracy of date record (i.e. APPROX, INFER, QUESTION). |
+| `DateAccuracy` | string       | Filter by accuracy of date record (i.e. `APPROX`, `INFER`, `QUESTION`). |
 | `CreatedBefore` | ISO 8601 datetime | Retrieve records created before a given date in `YYYY-MM-DD` format. |
 | `CreatedSince` | ISO 8601 datetime | Retrieve records created after a given date in `YYYY-MM-DD` format. |
 | `ModifiedBefore` | ISO 8601 datetime | Retrieve records last updated before a given date in `YYYY-MM-DD` format. |
@@ -144,7 +144,7 @@ Use these query parameters to filter the results returned by the API.
 | :------------ | :------------ | :------------- |
 | `Status`      | integer       | Filter by editorial status (0-4). **(Privileged)** |
 | `Digitized`   | boolean       | Filter by digitization status. |
-| `Copyright`   | string        | Filter by copyright holder (e.g. CBE, UNK). |
+| `Copyright`   | string        | Filter by copyright holder (e.g. `CBE`, `UNK`). |
 | `Condition`   | integer       | Filter by physical condition (0-3). |
 | `HandbookTopic` | string        | Filter by *A Handbook of Irish Folklore* [subject code](https://www.duchas.ie/en/tpc/cbeg) (e.g. B005). |
 | `PersonID`    | integer       | Filter by person's CBÉD identifier. |
@@ -175,9 +175,9 @@ Use these query parameters to filter the results returned by the API.
 | `ViafID`      | integer       | Filter by [VIAF](https://viaf.org/) entryID.  |
 | `CountyID`    | integer       | Filter by county using [logainm.ie](https://www.logainm.ie) placename identifier.  |
 | `PlaceID`     | integer       | Filter by place using [logainm.ie](https://www.logainm.ie) placename identifier.  |
-| `Country`     | ISO 3166 country code* | Filter by country ISO code (e.g. DE, US, GB-ENG). |
+| `Country`     | ISO 3166 country code* | Filter by country ISO code (e.g. `DE`, `US`, `GB-ENG`). |
 | `GeoNameID`   | integer       | Filter by [GeoName](https://www.geonames.org) placename identifier.  |
-| `Occupation`  | string        | Filter by occupation (e.g. IASC, FEIRM). |
+| `Occupation`  | string        | Filter by occupation (e.g. `IASC`, `FEIRM`). |
 | `BirthDateFrom` | integer**     | Retrieve records associated with this birth year or later. |
 | `BirthDateTo` | integer**     | Retrieve records associated with this birth year or earlier. |
 | `BirthDateAccuracy` | string       | Filter by accuracy of birth date record (i.e. APPROX, INFER, QUESTION). |

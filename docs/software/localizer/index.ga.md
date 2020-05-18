@@ -22,7 +22,7 @@ Cuireann an leabharlann feidhmiúlacht ar an bpointe boise ar fáil a cheadaíon
 - Iarratais ar chultúir gan tacaíocht a láimhseáil, ach leathanach earráide 404 a chur ar ais nó an t-úsáideoir a atreorú chuig leathanach sa teanga réamhshocraithe.
 - Gan róid áirithe a chur faoi thionchar na meánearraí logánaithe.
 - Socruithe a bhaineann le fianáin logánaithe a bhainistiú agus a chumrú ionas go bhféadfaí roghanna teanga an úsáideora a choinneáil le linn na seisiún brabhsála.
-- A chinneadh ar chóir go n-atreorófaí na húsáideoirí chuig URL logánaithe nuair a dhéanann siad iarratas ar leathanach baile an tsuímh gréasáin don chéad uair.
+- Cinneadh ar chóir go n-atreorófaí na húsáideoirí chuig URL logánaithe nuair a dhéanann siad iarratas ar leathanach baile an tsuímh gréasáin don chéad uair.
 - Cásanna a láimhseáil ina dteastaíonn uait cód teanga ISO sa URL ina bhfuil dhá nó trí litir a mhapáil go hinmheánach le réigiún nó le fochlib breisithe teanga.
 
 Is féidir an chuid is mó de na gnéithe seo a chumrú: cuirtear réamhshocruithe ciallmhara ar fáil, ach is féidir leat na cineálacha atreoruithe a úsáidtear, tréimhse bhailí fianán logánaithe, etc., a shonrú. Smaoiníodh ar SEO agus an leabharlann á dearadh, agus tugann an tsuiteáil réamhshocraithe réiteach optamach logánaithe dúinn maidir leis an innéacsú a dhéanann na príomhinnill chuardaigh. Oibríonn na meánearraí logánaithe go maith, fiú nuair a ritear i gcomhadlann fhíorúil iad. 
@@ -39,7 +39,7 @@ In **Startup.cs**, cuir an treoir `using Gaois.Localizer` ag barr an chomhaid. D
 
 ### Cumraíocht bhunúsach
 
-1. Cuir na meánearraí `app.UseLocalizer()` leis an modh *Configure* áit ar bith tar éis `app.UseStaticFiles` (má tá siad ann) agus roimh `app.UseMvc()`, mar seo a leanas:  
+1. Cuir na meánearraí `app.UseLocalizer()` leis an modh *Configure* áit ar bith tar éis `app.UseStaticFiles()` (más ann dó) agus roimh `app.UseMvc()`, mar seo a leanas:  
 
 ```csharp
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -209,7 +209,7 @@ services.AddLocalizer(options =>
 });
 ```
 
-Úsáidtear teaghráin regex chun sainmhíniú a thabhairt ar chosáin. Cuirtear róid a thosaíonn le `/error`, e.g. `/Error` nó `/error/{0}/`,  leis an liosta eisiaimh de réir réamhshocraithe chun fadhbanna i dtaca le ródú ciorclach a sheachaint nuair a chaitear  `CultureNotFoundException`. 
+Úsáidtear teaghráin shloinn rialta chun sainmhíniú a thabhairt ar chosáin. Cuirtear róid a thosaíonn le `/error`, e.g. `/Error` nó `/error/{0}/`,  leis an liosta eisiaimh de réir réamhshocraithe chun fadhbanna i dtaca le ródú ciorclach a sheachaint nuair a chaitear  `CultureNotFoundException`. 
 
 ## Fianáin logánaithe
 
@@ -355,7 +355,7 @@ Breisíonn an modh seo an modh [*GetDisplayUrl()*](https://docs.microsoft.com/en
 
 ### GetEncodedUrl()
 
-Is ionann é seo agus an modh roimhe seo, ach aschuireann sé seo teaghrán atá ionchódaithe go hiomlán in URL. I gcomhthéacs logánú an fheidhmchláir gréasáin, tá an modh seo an-úsáideach nuair atá naisc mhalartacha le paraiméadair mhalartacha cultúr á nginiúint agat:
+Is ionann é seo agus an modh roimhe seo, ach aschuireann sé seo teaghrán atá ionchódaithe go hiomlán mar URL. I gcomhthéacs logánú an fheidhmchláir gréasáin, tá an modh seo an-úsáideach nuair atá naisc mhalartacha le paraiméadair mhalartacha cultúr á nginiúint agat:
 
 ```c#
 <link rel="alternate" hreflang="@lang" href="@Context.Request.GetEncodedUrl(1, "fr-FR")">

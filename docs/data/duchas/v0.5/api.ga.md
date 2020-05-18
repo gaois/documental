@@ -16,7 +16,7 @@ Cuireadh tionscadal Dúchas ar bun chun tús a chur le digitiú [Chnuasach Bhéa
 
 ### Cnuasach Bhéaloideas Éireann agus na bailiúcháin
 
-Tá sonraí ó thrí cinn de na cúig phríomhbhailiúchán béaloidis atá ag Cnuasach Bhéaloideas Éireann ar fáil tríd an ardán seo faoi láthair. Ach tuiscint a bheith agat ar a bhfuil sna bailiúcháin seo, cabhróidh sé leat úsáid a bhaint as an API. Tabhair faoi deara go dtagraítear do na bunachair sonraí a bhaineann leis na bailiúcháin seo i ngearrscríobh go minic ach acrainmneacha leithéid CBÉS, CBÉG, etc. a úsáid. Cruthaítear na hacrainmneacha seo de ghnáth ón ainm Gaeilge *Cnuasach Bhéaloideas Éireann* agus litir amháin ina dhiaidh sin a sheasann don bhunachar sonraí atá i gceist. Tagraíonn CBÉ do Phríomhbhailiúchán Lámhscríbhinní Chnuasach Bhéaloideas Éireann.  
+Tá sonraí ó thrí cinn de na cúig mhórbhailiúchán béaloidis atá ag Cnuasach Bhéaloideas Éireann ar fáil tríd an ardán seo faoi láthair. Ach tuiscint a bheith agat ar a bhfuil sna bailiúcháin seo, cabhróidh sé leat úsáid a bhaint as an API. Tabhair faoi deara go dtagraítear do na bunachair sonraí a bhaineann leis na bailiúcháin seo i ngearrscríobh go minic ach acrainmneacha leithéid CBÉS, CBÉG, etc. a úsáid. Cruthaítear na hacrainmneacha seo de ghnáth ón ainm Gaeilge *Cnuasach Bhéaloideas Éireann* agus litir amháin ina dhiaidh sin a sheasann don bhunachar sonraí atá i gceist. Tagraíonn CBÉ do Phríomhbhailiúchán Lámhscríbhinní Chnuasach Bhéaloideas Éireann.  
 
 #### An Príomhbhailiúchán Lámhscríbhinní (CBÉ)
 
@@ -32,13 +32,13 @@ Tá suas le 80,000 grianghraf i mbailiúchán Chnuasach Bhéaloideas Éireann, a
 
 #### An Bunachar Daoine (CBÉD)
 
-Aithnítear daoine a ainmnítear laistigh de mheiteashonraí CBÉ agus CBÉG ach tagairt a dhéanamh d'oibiachtaí sa bhunachar sonraí seo. Ní mhapálann CBÉD go díreach le bailiúchán fisiciúil ar bith de chuid CBÉ. Ina áit sin, ós rud é go luaitear go leor daoine sna bailiúcháin éagsúla de chuid CBÉ – tá roinnt grianghrafadóirí in CBÉG ina mbailitheoirí in CBÉ, mar shampla – tá sé i gceist ag an mBunachar Daoine a bheith ina fhoinse aonair fírinne le haghaidh meiteashonraí pearsanta ar fud an tacair iomláin sonraí. Faoi láthair, cuimsíonn an Bunachar Daoine gach duine atá i gcodanna digitithe in CBÉ agus CBÉG. De bharr scóip thionscadal digitithe Bhailiúchán na Scol, ní raibh sé indéanta go dtí seo tacar normalaithe meiteashonraí pearsanta a bhaint - táthar ag súil go dtabharfar faoin obair seo arís amach anseo, áfach.  
+Aithnítear daoine a ainmnítear laistigh de mheiteashonraí CBÉ agus CBÉG ach tagairt a dhéanamh d'oibiachtaí sa bhunachar sonraí seo. Ní mhapálann CBÉD go díreach le bailiúchán fisiciúil ar bith de chuid CBÉ. Ina áit sin, ós rud é go luaitear go leor daoine sna bailiúcháin éagsúla de chuid CBÉ – tá roinnt grianghrafadóirí in CBÉG ina mbailitheoirí in CBÉ, mar shampla – tá sé i gceist ag an mBunachar Daoine a bheith ina fhoinse aonair fírinne le haghaidh meiteashonraí pearsanta ar fud an tacair iomláin sonraí. Faoi láthair, cuimsíonn an Bunachar Daoine gach duine atá i gcodanna digitithe in CBÉ agus CBÉG. De bharr scóip thionscadal digitithe Bhailiúchán na Scol, ní raibh sé indéanta go dtí seo tacar normalaithe meiteashonraí pearsanta a bhaint - táthar ag súil go dtabharfar faoin obair seo arís amach anseo, áfach.
 
 Tá tuilleadh eolais faoi CBÉ agus faoi na bailiúcháin ar fáil [anseo](https://www.duchas.ie/ga/info/cbe). 
 
 ## Eolas ginearálta API 
 
-Téigh i gcomhairle leis an [treoir maidir le cur chun siúil](/ga/data/getting-started) i dtaca le hacmhainní sonraí oscailte Gaois sula léann tú an chuid eile de na doiciméid a bhaineann le API Dúchas. Déantar cur síos sa treoir ar an gcaoi a bhfaightear faisnéis aitheantais an úsáideora agus ar an gcaoi a gcuirtear eolas tábhachtach úsáide ar fáil.  
+Téigh i gcomhairle leis an [mbuntreoir](/ga/data/getting-started) i dtaca le hacmhainní sonraí oscailte Gaois sula léann tú an chuid eile de na doiciméid a bhaineann le API Dúchas. Déantar cur síos sa treoir ar an gcaoi a bhfaightear faisnéis aitheantais an úsáideora agus ar an gcaoi a gcuirtear eolas tábhachtach úsáide ar fáil.  
 
 ## Pribhléidí rochtana API
 
@@ -98,12 +98,12 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | `PersonID` | slánuimhir       | Scag de réir aitheantóir CBÉD an duine. Cuimsíonn an scagaire seo gach cineál duine (i.e. bailitheoir, faisnéiseoir, duine ábhartha). |
 | `CountyID`    | slánuimhir       | Scag de réir contae ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
 | `PlaceID`     | slánuimhir       | Scag de réir áite ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
-| `Country`     | ISO 3166 cód tíre* | Scag de réir tíre ach cód ISO a úsáid (e.g. DE, US, GB-ENG). |
+| `Country`     | ISO 3166 cód tíre* | Scag de réir tíre ach cód ISO a úsáid (e.g. `DE`, `US`, `GB-ENG`). |
 | `GeoNameID`   | slánuimhir       | Scag de réir áite ach aitheantóir [GeoName](https://www.geonames.org) a úsáid.  |
 | `Language`    | teaghrán         | Scag míreanna de réir teanga ach cód teanga ISO 639-1 a úsáid. |
 | `DateFrom`    | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta ina diaidh. |
 | `DateTo`      | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta roimhe sin. |
-| `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (i.e. GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (i.e. `APPROX`, `INFER`, `QUESTION`). |
 | `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
 | `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 | `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
@@ -144,7 +144,7 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | :------------ | :--------------- | :------------- |
 | `Status`      | slánuimhir       | Scag de réir an stádais eagarthóireachta (0-4). **(Faoi phribhléid)** |
 | `Digitized`   | Boole            | Scag de réir an stádais digitithe. |
-| `Copyright`   | teaghrán         | Scag de réir an tsealbhóra chóipchirt (e.g. CBE, UNK). |
+| `Copyright`   | teaghrán         | Scag de réir an tsealbhóra chóipchirt (e.g. `CBE`, `UNK`). |
 | `Condition`   | slánuimhir       | Scag de réir bail fhisiciúil (0-3). |
 | `HandbookTopic` | teaghrán        | Scag de réir chód ábhair [*A Handbook of Irish Folklore*](https://www.duchas.ie/ga/tpc/cbeg) (e.g. B005). |
 | `PersonID`    | slánuimhir       | Scag de réir aitheantóir CBÉD an duine. |
@@ -152,11 +152,11 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | `RelevantPersonID` | slánuimhir       | Scag de réir aitheantóir CBÉD an duine. |
 | `CountyID`    | slánuimhir       | Scag de réir contae ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
 | `PlaceID`     | slánuimhir       | Scag de réir áite ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
-| `Country`     | cód tíre ISO 3166* | Scag de réir tíre ach cód ISO a úsáid (e.g. DE, US, GB-ENG). |
+| `Country`     | cód tíre ISO 3166* | Scag de réir tíre ach cód ISO a úsáid (e.g. `DE`, `US`, `GB-ENG`). |
 | `GeoNameID`   | slánuimhir       | Scag de réir áite ach aitheantóir [GeoName](https://www.geonames.org) a úsáid.  |
 | `DateFrom`    | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta ina diaidh. |
 | `DateTo`      | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain seo nó le blianta roimhe sin. |
-| `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (i.e. GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `DateAccuracy` | teaghrán        | Scag de réir chruinneas dháta an taifid (i.e. `APPROX`, `INFER`, `QUESTION`). |
 | `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
 | `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 | `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
@@ -175,15 +175,15 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | `ViafID`      | slánuimhir       | Scag de réir ID iontráil [VIAF](https://viaf.org/).  |
 | `CountyID`    | slánuimhir       | Scag de réir contae ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
 | `PlaceID`     | slánuimhir       | Scag de réir áite ach aitheantóir [logainm.ie](https://www.logainm.ie) a úsáid.  |
-| `Country`     | ISO 3166 cód tíre* | Scag de réir tíre ach cód ISO a úsáid (e.g. DE, US, GB-ENG). |
+| `Country`     | ISO 3166 cód tíre* | Scag de réir tíre ach cód ISO a úsáid (e.g. `DE`, `US`, `GB-ENG`). |
 | `GeoNameID`   | slánuimhir       | Scag de réir aitheantóir [GeoName](https://www.geonames.org).  |
-| `Occupation`  | teaghrán         | Scag de réir gairme (e.g. IASC, FEIRM). |
+| `Occupation`  | teaghrán         | Scag de réir gairme (e.g. `IASC`, `FEIRM`). |
 | `BirthDateFrom` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bhreithe seo nó le blianta ina diaidh. |
 | `BirthDateTo` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bhreithe seo nó le blianta roimhe sin. |
-| `BirthDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta breithe (i.e. GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `BirthDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta breithe (i.e. `APPROX`, `INFER`, `QUESTION`). |
 | `DeathDateFrom` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bháis seo nó le blianta ina diaidh. |
 | `DeathDateTo` | slánuimhir**     | Aisghabh taifid a bhaineann leis an mbliain bháis seo nó le blianta roimhe sin. |
-| `DeathDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta báis (i.e. GARLUACH, MEASTACHÁN, IN AMHRAS). |
+| `DeathDateAccuracy` | teaghrán       | Scag de réir chruinneas an dáta báis (i.e. `APPROX`, `INFER`, `QUESTION`). |
 | `CreatedBefore` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
 | `CreatedSince` | am-dháta ISO 8601 | Aisghabh taifid a cruthaíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 | `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |

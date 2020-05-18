@@ -80,8 +80,8 @@ It then supplies these additional parameters which tell Screenful (i) which URL 
 
 ```html
 <script type="text/javascript">
-Screenful.Login.loginUrl="../login.json";
-Screenful.Login.redirectUrl="<%=redirectUrl%>";
+  Screenful.Login.loginUrl="../login.json";
+  Screenful.Login.redirectUrl="<%=redirectUrl%>";
 </script>
 ```
 

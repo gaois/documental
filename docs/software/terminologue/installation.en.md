@@ -18,7 +18,7 @@ Terminologue is web-based. This means that Terminologue runs on a server somewhe
 
 Terminologue's backend (= the bits that run on the server) is written in [Node.js](https://nodejs.org/), which means the source code is (server-side) JavaScript and runs on pretty much any operating system, including GNU/Linux and Microsoft Windows. The only prerequisite is to install Node.js on your computer. All other prerequisites and dependencies will be detected and installed automatically by the Node.js Package Manager during set up.
 
-For storing data on the server, including all the termbases, data about users and so on, Terminologue uses [SQLite](https://www.sqlite.org/). This dependency is managed by the Node.js Package Manager too. SQLite is file-based (= every database is just a file somewhere on your computer) which means that you don't need to install any database engines on your computer or anything like that.
+For storing data on the server, including all the termbases, data about users and so on, Terminologue uses [SQLite](https://www.sqlite.org/). This dependency is managed by the Node Package Manager too. SQLite is file-based (= every database is just a file somewhere on your computer) which means that you don't need to install any database engines on your computer or anything like that.
 
 ## The steps
 

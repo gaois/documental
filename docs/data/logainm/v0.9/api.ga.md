@@ -16,11 +16,11 @@ Chruthaigh grúpa taighde Gaois in [Fiontar & Scoil na Gaeilge](https://www.dcu.
  
 ## Eolas ginearálta faoi API
 
-Téigh i gcomhairle leis an [treoir maidir le cur chun siúil](/ga/data/getting-started) i dtaca le hacmhainní sonraí oscailte Gaois sula léann tú an chuid eile de na doiciméid a bhaineann le API Logainm. Déantar cur síos sa treoir ar an gcaoi a bhfaightear faisnéis aitheantais an úsáideora agus ar an gcaoi a gcuirtear eolas tábhachtach úsáide ar fáil.  
+Téigh i gcomhairle leis an [mbuntreoir](/ga/data/getting-started) i dtaca le hacmhainní sonraí oscailte Gaois sula léann tú an chuid eile de na doiciméid a bhaineann le API Logainm. Déantar cur síos sa treoir ar an gcaoi a bhfaightear faisnéis aitheantais an úsáideora agus ar an gcaoi a gcuirtear eolas tábhachtach úsáide ar fáil.
 
 ## Cosáin acmhainne
 
-Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm ar an bpríomhshuíomh gréasáin. Liostaítear thíos gach cosán iarratais atá ar fáil faoi láthair. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
+Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin uathúla atá iarcheangailte le hóstainm an phríomhshuímh gréasáin. Liostaítear thíos gach cosán iarratais atá ar fáil faoi láthair. Tá [foclóir sonraí](../data) ar fáil chun cabhrú le húsáideoirí torthaí a fhaightear ón API a pharsáil.  
 
 | Modh        | Cosán                         | Acmhainn                  |
 | :---------- | :---------------------------- | :------------------------ |
@@ -45,7 +45,6 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 
 Úsáid na paraiméadair iarratais seo chun na torthaí a fhaightear ón API a scagadh.
 
-
 | Ainm          | Cineál          | Cur síos    |
 | :------------ | :-------------- | :------------- |
 | `PlaceID`     | slánuimhir      | Scag de réir aitheantóir áite. Mar shampla, tagtar ar gach áit i gContae Dhún na nGall ach `PlaceID` de `100013` a chur isteach. |
@@ -55,8 +54,8 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | `Latitude`    | float           | Scag de réir comhordanáid domhanleithid. Caithfear é a úsáid i gcomhar le luach `Longitude`. |
 | `Longitude`   | float           | Scag de réir comhordanáid domhanfhaid. Caithfear é a úsáid i gcomhar le luach `Latitude`. |
 | `Accurate`    | Boole           | Má tá sé fíor, ná cuir ach áiteanna a gcreidtear go bhfuil a gcuid comhordanáidí geografacha beacht ar ais. Má tá sé bréagach, ná cuir ach áiteanna a bhfuarthas a gcuid comhordanáidí geografacha trí eachtarshuí ó áiteanna in aice láimhe ar ais. |
-| `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15,000 an t-uasmhéid do gha ar bith. Filleann sé ar 3,000 go huathoibríoch. |
-| `Query`       | teaghrán        | Scaig de réir téarma(í) cuardaigh. Tá cuardaigh théacs íogair ó thaobh an tsínte fhada de, mar shampla, faightear torthaí difriúla ó na téarmaí cuardaigh 'Rath' agus 'Ráth'. Tabhair faoi deara nach bhfaightear ach meaitseálacha cruinne ar théarmaí iarratais trí chuardaigh théacs. D'fhéadfadh meaitseálacha páirteacha nó tuairimeacha a bheith sa réimse freagartha `SimilarNames`. |
+| `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15,000 an t-uasmhéid do gha ar bith. Is é 3,000 an luach réamhshocraithe. |
+| `Query`       | teaghrán        | Scag de réir téarma(í) cuardaigh. Tá cuardaigh théacs íogair ó thaobh an tsínte fhada de, mar shampla, faightear torthaí difriúla ó na téarmaí cuardaigh 'Rath' agus 'Ráth'. Tabhair faoi deara nach bhfaightear ach meaitseálacha cruinne ar théarmaí iarratais trí chuardaigh théacs. D'fhéadfadh meaitseálacha páirteacha nó tuairimeacha a bheith sa réimse freagartha `SimilarNames`. |
 | `Gaeltacht`   | Boole           | Má tá sé fíor, ná cuir ach áiteanna atá i gceantar Gaeltachta ar ais. Má tá sé bréagach, ná cuir áiteanna atá i gceantair Ghaeltachta san áireamh sa tacar torthaí. |
 | `PostOffice`  | Boole           | Má tá sé fíor, ná cuir ach áiteanna ina bhfuil, nó ina raibh, oifig an phoist ar ais. Má tá sé bréagach, ná cuir áiteanna ina bhfuil, nó ina raibh, oifig an phoist san áireamh sa tacar torthaí. |
 | `NorthernIreland` | Boole          | Má tá sé fíor, ná cuir ach áiteanna atá i dTuaisceart Éireann ar ais. Má tá sé bréagach, ná cuir áiteanna atá i dTuaisceart Éireann san áireamh sa tacar torthaí. |
@@ -71,7 +70,7 @@ Nuair a fhaightear sonraí a bhaineann le níos mó ná áit amháin mar fhreagr
 
 ## Samplaí léiritheacha
 
-Seo thíos sampla de liosta nach bhfuil uileghabhálach d'aimsitheoirí aonfhoirmeacha acmhainne bailí maidir le hiarratais API:  
+Seo thíos liosta, nach bhfuil uileghabhálach, d'aimsitheoirí aonfhoirmeacha acmhainne bailí mar léiriú ar iarratais API:
 
 - `https://www.logainm.ie/api/v0.9/?PlaceID=100013`
 - `https://www.logainm.ie/api/v0.9/?PlaceID=100009&CategoryID=PAR`
