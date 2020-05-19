@@ -30,7 +30,7 @@ Tá [Comhroinnt Sócmhainní Tras-Fhoinse](https://developer.mozilla.org/en-US/d
 
 Tacófar le leaganacha níos sine ar mhaithe le héascaíocht an fhorbróra: gan leaganú, d'fhéadfadh feidhmchláir spleácha de chuid cliant cliseadh de bharr athruithe ar chomhréir API. Déanfaimid ár ndícheall acmhainní nua a chur leis an suíomh de réir a chéile agus ní chuirfimid athruithe briste i bhfeidhm ach amháin mura bhfuil aon rogha eile ann. Déantar leaganacha API trí [Leaganú Séimeantach 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) a úsáid agus leantar sonraíocht semver. Ar mhaithe le gontacht, áfach, ní léirítear ach pointí mórleaganacha agus mionleaganacha in aimsitheoirí aonfhoirmeacha acmhainne a bhaineann le hiarratais.
 
-Tar éis tamaill, seans go mbeidh go gcinnfear fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh Eochair API, cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
+Tar éis tamaill, seans go gcinnfear fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh Eochair API, cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
 
 **Tabhair faoi deara:** Ar mhaithe le tástáil amháin atá leaganacha réamheisiúna API (i.e. < v1.0) agus ní dhéanfar cothabháil orthu tar éis do leagan 1.0 a bheith eisithe.
 
