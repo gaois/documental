@@ -6,6 +6,12 @@
 	export let error;
 
 	const dev = process.env.NODE_ENV === 'development';
+	const pageNotFoundError = status === 404;
+	const networkError = status === 500 && (
+		error.message === 'Failed to fetch' // Chrome
+		|| error.message === 'NetworkError when attempting to fetch resource.' // Firefox
+		|| error.message === 'Network request failed' // Other/Polyfill
+	);
 </script>
 
 <svelte:head>
@@ -15,8 +21,10 @@
 
 <div class='message'>
 	<h1>{status}</h1>
-	{#if (status === 404)}
-		<p>{$_('error.pageNotFound')}.</p>
+	{#if pageNotFoundError}
+		<p>{$_('error.pageNotFound')}</p>
+	{:else if networkError}
+		<p>{$_('error.networkError')}</p>
 	{:else}
 		<p>{error.message}</p>
 	{/if}

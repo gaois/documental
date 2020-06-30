@@ -45,6 +45,7 @@
     },
     "error": {
         "contact": "Please contact us if you have any queries",
+        "networkError": "We were unable to fetch the resource. Please check that you have an active internet connection.",
         "pageNotFound": "Page not found"
     },
     "document": {

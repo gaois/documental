@@ -21,7 +21,14 @@ body,
 	width: 100%;
 }
 
+html {
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
 body {
+	color: #222;
 	color: var(--text-color);
 	font-family: -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	font-size: 14px;

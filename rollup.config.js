@@ -1,5 +1,4 @@
 import pkg from './package.json';
-import { mdsvex } from 'mdsvex';
 import json from '@rollup/plugin-json';
 import replace from '@rollup/plugin-replace';
 import babel from 'rollup-plugin-babel';
@@ -8,6 +7,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import svelte from 'rollup-plugin-svelte';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
+import { postcss } from 'svelte-preprocess';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
@@ -31,14 +31,12 @@ export default {
 				dev,
 				hydratable: true,
 				emitCss: true,
-				extensions: ['.svelte', '.svx'],
-				preprocess: mdsvex({
-					extension: '.svx',
-					markdownOptions: {
-					  typographer: true,
-					  linkify: true
-					},
-				  })
+				extensions: ['.svelte'],
+				preprocess: [
+					postcss({
+						plugins: [ require('autoprefixer')() ]
+					})
+				]
 			}),
 			resolve({
 				browser: true,
@@ -46,24 +44,32 @@ export default {
 			}),
 			commonjs(),
 			json(),
+			!legacy && babel({
+				extensions: ['.js', '.mjs', '.html', '.svelte'],
+				exclude: ['node_modules/@babel/**'],
+				plugins: [
+					'@babel/plugin-syntax-dynamic-import',
+					'@babel/plugin-proposal-object-rest-spread'
+				]
+			}),
 			legacy && babel({
 				extensions: ['.js', '.mjs', '.html', '.svelte'],
 				runtimeHelpers: true,
 				exclude: ['node_modules/@babel/**'],
 				presets: [
-					['@babel/preset-env', {
-						targets: '> 0.25%, not dead'
-					}]
+					['@babel/preset-env']
 				],
 				plugins: [
 					'@babel/plugin-syntax-dynamic-import',
+					'@babel/plugin-proposal-object-rest-spread',
 					['@babel/plugin-transform-runtime', {
 						useESModules: true
 					}]
 				]
 			}),
 			!dev && terser({
-				module: true
+				module: true,
+				safari10: true
 			})
 		],
 		onwarn
@@ -83,14 +89,12 @@ export default {
 			svelte({
 				generate: 'ssr',
 				dev,
-				extensions: ['.svelte', '.svx'],
-				preprocess: mdsvex({
-					extension: '.svx',
-					markdownOptions: {
-					  typographer: true,
-					  linkify: true
-					},
-				  })
+				extensions: ['.svelte'],
+				preprocess: [
+					postcss({
+						plugins: [ require('autoprefixer')() ]
+					})
+				]
 			}),
 			resolve({
 				dedupe

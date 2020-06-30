@@ -1,7 +1,7 @@
 import { timestamp, files, shell, routes } from '@sapper/service-worker';
 
 const ASSETS = `cache${timestamp}`;
-const exluded_file_routes = [
+const EXCLUDED_FILE_ROUTES = [
 	'android-chrome',
 	'apple-touch',
 	'browserconfig.xml',
@@ -14,7 +14,7 @@ const exluded_file_routes = [
 ];
 
 function is_cacheable(filename) {
-	for (const route of exluded_file_routes) {
+	for (const route of EXCLUDED_FILE_ROUTES) {
 		if (filename.startsWith(route)) return false;
 	}
 	return true;

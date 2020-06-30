@@ -45,6 +45,7 @@
     },
     "error": {
         "contact": "Déan teagmháil linn sa chás go mbíonn aon cheist agat",
+        "networkError": "Ní rabhthas in ann an acmhainn a bhí uait a fháil. Cinntigh, le do thoil, go bhfuil nasc beo idirlín agat.",
         "pageNotFound": "Níor aimsíodh an leathanach"
     },
     "document": {

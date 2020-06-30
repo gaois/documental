@@ -1,49 +1,60 @@
-<script context="module">
-	export async function preload(page, session) {
-		if (!!session.analyticsId) {
-			return { analyticsId: session.analyticsId };
-		}
-	};
-</script>
-
 <script>
 	import { stores } from '@sapper/app';
-	import { onMount } from 'svelte';
-	import { _, locale } from 'svelte-i18n';
+	import { fade } from 'svelte/transition';
+	import { _, isLoading } from 'svelte-i18n';
 
 	import Footer from 'components/Footer.svelte';
 	import GoogleAnalytics from 'components/GoogleAnalytics.svelte';
 	import Header from 'components/Header.svelte';
 	import InternetExplorerNotice from 'components/InternetExplorerNotice.svelte';
 	import Navigation from 'components/Navigation.svelte';
+	import PreloadingIndicator from 'components/PreloadingIndicator.svelte';
+	import SplashScreen from 'components/SplashScreen.svelte';
 
-	export let analyticsId;
-
-	const { page } = stores();
+	const { page, preloading } = stores();
 </script>
 
-<GoogleAnalytics {analyticsId}/>
+<GoogleAnalytics/>
 
-<div class='skip'>
-	<a href={`${$page.path}#main`}>
-		{$_(`global.skip`)}
-	</a>
-</div>
+{#if $isLoading}
+	<div class='splash' out:fade={{ delay: 150, duration: 250 }}>
+		<SplashScreen/>
+	</div>
+{:else}
+	<div class='skip'>
+		<a href={`${$page.path}#main`}>
+			{$_(`global.skip`)}
+		</a>
+	</div>
 
-<Header/>
+	{#if $preloading}
+		<PreloadingIndicator/>
+	{/if}
 
-<div class='container'>
-	<Navigation/>
-	<main id='main'>
-		<slot></slot>
-	</main>
-</div>
+	<Header/>
 
-<Footer/>
+	<div class='container'>
+		<Navigation/>
+		<main id='main'>
+			<slot></slot>
+		</main>
+	</div>
+
+	<Footer/>
+{/if}
 
 <InternetExplorerNotice/>
 
 <style>
+	.splash {
+        bottom: 0;
+		left: 0;
+		position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 999;
+	}
+	
 	.skip {
 		left: 0;
 		margin-left: 0;

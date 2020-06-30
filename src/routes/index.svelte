@@ -3,7 +3,8 @@
     import { locale, waitLocale } from 'svelte-i18n';
     
 	export async function preload(page, session) {
-        locale.set(session.locale || defaultLocale);
+		const localeCode = session.locale || defaultLocale;
+		locale.set(localeCode);
         return await waitLocale();
     };
 </script>
