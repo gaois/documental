@@ -20,7 +20,7 @@ Data from three of the five major collections of folklore held by Cnuasach Bhéa
 
 #### The Main Manuscript Collection (CBÉ)
 
-The Main Manuscript Collection comprises 2,400 bound volumes of material collected since 1932. Full- and part-time collectors compiled the majority of these under the auspices of the Irish Folklore Commission (1935–1971). Approximately two thirds of the material is in Irish and it includes every aspect of the Irish oral tradition. This Collection is in the process of digitization with 171 volumes published online to date.
+The Main Manuscript Collection comprises 2,400 bound volumes of material collected since 1932. Full- and part-time collectors compiled the majority of these under the auspices of the Irish Folklore Commission (1935–1971). Approximately two thirds of the material is in Irish and it includes every aspect of the Irish oral tradition. This Collection is in the process of digitization with 207 volumes published online to date.
 
 #### The Schools' Collection (CBÉS)
 
