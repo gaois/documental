@@ -18,7 +18,7 @@ Eisítear API Logainm go poiblí agus go hoifigiúil agus an t-uasdátú seo i b
 Athruithe bristeacha:
 
 - Déantar uimhriú leathanach a chur i bhfeidhm ar gach iarratas ar chríochphointe API a dtugtar liosta torthaí mar fhreagra air. Mura sonraítear paraiméadar leathanaigh ar bith tabharfar an chéad leathanach torthaí mar fhreagra agus uaslíon 1,000 toradh in aghaidh an leathanaigh. Cinntíonn an t-uimhriú leathanach go mbaineann feidhmíocht chobhsaí iontaofa leis an API, is cuma cad é an líon iomlán torthaí a aimsítear.
-- Cuirtear meiteashonraí i dtaobh líon iomlán na dtorthaí agus i dtaobh uimriú leathanach ar fáil i gcás gach críochphointe API a thugann liosta oibiachtaí mar fhreagra. I gcas liostaí tagartha, mar a thugtar ó chríochphointí ar nós `/api/v1.0/administrative-units`, `/api/v1.0/features`, `/api/v1.0/glossary` agus `/api/v1.0/counties`, ciallaíonn sé seo go mbíonn na torthaí neadaithe in airí dar teideal `results`.
+- Cuirtear meiteashonraí i dtaobh líon iomlán na dtorthaí agus i dtaobh uimhriú leathanach ar fáil i gcás gach críochphointe API a thugann liosta oibiachtaí mar fhreagra. I gcas liostaí tagartha, mar a thugtar ó chríochphointí ar nós `/api/v1.0/administrative-units`, `/api/v1.0/features`, `/api/v1.0/glossary` agus `/api/v1.0/counties`, ciallaíonn sé seo go mbíonn na torthaí neadaithe in airí dar teideal `results`.
 - Rinneadh an t-airí `places` a bhain leis an oibiacht [`placeList`](/ga/data/logainm/v1.0/data) a athainmniú mar `results`. Fágann sé seo go bhfuil struchtúr na n-oibiachtaí ar liostaí iad de réir a chéile anois.
 
 Athruithe eile:
