@@ -1,5 +1,5 @@
 ---
-title: Data dictionary (Version 0.9)
+title: Data dictionary (Version 1.0)
 shortTitle: Data dictionary
 description: Data dictionary for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
@@ -7,8 +7,6 @@ resource: Logainm
 order: 2
 public: true
 ---
-
-**Note:** This prelease version of the Logainm API is now deprecated and will no longer be supported after September 1st, 2020. Please view the [changelog](/en/data/logainm/v1.0/changelog) and migrate to [API v1.0](/en/data/logainm/v1.0/api).
 
 This document describes the data structure of the results made available via the Logainm Application Programming Interface (API). Logainm is a comprehensive management system for data, archival records and placenames research conducted by the Government of Ireland. For general information regarding the API and for developer guidelines, please consult the [developer documentation](../api).
 
@@ -19,7 +17,10 @@ Most API queries will return a `placeList` object. This contains a list of one o
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | TotalCount      | integer             | one                 | The total count of place records retrieved. |
-| Places          | [`place`](#place)     | none or one or many | The retrieved place records. |
+| TotalPages      | integer             | one                 | The total number of pages in the result set. |
+| CurrentPage     | integer             | one                 | The current page number. |
+| CountPerPage    | integer             | one                 | The maximum count of results returned per page. |
+| Results         | [`place`](#place)   | none or one or many | The retrieved place records. |
 | SimilarNames    | string              | none or one or many | A set of names which have a similar spelling to the query text (if performing a textual search). For example, if searching for 'Ballybunion', 'Ballybunnion' will be suggested. |
 | RelatedNames    | string              | none or one or many | A set of names which are related to the query text (if performing a textual search). For example, if searching for 'Lismore', the list of related names will suggest 'Lismore and Mocollop', 'Lismore Demesne' and 'Lismore Road'. |
 
@@ -253,6 +254,18 @@ Specifies a co-reference to a particular place in data sets other than the Place
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Uri             | string              | one                 | The URI of the external resource. |
+
+## `referenceList`
+
+This contains a list of one or more reference objects, if found, and additional metadata related to the query.
+
+| Property name   | Type                | Cardinality         | Description               |
+| :-------------- | :------------------ | :------------------ | :------------------------ |
+| TotalCount      | integer             | one                 | The total count of records retrieved. |
+| TotalPages      | integer             | one                 | The total number of pages in the result set. |
+| CurrentPage     | integer             | one                 | The current page number. |
+| CountPerPage    | integer             | one                 | The maximum count of results returned per page. |
+| Results         | [`category`](#category) or [`glossary`](#glossary) or [`place`](#place)   | none or one or many | The retrieved records. |
 
 ## `category`
 

@@ -1,5 +1,5 @@
 ---
-title: Comhéadan feidhmchláir Logainm (Leagan 0.9)
+title: Comhéadan feidhmchláir Logainm (Leagan 1.0)
 shortTitle: Comhéadan feidhmchláir
 description: Doiciméadacht forbróra i gcomhair API Logainm
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
@@ -7,8 +7,6 @@ resource: Logainm
 order: 1
 public: true
 ---
-
-**Tabhair faoi deara:** Tá an leagan réamheisiúna seo de API Logainm dímholta anois agus cuirfear deireadh leis ar an 1 Meán Fómhair 2020. Moltar súil a chaitheamh ar an [loga athruithe](/ga/data/logainm/v1.0/changelog) agus aistriú go dtí [API v1.0](/ga/data/logainm/v1.0/api).
 
 ## Réamhrá
 
@@ -25,15 +23,12 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | Modh        | Cosán                         | Acmhainn                  |
 | :---------- | :---------------------------- | :------------------------ |
 | GET         | `/api`                        | Meiteashonraí ginearálta API.     |
-| GET         | `/api/v0.9`                   | Liosta áiteanna agus meiteashonraí gaolmhara.**\*** |
-| GET         | `/api/v0.9/{id}`              | Meiteashonraí a bhaineann le háit ar leith. |
-| GET         | `/api/v0.9/administrative-units` | Liosta tagartha de mheiteashonraí a bhaineann le [haonaid riaracháin na hÉireann](https://www.logainm.ie/ga/inf/help-categs). Is féidir na haitheantóirí aonaid sa liosta seo a úsáid chun áiteanna a scagadh de réir `CategoryID`. |
-| GET         | `/api/v0.9/features`          | Liosta tagartha de mheiteashonraí a bhaineann le gnéithe geografacha. Is féidir na haitheantóirí gné sa liosta seo a úsáid chun áiteanna a scagadh de réir `CategoryID`. |
-| GET         | `/api/v0.9/glossary`          | Liosta tagartha de na [focail choitianta i logainmneacha na hÉireann](https://www.logainm.ie/ga/gls/) agus de mheiteashonraí gaolmhara. Is féidir na haitheantóirí gluaise sa liosta seo a úsáid chun áiteanna a scagadh de réir `GlossaryID`. |
-| GET         | `/api/v0.9/counties`          | Liosta tagartha de mheiteashonraí a bhaineann le contaetha. Is féidir na haitheantóirí áite sa liosta seo a úsáid chun áiteanna a scagadh de réir `PlaceID`. |
-
-**\*** Ní mór iarratais ar chríochphointe `/api/v0.9/` a scagadh le ceann amháin de na paraiméadair seo a leanas: `PlaceID`, `CategoryID`, `GlossaryID`, nó péire de `Longitude` agus `Latitude`.  
-
+| GET         | `/api/v1.0`                   | Liosta áiteanna agus meiteashonraí gaolmhara.**\*** |
+| GET         | `/api/v1.0/{id}`              | Meiteashonraí a bhaineann le háit ar leith. |
+| GET         | `/api/v1.0/administrative-units` | Liosta tagartha de mheiteashonraí a bhaineann le [haonaid riaracháin na hÉireann](https://www.logainm.ie/ga/inf/help-categs). Is féidir na haitheantóirí aonaid sa liosta seo a úsáid chun áiteanna a scagadh de réir `CategoryID`. |
+| GET         | `/api/v1.0/features`          | Liosta tagartha de mheiteashonraí a bhaineann le gnéithe geografacha. Is féidir na haitheantóirí gné sa liosta seo a úsáid chun áiteanna a scagadh de réir `CategoryID`. |
+| GET         | `/api/v1.0/glossary`          | Liosta tagartha de na [focail choitianta i logainmneacha na hÉireann](https://www.logainm.ie/ga/gls/) agus de mheiteashonraí gaolmhara. Is féidir na haitheantóirí gluaise sa liosta seo a úsáid chun áiteanna a scagadh de réir `GlossaryID`. |
+| GET         | `/api/v1.0/counties`          | Liosta tagartha de mheiteashonraí a bhaineann le contaetha. Is féidir na haitheantóirí áite sa liosta seo a úsáid chun áiteanna a scagadh de réir `PlaceID`. |
 
 ### Paraiméadair chosáin URL
 
@@ -45,8 +40,10 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 
 Úsáid na paraiméadair iarratais seo chun na torthaí a fhaightear ón API a scagadh.
 
-| Ainm          | Cineál          | Cur síos    |
+| Ainm          | Cineál          | Cur síos       |
 | :------------ | :-------------- | :------------- |
+| `Page`        | slánuimhir      | Sonraítear an uimhir leathanaigh reatha. Tosaíonn uimhreacha leathanach ar a haon (i.e. níl leathanaigh náid-innéacsaithe). |
+| `PerPage`     | slánuimhir      | Sonraítear líon na dtorthaí a thugtar in aghaidh an leathanaigh mar fhreagra ar iarratas a bhfuil uimhriú leathanach i bhfeidhm air. Is é 1,000 an luach réamhshocraithe. Is é 1,000 an t-uasluach atá ceadaithe. |
 | `PlaceID`     | slánuimhir      | Scag de réir aitheantóir áite. Mar shampla, tagtar ar gach áit i gContae Dhún na nGall ach `PlaceID` de `100013` a chur isteach. |
 | `CategoryID`  | teaghrán        | Scag de réir aitheantóir na catagóire áite, lena n-áirítear aonad riaracháin nó gné gheografach. |
 | `GlossaryID`  | slánuimhir      | Scag de réir aitheantóir na hiontrála gluaise. |
@@ -64,6 +61,10 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | `ModifiedBefore` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh roimh dháta ar leith i bhformáid `YYYY-MM-DD`. |
 | `ModifiedSince` | am-dháta ISO 8601 | Aisghabh taifid a nuashonraíodh i ndiaidh dáta ar leith i bhformáid `YYYY-MM-DD`. |
 
+## Uimhriú leathanach
+
+Nuair a thugtar liosta oibiachtaí mar fhreagra ar iarratas ar API Logainm cuirtear uimhriú leathanach i bhfeidhm ar an liosta. Sa chás go bhfuil níos mó torthaí ann ná uaslíon torthaí réamhshocraithe déantar na torthaí a roinnt ina ‘leathanaigh’. Seoltar iarratas API ar leith i gcás gach leathanaigh. Cinntíonn an t-uimhriú leathanach go mbaineann feidhmíocht chobhsaí iontaofa leis an API, is cuma cad é an líon iomlán torthaí a aimsítear. Mura socraítear paraiméadair leathanaigh ar bith tabharfar an chéad leathanach torthaí mar fhreagra agus uaslíon 1,000 toradh in aghaidh an leathanaigh i bhfeidhm. Is féidir líon na dtorthaí a thugtar in aghaidh an leathanaigh a chumrú ach an paraiméadar iarratais `PerPage` a shocrú. 
+
 ## Sórtáil
 
 Nuair a fhaightear sonraí a bhaineann le níos mó ná áit amháin mar fhreagra ar iarratas, sórtáiltear de réir an aitheantóra áite, in ord ardaitheach, iad. An t-aon eisceacht uaidh seo ná iarratais gheografacha, ina sonraítear na paraiméadair iarratais `Latitude` agus `Longitude`. Sa chás seo, liostaítear áiteanna de réir gaireachta do na comhordanáidí sonraithe agus liostaítear na háiteanna is gaire ar dtús.  
@@ -72,23 +73,23 @@ Nuair a fhaightear sonraí a bhaineann le níos mó ná áit amháin mar fhreagr
 
 Seo thíos liosta, nach bhfuil uileghabhálach, d'aimsitheoirí aonfhoirmeacha acmhainne bailí mar léiriú ar iarratais API:
 
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100013`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100009&CategoryID=PAR`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100002&ModifiedSince=2019-01-01`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
-- `https://www.logainm.ie/api/v0.9/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
-- `https://www.logainm.ie/api/v0.9/?GlossaryID=58`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100024&Gaeltacht=true`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100010&ExcludeStreets=true`
-- `https://www.logainm.ie/api/v0.9/?Query=Carrick&PlaceID=100029`
-- `https://www.logainm.ie/api/v0.9/1412322`
-- `https://www.logainm.ie/api/v0.9/1411548`
-- `https://www.logainm.ie/api/v0.9/14448`
-- `https://www.logainm.ie/api/v0.9/1384618`
-- `https://www.logainm.ie/api/v0.9/26783`
-- `https://www.logainm.ie/api/v0.9/1375542`
-- `https://www.logainm.ie/api/v0.9/2425`
-- `https://www.logainm.ie/api/v0.9/administrative-units/`
-- `https://www.logainm.ie/api/v0.9/features/`
-- `https://www.logainm.ie/api/v0.9/glossary/`
-- `https://www.logainm.ie/api/v0.9/counties/`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100013&Page=2&PerPage=200`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100009&CategoryID=PAR`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100002&ModifiedSince=2019-01-01`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
+- `https://www.logainm.ie/api/v1.0/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
+- `https://www.logainm.ie/api/v1.0/?GlossaryID=58`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100024&Gaeltacht=true`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100010&ExcludeStreets=true`
+- `https://www.logainm.ie/api/v1.0/?Query=Carrick&PlaceID=100029`
+- `https://www.logainm.ie/api/v1.0/1412322`
+- `https://www.logainm.ie/api/v1.0/1411548`
+- `https://www.logainm.ie/api/v1.0/14448`
+- `https://www.logainm.ie/api/v1.0/1384618`
+- `https://www.logainm.ie/api/v1.0/26783`
+- `https://www.logainm.ie/api/v1.0/1375542`
+- `https://www.logainm.ie/api/v1.0/2425`
+- `https://www.logainm.ie/api/v1.0/administrative-units/`
+- `https://www.logainm.ie/api/v1.0/features/`
+- `https://www.logainm.ie/api/v1.0/glossary/`
+- `https://www.logainm.ie/api/v1.0/counties/`

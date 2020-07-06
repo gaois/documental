@@ -8,7 +8,7 @@ public: true
 
 The [Gaois research group](https://www.gaois.ie) in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, in collaboration with our project partners, is making a number of open data resources available to the public. These include RESTful Application Programming Interfaces (APIs) and other data artifacts. Each of these resources is released under specific licencing conditions⁠: please read the appropriate licencing information, which accompanies the documentation for each resource on this website, before making use of the data.
 
-The [Logainm API](/en/data/logainm/v0.9/api) is now in public beta release and provides programmatic access to the Placenames Database of Ireland. Another API for the [Dúchas](/en/data/duchas/v0.5/api) project is currently in advanced development and a prerelease version is now available. It is hoped to make further resources available in the future.
+The [Logainm API](/en/data/logainm/v1.0/api) is now publicly available and provides programmatic access to the Placenames Database of Ireland. Another API for the [Dúchas](/en/data/duchas/v0.5/api) project is currently in advanced development and a prerelease version is available. It is hoped to make further resources available in the future.
 
 Gaois APIs share common usage, authentication, versioning and data protection patterns. The remainder of this document describes these patterns and should be read before proceeding to the specific documentation for each resource.
 
@@ -16,7 +16,7 @@ Gaois APIs share common usage, authentication, versioning and data protection pa
 
 Gaois APIs provide access to a number of resources by means of a defined URL schema. Specific resources are accessed via unique paths appended to the main website host. In some cases the resources that are returned may be filtered using optional query parameters. Attempts to access a resource provided by the API are referred to as requests. Following a successful request, resources are returned in the form of JSON. An unsuccessful attempt to access a resource will receive, at a minimum, a relevant HTTP status code in response to the request. An example of a valid API request is as follows:
 
-> `https://www.logainm.ie/api/v0.9/1375542`
+> `https://www.logainm.ie/api/v1.0/1375542`
 
 Users or applications (clients) requesting a resource via the API must authenticate their identity. This is achieved by providing an API Key with each request. Each client must obtain a unique API Key prior to interacting with the interface. Authentication is required to prevent abuse of the service and to track general usage statistics. Further details are provided below.
 
@@ -26,7 +26,7 @@ Gaois open data APIs support [Cross-Origin Resource Sharing](https://developer.m
 
 Multiple API versions are facilitated for all of our REST APIs. This means that more than one version of each API may be accessible at the same time. Newer API versions may offer additional resources or functionalities but may require a different request syntax to older versions. The target API version is indicated by the second path parameter in the request URL:
 
-> /api/**v0.9**/glossary
+> /api/**v1.0**/glossary
 
 Older versions will be supported for developer convenience: without versioning, changes to API syntax might cause dependent client applications to malfunction. We will endeavour to add new resources incrementally and will implement breaking changes only as a last resort. The API is versioned using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) and follows the semver specification. For brevity, however, only major and minor version points are reflected in request URLs.
 
@@ -52,13 +52,13 @@ Your API Key may be passed to the service in a few different ways. Choose whiche
 
 Pass the API Key into an `X-Api-Key` header:
 
-> `'X-Api-Key: <API_KEY_HERE>' 'https://www.logainm.ie/api/v0.9/1384618'`
+> `'X-Api-Key: <API_KEY_HERE>' 'https://www.logainm.ie/api/v1.0/1384618'`
 
 #### GET query parameter
 
 Pass the API Key into an `apiKey` GET query string parameter:
 
-> `'https://www.logainm.ie/api/v0.9/1384618?apiKey=API_KEY_HERE'`
+> `'https://www.logainm.ie/api/v1.0/1384618?apiKey=API_KEY_HERE'`
 
 **Note:** The GET query parameter may be used for non-GET requests (such as POST and PUT).
 
@@ -66,7 +66,7 @@ Pass the API Key into an `apiKey` GET query string parameter:
 
 As an alternative, pass the API Key as the username (with an empty password) using HTTP basic authentication:
 
-> `'https://API_KEY_HERE@www.logainm.ie/api/v0.9/1384618'`
+> `'https://API_KEY_HERE@www.logainm.ie/api/v1.0/1384618'`
 
 ## Security
 

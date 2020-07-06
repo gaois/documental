@@ -1,5 +1,5 @@
 ---
-title: Logainm Application Programming Interface (Version 0.9)
+title: Logainm Application Programming Interface (Version 1.0)
 shortTitle: API
 description: Developer documentation for the Logainm API
 keywords: Logainm, API, placenames, toponmy, onomastics, Irish language, Fiontar & Scoil na Gaeilge, DCU
@@ -7,8 +7,6 @@ resource: Logainm
 order: 1
 public: true
 ---
-
-**Note:** This prelease version of the Logainm API is now deprecated and will no longer be supported after September 1st, 2020. Please view the [changelog](/en/data/logainm/v1.0/changelog) and migrate to [API v1.0](/en/data/logainm/v1.0/api).
 
 ## Introduction
 
@@ -25,14 +23,12 @@ The resources provided by the API are accessed via unique paths appended to the 
 | Method      | Path                          | Resource                  |
 | :---------- | :---------------------------- | :------------------------ |
 | GET         | `/api`                        | General API metadata.     |
-| GET         | `/api/v0.9`                   | List of places and associated metadata.**\*** |
-| GET         | `/api/v0.9/{id}`              | Metadata associated with an individual place. |
-| GET         | `/api/v0.9/administrative-units` | Reference list of metadata associated with [Irish administrative units](https://www.logainm.ie/en/inf/help-categs). The unit identifiers in this list can be used to filter places by `CategoryID`. |
-| GET         | `/api/v0.9/features`          | Reference list of metadata associated with geographical features. The feature identifiers in this list can be used to filter places by `CategoryID`. |
-| GET         | `/api/v0.9/glossary`          | Reference list of [words commonly found in Irish placenames](https://www.logainm.ie/en/gls/) and associated metadata. The glossary identifiers in this list can be used to filter places by `GlossaryID`. |
-| GET         | `/api/v0.9/counties`          | Reference list of metadata associated with counties. The place identifiers in this list can be used to filter places by `PlaceID`. |
-
-**\*** Requests to the `/api/v0.9/` endpoint must be filtered by at least one of the following parameters: `PlaceID`, `CategoryID`, `GlossaryID`, or a pair of `Longitude` and `Latitude` parameters.
+| GET         | `/api/v1.0`                   | List of places and associated metadata.**\*** |
+| GET         | `/api/v1.0/{id}`              | Metadata associated with an individual place. |
+| GET         | `/api/v1.0/administrative-units` | Reference list of metadata associated with [Irish administrative units](https://www.logainm.ie/en/inf/help-categs). The unit identifiers in this list can be used to filter places by `CategoryID`. |
+| GET         | `/api/1.0/features`          | Reference list of metadata associated with geographical features. The feature identifiers in this list can be used to filter places by `CategoryID`. |
+| GET         | `/api/v1.0/glossary`          | Reference list of [words commonly found in Irish placenames](https://www.logainm.ie/en/gls/) and associated metadata. The glossary identifiers in this list can be used to filter places by `GlossaryID`. |
+| GET         | `/api/v1.0/counties`          | Reference list of metadata associated with counties. The place identifiers in this list can be used to filter places by `PlaceID`. |
 
 ### URL path parameters
 
@@ -46,6 +42,8 @@ Use these query parameters to filter the results returned by the API.
 
 | Name          | Type          | Description    |
 | :------------ | :------------ | :------------- |
+| `Page`        | integer       | Specifies the current page number. Page numbers start at one (i.e. pages are not zero indexed). |
+| `PerPage`     | integer       | Specifies the count of results to be returned per page in a paginated query. Defaults to 1,000. The maximum value allowed is 1,000. |
 | `PlaceID`     | integer       | Filter by place identifier. For example, a `PlaceID` of `100013` returns all of the places in County Donegal. |
 | `CategoryID`  | string        | Filter by place category identifier, such as an administrative unit or geographical feature. |
 | `GlossaryID`  | integer       | Filter by glossary entry identifier. |
@@ -63,6 +61,10 @@ Use these query parameters to filter the results returned by the API.
 | `ModifiedBefore` | ISO 8601 datetime | Retrieve records last updated before a given date in `YYYY-MM-DD` format. |
 | `ModifiedSince` | ISO 8601 datetime | Retrieve records last updated after a given date in `YYYY-MM-DD` format. |
 
+## Pagination
+
+Where a list of objects is returned in response to a request to the Logainm API the list will be paginated. This means that when the number of results exceeds a certain count the results are split across a number of ‘pages’. Pages are accessed by separate API requests. This helps ensure consistent and reliable performance regardless of the total result count. If no page parameters are specified the first page of results will be returned with a maximum count of 1,000 results per page. The number of results returned per page can be configured via the `PerPage` query parameter.
+
 ## Sorting
 
 Where data relating to more than one place is returned in response to a query it is sorted by place identifier, in ascending order. The only exception to this are geographic queries, where the `Latitude` and `Longitude` query parameters are specified, in which case places are listed in order of proximity to the specified coordinates, with the nearest places listed first.
@@ -71,23 +73,23 @@ Where data relating to more than one place is returned in response to a query it
 
 Below is a non-exhaustive list of valid API request URLs, provided for demonstration purposes:
 
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100013`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100009&CategoryID=PAR`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100002&ModifiedSince=2019-01-01`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
-- `https://www.logainm.ie/api/v0.9/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
-- `https://www.logainm.ie/api/v0.9/?GlossaryID=58`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100024&Gaeltacht=true`
-- `https://www.logainm.ie/api/v0.9/?PlaceID=100010&ExcludeStreets=true`
-- `https://www.logainm.ie/api/v0.9/?Query=Carrick&PlaceID=100029`
-- `https://www.logainm.ie/api/v0.9/1412322`
-- `https://www.logainm.ie/api/v0.9/1411548`
-- `https://www.logainm.ie/api/v0.9/14448`
-- `https://www.logainm.ie/api/v0.9/1384618`
-- `https://www.logainm.ie/api/v0.9/26783`
-- `https://www.logainm.ie/api/v0.9/1375542`
-- `https://www.logainm.ie/api/v0.9/2425`
-- `https://www.logainm.ie/api/v0.9/administrative-units/`
-- `https://www.logainm.ie/api/v0.9/features/`
-- `https://www.logainm.ie/api/v0.9/glossary/`
-- `https://www.logainm.ie/api/v0.9/counties/`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100013&Page=2&PerPage=200`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100009&CategoryID=PAR`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100002&ModifiedSince=2019-01-01`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
+- `https://www.logainm.ie/api/v1.0/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
+- `https://www.logainm.ie/api/v1.0/?GlossaryID=58`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100024&Gaeltacht=true`
+- `https://www.logainm.ie/api/v1.0/?PlaceID=100010&ExcludeStreets=true`
+- `https://www.logainm.ie/api/v1.0/?Query=Carrick&PlaceID=100029`
+- `https://www.logainm.ie/api/v1.0/1412322`
+- `https://www.logainm.ie/api/v1.0/1411548`
+- `https://www.logainm.ie/api/v1.0/14448`
+- `https://www.logainm.ie/api/v1.0/1384618`
+- `https://www.logainm.ie/api/v1.0/26783`
+- `https://www.logainm.ie/api/v1.0/1375542`
+- `https://www.logainm.ie/api/v1.0/2425`
+- `https://www.logainm.ie/api/v1.0/administrative-units/`
+- `https://www.logainm.ie/api/v1.0/features/`
+- `https://www.logainm.ie/api/v1.0/glossary/`
+- `https://www.logainm.ie/api/v1.0/counties/`

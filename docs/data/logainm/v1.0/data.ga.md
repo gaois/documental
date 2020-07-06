@@ -1,5 +1,5 @@
 ---
-title: Foclóir sonraí (Leagan 0.9)
+title: Foclóir sonraí (Leagan 1.0)
 shortTitle: Foclóir sonraí
 description: Foclóir sonraí i gcomhair API Logainm
 keywords: Logainm, API, logainmneacha, logainmníocht, ainmeolaíocht, Gaeilge, Fiontar & Scoil na Gaeilge, DCU
@@ -7,8 +7,6 @@ resource: Logainm
 order: 2
 public: true
 ---
-
-**Tabhair faoi deara:** Tá an leagan réamheisiúna seo de API Logainm dímholta anois agus cuirfear deireadh leis ar an 1 Meán Fómhair 2020. Moltar súil a chaitheamh ar an [loga athruithe](/ga/data/logainm/v1.0/changelog) agus aistriú go dtí [API v1.0](/ga/data/logainm/v1.0/api).
 
 Déantar cur síos sa doiciméad seo ar struchtúr sonraí na dtorthaí a chuirtear ar fáil trí Chomhéadan Feidhmchláir (API) Logainm. Áis chuimsitheach bhainistíochta í seo chun sonraí logainmneacha agus taifid chartlainne, mar aon le taighde logainmneacha Rialtas na hÉireann, a riar. Téigh i gcomhairle le [doiciméid an fhorbróra](../api) chun eolas ginearálta ar API agus treoirlínte an fhorbróra a fháil.
 
@@ -19,7 +17,10 @@ Gheofar oibiacht `placeList` ón gcuid is mó d'iarratais API. Tá liosta ina bh
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos               |
 | :-------------- | :------------------ | :------------------ | :--------------------- |
 | TotalCount      | slánuimhir          | ceann amháin        | Líon iomlán na dtaifead áite a aisghabhadh. |
-| Places          | [`place`](#place)     | ceann ar bith nó ceann amháin nó go leor | Na taifid áite a aisghabhadh. |
+| TotalPages      | slánuimhir          | ceann amháin        | Líon iomlán na leathanach sa tacar torthaí. |
+| CurrentPage     | slánuimhir          | ceann amháin        | An uimhir leathanaigh reatha. |
+| CountPerPage    | slánuimhir          | ceann amháin        | An t-uaslíon torthaí a thugtar in aghaidh an leathanaigh. |
+| Results         | [`place`](#place)     | ceann ar bith nó ceann amháin nó go leor | Na taifid áite a aisghabhadh. |
 | SimilarNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha a bhfuil an litriú atá orthu cosúil le téacs an iarratais (más cuardach téacs atá i gceist). Mar shampla, má chuardaíonn tú 'Ballybunion', molfar 'Ballybunnion.' |
 | RelatedNames    | teaghrán            | ceann ar bith nó ceann amháin nó go leor | Tacar ainmneacha atá bainteach le téacs an iarratais. Mar shampla, má chuardaíonn tú 'Lismore', molfar 'Lismore and Mocollop', 'Lismore Demesne' agus 'Lismore Road' i liosta na logainmneacha gaolmhara. |
 
@@ -253,6 +254,18 @@ Sonraíonn sé comhthagairt d'áit ar leith i dtacair sonraí seachas Bunachar L
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
 | Uri             | teaghrán            | ceann amháin        | URI na hacmhainne seachtraí. |
+
+## `referenceList`
+
+Tá liosta ina bhfuil oibiacht tagartha amháin nó níos mó, má aimsítear iad, agus meiteashonraí breise a bhaineann leis an iarratas san oibiacht seo.
+
+| Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
+| :-------------- | :------------------ | :------------------ | :------------------------ |
+| TotalCount      | slánuimhir          | ceann amháin        | Líon iomlán na dtaifead a aisghabhadh. |
+| TotalPages      | slánuimhir          | ceann amháin        | Líon iomlán na leathanach sa tacar torthaí. |
+| CurrentPage     | slánuimhir          | ceann amháin        | An uimhir leathanaigh reatha. |
+| CountPerPage    | slánuimhir          | ceann amháin        | An t-uaslíon torthaí a thugtar in aghaidh an leathanaigh. |
+| Results         | [`category`](#category) nó [`glossary`](#glossary) nó [`place`](#place) | ceann ar bith nó ceann amháin nó go leor | Na taifid a aisghabhadh. |
 
 ## `category`
 

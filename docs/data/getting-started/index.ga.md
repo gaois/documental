@@ -8,7 +8,7 @@ public: true
 
 Tá [grúpa taighde Gaois](https://www.gaois.ie) in [Fiontar & Scoil na Gaeilge](https://www.dcu.ie/fiontar_scoilnagaeilge/), DCU, i gcomhar lenár bpáirtnéirí tionscadail, ag cur roinnt acmhainní sonraí oscailte ar fáil don phobal. Áirítear leo Comhéadain Feidhmchláir (API) a bhaineann leas as cur chuige REST agus déantáin eile sonraí. Eisítear gach ceann de na hacmhainní seo faoi choinníollacha sonracha ceadúnaithe: léigh an t-eolas cuí ceadúnaithe, atá ar fáil ar an suíomh gréasáin seo sna doiciméid a ghabhann le gach acmhainn, sula mbaineann tú úsáid as na sonraí.  
 
-Tá leagan béite poiblí de [API Logainm](/en/data/logainm/v0.9/api) ar fáil anois agus tugann sé seo rochtain chláir ar Bhunachar Logainmneacha na hÉireann. Tá cuid mhór den obair chun API eile a bhaineann le tionscadal [Dúchas](/en/data/duchas/v0.5/api) a fhorbairt i gcrích faoi seo agus tá leagan réamheisiúna ar fáil anois. Táthar ag súil go gcuirfear tuilleadh acmhainní ar fáil amach anseo.
+Tá [API Logainm](/en/data/logainm/v1.0/api) ar fáil go poiblí anois agus tugann sé seo rochtain chláir ar Bhunachar Logainmneacha na hÉireann. Tá cuid mhór den obair chun API eile a bhaineann le tionscadal [Dúchas](/en/data/duchas/v0.5/api) a fhorbairt i gcrích faoi seo agus tá leagan réamheisiúna ar fáil anois. Táthar ag súil go gcuirfear tuilleadh acmhainní ar fáil amach anseo.
 
 Baineann patrúin choiteanna maidir le húsáid, fíordheimhniú, leaganú agus cosaint sonraí le comhéadain feidhmchláir Gaois. Déantar cur síos sa chuid eile den doiciméad seo ar na patrúin seo agus ba cheart iad a léamh sula leantar ar aghaidh go dtí na doiciméid ar leith a bhaineann le gach acmhainn.  
 
@@ -16,7 +16,7 @@ Baineann patrúin choiteanna maidir le húsáid, fíordheimhniú, leaganú agus 
 
 Tugann Comhéadain Feidhmchláir Gaois rochtain ar roinnt acmhainní trí scéimre URL sainithe. Faightear rochtain ar acmhainní ar leith trí chosáin uathúla atá iarcheangailte leis an óstainm. I gcásanna áirithe, d'fhéadfaí na hacmhainní a thagann ar ais a scagadh ach paraiméadair roghnacha iarratais a úsáid. Má éiríonn leis an iarratas, cuirtear acmhainní ar ais i bhfoirm JSON. Mura n-éiríonn leis an iarratas rochtain a fháil ar acmhainn, gheofar, ar a laghad, cód stádais HTTP mar fhreagra ar an iarratas. Seo a leanas sampla d'iarratas bailí API:  
 
-> `https://www.logainm.ie/api/v0.9/1375542`
+> `https://www.logainm.ie/api/v1.0/1375542`
 
 Ní mór d'úsáideoirí nó d'fheidhmchláir (cliaint) a iarrann acmhainn trí API a n-aitheantas a fhíordheimhniú. Déantar é seo ach Eochair API a thabhairt le gach iarratas. Ní mór do gach cliant Eochair uathúil API a fháil sula n-idirghníomhaíonn sé/sí leis an gcomhéadan. Teastaíonn fíordheimhniú chun mí-úsáid seirbhíse a chosc agus chun staitisticí ginearálta úsáide a rianú. Tá tuilleadh eolais thíos.
 
@@ -26,7 +26,7 @@ Tá [Comhroinnt Sócmhainní Tras-Fhoinse](https://developer.mozilla.org/en-US/d
 
 Éascaítear leaganacha éagsúla API le haghaidh gach API REST. Is ionann seo agus a rá gur féidir rochtain a fháil ar níos mó ná leagan amháin de gach API ag an am céanna. D'fhéadfadh leaganacha nua API acmhainní nó feidhmiúlachtaí breise a chur ar fáil ach seans go dteastódh comhréir dhifriúil iarratais uathu i gcomparáid le leaganacha níos sine. Léiríonn an dara paraiméadar cosáin in URL an iarratais an spriocleagan API:  
 
-> /api/**v0.9**/glossary
+> /api/**v1.0**/glossary
 
 Tacófar le leaganacha níos sine ar mhaithe le héascaíocht an fhorbróra: gan leaganú, d'fhéadfadh feidhmchláir spleácha de chuid cliant cliseadh de bharr athruithe ar chomhréir API. Déanfaimid ár ndícheall acmhainní nua a chur leis an suíomh de réir a chéile agus ní chuirfimid athruithe briste i bhfeidhm ach amháin mura bhfuil aon rogha eile ann. Déantar leaganacha API trí [Leaganú Séimeantach 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) a úsáid agus leantar sonraíocht semver. Ar mhaithe le gontacht, áfach, ní léirítear ach pointí mórleaganacha agus mionleaganacha in aimsitheoirí aonfhoirmeacha acmhainne a bhaineann le hiarratais.
 
@@ -52,13 +52,13 @@ Is féidir d'Eochair API a chur ar aghaidh chuig an tseirbhís ar bhealaí éags
 
 Cuir an Eochair API i gceanntásc `X-Api-Key`: 
 
-> `'X-Api-Key: <API_KEY_HERE>' 'https://www.logainm.ie/api/v0.9/1384618'`
+> `'X-Api-Key: <API_KEY_HERE>' 'https://www.logainm.ie/api/v1.0/1384618'`
 
 #### Paraiméadar iarratais GET
 
 Cuir an Eochair API i bparaiméadar `apiKey` um theaghrán iarratais GET: 
 
-> `'https://www.logainm.ie/api/v0.9/1384618?apiKey=API_KEY_HERE'`
+> `'https://www.logainm.ie/api/v1.0/1384618?apiKey=API_KEY_HERE'`
 
 **Tabhair faoi deara:** Is féidir an paraiméadar iarratais GET seo a úsáid le haghaidh iarratas nach mbaineann le GET (POST agus PUT san áireamh).
 
@@ -66,7 +66,7 @@ Cuir an Eochair API i bparaiméadar `apiKey` um theaghrán iarratais GET:
 
 Mar rogha eile, cuir an Eochair API ar aghaidh mar ainm úsáideora (agus pasfhocal folamh leis) ach fíordheimhniú bunúsach HTTP a úsáid:  
 
-> `'https://API_KEY_HERE@www.logainm.ie/api/v0.9/1384618'`
+> `'https://API_KEY_HERE@www.logainm.ie/api/v1.0/1384618'`
 
 ## Slándáil
 
