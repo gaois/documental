@@ -1,32 +1,28 @@
-
-title: Deployment
-description: Deploying Documental to a server environment
-keywords: documentation, localization, internationalization, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-resource: Documental
-order: 4
-public: true
+teideal: Imlonnú
+cur síos: Documental a imlonnú go dtí timpeallacht freastalaithe
+eochairfhocail: doiciméadacht, loganú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+acmhainn: Documental
+ord: 4
+poiblí: fíor
 ---
 
-Documental can be deployed either as (i) a Node.js application or (ii) a static website.
+Is féidir Documental a imlonnú mar (i) fheidhmchlár de chuid Node.js nó mar (ii) shuíomh greasáin statach.
 
-## Deploy as a Node.js application
+## Imlonnú mar fheidhmchlár de chuid Node.js
 
-### Create a production build
+### Cruathaigh tógáil táirgthe
 
-The first step is to create a production build of your application. Run the following command. Note that if you are currently running the application in development mode you will need to stop it (`Ctrl`/`Cmd` + `C`) before following this step.
+Is í an chéad chéim ná tógáil táirgthe a chruthú de d'fheidhmchlár. Rith an t-ordú seo a leanas. Tabhair do d'aire go mbeidh ort an feidhmchlár a stopú (`Ctrl`/`Cmd` + `C`) má tá tú á rith sa mhód forbartha sula leanann tú an chéim seo.
 
 ```cmd
 npm run build
 ```
 
-This produces an optimised version of your application that is ready for production deployment. The application code is output to the `__sapper__/build` directory. Run `node __sapper__/build` from the project root to test the production build on your machine.
+Déanann sé seo legan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an eolaire '__sapper__/build`. Rith 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
+### Imlonnaigh go dtí an freastalaí
 
-### Deploy to server
-
-You will then need to place the application on a server, either by FTP, RDP, automated script or whatever your preferred method is.
-
-The following directories need to be deployed to the website root on your server environment:
-
+Beidh ort an feidhmchlár a chur ar fhreastalaí ansin, le FTP, le RDP, le script uathoibríoch nó cibé modh is fearr leat.
+Caithfidh na heolairí seo a imlonnú go dtí fréamh an tsuímh greasáin ar do thimpeallacht freastalaithe:
 ```
 - __sapper__/build
 - docs
@@ -34,25 +30,21 @@ The following directories need to be deployed to the website root on your server
 - static
 ```
 
-We created the build output folder in the previous step. The `docs` directory contains your Markdown documentation files. The `node_modules` folder is the same as that in your project root, *not* the folder at `src/node_modules`. The `static` directory contains your static assets.
+Chruthaigh muid an fillteán tógáil táirgthe sa chéim roimhe seo. Tá do chuid filltéain doiciméadachta Markdown san eolaire 'docs'. Is ionann an fillteán 'node_modules` agus an fillteán i do fhréamh tionscadail, *ní hionann* an fillteán ag 'src/node_modules`. Tá do chuid sócmhainní statacha san eolaire 'static'.
 
-As regards subsequent deployments:
+Ó thaobh imlonnaithe iartheachtacha de:
 
-- If only the documentation has been updated (i.e. no application code has changed) you only need to deploy the `docs` folder.
-- If you install or update any Node.js modules, you will need to redeploy the `node_modules` directory.
-- Because Sapper uses a robust internal versioning system for application code, it is safe to merge subsequent deployments into the `__sapper__/build` folder as opposed to overwriting the folder. This also prevents users who are currently connected to the website from experiencing errors.
+- Munar uasdhátaíodh ach an doicimeádacht (i.e. níl cód feidhmchláir ar bith athraithe) ní mór duit an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdhátú beidh ort an eolaire 'node_modules` a ath-iomlonnú
+- As siocair go n-úsáideann Sapper córas comhad leaganaithe láidir don chód feidhmchláir, tá sé slán sábháilte imlonnaithe iartheachtacha a chumaisc isteach san fhillteán '__sapper__/build' gan an fillteán a fhorscríobh. Cuireann sé seo cosc ar fhadhbanna do na húsaideoirí atá nasctha leis an suíomh greasáin faoi láthair.
+### Ag imlonnú go dtí IIS le iisnode
 
-### Deploying to IIS with iisnode
-
-On Windows Server environments it is possible to serve Node.js applications using IIS as a reverse proxy. This is facilitated by [iisnode](https://github.com/Azure/iisnode) which you need to install first. A few extra steps need to be followed in this case:
-
-1. Create a new file in the website root directory called **app.js**. The file will contain just a single line that calls Documental's server-side code:
-
+Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js trí IIS a úsáid mar sheachfhreastalaí aisiompaithe. Tá sé seo éascaithe ag [iisnode] (https://github.com/Azure/iisnode) a gcaithfidh tú a shuiteáil ar dtús. Ní mór cúpla céim sa bhreis a leanúint sa chás seo:
+1. Cruathaigh fillteán nua sa suíomh greasáin darb ainm **app.js**. Beidh líne shingil amháin ann a chuireann síos ar chód taobh-freastalaí mar: 
   ```js
   require('./__sapper__/build/index.js');
   ```
 
-2. Create a new **Web.config** file in the website root directory. The Documental repository contains a sample Web.config file with annotations. The most important sections of the config file are as follows:
+2. Cruathaigh fillteán **Web.config** nua san eolaire fhréamh an tsuímh greasáin. Tá fillteán sámplach Web.config le nótaí mínithe air. Is iad na rannáin is tabhachtaí mar a leanas:
 
   ```xml
   <configuration>
@@ -72,22 +64,16 @@ On Windows Server environments it is possible to serve Node.js applications usin
   </configuration>
   ```
 
-  These serve to (i) load the iisnode hander and (ii) and redirect all requests to the app.js file where they are handed off to the Documental application code.
+  Is é an ról atá acu siúd ná (i) an issnode hander a lódáil agus (ii) gach iarratas a atreorú go dtí an fillteán app.js ina bhfuil siad tugtha don chód fheidhmchláir Documental.
+## Imlonnaigh le giniúint suímh stataí
 
-## Deploy using static site generation
-
-A static site is a collection of pregenerated HTML, JavaScript and CSS files. This is opposed to a server-generated website where content may be rendered and served to the user on the fly by an application. Static sites can be comparatively low-maintenance and require little-to-no server-side configuration.
-
-Run the following command to output a static site from Documental:
-
+Is ionann suíomh statach agus bailliúchán d'fhillteáin réamh-ghinte HTML, JavaScript agus CSS. Is é seo in áit shuíomh greasáin freastalaí-ghinte ina d'fhéadfadh inneachar a rindreáil agus a thabhairt don úsáideoir ar eitleog ag feidhmchlár. Féadfaigh suíomhanna statacha bheith sóchoiméadta gan mórán cumraíochta ar thaobh an fhreastalaí. 
+Rith an t-ordú a leanas chun suíomh statach a aschur ó Documental:
 ```cmd
 npm run export
 ```
 
-The static files will be output to the `__sapper__/export` directory. Subsequent export commands will automatically overwrite the contents of this directory.
-
-Run `npx serve __sapper__/export` to test your static site.
-
-When ready, deploy the contents of the `__sapper__/export` directory to the website root in your server environment.
-
-See the [Sapper](https://sapper.svelte.dev/) docs for further information
+Aschuirfidh na fillteáin statacha go dtí an eolaire '__sapper__/export`. Déanfaidh ordaithe easpórtála ina dhiaidh seo ábhair an eolaire seo a fhorscríobh.
+Rith 'npx serve __sapper__/export` chun do shuíomh statach a thástáil.
+Agus tú réidh, imlonnaigh inneachair an eolaire '__sapper__/export` go dtí fréamh an tsuímh greasáin i dtimpeallacht do fhreastalaí.
+Féach ar na caipéisí  [Sapper] (https://sapper.svelte.dev/) chun tuilleadh eolais a fháil.
