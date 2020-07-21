@@ -19,7 +19,7 @@ Is í an chéad chéim ná tógáil táirgthe a chruthú de d'fheidhmchlár. Rit
 npm run build
 ```
 
-Déanann sé seo legan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an t-eolaire '__sapper__/build`. Run 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
+Déanann sé seo leagan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an t-eolaire '__sapper__/build`. Run 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
 ### Imlonnaigh go dtí an freastalaí
 
 Beidh ort an feidhmchlár a chur ar fhreastalaí ansin, le FTP, le RDP, le script uathoibríoch nó cibé modh is fearr leat.
