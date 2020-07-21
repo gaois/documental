@@ -19,7 +19,7 @@ Is í an chéad chéim ná tógáil táirgthe a chruthú de d'fheidhmchlár. Rit
 npm run build
 ```
 
-Déanann sé seo legan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an eolaire '__sapper__/build`. Rith 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
+Déanann sé seo legan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an t-eolaire '__sapper__/build`. Run 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
 ### Imlonnaigh go dtí an freastalaí
 
 Beidh ort an feidhmchlár a chur ar fhreastalaí ansin, le FTP, le RDP, le script uathoibríoch nó cibé modh is fearr leat.
@@ -31,15 +31,15 @@ Caithfidh na heolairí seo a imlonnú go dtí fréamh an tsuímh greasáin ar do
 - static
 ```
 
-Chruthaigh muid an fillteán tógáil táirgthe sa chéim roimhe seo. Tá do chuid filltéain doiciméadachta Markdown san eolaire 'docs'. Is ionann an fillteán 'node_modules` agus an fillteán i do fhréamh tionscadail, *ní hionann* an fillteán ag 'src/node_modules`. Tá do chuid sócmhainní statacha san eolaire 'static'.
+Chruthaigh muid an fillteán tógáil táirgthe sa chéim roimhe seo. Tá do chuid filltéain doiciméadachta Markdown san eolaire 'docs'. Is ionann an fillteán 'node_modules` agus an fillteán i do fhréamh tionscadail, *ní* an fillteán ag 'src/node_modules`. Tá do chuid sócmhainní statacha san eolaire 'static'.
 
 Ó thaobh imlonnaithe iartheachtacha de:
 
-- Munar uasdhátaíodh ach an doicimeádacht (i.e. níl cód feidhmchláir ar bith athraithe) ní mór duit an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdhátú beidh ort an eolaire 'node_modules` a ath-iomlonnú
+- Munar uasdhátaíodh ach an doicimeádacht (i.e. níl cód feidhmchláir ar bith athraithe) ní mór duit an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdhátú beidh ort an t-eolaire 'node_modules` a ath-iomlonnú
 - As siocair go n-úsáideann Sapper córas comhad leaganaithe láidir don chód feidhmchláir, tá sé slán sábháilte imlonnaithe iartheachtacha a chumaisc isteach san fhillteán '__sapper__/build' gan an fillteán a fhorscríobh. Cuireann sé seo cosc ar fhadhbanna do na húsaideoirí atá nasctha leis an suíomh greasáin faoi láthair.
 ### Ag imlonnú go dtí IIS le iisnode
 
-Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js trí IIS a úsáid mar sheachfhreastalaí aisiompaithe. Tá sé seo éascaithe ag [iisnode] (https://github.com/Azure/iisnode) a gcaithfidh tú a shuiteáil ar dtús. Ní mór cúpla céim sa bhreis a leanúint sa chás seo:
+Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js trí IIS a úsáid mar sheachfhreastalaí aisiompaithe. Eascaíonn [iisnode] (https://github.com/Azure/iisnode) seo, a gcaithfidh tú a shuiteáil ar dtús. Ní mór cúpla céim sa bhreis a leanúint sa chás seo:
 1. Cruathaigh fillteán nua sa suíomh greasáin darb ainm **app.js**. Beidh líne shingil amháin ann a chuireann síos ar chód taobh-freastalaí mar: 
   ```js
   require('./__sapper__/build/index.js');
@@ -75,6 +75,6 @@ npm run export
 ```
 
 Aschuirfidh na fillteáin statacha go dtí an eolaire '__sapper__/export`. Déanfaidh ordaithe easpórtála ina dhiaidh seo ábhair an eolaire seo a fhorscríobh.
-Rith 'npx serve __sapper__/export` chun do shuíomh statach a thástáil.
+Run 'npx serve __sapper__/export` chun do shuíomh statach a thástáil.
 Agus tú réidh, imlonnaigh inneachair an eolaire '__sapper__/export` go dtí fréamh an tsuímh greasáin i dtimpeallacht do fhreastalaí.
 Féach ar na caipéisí  [Sapper] (https://sapper.svelte.dev/) chun tuilleadh eolais a fháil.
