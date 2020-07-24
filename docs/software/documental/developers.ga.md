@@ -176,7 +176,7 @@ Glacann an chomhpháirt `<NavigationResource/>` le roinnt **props** (airíonna)
 | **catagóir** | An catagóir doicimeádachta, `data` nó `software`. |
 | **acmhainn** | An sluga acmhainne. Comhfreagraíonn sé d'ainm an fhillteáin chéanna faoi `docs`. |
 | **ceannteideal**  | An teideal acmhainne. Má tá cúpla doiciméad ag an acmhainn, taispeáineofar ar a mbarr é seo sa nascleanúint. |
-| **latestVersion** | Má ta an acmhainn leaganaithe, sainigh an leagan-uimhir is déanaí anseo.  |
+| **leagan is déanaí** | Má ta an acmhainn leaganaithe, sainigh an leagan-uimhir is déanaí anseo.  |
 | **innéacs**    | Is é an 'leathanach baile' innéacs na hacmhainne. Déan an sluga doiciméid den chéad doiciméad atá le taispeáint a phasáil mar an luach innéacs. Níl seo riachtanach mas aonrachán é an acmhainn. |
 | **aonrachán** | Má léirítear é, níl ach doiciméad amháin san acmhainn agus ní gá an airí `index` a shainiú.
 
