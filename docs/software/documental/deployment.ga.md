@@ -36,17 +36,17 @@ Chruthaíomar an fillteán tógála táirgthe sa chéim roimhe seo. Tá do chuid
 
 Maidir le himlonnaithe iartheachtacha:
 
-- Murar uasdátaíodh ach an doiciméadacht (i.e. níor athróidh cód feidhmchláir ar bith) ní ga duit ach an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdátú beidh ort an t-eolaire 'node_modules` a ath-iomlonnú
-- As siocair go n-úsáideann Sapper córas comhad leaganaithe láidir don chód feidhmchláir, tá sé slán sábháilte imlonnaithe iartheachtacha a chumaisc isteach san fhillteán '__sapper__/build' gan an fillteán a fhorscríobh. Cuireann sé seo cosc ar fhadhbanna do na húsaideoirí atá nasctha leis an suíomh greasáin faoi láthair.
+- Murar uasdátaíodh ach an doiciméadacht (i.e. níor athróidh cód feidhmchláir ar bith) ní ga duit ach an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdátú beidh ort an t-eolaire 'node_modules` a ath-imlonnú
+- As siocair go n-úsáideann Sapper comhad leaganaithe láidir inmheánach don chód feidhmchláir, tá sé slán sábháilte imlonnuithe iartheachtacha a chumaisc isteach san fhillteán '__sapper__/build' in ionad an fillteán a fhorscríobh. Cuireann sé sin cosc ar fhadhbanna do na húsaideoirí atá nasctha leis an suíomh gréasáin faoi láthair.
 ### Ag imlonnú go dtí IIS le iisnode
 
-Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js trí IIS a úsáid mar sheachfhreastalaí aisiompaithe. Eascaíonn [iisnode] (https://github.com/Azure/iisnode) seo, a gcaithfidh tú a shuiteáil ar dtús. Ní mór cúpla céim sa bhreis a leanúint sa chás seo:
-1. Cruathaigh fillteán nua sa suíomh greasáin darb ainm **app.js**. Beidh líne shingil amháin ann a chuireann síos ar chód taobh-freastalaí mar: 
+Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js trí IIS a úsáid mar sheachfhreastalaí aisiompaithe. Eascaíonn [iisnode] (https://github.com/Azure/iisnode) é sin, a gcaithfidh tú a shuiteáil ar dtús. Ní mór cúpla céim sa bhreis a leanúint sa chás sin:
+1. Cruathaigh comhad nua sa suíomh gréasáin darb ainm **app.js**. Beidh líne shingil amháin sa chomad a ghlaonn taobh-freastalaí Documental: 
   ```js
   require('./__sapper__/build/index.js');
   ```
 
-2. Cruathaigh fillteán **Web.config** nua san eolaire fhréamh an tsuímh greasáin. Tá fillteán sámplach Web.config le nótaí mínithe air. Is iad na rannáin is tabhachtaí mar a leanas:
+2. Cruathaigh comhad **Web.config** nua in eolaire fhréamh an tsuímh gréasáin. Tá comhad sámplach Web.config le nótaí mínithe sa stór Documental. Seo a leanas na rannáin is tabhachtaí den chomad cumraithe:
 
   ```xml
   <configuration>
@@ -66,16 +66,17 @@ Ar thimpeallachtaí Windows Server is féidir freastal ar fheidhmchláir Node.js
   </configuration>
   ```
 
-  Is é an ról atá acu siúd ná (i) an issnode hander a lódáil agus (ii) gach iarratas a atreorú go dtí an fillteán app.js ina bhfuil siad tugtha don chód fheidhmchláir Documental.
+  Is é an ról atá acu siúd ná (i) an "issnode hander" a lódáil agus (ii) gach iarratas a atreorú go dtí an comhad app.js ina dtugtar iad don chód feidhmchláir Documental.
 ## Imlonnaigh le giniúint suímh stataí
 
-Is ionann suíomh statach agus bailliúchán d'fhillteáin réamh-ghinte HTML, JavaScript agus CSS. Is é seo in áit shuíomh greasáin freastalaí-ghinte ina d'fhéadfadh inneachar a rindreáil agus a thabhairt don úsáideoir ar eitleog ag feidhmchlár. Féadfaigh suíomhanna statacha bheith sóchoiméadta gan mórán cumraíochta ar thaobh an fhreastalaí. 
+Is ionann suíomh statach agus bailiúchán comhad réamh-ghinte HTML, JavaScript agus CSS. Tá sé sin difriúil le suíomh gréasáin freastalaí-ghinte ina bhféadfadh inneachar a rindreáil agus a thabhairt don úsáideoir ar an toirt trí fheidhmchlár. Mar chomparáid, ní bhíonn an oiread sin cothabhála de dhíth i gcás suíomhanna statacha agus ní bhíonn mórán cumraíochta nó cumraíocht ar bith, de dhíth ar thaobh an fhreastalaí. 
 Rith an t-ordú a leanas chun suíomh statach a aschur ó Documental:
 ```cmd
 npm run export
 ```
 
-Aschuirfidh na fillteáin statacha go dtí an eolaire '__sapper__/export`. Déanfaidh ordaithe easpórtála ina dhiaidh seo ábhair an eolaire seo a fhorscríobh.
-Run 'npx serve __sapper__/export` chun do shuíomh statach a thástáil.
-Agus tú réidh, imlonnaigh inneachair an eolaire '__sapper__/export` go dtí fréamh an tsuímh greasáin i dtimpeallacht do fhreastalaí.
-Féach ar na caipéisí  [Sapper] (https://sapper.svelte.dev/) chun tuilleadh eolais a fháil.
+Aschuirfear na comhaid statacha go dtí an eolaire '__sapper__/export`. Déanfaidh ordaithe easpórtála ina dhiaidh sin inneachair an eolaire sin a fhorscríobh go huathoibríoch. Rith 'npx serve __sapper__/export` chun do shuíomh statach a thástáil.
+
+Agus tú réidh, imlonnaigh inneachair an eolaire '__sapper__/export` go dtí fréamh an tsuímh gréasáin i do thimpeallacht freastalaí.
+
+Féach ar na caipéisí  [Sapper] (https://sapper.svelte.dev/) chun tuilleadh faisnéise a fháil.
