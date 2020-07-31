@@ -1,29 +1,30 @@
 ---
 teideal: Imlonnú
-cur síos: Documental a imlonnú go dtí timpeallacht freastalaithe
-eochairfhocail: doiciméadacht, loganú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+cur síos: Documental a imlonnú go dtí timpeallacht freastalaí
+eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
 acmhainn: Documental
 ord: 4
 poiblí: fíor
 ---
 
-Is féidir Documental a imlonnú mar (i) fheidhmchlár de chuid Node.js nó mar (ii) shuíomh greasáin statach.
+Is féidir Documental a imlonnú mar (i) fheidhmchlár de chuid Node.js nó mar (ii) shuíomh gréasáin statach.
 
 ## Imlonnú mar fheidhmchlár de chuid Node.js
 
 ### Cruathaigh tógáil táirgthe
 
-Is í an chéad chéim ná tógáil táirgthe a chruthú de d'fheidhmchlár. Rith an t-ordú seo a leanas. Tabhair do d'aire go mbeidh ort an feidhmchlár a stopú (`Ctrl`/`Cmd` + `C`) má tá tú á rith sa mhód forbartha sula leanann tú an chéim seo.
+Is í an chéad chéim ná tógáil táirgthe a chruthú de d'fheidhmchlár. Rith an t-ordú seo a leanas. Tabhair faoi deara go mbeidh ort an feidhmchlár a stopadh (`Ctrl`/`Cmd` + `C`) má tá tú á rith sa mhód forbartha sula leanfaidh tú an chéim seo.
 
 ```cmd
 npm run build
 ```
 
-Déanann sé seo leagan barrfheabhsaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Tá cód an fheidhmchláir aschurtha go dtí an t-eolaire '__sapper__/build`. Run 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe a thástáil ar do mheaisín.
+Déanann sé sin leagan optamaithe de d'fheidhmchlár atá réidh don imlonnú táirgthe. Déantar cód an fheidhmchláir a aischur go dtí an t-eolaire '__sapper__/build`. Rith 'node__sapper__/build` ó fhréamh an tionscadail chun an tógáil táirgthe ar do mheaisín a thástáil.
+
 ### Imlonnaigh go dtí an freastalaí
 
-Beidh ort an feidhmchlár a chur ar fhreastalaí ansin, le FTP, le RDP, le script uathoibríoch nó cibé modh is fearr leat.
-Caithfidh na heolairí seo a imlonnú go dtí fréamh an tsuímh greasáin ar do thimpeallacht freastalaithe:
+Beidh ort an feidhmchlár a chur ar fhreastalaí ansin, le FTP, le RDP, le script uathoibrithe nó cibé modh is fearr leat.
+Caithfidh na heolairí seo a leanas imlonnú go dtí fréamh an tsuímh gréasáin ar do thimpeallacht freastalaí:
 ```
 - __sapper__/build
 - docs
@@ -31,11 +32,11 @@ Caithfidh na heolairí seo a imlonnú go dtí fréamh an tsuímh greasáin ar do
 - static
 ```
 
-Chruthaigh muid an fillteán tógáil táirgthe sa chéim roimhe seo. Tá do chuid filltéain doiciméadachta Markdown san eolaire 'docs'. Is ionann an fillteán 'node_modules` agus an fillteán i do fhréamh tionscadail, *ní* an fillteán ag 'src/node_modules`. Tá do chuid sócmhainní statacha san eolaire 'static'.
+Chruthaíomar an fillteán tógála táirgthe sa chéim roimhe seo. Tá do chuid comhaid doiciméadachta Markdown san eolaire 'docs'. Is ionann an fillteán 'node_modules` agus an fillteán i do fhréamh tionscadail, *ní* an fillteán ag 'src/node_modules`. Tá do chuid sócmhainní statacha san eolaire 'static'.
 
-Ó thaobh imlonnaithe iartheachtacha de:
+Maidir le himlonnaithe iartheachtacha:
 
-- Munar uasdhátaíodh ach an doicimeádacht (i.e. níl cód feidhmchláir ar bith athraithe) ní mór duit an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdhátú beidh ort an t-eolaire 'node_modules` a ath-iomlonnú
+- Murar uasdátaíodh ach an doiciméadacht (i.e. níor athróidh cód feidhmchláir ar bith) ní ga duit ach an fillteán 'docs' a imlonnú. Má dhéanann tú aon mhodúl Node.js a shuiteáil nó a uasdátú beidh ort an t-eolaire 'node_modules` a ath-iomlonnú
 - As siocair go n-úsáideann Sapper córas comhad leaganaithe láidir don chód feidhmchláir, tá sé slán sábháilte imlonnaithe iartheachtacha a chumaisc isteach san fhillteán '__sapper__/build' gan an fillteán a fhorscríobh. Cuireann sé seo cosc ar fhadhbanna do na húsaideoirí atá nasctha leis an suíomh greasáin faoi láthair.
 ### Ag imlonnú go dtí IIS le iisnode
 
