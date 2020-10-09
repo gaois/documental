@@ -1,22 +1,30 @@
 import pkg from './package.json';
+import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 import replace from '@rollup/plugin-replace';
-import babel from 'rollup-plugin-babel';
-import commonjs from 'rollup-plugin-commonjs';
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
 import svelte from 'rollup-plugin-svelte';
 import { terser } from 'rollup-plugin-terser';
 import config from 'sapper/config/rollup.js';
-import { postcss } from 'svelte-preprocess';
+import sveltePreprocess from 'svelte-preprocess';
 
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const onwarn = (warning, onwarn) => (
-	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message))
-		|| warning.code === 'THIS_IS_UNDEFINED') || onwarn(warning);
-const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
+const dedupe = ['svelte', 'svelte/transition', 'svelte/internal'];
+const onwarn = (warning, onwarn) =>
+	(warning.code === 'MISSING_EXPORT' && /'preload'/.test(warning.message)) ||
+	(warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
+	(warning.code === 'THIS_IS_UNDEFINED') ||
+	onwarn(warning);
+const preprocess = [
+	sveltePreprocess({
+		postcss: true,
+		sourceMap: true
+	})
+];
 
 export default {
 	client: {
@@ -29,14 +37,10 @@ export default {
 			}),
 			svelte({
 				dev,
-				hydratable: true,
 				emitCss: true,
 				extensions: ['.svelte'],
-				preprocess: [
-					postcss({
-						plugins: [ require('autoprefixer')() ]
-					})
-				]
+				hydratable: true,
+				preprocess
 			}),
 			resolve({
 				browser: true,
@@ -44,27 +48,30 @@ export default {
 			}),
 			commonjs(),
 			json(),
-			!legacy && babel({
-				extensions: ['.js', '.mjs', '.html', '.svelte'],
-				exclude: ['node_modules/@babel/**'],
-				plugins: [
-					'@babel/plugin-syntax-dynamic-import',
-					'@babel/plugin-proposal-object-rest-spread'
-				]
-			}),
-			legacy && babel({
-				extensions: ['.js', '.mjs', '.html', '.svelte'],
-				runtimeHelpers: true,
-				exclude: ['node_modules/@babel/**'],
-				presets: [
-					['@babel/preset-env']
+			!dev && legacy && babel({
+				babelHelpers: 'runtime',
+				exclude: [
+					'node_modules/@babel/**',
+					'node_modules/core-js/**',
+					'node_modules/core-js-pure/**'
 				],
+				extensions: ['.js', '.mjs', '.html', '.svelte'],
 				plugins: [
 					'@babel/plugin-syntax-dynamic-import',
 					'@babel/plugin-proposal-object-rest-spread',
+					'@babel/plugin-transform-spread',
 					['@babel/plugin-transform-runtime', {
 						useESModules: true
 					}]
+				],
+				presets: [
+					[ 
+						'@babel/preset-env',
+						{
+							'useBuiltIns': 'entry',
+							'corejs': 3
+						}
+					]
 				]
 			}),
 			!dev && terser({
@@ -72,9 +79,9 @@ export default {
 				safari10: true
 			})
 		],
+		preserveEntrySignatures: false,
 		onwarn
 	},
-
 	server: {
 		input: config.server.input(),
 		output: config.server.output(),
@@ -87,14 +94,11 @@ export default {
 				'max-age=600': 'no-cache'
 			}),
 			svelte({
-				generate: 'ssr',
 				dev,
 				extensions: ['.svelte'],
-				preprocess: [
-					postcss({
-						plugins: [ require('autoprefixer')() ]
-					})
-				]
+				generate: 'ssr',
+				hydratable: true,
+				preprocess
 			}),
 			resolve({
 				dedupe
@@ -105,9 +109,9 @@ export default {
 		external: Object.keys(pkg.dependencies).concat(
 			require('module').builtinModules || Object.keys(process.binding('natives'))
 		),
+		preserveEntrySignatures: 'strict',
 		onwarn
 	},
-
 	serviceworker: {
 		input: config.serviceworker.input(),
 		output: config.serviceworker.output(),
@@ -121,6 +125,7 @@ export default {
 			commonjs(),
 			!dev && terser()
 		],
+		preserveEntrySignatures: false,
 		onwarn
 	}
 };
