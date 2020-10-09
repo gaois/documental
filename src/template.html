@@ -14,10 +14,6 @@
 	<meta name='msapplication-TileColor' content='#54c0db'>
 	<meta name='theme-color' content='#f0f2f3'>
 
-	<link rel='stylesheet' href='global.css'>
-
-	%sapper.styles%
-
 	<script>
 		/*! modernizr 3.6.0 (Custom Build) | MIT *
 		* https://modernizr.com/download/?-smil-setclasses !*/
@@ -25,6 +21,11 @@
 		/**Conditionally polyfill modern JS APIs using polyfill.io**/
 		if(!(window.fetch&&window.Promise&&window.Promise.prototype.finally&&[].includes&&Object.assign&&Object.getOwnPropertyDescriptors&&window.Map)){document.write('<script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CPromise.prototype.finally%2CObject.getOwnPropertyDescriptors%2Cfetch"></scr'+'ipt>')}
 	</script>
+
+	%sapper.scripts%
+
+	<link rel='stylesheet' href='global.css'>
+	%sapper.styles%
 
 	%sapper.head%
 
@@ -47,7 +48,5 @@
 </head>
 <body>
 	<div id='sapper'>%sapper.html%</div>
-
-	%sapper.scripts%
 </body>
 </html>
