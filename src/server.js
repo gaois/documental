@@ -17,11 +17,12 @@ polka()
 		compression({ threshold: 0 }),
 		sirv('static', { dev, maxAge: maxAge }),
 		enthusiast({
-			cookieMaxAge: cookieMaxAge,
-			cookieName: cookieName,
-			defaultLocale: defaultLocale,
-			excludedRoutes: excludedRoutes,
-			locales: locales
+			cookieMaxAge,
+			cookieName,
+			defaultLocale,
+			excludeDocuments: false,
+			excludedRoutes,
+			locales
 		}),
 		sapper.middleware({
 			session: (req) => ({
