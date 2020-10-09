@@ -2,6 +2,7 @@ import { timestamp, files, shell, routes } from '@sapper/service-worker';
 
 const ASSETS = `cache${timestamp}`;
 const EXCLUDED_FILE_ROUTES = [
+	'.DS_Store',
 	'android-chrome',
 	'apple-touch',
 	'browserconfig.xml',
