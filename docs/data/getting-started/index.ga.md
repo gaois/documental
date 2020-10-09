@@ -30,7 +30,7 @@ Tá [Comhroinnt Sócmhainní Tras-Fhoinse](https://developer.mozilla.org/en-US/d
 
 Tacófar le leaganacha níos sine ar mhaithe le héascaíocht an fhorbróra: gan leaganú, d'fhéadfadh feidhmchláir spleácha de chuid cliant cliseadh de bharr athruithe ar chomhréir API. Déanfaimid ár ndícheall acmhainní nua a chur leis an suíomh de réir a chéile agus ní chuirfimid athruithe briste i bhfeidhm ach amháin mura bhfuil aon rogha eile ann. Déantar leaganacha API trí [Leaganú Séimeantach 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) a úsáid agus leantar sonraíocht semver. Ar mhaithe le gontacht, áfach, ní léirítear ach pointí mórleaganacha agus mionleaganacha in aimsitheoirí aonfhoirmeacha acmhainne a bhaineann le hiarratais.
 
-Tar éis tamaill, seans go gcinnfear fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh Eochair API, cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
+Tar éis tamaill, seans go gcinnfear fáil réidh le seanleaganacha API ar chúiseanna cothabhála nó feidhmíochta. Nuair a chláraíonn tú le haghaidh cuntas forbróra de chuid Gaois (féach thíos), cuirfear ceist ort maidir le cumarsáid a fháil ó ghrúpa taighde Gaois ó am go ham. Ach glacadh le cumarsáid a fháil, cuirfear ar an eolas go luath thú maidir le hathruithe dá leithéid.
 
 **Tabhair faoi deara:** Ar mhaithe le tástáil amháin atá leaganacha réamheisiúna API (i.e. < v1.0) agus ní dhéanfar cothabháil orthu tar éis do leagan 1.0 a bheith eisithe.
 
@@ -40,9 +40,7 @@ Ní mór do chliaint a bhfuil acmhainn á hiarraidh acu tríd an API a n-aithean
 
 ### Conas Eochair API a fháil 
 
-Téigh chuig 'Mol Forbróra Gaois' ar [gaois.ie](https://www.gaois.ie/). Logáil isteach nó cláraigh chun cuntas a chruthú agus gheobhaidh tú rochtain ar Eochair uathúil API.  
-
-**Tabhair faoi deara:** Beidh an tseirbhís chlárúcháin ag teacht go luath. Idir an dá linn, déan teagmháil linn ag [gaois@dcu.ie](mailto:gaois@dcu.ie) chun d'Eochair API a iarraidh nó a athshocrú.  
+Téigh chuig 'Mol na bhForbróirí' ar [gaois.ie](https://www.gaois.ie/ga/technology/developers/). Logáil isteach nó cláraigh chun cuntas a chruthú agus beidh tú in ann Eochair API a ghiniúint.
 
 ### Conas d'Eochair API a chur ar aghaidh 
 
@@ -100,6 +98,6 @@ Nascann aitheantas an chliaint d'iarratas leis na sonraí a stóráil tú i 'Mol
 
 Coimeádaimid an ceart againn féin méadracht chomhiomlán nó anaithnid a bhaineann le hiarratas API a thuairisciú agus/nó a fhoilsiú. Ní thuairisceoimid, ní fhoilseoimid ná ní roinnfimid sonraí ar leith ó chliant (i.e. aitheantas an chliaint nó sonraí eile aitheantais dá c(h)uid) le tríú páirtí ar bith. Coimeádaimid an ceart againn féin míreanna sonraí 1-4, a liostaíodh thuas, a choinneáil go deo ar mhaithe le monatóireacht feidhmíochta, taighde agus feabhsuithe seirbhíse.   
 
-Tá tú i dteideal do chuid sonraí pearsanta a bhaint dár gcórais am ar bith. Scriosfar d'ainm úsáideora, pasfhocal, ainm, cleamhnacht eagraíochtúil agus an ceangal le hiarratais stóráilte, go hiomlán agus go buan. Déan teagmháil linn ag [gaois@dcu.ie](mailto:gaois@dcu.ie) más mian leat go mbainfear do chuid sonraí pearsanta.  
+Tá tú i dteideal do chuid sonraí pearsanta a bhaint dár gcórais am ar bith. Scriosfar d'ainm, pasfhocal, seoladh ríomhphoist, cleamhnacht eagraíochtúil agus an ceangal le hiarratais stóráilte, go hiomlán agus go buan. Is féidir do chuntas forbóra, agus na sonraí pearsanta uile a mbaineann leis, a scriosadh ar ['Mol na bhForbóirí'](https://www.gaois.ie/ga/technology/developers/) ar shuíomh Gaois.
 
 Ach rochtain a fháil ar cheann ar bith dár gcomhéadain feidhmchláir, aontaíonn tú go gcloífidh tú leis na polasaithe agus leis na cleachtais ar fad a luaitear sa doiciméad seo.  

@@ -30,7 +30,7 @@ Multiple API versions are facilitated for all of our REST APIs. This means that 
 
 Older versions will be supported for developer convenience: without versioning, changes to API syntax might cause dependent client applications to malfunction. We will endeavour to add new resources incrementally and will implement breaking changes only as a last resort. The API is versioned using [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) (semver) and follows the semver specification. For brevity, however, only major and minor version points are reflected in request URLs.
 
-After a period of time it may become necessary to deprecate older API versions for maintenance or performance reasons. When you register for your API Key, you will be asked if you are willing to receive communications from the Gaois research group from time to time. Agreeing to receive such communication means you will receive advance notice of any such changes.
+After a period of time it may become necessary to deprecate older API versions for maintenance or performance reasons. When you register for your Gaois developer account (see below), you will be asked if you are willing to receive communications from the Gaois research group from time to time. Agreeing to receive such communication means you will receive advance notice of any such changes.
 
 **Note:** Prerelease API versions (i.e. < v1.0) are for testing purposes and will not be maintained once a v1.0 release has been reached.
 
@@ -40,9 +40,7 @@ Clients requesting a resource via the API are required to authenticate their ide
 
 ### How to obtain your API Key
 
-Visit the 'Gaois Developer Hub' at [gaois.ie](https://www.gaois.ie/). Log in or register to create an account and you will be able to access your unique API Key.
-
-**Note:** The registration service is coming soon. In the meantime, please contact us at [gaois@dcu.ie](mailto:gaois@dcu.ie) to request or reset your API Key.
+Visit the 'Gaois Developer Hub' at [gaois.ie](https://www.gaois.ie/en/technology/developers/). Log in or register to create an account and you will be able to generate an API Key.
 
 ### How to pass your API Key
 
@@ -100,6 +98,6 @@ The client ID links your request to the data you have stored in the 'Gaois Devel
 
 We reserve the right to report and/or publish aggregated or anonymised API query metrics. We will not report, publish or share any specific client data (i.e. your client ID or any associated client identification data) with any third party. We reserve the right to retain data items 1–4, listed above, indefinitely for the purposes of performance monitoring, research and service enhancement.
 
-You are entitled to have your personal data removed from our systems at any time. This means deleting your username, password, name, organisational affiliation and association with stored requests, completely and permanently. Please contact us at [gaois@dcu.ie](mailto:gaois@dcu.ie) if you wish to request that your personal data be removed.
+You are entitled to have your personal data removed from our systems at any time. This means deleting your name, password, e-mail address, organisational affiliation and association with stored requests, completely and permanently. You can delete your developer account, and all associated personal data, on the ['Gaois Developer Hub'](https://www.gaois.ie/en/technology/developers/).
 
 By accessing any of our APIs you agree to abide by all policies and practices outlined in this document.
