@@ -1,19 +1,13 @@
 import * as sapper from '@sapper/app';
+import { i18nClient } from 'services/i18n';
 
-import 'i18n';
+import '@formatjs/intl-getcanonicallocales/polyfill';
+import '@formatjs/intl-pluralrules/polyfill';
+import '@formatjs/intl-pluralrules/dist/locale-data/en';
+import '@formatjs/intl-pluralrules/dist/locale-data/ga';
 
-const config = {
+i18nClient();
+
+sapper.start({
 	target: document.querySelector('#sapper')
-};
-
-if (!Intl.PluralRules) {
-	(async () => {
-		await import('@formatjs/intl-getcanonicallocales/polyfill');
-		await import('@formatjs/intl-pluralrules/polyfill');
-		await import('@formatjs/intl-pluralrules/dist/locale-data/en');
-		await import('@formatjs/intl-pluralrules/dist/locale-data/ga');
-		sapper.start(config);
-	})();
-} else {
-	sapper.start(config);
-}
+});

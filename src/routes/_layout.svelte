@@ -1,3 +1,11 @@
+<script context="module">
+	import { waitLocale } from 'services/i18n';
+
+	export async function preload() {
+		return waitLocale();
+	}
+</script>
+
 <script>
 	import { stores } from '@sapper/app';
 	import { fade } from 'svelte/transition';

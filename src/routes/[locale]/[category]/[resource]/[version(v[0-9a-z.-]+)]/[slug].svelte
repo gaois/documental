@@ -1,12 +1,9 @@
 <script context="module">
-    import localize from 'i18n/localize';
+    import { mapPath } from 'services/http';
     import { readMarkdown } from 'utils/markdown';
     import { errorMessage } from 'utils/messenger';
-    import { mapPath } from 'utils/server';
 
 	export async function preload(page, session) {
-        await localize(page, session);
-        
         const { locale } = page.params;
         const path = mapPath(`data/article.json?${new URLSearchParams(page.params).toString()}`, session);
         const response = await this.fetch(path);

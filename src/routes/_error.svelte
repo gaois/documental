@@ -1,6 +1,6 @@
 <script>
+    import { _ } from 'services/i18n';
 	import settings from 'settings';
-    import { _ } from 'svelte-i18n';
 
 	export let status;
 	export let error;

@@ -2,11 +2,10 @@ import * as sapper from '@sapper/server';
 import compression from 'compression';
 import enthusiast from 'enthusiast';
 import polka from 'polka';
+import { i18n } from 'services/i18n';
+import { cookieMaxAge, cookieName, defaultLocale, excludedRoutes, locales } from 'services/i18n/settings';
+import { getProtocol } from 'services/http';
 import sirv from 'sirv';
-import { getProtocol } from 'utils/server';
-
-import 'i18n';
-import { cookieMaxAge, cookieName, defaultLocale, excludedRoutes, locales } from 'i18n/settings';
 
 const { ANALYTICS_ID, PORT, NODE_ENV, HOSTNAME } = process.env;
 const dev = NODE_ENV === 'development';
@@ -24,6 +23,7 @@ polka()
 			excludedRoutes,
 			locales
 		}),
+		i18n(),
 		sapper.middleware({
 			session: (req) => ({
 				analyticsId: ANALYTICS_ID,
