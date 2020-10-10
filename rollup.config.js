@@ -48,7 +48,7 @@ export default {
 			}),
 			commonjs(),
 			json(),
-			!dev && legacy && babel({
+			(!dev || legacy) && babel({
 				babelHelpers: 'runtime',
 				exclude: [
 					'node_modules/@babel/**',
@@ -74,7 +74,7 @@ export default {
 					]
 				]
 			}),
-			!dev && terser({
+			(!dev || legacy) && terser({
 				module: true,
 				safari10: true
 			})
@@ -88,10 +88,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': false,
-				'process.env.NODE_ENV': JSON.stringify(mode),
-				// prevent html caching á la https://github.com/sveltejs/sapper/issues/567#issuecomment-542788270
-				// hacky, but if html is cached users may receive wrong locale when they navigate back to root url /
-				'max-age=600': 'no-cache'
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
 				dev,
@@ -119,8 +116,7 @@ export default {
 			resolve(),
 			replace({
 				'process.browser': true,
-				'process.env.NODE_ENV': JSON.stringify(mode),
-				'max-age=600': 'no-cache'
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			commonjs(),
 			!dev && terser()
