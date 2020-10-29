@@ -98,7 +98,7 @@ Léirítear na coincheapa seo in ainmniú na gcomhad svelte sa chomhadlann `src/
   - index
 ```
 
-Ina theannta sin, mar a fheiceann tú sa doiciméadacht le haghaidh [eagarthóirí] (../eagarthóirí), bíonn na comhaid doiciméadachta Markdown bunaithe ar na coincheapa seo den chuid is mó. 
+Ina theannta sin, mar a fheiceann tú sa doiciméadacht le haghaidh [eagarthóirí](../eagarthóirí), bíonn na comhaid doiciméadachta Markdown bunaithe ar na coincheapa seo den chuid is mó. 
 
 ## Logánú
 
