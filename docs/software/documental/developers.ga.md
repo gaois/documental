@@ -38,7 +38,7 @@ npm rith dev
 
 
 
-Nuair a bhíonn an feidhmchlár á rith i mód forbróra bíonn beo-athlódáil modúl ar fáil (i.e. déantar na hathruithe a dhéanann tú san eagarthóir a thaispeáint sa bhrabhsálaí láithreach bonn nuair a shábháiltear é), chomh maith le teachtaireachtaí mionsonraithe sa chonsól i dtaobh faisnéise agus earráidí. Sula ndéanann tú an feidhmchlár a imlonnú go timpeallacht freastalaí, beidh ort an feidhmchlár a thógáil sa mhód táirgeachta. Pléitear é seo sa chuid a bhaineann le [himlonnú] (../imlonnú). 
+Nuair a bhíonn an feidhmchlár á rith i mód forbróra bíonn beo-athlódáil modúl ar fáil (i.e. déantar na hathruithe a dhéanann tú san eagarthóir a thaispeáint sa bhrabhsálaí láithreach bonn nuair a shábháiltear é), chomh maith le teachtaireachtaí mionsonraithe sa chonsól i dtaobh faisnéise agus earráidí. Sula ndéanann tú an feidhmchlár a imlonnú go timpeallacht freastalaí, beidh ort an feidhmchlár a thógáil sa mhód táirgeachta. Pléitear é seo sa chuid a bhaineann le [himlonnú](../deployment). 
 
 ## Struchtúr an tionscadail
 
