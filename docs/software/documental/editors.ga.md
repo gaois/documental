@@ -1,11 +1,11 @@
 ---
-teideal: doiciméadacht - á chruthú agus á chur in eagar
-gearrtheideal: d'eagarthóirí
-cur síos: conas doiciméadacht a chruthú agus a chur in eagar
-eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-acmhainn: Documental
-ord: 2
-poiblí: fíor
+title: Doiciméadacht - á chruthú agus á chur in eagar
+shortTitle: D'eagarthóirí
+description: Conas doiciméadacht a chruthú agus a chur in eagar
+keywords: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+resource: Documental
+order: 2
+public: true
 ---
 
 Gheofar ar an leathanach seo treoracha d'eagarthóirí inneachair atá ag scríobh nó ag aistriú doiciméad lena n-úsáid in Documental. Cé go bhfuil scríobh na doiciméadachta teicniúla ábhairín difriúil i gcomparáid le húsáid a bhaint as gnáth-phróiseálaí focal, ní hé go mbeadh saineolas teicniúil ag teastáil lena aghaidh.

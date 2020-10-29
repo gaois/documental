@@ -1,10 +1,10 @@
 ---
-teideal: imlonnú
-cur síos: ag imlonnú Documental i dtimpeallacht freastalaí
-eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-acmhainn: Documental
-ord: 4
-poiblí: fíor
+title: Imlonnú
+description: Ag imlonnú Documental i dtimpeallacht freastalaí
+keywords: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+resource: Documental
+order: 4
+public: true
 ---
 
 Is féidir Documental a imlonnú (i) mar fheidhmchlár Node.js, nó (ii) mar shuíomh statach

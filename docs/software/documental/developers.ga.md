@@ -1,13 +1,13 @@
 ---
-teideal: Doiciméadacht Forbróirí
-gearrtheideal: d'fhorbróirí
-cur síos: conas Documental a bhreisiú agus a mhionathrú
-eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-acmhainn: Documental
-ord: 3
-poiblí: fíor
-
+title: Doiciméadacht Forbróirí
+shortTitle: D'fhorbróirí
+description: Conas Documental a bhreisiú agus a mhionathrú
+keywords: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+resource: Documental
+order: 3
+public: true
 ---
+
 Is feidhmchlár [Node.js](https://nodejs.org/) é Documental scríofa i Javascript. Is féidir leis rith ar fhreastalaí, ag soláthar inneachair go dinimiciúil, nó, is féidir é a úsáid mar [ghineadóir suímh stataigh](https://www.staticgen.com/about). Mínítear é seo a thuilleadh sa chuid a bhaineann le [himlonnú](../imlonnú). Stóráiltear inneachar suímh idirlín ar dhiosca i bhformáid chomhad Markdown agus níl aon bhunachar sonraí ná aon saghas sonraíochta eile stóráilte. 
 
 Oibríonn an bogearra ar gach córas oibriúcháin coitianta: an t-aon réamhriachtanas ná Node.js a shuiteáil ar do ríomhaire. Aimseoidh agus suiteálfaidh Node.js Package Manager (NPM) gach spleáchais eile as féin i rith na cumraíochta. Tógtar Documental trí úsáid a bhaint as [Svelte](https://svelte.dev/), creatlach comhpháirteanna cosúil le React, agus [Sapper](https://sapper.svelte.dev/), creatlach feidhmchláir á chumhachtú ag Svelte. Féach an doiciméadacht le haghaidh na gcreatlach seo má bhíonn aon cheist agat ó thaobh an fheidhmchláir de, mar tá eolas den saghas sin lasmuigh de scóip an ailt seo. 

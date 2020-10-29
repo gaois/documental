@@ -1,12 +1,12 @@
 ---
-teideal: Forléargas
-cur síos: Treoir ar úsáid Documental, ardán ilteangach doiciméadachta teicniúla
-eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-acmhainn: Documental 
+title: Forléargas
+description: Treoir ar úsáid Documental, ardán ilteangach doiciméadachta teicniúla
+keywords: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
+resource: Documental
 github: https://github.com/gaois/documental
-ord: 1
-toc: bréagach
-poiblí: fíor
+order: 1
+toc: false
+public: true
 ---
 
 Ardán ilteangach doiciméadachta teicniúla is ea Documental, arna fhorbairt ag [grúpa taighde Gaois](https://www.gaois.ie/ga/), Fiontar & Scoil na Gaeilge, DCU. Tugann sé cumhacht do [docs.gaois.ie](https://docs.gaois.ie), ár suíomh doiciméadachta teicniúla. 
