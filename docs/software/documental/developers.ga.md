@@ -212,4 +212,4 @@ Cosúil leis an nascleanúint, is gá dúinn comhpháirt a léiríonn an acmhain
 | **teideal** | Ceannteideal tuairisciúil. |
 | **blurba** | Cur síos 1-2 abairt ar an acmhainn. |
 
-Tabhair do d'aire go mb'fhéidir gur mhian leat [teaghráin logánaithe] (#logánú) a phasáil le haghaidh cuid de na hairíonna. 
+Tabhair do d'aire go mb'fhéidir gur mhian leat [teaghráin logánaithe](#logánú) a phasáil le haghaidh cuid de na hairíonna. 
