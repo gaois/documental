@@ -46,7 +46,7 @@ Mar a thug tú faoi deara sa chuid dheireanach, b'fhéidir, ainmnítear comhaid 
 [slug].[logchaighdeán].md
 ```
 
--Is ionann **.md** agus iarmhír an chomhaid (`md` i gcomhair **M**ark**d**own).
+-Is ionann **.md** agus iarmhír an chomhaid ('md' i gcomhair **M**ark**d**own).
 -Úsáideann an **logchaighdeán** cód teanga ISO chun teanga an doiciméid a chur in iúl, mar shampla, `en` don Bhéarla agus `ga` don Ghaeilge.
 -Ainm uathúil don chomhad is ea an **slug**.
 
