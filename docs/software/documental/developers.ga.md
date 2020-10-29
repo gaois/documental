@@ -102,7 +102,7 @@ Ina theannta sin, mar a fheiceann tú sa doiciméadacht le haghaidh [eagarthóir
 
 ## Logánú
 
-Déileálann Documental le logánú UI tríd an leabharlann [svelte-i18n](https://github.com/kaisermann/svelte-i18n) . Úsáideann sé seo an [fhormáid teachtaireacht ICU] (http://userguide.icu-project.org/formatparse/messages) chun na teaghráin atá sofheicthe ag an úsáideoir a aistriú. 
+Déileálann Documental le logánú UI tríd an leabharlann [svelte-i18n](https://github.com/kaisermann/svelte-i18n) . Úsáideann sé seo an [fhormáid teachtaireacht ICU](http://userguide.icu-project.org/formatparse/messages) chun na teaghráin atá sofheicthe ag an úsáideoir a aistriú. 
 
 Stóráiltear na haistriúcháin ar chomhaid JSON san fhillteán barrleibhéil "teachtaireachtaí". Ainmnítear na comhaid seo san fhormáid `[logchaighdeán].json`. De réir an réamhshocraithe, is mar seo a leanas a bhíonn struchtúr an fhillteáin `teachtaireachtaí`: 
 
