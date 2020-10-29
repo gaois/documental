@@ -138,7 +138,7 @@ I gcomhair blocanna níos mó téacs is féidir linn ábhar logánaithe a chur i
 
 ## Acmhainn nua a chur leis
 
-Cé gur féidir le baill foirne eagarthóireachta [doiciméid a chruthú agus a chur in eagar] (../eagarthóirí) laistigh d'acmhainn ar leith, bíonn ionchur ón bhforbróir ag teastáil de ghnáth chun acmhainn nua a chur leis, nó chun athrú a dhéanamh ar léiriú na hacmhainne ar an nascleanúint nó ar an leathanach baile. Tugann na treoracha thíos cur síos ar conas é seo a bhaint amach. 
+Cé gur féidir le baill foirne eagarthóireachta [doiciméid a chruthú agus a chur in eagar](../eagarthóirí) laistigh d'acmhainn ar leith, bíonn ionchur ón bhforbróir ag teastáil de ghnáth chun acmhainn nua a chur leis, nó chun athrú a dhéanamh ar léiriú na hacmhainne ar an nascleanúint nó ar an leathanach baile. Tugann na treoracha thíos cur síos ar conas é seo a bhaint amach. 
 
 ### An filltéan `docs` 
 
@@ -146,7 +146,7 @@ Bíonn fillteán comhfhreagrach laistigh den chomhadlann barrleibhéil `docs` ag
 
 ### Nascleanúint
 
-Tá an [chomhpháirt] (#cur-chuige-comhpháirt-bunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
+Tá an [chomhpháirt](#cur-chuige-comhpháirt-bunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
 
 Mar shampla, chun acmhainn nua bogearraí a chur leis, déanaimid an chuid chuí den chomhad **Navigation.svelte** a chur in eagar:
 
