@@ -53,8 +53,8 @@ Mar a thug tú faoi deara sa chuid dheireanach, b'fhéidir, ainmnítear comhaid 
 Is féidir gurbh ionann teideal an doiciméid agus an **slug** ach fós féin caithfidh sé cloí leis na rialacha seo a leanas:
 
 1. Úsáid litreacha beaga amháin.
-2. Cuir fleiscíní ('-') in ionad spásanna.
-3. Ná húsáid aon aiceann (á, é, ó, srl.) nó carachtair speisialta ar nós '!', '?', nó "#".
+2. Cuir fleiscíní (`-`) in ionad spásanna.
+3. Ná húsáid aon aiceann (á, é, ó, srl.) nó carachtair speisialta ar nós `!`, `?`, nó `#`.
 
 Seo a leanas roinnt ainmneacha bailí comhad in Documental:
 
