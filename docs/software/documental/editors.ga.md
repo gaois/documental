@@ -16,7 +16,7 @@ Caithfear aon doiciméadacht in Documental a scríobh in Markdown. Is éard atá
 
 ## Struchtúr an fhillteáin
 
-Tá an doiciméadacht uile istigh san fhillteán 'docs'. Mar eagarthóir, beidh tú in ann do chuid oibre ar fad a chur i gcrích anseo. Is gnách go mbíonn cuma nó cruth mar seo ar fhillteán 'docs' :
+Tá an doiciméadacht uile istigh san fhillteán `docs`. Mar eagarthóir, beidh tú in ann do chuid oibre ar fad a chur i gcrích anseo. Is gnách go mbíonn cuma nó cruth mar seo ar fhillteán `docs`:
 
 ```
 - docs
@@ -32,9 +32,9 @@ Tá an doiciméadacht uile istigh san fhillteán 'docs'. Mar eagarthóir, beidh 
       - intro.en.md
 ```
 
-Tá máthair-fhillteán 'docs' ann. Laistigh den fhillteán sin tá dhá chatagóir de dhoiciméadacht, mar atá 'sonraí' (Sonraí Oscailte) agus 'bogearraí' (Bogearraí). Tá **acmhainn** amháin ar a laghad istigh i ngach ceann de na fillteáin seo. Acmhainn is ea bailiúchán de dhoiciméid a bhaineann le seirbhís nó bogearraí ar leith. Má fhéachaimid ar an bhfillteán 'software' feicfimid acmhainn darb ainm 'terminologue' (Terminologue), go bhfuil roinnt doiciméad istigh inti. 
+Tá máthair-fhillteán `docs` ann. Laistigh den fhillteán sin tá dhá chatagóir de dhoiciméadacht, mar atá `sonraí` (Sonraí Oscailte) agus `bogearraí` (Bogearraí). Tá **acmhainn** amháin ar a laghad istigh i ngach ceann de na fillteáin seo. Acmhainn is ea bailiúchán de dhoiciméid a bhaineann le seirbhís nó bogearraí ar leith. Má fhéachaimid ar an bhfillteán `software` feicfimid acmhainn darb ainm `terminologue` (Terminologue), go bhfuil roinnt doiciméad istigh inti. 
 
-Má fhéachaimid ar an bhfillteán 'sonraí' agus an acmhainn 'logainm' (Logainm API) feicfimid gur mac díreach léi, an fillteán **leaganacha** 'v0.9'. Baineann doiciméid an fhillteáin seo le leagan 0.9 den API. I gcás acmhainní áirithe, beidh raidhse leaganacha acu agus doiciméadacht shainiúil ag gabháil le gach ceann acu.  
+Má fhéachaimid ar an bhfillteán `sonraí` agus an acmhainn `logainm` (Logainm API) feicfimid gur mac díreach léi, an fillteán **leaganacha** `v0.9`. Baineann doiciméid an fhillteáin seo le leagan 0.9 den API. I gcás acmhainní áirithe, beidh raidhse leaganacha acu agus doiciméadacht shainiúil ag gabháil le gach ceann acu.  
 
 Cuir struchtúir an fhillteáin i gcomparáid leis na URLanna a úsáideadh ar an suíomh [docs.gaois.ie](https://docs.gaois.ie) . Féach mar a mhapálann URL ar nós `https://docs.gaois.ie/en/software/terminologue/installation` nó `https://docs.gaois.ie/ga/data/logainm/v0.9/api` go dtí struchtúr an fhillteáin. 
 
@@ -46,8 +46,8 @@ Mar a thug tú faoi deara sa chuid dheireanach, b'fhéidir, ainmnítear comhaid 
 [slug].[logchaighdeán].md
 ```
 
--Is ionann **.md** agus iarmhír an chomhaid ('md' i gcomhair **M**ark**d**own).
--Úsáideann an **logchaighdeán** cód teanga ISO chun teanga an doiciméid a chur in iúl, mar shampla, 'en' don Bhéarla agus 'ga' don Ghaeilge.
+-Is ionann **.md** agus iarmhír an chomhaid (`md` i gcomhair **M**ark**d**own).
+-Úsáideann an **logchaighdeán** cód teanga ISO chun teanga an doiciméid a chur in iúl, mar shampla, `en` don Bhéarla agus `ga` don Ghaeilge.
 -Ainm uathúil don chomhad is ea an **slug**.
 
 Is féidir gurbh ionann teideal an doiciméid agus an *slug** ach fós féin caithfidh sé cloí leis na rialacha seo a leanas:
@@ -93,7 +93,7 @@ Leanann na meiteashonraí thuas formáid dá nglaoitear YAML ach ní den tábhac
 
 1. Tosaíonn agus críochnaíonn an ceanntásc le tacair de thrí fhleiscín `---`. Is sa tslí sin a bhíonn a fhios againne agus ag an ríomhaire nach cuid den inneachar é. 
 2. I ngach líne sa cheanntásc, bíonn píosa amháin meiteashonraí air. 
-3. Bíonn **eochairmhír** ar nós 'teideal' nó 'ord' ar gach líne, agus **luach** ina dhiaidh sin. Scartar eochairmhíreanna agus luachanna le hidirstad (':') agus spás.
+3. Bíonn **eochairmhír** ar nós `teideal` nó `ord` ar gach líne, agus **luach** ina dhiaidh sin. Scartar eochairmhíreanna agus luachanna le hidirstad (':') agus spás.
 
 Tabhair do d'aird ar phointe a trí óir má úsáideann tú dhá idirstad in aon líne amháin d'fhéadfadh sé earráid a chruthú (is amhlaidh go gceapann an ríomhaire go bhfuil tú ag iarraidh dhá phéire eochairmhír-luach a chur ar aon líne amháin). Cad atá le déanamh mar sin más gá duit idirstad eile a úsáid? Ba cheart an luach a iniamh i gcomharthaí athfhriotail, mar a léirítear thíos. Is cuma comharthaí singile nó dúbailte athfhriotail a úsáid. 
 
@@ -131,17 +131,17 @@ poiblí:
 | `toc` | Níl | Má thugann tú an luach "bréagach" don eochairmhír seo ní thaispeánfar aon chlár ábhar leis an doiciméad. Mura dtugann, glactar leis go bhfuil an luach "fíor".  |
 | `poiblí` | Tá | Ní mór é seo a chur isteach chun go mbeidh fáil ar an doiciméad tríd an suíomh gréasáin poiblí. |
 
-Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór duit an eochairmhír-luach 'poiblí: fíor' a bheith agat, áfach, chun go mbeidh fáil ag an bpobal ar do leathanach.
+Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór duit an eochairmhír-luach `poiblí: fíor` a bheith agat, áfach, chun go mbeidh fáil ag an bpobal ar do leathanach.
 
 ### Ag scríobh inneachair
 
 Maidir leis an gcuid eile den doiciméad, déantar é a scríobh in Markdown. Do cheisteanna i dtaobh Markdown, féach na hacmhainní a luaitear thuas. Is fiú cúpla rud a lua mar sin féin:
 
 - Úsáid ceannteidil. Tugann siad struchtúr don inneachar. Déanann siad an t-ábhar níos fusa lena léamh chomh maith, go háirithe sa chomhthéacs digiteach, áit nach mbíonn leathanaigh chun an téacs a fhoroinnt. 
-- Chomh fada agus nach bhfuil luach "bréagach" ag gabháil leis an meiteashonra 'toc' (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
+- Chomh fada agus nach bhfuil luach "bréagach" ag gabháil leis an meiteashonra `toc` (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
 - Is gnách go léirítear cód ríomhaire (chomh maith le luachanna a úsáideann nó a aschuireann ríomhchláir) in Markdown trína iniamh le graif (<code>`</code>). Is iondúil nach n-aistrítear téacs sna blocanna cóid. Bíodh is go mb'fhéidir go bhfuil focail nó nathanna Béarla sa téacs, is gnách go bhfuil na focail agus na nathanna céanna de dhlúth agus d'inneach pé teanga ríomhchláraithe atá i gceist.
 
-Mar fhocal scoir, is dócha gurb é an modh foghlama is fearr ná féachaint ar shamplaí atá ann cheana. Caith súil ar na comhaid san fhillteán 'docs' agus féach an tslí a dtaispeántar iad ar an suíomh gréasáin [docs.gaois.ie](https://docs.gaois.ie). 
+Mar fhocal scoir, is dócha gurb é an modh foghlama is fearr ná féachaint ar shamplaí atá ann cheana. Caith súil ar na comhaid san fhillteán `docs` agus féach an tslí a dtaispeántar iad ar an suíomh gréasáin [docs.gaois.ie](https://docs.gaois.ie). 
 
 ### Ag úsáid íomhánna
 
@@ -154,5 +154,5 @@ Is féidir íomhánna a chur in aon doiciméad ach gnáthchomhréir Markdown a �
 Tá dhá rud nach foláir a choimeád ar intinn ó thaobh íomhánna de:
 
 1. Ba cheart comhaid íomhánna a chur i gcomhadlann `static/images` i do thionscadal Documental
-2. Mar is léir ón sampla thuas, caithfidh tú tagairt a dhéanamh don íomhá ag úsáid cosán '/íomhánna/', mar shampla '/iomhanna/ainmcomhaidiomha.jpg'.
+2. Mar is léir ón sampla thuas, caithfidh tú tagairt a dhéanamh don íomhá ag úsáid cosán `/íomhánna/`, mar shampla `/iomhanna/ainmcomhaidiomha.jpg`.
 
