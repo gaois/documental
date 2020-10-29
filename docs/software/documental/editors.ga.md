@@ -138,7 +138,8 @@ Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór duit an eochai
 Maidir leis an gcuid eile den doiciméad, déantar é a scríobh in Markdown. Do cheisteanna i dtaobh Markdown, féach na hacmhainní a luaitear thuas. Is fiú cúpla rud a lua mar sin féin:
 
 - Úsáid ceannteidil. Tugann siad struchtúr don inneachar. Déanann siad an t-ábhar níos fusa lena léamh chomh maith, go háirithe sa chomhthéacs digiteach, áit nach mbíonn leathanaigh chun an téacs a fhoroinnt. 
-- Chomh fada agus nach bhfuil luach "bréagach" ag gabháil leis an meiteashonra `toc` (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
+- Chomh fada agus nach bhfuil luach "
+`bréagach` ag gabháil leis an meiteashonra `toc` (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
 - Is gnách go léirítear cód ríomhaire (chomh maith le luachanna a úsáideann nó a aschuireann ríomhchláir) in Markdown trína iniamh le graif (<code>`</code>). Is iondúil nach n-aistrítear téacs sna blocanna cóid. Bíodh is go mb'fhéidir go bhfuil focail nó nathanna Béarla sa téacs, is gnách go bhfuil na focail agus na nathanna céanna de dhlúth agus d'inneach pé teanga ríomhchláraithe atá i gceist.
 
 Mar fhocal scoir, is dócha gurb é an modh foghlama is fearr ná féachaint ar shamplaí atá ann cheana. Caith súil ar na comhaid san fhillteán `docs` agus féach an tslí a dtaispeántar iad ar an suíomh gréasáin [docs.gaois.ie](https://docs.gaois.ie). 
