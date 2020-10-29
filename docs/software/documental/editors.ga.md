@@ -93,7 +93,7 @@ Leanann na meiteashonraí thuas formáid dá nglaoitear YAML ach ní den tábhac
 
 1. Tosaíonn agus críochnaíonn an ceanntásc le tacair de thrí fhleiscín `---`. Is sa tslí sin a bhíonn a fhios againne agus ag an ríomhaire nach cuid den inneachar é. 
 2. I ngach líne sa cheanntásc, bíonn píosa amháin meiteashonraí air. 
-3. Bíonn **eochairmhír** ar nós `teideal` nó `ord` ar gach líne, agus **luach** ina dhiaidh sin. Scartar eochairmhíreanna agus luachanna le hidirstad (':') agus spás.
+3. Bíonn **eochairmhír** ar nós `teideal` nó `ord` ar gach líne, agus **luach** ina dhiaidh sin. Scartar eochairmhíreanna agus luachanna le hidirstad (`:`) agus spás.
 
 Tabhair do d'aird ar phointe a trí óir má úsáideann tú dhá idirstad in aon líne amháin d'fhéadfadh sé earráid a chruthú (is amhlaidh go gceapann an ríomhaire go bhfuil tú ag iarraidh dhá phéire eochairmhír-luach a chur ar aon líne amháin). Cad atá le déanamh mar sin más gá duit idirstad eile a úsáid? Ba cheart an luach a iniamh i gcomharthaí athfhriotail, mar a léirítear thíos. Is cuma comharthaí singile nó dúbailte athfhriotail a úsáid. 
 
@@ -128,7 +128,7 @@ poiblí:
 | `npm` | Níl | URL phacáiste [NPM](https://www.npmjs.com/) a bhaineann leis an doiciméad. |
 | `nuget` | Níl | URL phacáiste [NuGet](https://www.nuget.org/) a bhaineann leis an doiciméad. |
 | `ord` | Níl | Uimhir a sheasann don ord ardaitheach ina dtaispeánfar na doiciméid a bhaineann le hacmhainn amháin |
-| `toc` | Níl | Má thugann tú an luach "bréagach" don eochairmhír seo ní thaispeánfar aon chlár ábhar leis an doiciméad. Mura dtugann, glactar leis go bhfuil an luach "fíor".  |
+| `toc` | Níl | Má thugann tú an luach `bréagach` don eochairmhír seo ní thaispeánfar aon chlár ábhar leis an doiciméad. Mura dtugann, glactar leis go bhfuil an luach `fíor`.  |
 | `poiblí` | Tá | Ní mór é seo a chur isteach chun go mbeidh fáil ar an doiciméad tríd an suíomh gréasáin poiblí. |
 
 Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór duit an eochairmhír-luach `poiblí: fíor` a bheith agat, áfach, chun go mbeidh fáil ag an bpobal ar do leathanach.
