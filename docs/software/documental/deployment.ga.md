@@ -2,7 +2,7 @@
 teideal: imlonnú
 cur síos: ag imlonnú Documental i dtimpeallacht freastalaí
 eochairfhocail: doiciméadacht, logánú, idirnáisiúnú, Sapper, Svelte, Gaois, Fiontar & Scoil na Gaeilge, DCU
-achmhainn: Documental
+acmhainn: Documental
 ord: 4
 poiblí: fíor
 ---
@@ -19,13 +19,13 @@ An chéad chéim is ea tiomsú táirgeachta de d'fheidhmchlár a chruthú. Rith 
 npm run build
 ```
 
-Táirgeann sé seo leagan optamaithe de d'fheidhmchlár atá réidh d'imlonnú táirgeachta. Aschuirtear cód an fheidhmchláir go dtí an chomhadlann `__sapper__/build`. Rith `node __sapper__/build` ó fhréamh an tionscadail chun an tiomsú tairgeachta a thástáil ar do mheaisín.
+Táirgeann sé seo leagan optamaithe de d'fheidhmchlár atá réidh d'imlonnú táirgeachta. Aschuirtear cód an fheidhmchláir go dtí an chomhadlann `__sapper__/build`. Rith `node __sapper__/build` ó fhréamh an tionscadail chun an tiomsú táirgeachta a thástáil ar do mheaisín.
 
 ### Imlonnú chuig freastalaí
 
 Ansin, beidh ort an feidhmchlár a chur ar fhreastalaí, le FTP, RDP, uath-script nó pé modh is fearr leat.
 
-Ní foláir na comhadlanna seo a leanas a imlonnú chuig fréamh an tsuímh gréasáin ar thimpeallacht d'fhreastalaí:
+Ní foláir na comhadlanna seo a leanas a imlonnú chuig fréamh an tsuímh gréasáin ar thimpeallacht do fhreastalaí:
 
 ```
 - __sapper__/build
@@ -34,12 +34,12 @@ Ní foláir na comhadlanna seo a leanas a imlonnú chuig fréamh an tsuímh gré
 - static
 ```
 
-Chruthaíomar an fillteán aschuir tiomsaithe sa chéim roimhe seo. Istigh sa chomhadlann `docs` a gheibhtear do chuid comhad doiciméadachta Markdown. Is ionann an fillteán `node_modules`agus fréamh do thionscadail, *ní* an fillteán ag `src/node_modules`. Sa chomhadlann `static` a fhaightear do chuid sóchmhainní statacha. 
+Chruthaíomar an fillteán aschuir tiomsaithe sa chéim roimhe seo. Istigh sa chomhadlann `docs` a fhaightear do chuid comhad doiciméadachta Markdown. Is ionann an fillteán `node_modules`agus fréamh do thionscadail, *ní* an fillteán ag `src/node_modules`. Sa chomhadlann `static` a fhaightear do chuid sócmhainní statacha. 
 
-Maidir le himlonnaithe ina dhiaidh sin:
+Maidir le himlonnuithe ina dhiaidh sin:
 
 - Más í an doiciméadacht amháin a uasghrádaíodh (i.e. níor athraíodh aon chód feidhmchláir), ní gá ach an fillteán `docs` a úsáid
-- Má shuiteálann tú nó má uasghrádaíonn tú aon mhodúil Node.js beidh ort an chomadlann `node_modules` a imlonnú an athuair.
+- Má shuiteálann tú nó má uasghrádaíonn tú aon mhodúil Node.js beidh ort an chomhadlann `node_modules` a imlonnú an athuair.
 - A bhuí le do chóras inmheánach leaganaithe docht Sapper, is sábháilte aon úsáid ina dhiaidh sin a chumasc leis an bhfillteán `__sapper__/build` seachas an fillteán a fhorscríobh. Tá de bhua aige seo freisin nach gcuireann sé isteach orthu siúd atá ceangailte leis an suíomh faoi láthair. 
 
 ### Á imlonnú in ISS le iisnode
@@ -73,13 +73,13 @@ I dtimpeallachtaí Windows Server is féidir freastal a dhéanamh ar fheidhmchl�
   </configuration>
   ```
 
-  Tá na feidhmeanna seo ag na rannáin thuas: (i) lódáileann siad an láimhsealaí iisnode agus (ii) atreoraíonn siad gach iarratas go dtí an comhad app.js nuair ina n-aistrítear iad go dtí cód feidhmchláir Documental. 
+  Tá na feidhmeanna seo ag na rannáin thuas: (i) lódálann siad an láimhsealaí iisnode agus (ii) atreoraíonn siad gach iarratas go dtí an comhad app.js nuair ina n-aistrítear iad go dtí cód feidhmchláir Documental. 
 
 
 
 ## Imlonnú trí ghiniúint suímh stataigh
 
-Is éard is suíomh statach ann ná bailiúchán de chomhaid réamhghinte HTML, JavaScript agus CSS, murab ionann agus suíomh freastalaí-ghinte ar féidir leis an bhfeidhmchlár an t-ábhar a léiriú agus a sheairbheáil ar eiteog ar an úsáideoir 
+Is éard is suíomh statach ann ná bailiúchán de chomhaid réamhghinte HTML, JavaScript agus CSS, murab ionann agus suíomh freastalaí-ghinte ar féidir leis an bhfeidhmchlár an t-ábhar a léiriú agus a sheirbheáil ar eiteog ar an úsáideoir 
 
 Rith an t-ordú seo a leanas chun suíomh statach a aschur ó Documental:
 
