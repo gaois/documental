@@ -50,7 +50,7 @@ Mar a thug tú faoi deara sa chuid dheireanach, b'fhéidir, ainmnítear comhaid 
 -Úsáideann an **logchaighdeán** cód teanga ISO chun teanga an doiciméid a chur in iúl, mar shampla, `en` don Bhéarla agus `ga` don Ghaeilge.
 -Ainm uathúil don chomhad is ea an **slug**.
 
-Is féidir gurbh ionann teideal an doiciméid agus an *slug** ach fós féin caithfidh sé cloí leis na rialacha seo a leanas:
+Is féidir gurbh ionann teideal an doiciméid agus an **slug** ach fós féin caithfidh sé cloí leis na rialacha seo a leanas:
 
 1. Úsáid litreacha beaga amháin.
 2. Cuir fleiscíní ('-') in ionad spásanna.
