@@ -34,7 +34,7 @@ The following directories need to be deployed to the website root on your server
 - static
 ```
 
-We created the build output folder in the previous step. The `docs` directory contains your Markdown documentation files. The `node_modules` folder is the same as that in your project root, *not* the folder at `src/node_modules`. The `static` directory contains your static assets.
+We created the build output folder in the previous step. The `docs` directory contains your Markdown documentation files. The `node_modules` folder is the same as that in your project root, NOT the folder at `src/node_modules`. The `static` directory contains your static assets.
 
 As regards subsequent deployments:
 
