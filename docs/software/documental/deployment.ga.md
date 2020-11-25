@@ -7,7 +7,7 @@ order: 4
 public: true
 ---
 
-Is féidir Documental a imlonnú (i) mar fheidhmchlár Node.js, nó (ii) mar shuíomh statach
+Is féidir Documental a imlonnú (i) mar fheidhmchlár Node.js, nó (ii) mar shuíomh statach.
 
 ## Imlonnú mar fheidhmchlár Node.js
 
@@ -34,12 +34,12 @@ Ní foláir na comhadlanna seo a leanas a imlonnú chuig fréamh an tsuímh gré
 - static
 ```
 
-Chruthaíomar an fillteán aschuir tiomsaithe sa chéim roimhe seo. Istigh sa chomhadlann `docs` a fhaightear do chuid comhad doiciméadachta Markdown. Is ionann an fillteán `node_modules`agus fréamh do thionscadail, *ní* an fillteán ag `src/node_modules`. Sa chomhadlann `static` a fhaightear do chuid sócmhainní statacha. 
+Chruthaíomar an fillteán aschuir tiomsaithe sa chéim roimhe seo. Istigh sa chomhadlann `docs` a fhaightear do chuid comhad doiciméadachta Markdown. Is ionann an fillteán `node_modules`agus fréamh do thionscadail, NÍ an fillteán ag `src/node_modules`. Sa chomhadlann `static` a fhaightear do chuid sócmhainní statacha. 
 
 Maidir le himlonnuithe ina dhiaidh sin:
 
 - Más í an doiciméadacht amháin a uasghrádaíodh (i.e. níor athraíodh aon chód feidhmchláir), ní gá ach an fillteán `docs` a úsáid
-- Má shuiteálann tú nó má uasghrádaíonn tú aon mhodúil Node.js beidh ort an chomhadlann `node_modules` a imlonnú an athuair.
+- Má shuiteálann tú nó má uasghrádaíonn tú aon mhodúil Node.js, beidh ort an chomhadlann `node_modules` a imlonnú an athuair.
 - A bhuí le do chóras inmheánach leaganaithe docht Sapper, is sábháilte aon úsáid ina dhiaidh sin a chumasc leis an bhfillteán `__sapper__/build` seachas an fillteán a fhorscríobh. Tá de bhua aige seo freisin nach gcuireann sé isteach orthu siúd atá ceangailte leis an suíomh faoi láthair. 
 
 ### Á imlonnú in ISS le iisnode
@@ -73,7 +73,7 @@ I dtimpeallachtaí Windows Server is féidir freastal a dhéanamh ar fheidhmchl�
   </configuration>
   ```
 
-  Tá na feidhmeanna seo ag na rannáin thuas: (i) lódálann siad an láimhsealaí iisnode agus (ii) atreoraíonn siad gach iarratas go dtí an comhad app.js nuair ina n-aistrítear iad go dtí cód feidhmchláir Documental. 
+  Tá na feidhmeanna seo ag na rannáin thuas: (i) lódálann siad an láimhsealaí iisnode agus (ii) atreoraíonn siad gach iarratas go dtí an comhad app.js nuair a n-aistrítear iad go dtí cód feidhmchláir Documental. 
 
 
 
@@ -92,4 +92,4 @@ Rith `npx serve __sapper__/export` chun do shuíomh statach a thástáil.
 
 Nuair atá tú réidh, imlonnaigh inneachar chomhadlann `__sapper__/export` go dtí fréamh an tsuímh i dtimpeallacht do fhreastalaí.
 
-Féach na doiciméid [Sapper](https://sapper.svelte.dev/) i gcomhair tuilleadh faisnéise. 
+Féach na doiciméid [Sapper](https://sapper.svelte.dev/) i gcomhair tuilleadh eolais. 
