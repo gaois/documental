@@ -9,7 +9,7 @@ toc: false
 public: true
 ---
 
-Documental is a multilingual technical documentation platform developed by the [Gaois research group](https://www.gaois.ie/en/), Fiontar & Scoil na Gaeilge, DCU. It powers our [docs.gaois.ie](https://docs.gaois.ie) technical documentation website.
+Documental is a multilingual technical documentation platform developed by [Gaois](https://www.gaois.ie/en/), Fiontar & Scoil na Gaeilge, DCU. It powers our [docs.gaois.ie](https://docs.gaois.ie) technical documentation website.
 
 While Documental is being made available on an open-source basis, it has been built specifically with the requirements of the Gaois research group in mind and we do not envisage that it will be used 'as is' by anyone else. Rather, we hope that it could serve as a strong template for others looking to build similar platforms.
 
