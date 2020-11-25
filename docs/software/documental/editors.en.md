@@ -12,7 +12,7 @@ This page contains instructions for content editors writing or translating docum
 
 ## Requirements
 
-Documental requires documentation to be written in Markdown. Markdown is just plain text with a few additional symbols that we insert to represent things like headings, bold text, links, etc. Documental uses a particular variation of Markdown known as GitHub-flavoured Markdown (GFM) which makes it easier to mix computer code with regular prose. However, it's important to stress that you don't need to understand any programming languages to write Markdown! You can find a quick reference for writing in GFM [here](https://guides.github.com/features/mastering-markdown/) or a more detailed guide [here](https://www.markdownguide.org/). Markdown files are text files with a particular file extension, usually **.md**. You may choose to edit Markdown files via an online platform such as GitHub or using an application on your computer.
+Documental requires documentation to be written in Markdown. Markdown is just plain text with a few additional symbols that we insert to represent things like headings, bold text, links, etc. Documental uses a particular variation of Markdown known as "GitHub-flavoured Markdown" (GFM) which makes it easier to mix computer code with regular prose. However, it's important to stress that you don't need to understand any programming languages to write Markdown! You can find a quick reference for writing in GFM [here](https://guides.github.com/features/mastering-markdown/) or a more detailed guide [here](https://www.markdownguide.org/). Markdown files are text files with a particular file extension, usually **.md**. You may choose to edit Markdown files via an online platform such as GitHub or using an application on your computer.
 
 ## Folder structure
 
@@ -34,7 +34,7 @@ All documentation is contained in the `docs` folder. As an editor, you will be a
 
 There is a parent `docs` folder. Within that folder there are two **categories** of documentation, `data` (Open Data) and `software` (Software). Each of these folders contains one or more **resources**. A resource is a collection of one or more **documents** relating to a particular service or piece of software. If we look in the `software` folder we see a resource called `terminologue` (Terminologue) which in turn contains several documents.
 
-If we turn to the `data` folder and the `logainm` (Logainm API) resource we see its direct child is a **version** folder, `v0.9`. The documents in this folder relate to version 0.9 of the API. Certain resources may have multiple versions and documentation specific to those versions.
+If we turn to the `data` folder and the `logainm` (Logainm API) resource, we see its direct child is a **version** folder, `v0.9`. The documents in this folder relate to version 0.9 of the API. Certain resources may have multiple versions and documentation specific to those versions.
 
 Compare the folder structure to the URLs used on the [docs.gaois.ie](https://docs.gaois.ie) website. See how a URL such as `https://docs.gaois.ie/en/software/terminologue/installation` or `https://docs.gaois.ie/ga/data/logainm/v0.9/api` maps to the folder structure.
 
@@ -47,7 +47,7 @@ As you might have gathered from the previous section, Markdown files in Document
 ```
 
 - **.md** is the file extension ('md' for **M**ark**d**own).
-- The **locale** uses an ISO language code to represent the language in which the document is written, e.g. `en` for English and `ga` for Gaeilge (Irish).
+- The **locale** uses an ISO language code to represent the language in which the document is written, e.g. `en` for English and `ga` for *Gaeilge* (Irish).
 - The **slug** is a unique name for your file.
 
 A **slug** can be the same as a document title but it must follow a number of rules:
@@ -62,7 +62,7 @@ Here are some valid filenames in Documental:
 - `deployment.en.md`
 - `getting-started.ga.md`
 
-Here are some *invalid* documentation filenames:
+Here are some INVALID documentation filenames:
 
 - `Api.en.md` (uses uppercase letter)
 - `deployment.md` (missing locale)
@@ -70,11 +70,11 @@ Here are some *invalid* documentation filenames:
 
 ## Writing documentation
 
-Now that you have a file prepared it's time to write some documentation. Each document should contain two parts: (1) metadata and (2) content.
+Now that you have a file prepared, it's time to write some documentation. Each document should contain two parts: (1) metadata and (2) content.
 
 ### Writing metadata
 
-As you probably know, metadata is data which describes other data. The metadata in Documental documents describes the content of the document (discussed in the next section). We write metadata at the very top of the document, before anything else, in what we call a *metadata header*. Here's an example:
+As you probably know, metadata is data which describes other data. The metadata in Documental documents describes the content of the document (discussed in the next section). We write metadata at the very top of the document, before anything else, in what we call a "metadata header". Here's an example:
 
 ```yaml
 ---
@@ -92,7 +92,7 @@ This follows a format called YAML but it's not important to understand this. Let
 
 1. The header starts and ends with sets of triple hyphens `---`. This is how we (and the computer) know that it's not part of the content.
 2. Each line within the header contains one piece of metadata.
-3. Each line consists of a **key** such as `title` or `order` followed by a **value**. Keys and values are separated by a colon character (`:`) and a space.
+3. Each line consists of a **key** such as `title` or `order` followed by a **value**. Keys and values are separated by a colon (`:`) and a space.
 
 The last point is important to note as if you have two colons in a single line it may cause an error (the computer thinks you're trying to put two key-value pairs on one line). So what happens if you need to use a second colon? In cases such as this, you can enclose the value in quotes as below. It doesn't matter if you use single- or double-quotation marks:
 
