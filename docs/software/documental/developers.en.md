@@ -10,7 +10,7 @@ public: true
 
 Documental is a [Node.js](https://nodejs.org/) application written in JavaScript. It can run on a server, dynamically serving content, or it can be used as a [static site generator](https://www.staticgen.com/about). This is explained further in the [deployment](../deployment) section. All website content is stored on disk in the form of Markdown files and there are no databases or other types of data store.
 
-The software works on all popular operating systems: the only prerequisite is to install Node.js on your computer. All other dependencies will be detected and installed automatically by the Node.js Package Manager (NPM) during setup. Documental is built using [Svelte](https://svelte.dev/), a component framework similar to React, and [Sapper](https://sapper.svelte.dev/), an application framework powered by Svelte. Please consult the documentation for these frameworks as regards any application-level questions you might have, as such information is outside the scope of this article.
+The software works on all popular operating systems: the only prerequisite is to install Node.js on your computer. All other dependencies will be detected and installed automatically by the Node.js Package Manager (NPM) during setup. Documental is built using [Svelte](https://svelte.dev/), a component framework similar to [React](https://reactjs.org/), and [Sapper](https://sapper.svelte.dev/), an application framework powered by Svelte. Please consult the documentation for these frameworks as regards any application-level questions you might have, as such information is outside the scope of this article.
 
 ## Getting started
 
@@ -57,9 +57,9 @@ Modern JavaScript frameworks take a component-based approach to constructing an 
 
 Documental is organised around a few key concepts:
 
-1. **Locales**: This represents the user's localisation/internationalisation preferences, e.g. Gaeilge (Irish) or English.
-2. **Documentation categories**: In Documental, there are two categories — Open Data and Software — however more can be added.
-3. **Resources**: Resources are discrete collections of one or more documents associated with a piece of software, a service or data artifact.
+1. **Locales**: This represents the user's localisation/internationalisation preferences, e.g. *Gaeilge* (Irish) or English.
+2. **Documentation categories**: In Documental, there are two categories — open data and software — however more can be added.
+3. **Resources**: Resources are discrete collections of one or more documents associated with a piece of software, a service or a data artifact.
 4. **Resource versions**: Documentation for particular resources may be versioned, usually with reference to the resource's own version number.
 5. **Documents**: A single page of documentation, particular to a specific category, locale, resource and, optionally, resource version.
 
@@ -71,7 +71,7 @@ These concepts are reflected in the URLs used by the docs.gaois.ie website:
 - **`data`**: The category is Open Data.
 - **`logainm`**: The resource is the Logainm API.
 - **`v0.9`**: The documentation version number is 0.9.
-- **`licence`**: The slug `licence` corresponds to the name of a single document (i.e. a singe file in the `docs` directory).
+- **`licence`**: The slug `licence` corresponds to the name of a single document (i.e. a single file in the `docs` directory).
 
 As stated above, not all resources are versioned:
 
@@ -138,7 +138,7 @@ While editorial team members can [create and edit documents](../editors) within 
 
 ### `docs` folder
 
-Each documentation resource requires a corresponding folder within the top-level `docs` directory. If you were creating an Open Data resource for a new API, for example, you might create a new folder at `docs/data/mynewapi`. If the API was versioned you might add a further subfolder at `docs/data/mynewapi/v1.0`. See the repository for existing examples. Note that this task could be carried out by a content editor provided they have a good understanding of the directory structure. 
+Each documentation resource requires a corresponding folder within the top-level `docs` directory. If you were creating an open data resource for a new API, for example, you might create a new folder at `docs/data/mynewapi`. If the API was versioned you might add a further subfolder at `docs/data/mynewapi/v1.0`. See the repository for existing examples. Note that this task could be carried out by a content editor provided they have a good understanding of the directory structure. 
 
 ### Navigation
 
@@ -175,7 +175,7 @@ The `<NavigationResource/>` component accepts a number of **props** (properties)
 
 | Prop | Description |
 | ---- | ---- |
-| **category** | The documentation category, `data` or `software`. |
+| **category** | The documentation category `data` or `software`. |
 | **resource** | The resource slug. Corresponds to the name of the resource folder under `docs`. |
 | **heading**  | The resource title. If the resource has several documents, this will be displayed above them in the navigation. |
 | **latestVersion** | If the resource is versioned, specify the latest version number here.  |
@@ -188,7 +188,7 @@ Don't forget that unless a document has a YAML header of `public: true` it will 
 
 Optionally, you may wish to add a descriptive blurb about the resource to the website home page. Open the **Home.svelte** component in `src/node_modules/components`.
 
-As with the navigation we need to add a component that will represent the new resource:
+As with the navigation, we need to add a component that will represent the new resource:
 
 ```svelte
 <ul>
