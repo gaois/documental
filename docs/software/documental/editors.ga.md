@@ -119,27 +119,26 @@ public:
 
 | Eochairmhír | Riachtanach |Luach|
 | --- | -------- | ----- |
-| `title` | Tá | Teideal iomlán an doiciméid. Taispeánfar é seo ag barr leathanach an doiciméid |
-| `shortTitle` | Tá | Teideal (chomh gairid agus is féidir) a thaispeánfar i nascleanúint an tsuímh gréasáin |
-| `description` | Tá | Achoimre ghearr ar an inneachar, abairt nó dhó ar fad. D'fhéadfadh sé a bheith ar taispeáint i dtorthaí innill chuardaigh nó postálacha comhroinnte ar na meáin shóisialta   |
+| `title` | Tá | Teideal iomlán an doiciméid. Taispeánfar é seo ag barr leathanach an doiciméid. |
+| `shortTitle` | Tá | Teideal (chomh gairid agus is féidir) a thaispeánfar i nascleanúint an tsuímh gréasáin. |
+| `description` | Tá | Achoimre ghearr ar an inneachar, abairt nó dhó ar fad. D'fhéadfadh sé a bheith ar taispeáint i dtorthaí innill chuardaigh nó postálacha comhroinnte ar na meáin shóisialta. |
 | `keyword` | Tá | Liosta, arna scaradh le camóga, d'eochairfhocail a bhaineann le hábhar an doiciméid.|
 | `resource` | Níl | Ainm na hacmhainne lena mbaineann an doiciméad. Taispeánfar é seo roimh theideal an doiciméid i gcluaisín an bhrabhsálaí. |
 | `github` | Níl | URL stór [GitHub](https://github.com/) a bhaineann leis an doiciméad. |
 | `npm` | Níl | URL phacáiste [NPM](https://www.npmjs.com/) a bhaineann leis an doiciméad. |
 | `nuget` | Níl | URL phacáiste [NuGet](https://www.nuget.org/) a bhaineann leis an doiciméad. |
-| `ord` | Níl | Uimhir a sheasann don ord ardaitheach ina dtaispeánfar na doiciméid a bhaineann le hacmhainn amháin |
+| `order` | Níl | Uimhir a sheasann don ord ardaitheach ina dtaispeánfar na doiciméid a bhaineann le hacmhainn amháin. |
 | `toc` | Níl | Má bhronntar an luach `false` ar an eochairmhír seo, ní thaispeánfar aon chlár ábhar leis an doiciméad. Mura mbronntar, glactar leis go bhfuil an luach `true`.  |
-| `poiblí` | Tá | Ní mór é seo a chur isteach chun go mbeidh fáil ar an doiciméad tríd an suíomh gréasáin poiblí. |
+| `public` | Tá | Ní mór é seo a chur isteach chun go mbeidh fáil ar an doiciméad tríd an suíomh gréasáin poiblí. |
 
-Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór duit an eochairmhír-luach `public: true` a bheith luaite, áfach, chun go mbeidh fáil ag an bpobal ar do leathanach.
+Tabhair faoi deara nach bhfuil gach réimse riachtanach. Ní mór an eochairmhír-luach `public: true` a bheith luaite, áfach, chun go mbeidh fáil ag an bpobal ar do leathanach.
 
 ### Ag scríobh inneachair
 
 Maidir leis an gcuid eile den doiciméad, déantar é a scríobh in Markdown. Maidir le ceisteanna i dtaobh Markdown, féach na hacmhainní thuasluaite. Mar sin féin, is fiú díriú ar chúpla pointe:
 
 - Úsáid ceannteidil. Tugann siad struchtúr don inneachar. Déanann siad an t-ábhar níos fusa lena léamh chomh maith, go háirithe sa chomhthéacs digiteach, áit nach mbíonn leathanaigh chun an téacs a fhoroinnt. 
-- Chomh fada agus nach bhfuil luach "
-`false` ag gabháil leis an meiteashonra `toc` (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
+- Chomh fada agus nach bhfuil luach `false` ag gabháil leis an meiteashonra `toc` (féach thuas), déanfaidh Documental clár ábhar a ghiniúint go huathoibríoch ag úsáid na gceannteideal sa doiciméad. Beidh an clár ábhar seo le feiceáil ar thaobh dheas an scáileáin ar ríomhairí deisce agus beidh rochtain air ar ghléasanna móibíleacha ach brú ar chnaipe. 
 - Is gnách go léirítear cód ríomhaire (chomh maith le luachanna a úsáideann nó a aschuireann ríomhchláir) in Markdown trína iniamh le graifeanna (<code>`</code>). Is iondúil nach n-aistrítear téacs sna blocanna cóid. Bíodh is go mb'fhéidir go bhfuil focail nó nathanna Béarla sa téacs, is gnách go bhfuil na focail agus na nathanna céanna sainiúil do pé teanga ríomhchláraithe atá i gceist.
 
 Mar fhocal scoir, is dócha gurb é an modh foghlama is fearr ná féachaint ar shamplaí atá ann cheana. Caith súil ar na comhaid san fhillteán `docs` agus féach an tslí a dtaispeántar iad ar an suíomh gréasáin [docs.gaois.ie](https://docs.gaois.ie). 
