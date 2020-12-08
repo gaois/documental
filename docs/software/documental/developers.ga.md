@@ -51,7 +51,7 @@ Caithimis súil ar struchtúr an fhillteáin laistigh de do stór Documental. Sn
 
 ## Cur chuige comhpháirt-bhunaithe
 
-Bíonn cur chuige comhpháirt-bhunaithe ag creatlacha nua-aimseartha Javascript agus iad ag tógáil feidhmchláir. Má tá taithí agat ar HTML a tháirgeadh le creatlacha ar thaobh an fhreastalaí in C#, PHP, etc. , b'fhéidir nach dtiocfaidh sé seo go réidh leat i dtosach.  Ó thaobh Documental de, comhaid shingile le hiarmhír is éard atá i gceist le comhpháirteanna. De ghnáth, cuirtear sa fillteán `src/node_modules/components` iad*. Déanann na comhaid chomhpháirte an mharcáil, an stíl, an stad agus an loighic le haghaidh cuid áirithe den fheidhmchlár a imchochlú. D'fhéadaidís comhpháirteanna eile a iompórtáil agus iad a úsáid laistigh dá marcáil. Mar shampla, déanann **Resource.svelte** mac-chomhpháirt darb ainm **Article.svelte** a iompórtáil  agus úsáideann sé an chlib chomhpháirte `<Article/>` laistigh dá marcáil. Cé go bhfuil cuma (X)HTML ar an gclib `<Article/>`, ní mar sin a léireofar sa bhrabhsálaí é. Is amhlaidh go dtiomsófar comhpháirt an ailt, mar aon lena mac-chomhpháirteanna go léir, go HTML caighdeánach bailí roimh sheoladh go dtí an cliant. Is éasca an cur chuige comhpháirt-bhunaithe a fhoghlaim nuair a chuireann tú tús le heagarthóireacht ar chomhaid .svelte. Tá tuilleadh eolais ar fáil sa doiciméadacht Sapper agus Svelte thuasluaite. 
+Bíonn cur chuige comhpháirt-bhunaithe ag creatlacha nua-aimseartha Javascript agus iad ag tógáil feidhmchláir. Má tá taithí agat ar HTML a tháirgeadh le creatlacha ar thaobh an fhreastalaí in C#, PHP, etc. , b'fhéidir nach dtiocfaidh sé seo go réidh leat i dtosach.  Ó thaobh Documental de, comhaid shingile le hiarmhír is éard atá i gceist le comhpháirteanna. De ghnáth, cuirtear sa fillteán `src/node_modules/components` iad.* Déanann na comhaid chomhpháirte an mharcáil, an stíl, an stad agus an loighic le haghaidh cuid áirithe den fheidhmchlár a imchochlú. D'fhéadaidís comhpháirteanna eile a iompórtáil agus iad a úsáid laistigh dá marcáil. Mar shampla, déanann **Resource.svelte** mac-chomhpháirt darb ainm **Article.svelte** a iompórtáil  agus úsáideann sé an chlib chomhpháirte `<Article/>` laistigh dá marcáil. Cé go bhfuil cuma (X)HTML ar an gclib `<Article/>`, ní mar sin a léireofar sa bhrabhsálaí é. Is amhlaidh go dtiomsófar comhpháirt an ailt, mar aon lena mac-chomhpháirteanna go léir, go HTML caighdeánach bailí roimh sheoladh go dtí an cliant. Is éasca an cur chuige comhpháirt-bhunaithe a fhoghlaim nuair a chuireann tú tús le heagarthóireacht ar chomhaid .svelte. Tá tuilleadh eolais ar fáil sa doiciméadacht Sapper agus Svelte thuasluaite. 
 
 \* Tabhair do d'aire gur comhpháirteanna chomh maith iad na comhaid .svelte san fhillteán `src/routes`, ach gur fusa féachaint orthu mar leathanaigh chomhfhreagracha gréasáin. 
 
@@ -73,7 +73,7 @@ Léirítear na coincheapa seo sna URLanna a úsáideann an suíomh gréasáin do
 - **`data`**: Is ionann an chatagóir agus Sonraí Oscailte.
 - **`logainm`**: Is ionann an fhoinse agus Logainm API.
 - **`v0.9`**: Is ionann uimhir leagain na hacmhainne agus 0.9. 
-- **`licence`**: Baineann an slug 'licence' le hainm doiciméid shingil (i.e. comhad singil sa chomhadlann `docs`). 
+- **`licence`**: Baineann an slug `licence` le hainm doiciméid shingil (i.e. comhad singil sa chomhadlann `docs`). 
 
 Mar atá ráite thuas, ní dhéantar leaganú ar gach acmhainn: 
 
