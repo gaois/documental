@@ -146,7 +146,7 @@ Bíonn fillteán comhfhreagrach laistigh den chomhadlann barrleibhéil `docs` ag
 
 ### Nascleanúint
 
-Tá an [chomhpháirt](#cur-chuige-comhpháirt-bhunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
+Tá an [chomhpháirt](#cur-chuige-comhphairt-bhunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
 
 Mar shampla, chun acmhainn nua bogearraí a chur leis, déanaimid an chuid chuí den chomhad **Navigation.svelte** a chur in eagar:
 
@@ -212,4 +212,4 @@ Cosúil leis an nascleanúint, is gá dúinn comhpháirt a léiríonn an acmhain
 | **heading** | Ceannteideal tuairisciúil. |
 | **blurb** | Cur síos 1-2 abairt ar an acmhainn. |
 
-Tabhair do d'aire go mb'fhéidir gur mhian leat [teaghráin logánaithe](#logánú) a phasáil le haghaidh cuid de na hairíonna. 
+Tabhair do d'aire go mb'fhéidir gur mhian leat [teaghráin logánaithe](#loganu) a phasáil le haghaidh cuid de na hairíonna. 
