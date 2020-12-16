@@ -8,7 +8,7 @@ order: 3
 public: true
 ---
 
-Is feidhmchlár [Node.js](https://nodejs.org/) é Documental scríofa i Javascript. Is féidir leis rith ar fhreastalaí, ag soláthar inneachair go dinimiciúil, nó is féidir é a úsáid mar [ghineadóir suímh stataigh](https://www.staticgen.com/about). Mínítear é seo a thuilleadh sa chuid den suíomh a bhaineann le [himlonnú](https://docs.gaois.ie/ga/software/documental/deployment). Stóráiltear inneachar suímh gréasáin ar dhiosca i bhformáid chomhad Markdown agus níl aon bhunachar sonraí ná aon saghas sonraíochta eile stóráilte. 
+Is feidhmchlár [Node.js](https://nodejs.org/) é Documental scríofa i Javascript. Is féidir leis rith ar fhreastalaí, ag soláthar inneachair go dinimiciúil, nó is féidir é a úsáid mar [ghineadóir suímh stataigh](https://www.staticgen.com/about). Mínítear é seo a thuilleadh sa chuid den suíomh a bhaineann le [himlonnú](/ga/software/documental/deployment). Stóráiltear inneachar suímh gréasáin ar dhiosca i bhformáid chomhad Markdown agus níl aon bhunachar sonraí ná aon saghas sonraíochta eile stóráilte. 
 
 Oibríonn an bogearra ar gach córas oibriúcháin coitianta: an t-aon réamhriachtanas ná Node.js a shuiteáil ar do ríomhaire. Aimseoidh agus suiteálfaidh Node.js Package Manager (NPM) gach spleáchais eile as féin i rith na cumraíochta. Tógtar Documental trí úsáid a bhaint as [Svelte](https://svelte.dev/), creatlach comhpháirteanna cosúil le [React](https://reactjs.org/), agus [Sapper](https://sapper.svelte.dev/), creatlach feidhmchláir á chumhachtú ag Svelte. Féach an doiciméadacht le haghaidh na gcreatlach seo má bhíonn aon cheist agat ó thaobh an fheidhmchláir de, mar tá eolas den saghas sin lasmuigh de scóip an ailt seo. 
 
@@ -98,7 +98,7 @@ Léirítear na coincheapa seo in ainmniú na gcomhad svelte sa chomhadlann `src/
   - index
 ```
 
-Ina theannta sin, mar a fheiceann tú sa doiciméadacht le haghaidh [eagarthóirí](https://docs.gaois.ie/ga/software/documental/editors), bíonn na comhaid doiciméadachta Markdown bunaithe ar na coincheapa seo den chuid is mó. 
+Ina theannta sin, mar a fheiceann tú sa doiciméadacht le haghaidh [eagarthóirí](/ga/software/documental/editors), bíonn na comhaid doiciméadachta Markdown bunaithe ar na coincheapa seo den chuid is mó. 
 
 ## Logánú
 
@@ -138,7 +138,7 @@ I gcomhair blocanna níos mó téacs, is féidir linn ábhar logánaithe a chur 
 
 ## Acmhainn nua a chur leis
 
-Cé gur féidir le baill foirne eagarthóireachta [doiciméid a chruthú agus a chur in eagar](https://docs.gaois.ie/ga/software/documental/editors) laistigh d'acmhainn ar leith, bíonn ionchur ón bhforbróir ag teastáil de ghnáth chun acmhainn nua a chur leis, nó chun athrú a dhéanamh ar léiriú na hacmhainne ar an nascleanúint nó ar an leathanach baile. Tugann na treoracha thíos cur síos ar conas é seo a bhaint amach. 
+Cé gur féidir le baill foirne eagarthóireachta [doiciméid a chruthú agus a chur in eagar](/ga/software/documental/editors) laistigh d'acmhainn ar leith, bíonn ionchur ón bhforbróir ag teastáil de ghnáth chun acmhainn nua a chur leis, nó chun athrú a dhéanamh ar léiriú na hacmhainne ar an nascleanúint nó ar an leathanach baile. Tugann na treoracha thíos cur síos ar conas é seo a bhaint amach. 
 
 ### An filltéan `docs` 
 
@@ -146,7 +146,7 @@ Bíonn fillteán comhfhreagrach laistigh den chomhadlann barrleibhéil `docs` ag
 
 ### Nascleanúint
 
-Tá an [chomhpháirt](#cur-chuige-comhpháirt-bunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
+Tá an [chomhpháirt](#cur-chuige-comhpháirt-bhunaithe) **Nascleanúint.svelte** lonnaithe in `src/node_modules/components`. Nuair a chuirtear an comhad seo in eagar bítear ábalta liosta na n-acmhainní a bhfuil fáil orthu ar an suíomh a leasú (le feiceáil ar thaobh chlé an scáileáin ar ghléasanna deisce).
 
 Mar shampla, chun acmhainn nua bogearraí a chur leis, déanaimid an chuid chuí den chomhad **Navigation.svelte** a chur in eagar:
 
