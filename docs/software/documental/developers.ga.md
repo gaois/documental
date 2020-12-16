@@ -45,7 +45,7 @@ Nuair a bhíonn an feidhmchlár á rith i mód forbróra, bíonn beo-athlódáil
 Caithimis súil ar struchtúr an fhillteáin laistigh de do stór Documental. Sna fillteáin bharrleibhéil seo a leanas is dóichí a dhéanfaidh tú athruithe: 
 
 - **`docs`**: Beidh an doiciméadacht Markdown a fhoilseofar ar do shuíomh gréasáin istigh anseo.
-- **`messages`**: Na teaghráin aistrithe a thaispeánfar sa chomhéadan úsáideora (UI), tá siad istigh anseo. Féach [Logánú](#logánú) thíos. 
+- **`messages`**: Na teaghráin aistrithe a thaispeánfar sa chomhéadan úsáideora (UI), tá siad istigh anseo. Féach [Logánú](#loganu) thíos. 
 - **`src`**: Cód foinseach an fheidhmchláir, loighic ródaithe agus gnólachta san áireamh. 
 - **`static`**: Comhaid statacha a sholáthróidh d'fheidhmchlár, ar nós íomhánna, deilbhíní suímh nó comhaid sheachtracha CSS. 
 
