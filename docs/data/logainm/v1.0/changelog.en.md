@@ -9,6 +9,19 @@ toc: false
 public: true
 ---
 
+## **v1.0.1** / 2021-01-21
+
+### Changed
+
+Non-breaking changes:
+
+- Fixed an issue where specific queries for individual place records returned an error due to a null `gridReference` property.
+- Fixed an issue where queries for individual place records that did not exist returned a 500 HTTP status code instead of the appropiate 404 status code.
+
+### Removed
+
+- Removed support for API v0.9 (pre-release version).
+
 ## **v1.0.0** / 2020-07-05
 
 This update marks the official public release of the Logainm API.

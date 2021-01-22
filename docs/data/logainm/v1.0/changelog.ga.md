@@ -9,6 +9,19 @@ toc: false
 public: true
 ---
 
+## **v1.0.1** / 2021-01-21
+
+### Athraithe
+
+Athruithe neamhbhristeacha:
+
+- Réitíodh fadhb a d'fhág gur tharla earráid i gcás iarratas faoi leith ar thaifid áite aonair nuair a bhain airí nialasach le `gridReference` de chuid an taifid.
+- Réitíodh cás ina dtugtaí cód stádais HTTP 500 mar fhreagra ar iarratais ar áiteanna nach ann dóibh sa bhunachar nuair ba chirte cód stádas 404 a thabhairt.
+
+### Bainte
+
+- Cuireadh deireadh le API v0.9 (leagan réamheisiúna).
+
 ## **v1.0.0** / 2020-07-05
 
 Eisítear API Logainm go poiblí agus go hoifigiúil agus an t-uasdátú seo i bhfeidhm.
