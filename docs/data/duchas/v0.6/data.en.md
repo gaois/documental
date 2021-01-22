@@ -74,7 +74,7 @@ Queries to the Main Manuscript Collection may return one or more `volume` object
 | ID              | integer             | one                 | The item identifier (unique within collection). |
 | DateCreated     | ISO 8601 datetime   | none or one         | The date and time of entry creation.  |
 | DateModified    | ISO 8601 datetime   | none or one         | The date and time of most recent modification to entry.  |
-| EditorsPick     | ISO 8601 datetime   | none or one         | Denotes the date on which the item was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
+| EditorsPick     | ISO 8601 datetime   | none or one or many | Denotes the date on which the item was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
 | Sensitive       | boolean             | one                 | If true, the item contains sensitive content and should not be made publicly available. **(Privileged)** |
 | ListingOrder    | string              | none or one         | The listing order of the item within its parent manuscript part. The order of items is determined, in the first instance, by their initial page number however the `listingOrder` property may be used, for example, to represent the order of two or more items on a single page. |
 | Date            | [`date`](#date)     | none or one         | Metadata associated with the date or period of time, if known, during which the manuscript item was collected. |
@@ -192,7 +192,7 @@ Queries to the Schools' Collection may return one or more `volume` objects. The 
 | ID              | integer             | one                 | The item identifier (unique within collection). |
 | DateCreated     | ISO 8601 datetime   | none or one         | The date and time of entry creation.  |
 | DateModified    | ISO 8601 datetime   | none or one         | The date and time of most recent modification to entry.  |
-| EditorsPick     | ISO 8601 datetime   | none or one         | Denotes the date on which the item was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
+| EditorsPick     | ISO 8601 datetime   | none or one or many | Denotes the date on which the item was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
 | Sensitive       | boolean             | one                 | If true, the item contains sensitive content and should not be made publicly available. **(Privileged)** |
 | ListingOrder    | string              | none or one         | The listing order of the item within its parent manuscript part. The order of items is determined, in the first instance, by their initial page number however the `listingOrder` property may be used, for example, to represent the order of two or more items on a single page. |
 | Title           | string              | none or one         | The title of the item, if one is given. |
@@ -278,7 +278,7 @@ Queries to the Photographic Collection may return one or more `photograph` objec
 | ID              | integer             | one                 | The photograph identifier (unique within collection). |
 | DateCreated     | ISO 8601 datetime   | one                 | The date and time of entry creation.  |
 | DateModified    | ISO 8601 datetime   | none or one         | The date and time of most recent modification to entry.  |
-| EditorsPick     | ISO 8601 datetime   | none or one         | Denotes the date on which the photograph was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
+| EditorsPick     | ISO 8601 datetime   | none or one or many | Denotes the date on which the photograph was featured as a '[Weekly Pick](https://www.duchas.ie/en/ftr/)' on dúchas.ie, if featured. |
 | ReferenceNumber | string              | none or one         | The NFC archival reference for the photograph.      |
 | Status          | integer             | one                 | Specifies the entry's editorial [status](#status). **(Privileged)**  |
 | Sensitive       | boolean             | one                 | If true, the entry contains sensitive content and should not be made publicly available. **(Privileged)** |

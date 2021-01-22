@@ -9,6 +9,14 @@ toc: false
 public: true
 ---
 
+## **v0.6.0** / 2021-01-22
+
+### Changed
+
+Breaking change:
+
+- The `editorsPick` property associated with `photograph` and manuscript `item` objects now has a cardinality of 'none or one or many' (previously 'none or one') and is represented by an array in JSON. This accounts for the fact that these types of entries may be selected as an editor's pick on more than one occasion.
+
 ## **v0.5.3** / 2020-02-08
 
 ### Added

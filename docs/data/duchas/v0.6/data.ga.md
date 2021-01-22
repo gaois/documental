@@ -74,7 +74,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | ID              | slánuimhir            | ceann amháin                             | Aitheantóir na míre (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin            | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
+| EditorsPick     | am-dháta ISO 8601     | ceann ar bith nó ceann amháin nó go leor | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
 | Sensitive       | Boole                 | ceann amháin                             | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi phribhléid)** |
 | ListingOrder    | teaghrán              | ceann ar bith nó ceann amháin            | Ord liostaithe na míre laistigh den lámhscríbhinn ina bhfaightear í. Cinntear ord na míreanna, ar an gcéad ásc, ach uimhir thosaigh an leathanaigh a úsáid ach d’fhéadfaí an t-airí `listingOrder` a úsáid, mar shampla, chun ord dhá mhír, nó níos mó, ar leathanach amháin a léiriú. |
 | Date            | [`date`](#date)       | ceann ar bith nó ceann amháin            | Meiteashonraí a bhaineann leis an dáta nó leis an tréimhse inar tiomsaíodh an mhír den lámhscríbhinn, má tá sé ar eolas. |
@@ -192,7 +192,7 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | ID              | slánuimhir             | ceann amháin                          | Aitheantóir na míre (uathúil laistigh den bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin         | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
+| EditorsPick     | am-dháta ISO 8601      | ceann ar bith nó ceann amháin nó go leor | Seasann sé don dáta ar úsáideadh an mhír mar '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
 | Sensitive       | Boole                  | ceann amháin                          | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi phribhléid)** |
 | ListingOrder    | teaghrán               | ceann ar bith nó ceann amháin         | Ord liostaithe na míre laistigh den lámhscríbhinn ina bhfaightear í. Cinntear ord na míreanna, ar an gcéad ásc, ach uimhir thosaigh an leathanaigh a úsáid ach d’fhéadfaí an t-airí `listingOrder` a úsáid, mar shampla, chun ord dhá mhír, nó níos mó, ar leathanach amháin a léiriú. |
 | Title           | teaghrán               | ceann ar bith nó ceann amháin         | Teideal na míre, má chuirtear ar fáil é. |
@@ -278,7 +278,7 @@ D’fhéadfaí oibiacht `photograph` amháin, nó níos mó, a fháil ó iarrata
 | ID              | slánuimhir          | ceann amháin                             | Aitheantóir an ghrianghraif (uathúil laistigh de bhailiúchán). |
 | DateCreated     | am-dháta ISO 8601   | ceann amháin                             | An dáta agus an t-am a cruthaíodh an iontráil.  |
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil.  |
-| EditorsPick     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin            | Seasann sé don dáta ar úsáideadh an mhír mar  '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
+| EditorsPick     | am-dháta ISO 8601   | ceann ar bith nó ceann amháin nó go leor | Seasann sé don dáta ar úsáideadh an mhír mar  '[Rogha na Seachtaine](https://www.duchas.ie/ga/ftr/)' ar dúchas.ie, má úsáideadh í. |
 | ReferenceNumber | teaghrán            | ceann ar bith nó ceann amháin            | Tagairt chartlainne CBÉ an ghrianghraif.      |
 | Status          | slánuimhir          | ceann amháin                             | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi phribhléid)**  |
 | Sensitive       | Boole               | ceann amháin                             | Má tá sé fíor, tá ábhar íogair sa mhír agus níor cheart í a chur ar fáil go poiblí. **(Faoi phribhléid)**  |

@@ -9,6 +9,14 @@ toc: false
 public: true
 ---
 
+## **v0.6.0** / 2021-01-22
+
+### Athruithe
+
+Athrú bristeach:
+
+- Athraíodh an bhunuimhreacht a bhaineann leis an airí `editorsPick` de chuid na n-oibiachtaí `photograph` agus `item` (lámhscríbhinní) ó 'ceann ar bith nó ceann amháin' go 'ceann ar bith nó ceann amháin nó go leor'. Léirítear an t-airí seo mar eagar in JSON anois. Aithnítear, dá thoradh seo, go bhféadfaí na hiontrálacha seo a shannadh mar rogha na seachtaine níos mó ná uair amháin. 
+
 ## **v0.5.3** / 2020-02-08
 
 ### Forbairtí breise

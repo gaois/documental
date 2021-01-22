@@ -55,7 +55,7 @@
 			</li>
 			<li>
 				<HomeResource 
-					href={`/${$locale}/data/duchas/v0.5/api`}
+					href={`/${$locale}/data/duchas/v0.6/api`}
 					heading='Dúchas'
 					blurb={$_('home.sections.duchasBlurb')}/>
 			</li>
