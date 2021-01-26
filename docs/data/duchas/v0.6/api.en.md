@@ -1,5 +1,5 @@
 ---
-title: Dúchas Application Programming Interface (Version 0.5)
+title: Dúchas Application Programming Interface (Version 0.6)
 shortTitle: API
 description: Developer documentation for the Dúchas API
 keywords: Dúchas, API, folklore, history, storytelling, Irish language, Fiontar & Scoil na Gaeilge, DCU
@@ -51,26 +51,26 @@ The resources provided by the API are accessed via unique paths appended to the 
 | Method      | Path                          | Collection     | Resource                  |
 | :---------- | :---------------------------- | :------------- | :------------------------ |
 | GET         | `/api`                        | N/A            | General API metadata.     |
-| GET         | `/api/v0.5`                   | N/A            | General API metadata.     |
-| GET         | `/api/v0.5/cbe`               | CBÉ            | List of manuscript volumes and associated metadata.* |
-| GET         | `/api/v0.5/cbe/volumes`       | CBÉ            | Index of manuscript volumes and summary metadata. |
-| GET         | `/api/v0.5/cbed`              | CBÉD           | List of persons and associated metadata. |
-| GET         | `/api/v0.5/cbed/{id}`         | CBÉD           | Metadata associated with an individual person. |
-| GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Reference list of metadata associated with occupations. |
-| GET         | `/api/v0.5/cbeg`              | CBÉG           | List of photographs and associated metadata.** |
-| GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Metadata associated with an individual photograph. |
-| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Reference list of subject headings ([topics](https://www.duchas.ie/en/tpc/cbeg)) in Seán Ó Súilleabháin's *A Handbook of Irish Folklore*. |
-| GET         | `/api/v0.5/cbes`              | CBÉS           | List of manuscript volumes and associated metadata.*** |
-| GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Index of manuscript volumes and summary metadata. |
-| GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Reference list of topics from the [Schools' Collection Subject List](https://www.duchas.ie/en/tpc/cbes).
-| GET         | `/api/v0.5/counties`          | N/A            | Reference list of metadata associated with Irish counties. |
-| GET         | `/api/v0.5/countries`         | N/A            | Reference list of metadata associated with countries. |
+| GET         | `/api/v0.6`                   | N/A            | General API metadata.     |
+| GET         | `/api/v0.6/cbe`               | CBÉ            | List of manuscript volumes and associated metadata.* |
+| GET         | `/api/v0.6/cbe/volumes`       | CBÉ            | Index of manuscript volumes and summary metadata. |
+| GET         | `/api/v0.6/cbed`              | CBÉD           | List of persons and associated metadata. |
+| GET         | `/api/v0.6/cbed/{id}`         | CBÉD           | Metadata associated with an individual person. |
+| GET         | `/api/v0.6/cbed/occupations`  | CBÉD           | Reference list of metadata associated with occupations. |
+| GET         | `/api/v0.6/cbeg`              | CBÉG           | List of photographs and associated metadata.** |
+| GET         | `/api/v0.6/cbeg/{id}`         | CBÉG           | Metadata associated with an individual photograph. |
+| GET         | `/api/v0.6/cbeg/topics/handbook`   | CBÉG           | Reference list of subject headings ([topics](https://www.duchas.ie/en/tpc/cbeg)) in Seán Ó Súilleabháin's *A Handbook of Irish Folklore*. |
+| GET         | `/api/v0.6/cbes`              | CBÉS           | List of manuscript volumes and associated metadata.*** |
+| GET         | `/api/v0.6/cbes/volumes`      | CBÉS           | Index of manuscript volumes and summary metadata. |
+| GET         | `/api/v0.6/cbes/topics`       | CBÉS           | Reference list of topics from the [Schools' Collection Subject List](https://www.duchas.ie/en/tpc/cbes).
+| GET         | `/api/v0.6/counties`          | N/A            | Reference list of metadata associated with Irish counties. |
+| GET         | `/api/v0.6/countries`         | N/A            | Reference list of metadata associated with countries. |
 
-**\*** Requests to the `/api/v0.5/cbe` endpoint must be filtered by at least one of the following parameters: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`,`CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` or `PersonID`.
+**\*** Requests to the `/api/v0.6/cbe` endpoint must be filtered by at least one of the following parameters: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`,`CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` or `PersonID`.
 
-**\*\*** Requests to the `/api/v0.5/cbeg` endpoint must be filtered by at least one of the following parameters: `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` or `PersonID`.
+**\*\*** Requests to the `/api/v0.6/cbeg` endpoint must be filtered by at least one of the following parameters: `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` or `PersonID`.
 
-**\*\*\*** Requests to the `/api/v0.5/cbes` endpoint must be filtered by at least one of the following parameters: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`, `SchoolCountyID`, `SchoolPlaceID`, `TeacherID`, `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` or `PersonID`.
+**\*\*\*** Requests to the `/api/v0.6/cbes` endpoint must be filtered by at least one of the following parameters: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`, `SchoolCountyID`, `SchoolPlaceID`, `TeacherID`, `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` or `PersonID`.
 
 ### URL path parameters
 
@@ -197,25 +197,25 @@ Use these query parameters to filter the results returned by the API.
 
 Below is a non-exhaustive list of valid API request URLs, provided for demonstration purposes:
 
-- `https://www.duchas.ie/api/v0.5/cbe/?VolumeID=7000256`
-- `https://www.duchas.ie/api/v0.5/cbe/?PersonID=315678581`
-- `https://www.duchas.ie/api/v0.5/cbed/315678333`
-- `https://www.duchas.ie/api/v0.5/cbed/1740563`
-- `https://www.duchas.ie/api/v0.5/cbed/?ModifiedSince=2019-01-01`
-- `https://www.duchas.ie/api/v0.5/cbed/?PlaceID=35176`
-- `https://www.duchas.ie/api/v0.5/cbed/?Gender=f&CountyID=100013`
-- `https://www.duchas.ie/api/v0.5/cbed/?Country=AU`
-- `https://www.duchas.ie/api/v0.5/cbed/?GeoNameID=2177413`
-- `https://www.duchas.ie/api/v0.5/cbed/?PlaceID=130443&Occupation=IASC`
-- `https://www.duchas.ie/api/v0.5/cbeg/974`
-- `https://www.duchas.ie/api/v0.5/cbeg/?CountyID=100009&ModifiedSince=2018-09-01`
-- `https://www.duchas.ie/api/v0.5/cbeg/?Status=4&CountyID=100023`
-- `https://www.duchas.ie/api/v0.5/cbeg/?Copyright=UNK&PhotographerID=93573082`
-- `https://www.duchas.ie/api/v0.5/cbeg/?HandbookTopic=E&PhotographerID=93573082&Digitized=false`
-- `https://www.duchas.ie/api/v0.5/cbeg/?HandbookTopic=B006&CountyID=100023`
-- `https://www.duchas.ie/api/v0.5/cbeg/?CountyID=100024&DateFrom=1960&DateTo=1969&DateAccuracy=APPROX`
-- `https://www.duchas.ie/api/v0.5/cbes/?VolumeNumber=0133`
-- `https://www.duchas.ie/api/v0.5/cbes/?CountyID=100002&TopicID=5192275&Language=en`
-- `https://www.duchas.ie/api/v0.5/cbes/?PlaceID=18689`
-- `https://www.duchas.ie/api/v0.5/cbes/topics`
-- `https://www.duchas.ie/api/v0.5/counties`
+- `https://www.duchas.ie/api/v0.6/cbe/?VolumeID=7000256`
+- `https://www.duchas.ie/api/v0.6/cbe/?PersonID=315678581`
+- `https://www.duchas.ie/api/v0.6/cbed/315678333`
+- `https://www.duchas.ie/api/v0.6/cbed/1740563`
+- `https://www.duchas.ie/api/v0.6/cbed/?ModifiedSince=2019-01-01`
+- `https://www.duchas.ie/api/v0.6/cbed/?PlaceID=35176`
+- `https://www.duchas.ie/api/v0.6/cbed/?Gender=f&CountyID=100013`
+- `https://www.duchas.ie/api/v0.6/cbed/?Country=AU`
+- `https://www.duchas.ie/api/v0.6/cbed/?GeoNameID=2177413`
+- `https://www.duchas.ie/api/v0.6/cbed/?PlaceID=130443&Occupation=IASC`
+- `https://www.duchas.ie/api/v0.6/cbeg/974`
+- `https://www.duchas.ie/api/v0.6/cbeg/?CountyID=100009&ModifiedSince=2018-09-01`
+- `https://www.duchas.ie/api/v0.6/cbeg/?Status=4&CountyID=100023`
+- `https://www.duchas.ie/api/v0.6/cbeg/?Copyright=UNK&PhotographerID=93573082`
+- `https://www.duchas.ie/api/v0.6/cbeg/?HandbookTopic=E&PhotographerID=93573082&Digitized=false`
+- `https://www.duchas.ie/api/v0.6/cbeg/?HandbookTopic=B006&CountyID=100023`
+- `https://www.duchas.ie/api/v0.6/cbeg/?CountyID=100024&DateFrom=1960&DateTo=1969&DateAccuracy=APPROX`
+- `https://www.duchas.ie/api/v0.6/cbes/?VolumeNumber=0133`
+- `https://www.duchas.ie/api/v0.6/cbes/?CountyID=100002&TopicID=5192275&Language=en`
+- `https://www.duchas.ie/api/v0.6/cbes/?PlaceID=18689`
+- `https://www.duchas.ie/api/v0.6/cbes/topics`
+- `https://www.duchas.ie/api/v0.6/counties`

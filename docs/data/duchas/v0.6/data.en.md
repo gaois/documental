@@ -1,5 +1,5 @@
 ---
-title: Data dictionary (Version 0.5)
+title: Data dictionary (Version 0.6)
 shortTitle: Data dictionary
 description: Data dictionary for the Dúchas API
 keywords: Dúchas, API, folklore, history, storytelling, Irish language, Fiontar & Scoil na Gaeilge, DCU

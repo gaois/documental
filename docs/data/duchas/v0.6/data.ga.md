@@ -1,5 +1,5 @@
 ---
-title: Foclóir sonraí (Leagan 0.5)
+title: Foclóir sonraí (Leagan 0.6)
 shortTitle: Foclóir sonraí
 description: Foclóir sonraí i gcomhair API Dúchas
 keywords: Dúchas, comhéadan feidhmchláir, béaloideas, stair, scéalaíocht, Fiontar & Scoil na Gaeilge, DCU
@@ -29,8 +29,8 @@ D'fhéadfaí oibiacht `volume` amháin, nó níos mó, a fháil ó iarratais ar 
 | DateModified    | am-dháta ISO 8601   | ceann ar bith nó ceann amháin           | Dáta agus am an mhionathraithe is déanaí a rinneadh ar an iontráil. Léiríonn sé seo na nuashonruithe is déanaí ar chodanna agus ar mhíreanna na lámhscríbhinne, chomh maith le nuashonruithe ar mheiteashonraí an imleabhair féin.  |
 | VolumeNumber    | teaghrán            | ceann ar bith nó ceann amháin           | Uimhir tagartha cartlainne CBÉ an imleabhair. |
 | Status          | slánuimhir          | ceann amháin                            | Sonraíonn sé [stádas](#status) eagarthóireachta na hiontrála. **(Faoi phribhléid)**  |
-| Pages           | [`page`](/ga/data/duchas/v0.5/data#an-priomhbhailiuchan-page)     | ceann amháin                          | Meiteashonraí a dhéanann cur síos ar leathanaigh fhisiciúla an imleabhair. |
-| Parts           | [`part`](/ga/data/duchas/v0.5/data#an-priomhbhailiuchan-part)     | ceann ar bith nó ceann amháin         | Meiteashonraí a dhéanann cur síos ar na codanna loighciúla a fhoroinneann imleabhar na lámhscríbhinne agus a bhfuil ann. |
+| Pages           | [`page`](#an-priomhbhailiuchan-page)     | ceann amháin                          | Meiteashonraí a dhéanann cur síos ar leathanaigh fhisiciúla an imleabhair. |
+| Parts           | [`part`](#an-priomhbhailiuchan-part)     | ceann ar bith nó ceann amháin         | Meiteashonraí a dhéanann cur síos ar na codanna loighciúla a fhoroinneann imleabhar na lámhscríbhinne agus a bhfuil ann. |
 
 ### An Príomhbhailiúchán `page`
 

@@ -1,5 +1,5 @@
 ---
-title: Comhéadan feidhmchláir Dúchas (Leagan 0.5)
+title: Comhéadan feidhmchláir Dúchas (Leagan 0.6)
 shortTitle: Comhéadan feidhmchláir
 description: Doiciméadacht forbróra i gcomhair API Dúchas
 keywords: Dúchas, comhéadan feidhmchláir, béaloideas, stair, scéalaíocht, Fiontar & Scoil na Gaeilge, DCU
@@ -51,26 +51,26 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 | Modh        | Cosán                         | Bailiúchán     | Acmhainn                          |
 | :---------- | :---------------------------- | :------------- | :-------------------------------- |
 | GET         | `/api`                        | N/A            | Meiteashonraí ginearálta API.     |
-| GET         | `/api/v0.5`                   | N/A            | Meiteashonraí ginearálta API.     |
-| GET         | `/api/v0.5/cbe`               | CBÉ            | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.* |
-| GET         | `/api/v0.5/cbe/volumes`       | CBÉ            | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
-| GET         | `/api/v0.5/cbed`              | CBÉD           | Liosta daoine agus meiteashonraí gaolmhara. |
-| GET         | `/api/v0.5/cbed/{id}`         | CBÉD           | Meiteashonraí a bhaineann le duine ar leith. |
-| GET         | `/api/v0.5/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
-| GET         | `/api/v0.5/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
-| GET         | `/api/v0.5/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
-| GET         | `/api/v0.5/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair ([topaicí](https://www.duchas.ie/ga/tpc/cbeg)) in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
-| GET         | `/api/v0.5/cbes`              | CBÉS           | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.*** |
-| GET         | `/api/v0.5/cbes/volumes`      | CBÉS           | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
-| GET         | `/api/v0.5/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
-| GET         | `/api/v0.5/counties`          | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le contaetha na hÉireann. |
-| GET         | `/api/v0.5/countries`         | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le tíortha. |
+| GET         | `/api/v0.6`                   | N/A            | Meiteashonraí ginearálta API.     |
+| GET         | `/api/v0.6/cbe`               | CBÉ            | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.* |
+| GET         | `/api/v0.6/cbe/volumes`       | CBÉ            | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
+| GET         | `/api/v0.6/cbed`              | CBÉD           | Liosta daoine agus meiteashonraí gaolmhara. |
+| GET         | `/api/v0.6/cbed/{id}`         | CBÉD           | Meiteashonraí a bhaineann le duine ar leith. |
+| GET         | `/api/v0.6/cbed/occupations`  | CBÉD           | Liosta tagartha de mheiteashonraí a bhaineann le gairmeacha. |
+| GET         | `/api/v0.6/cbeg`              | CBÉG           | Liosta grianghraf agus meiteashonraí gaolmhara.** |
+| GET         | `/api/v0.6/cbeg/{id}`         | CBÉG           | Meiteashonraí a bhaineann le grianghraf ar leith. |
+| GET         | `/api/v0.6/cbeg/topics/handbook`   | CBÉG           | Liosta tagartha de cheannteidil ábhair ([topaicí](https://www.duchas.ie/ga/tpc/cbeg)) in *A Handbook of Irish Folklore* le Seán Ó Súilleabháin. |
+| GET         | `/api/v0.6/cbes`              | CBÉS           | Liosta imleabhar lámhscríbhinne agus meiteashonraí gaolmhara.*** |
+| GET         | `/api/v0.6/cbes/volumes`      | CBÉS           | Innéacs imleabhar lámhscríbhinne agus meiteashonraí achoimre. |
+| GET         | `/api/v0.6/cbes/topics`       | CBÉS           | Liosta tagartha de thopaicí ó [Chlár Ábhar Bhailiúchán na Scol](https://www.duchas.ie/ga/tpc/cbes).
+| GET         | `/api/v0.6/counties`          | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le contaetha na hÉireann. |
+| GET         | `/api/v0.6/countries`         | N/A            | Liosta tagartha de mheiteashonraí a bhaineann le tíortha. |
 
-**\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbe` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`,`CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
+**\*** Caithfear iarratas ar an gcríochphointe `/api/v0.6/cbe` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`,`CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
 
-**\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbeg` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` nó `PersonID`.
+**\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.6/cbeg` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `PhotographerID`, `RelevantPersonID` nó `PersonID`.
 
-**\*\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.5/cbes` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`, `SchoolCountyID`, `SchoolPlaceID`, `TeacherID`, `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
+**\*\*\*** Caithfear iarratas ar an gcríochphointe `/api/v0.6/cbes` a scagadh de réir ceann amháin, ar a laghad, de na paraiméadair seo a leanas: `VolumeID`, `VolumeNumber`, `PageID`, `PartID`, `ItemID`, `SchoolCountyID`, `SchoolPlaceID`, `TeacherID`, `CountyID`, `PlaceID`, `Country`, `GeoNameID`, `CollectorID`, `InformantID` nó `PersonID`.
 
 ### Paraiméadair chosáin URL
 
@@ -197,25 +197,25 @@ Faightear rochtain ar acmhainní a chuireann an API ar fáil trí chosáin uath�
 
 Seo thíos liosta, nach bhfuil uileghabhálach, d'aimsitheoirí aonfhoirmeacha acmhainne bailí maidir le hiarratais API:
 
-- `https://www.duchas.ie/api/v0.5/cbe/?VolumeID=7000256`
-- `https://www.duchas.ie/api/v0.5/cbe/?PersonID=315678581`
-- `https://www.duchas.ie/api/v0.5/cbed/315678333`
-- `https://www.duchas.ie/api/v0.5/cbed/1740563`
-- `https://www.duchas.ie/api/v0.5/cbed/?ModifiedSince=2019-01-01`
-- `https://www.duchas.ie/api/v0.5/cbed/?PlaceID=35176`
-- `https://www.duchas.ie/api/v0.5/cbed/?Gender=f&CountyID=100013`
-- `https://www.duchas.ie/api/v0.5/cbed/?Country=AU`
-- `https://www.duchas.ie/api/v0.5/cbed/?GeoNameID=2177413`
-- `https://www.duchas.ie/api/v0.5/cbed/?PlaceID=130443&Occupation=IASC`
-- `https://www.duchas.ie/api/v0.5/cbeg/974`
-- `https://www.duchas.ie/api/v0.5/cbeg/?CountyID=100009&ModifiedSince=2018-09-01`
-- `https://www.duchas.ie/api/v0.5/cbeg/?Status=4&CountyID=100023`
-- `https://www.duchas.ie/api/v0.5/cbeg/?Copyright=UNK&PhotographerID=93573082`
-- `https://www.duchas.ie/api/v0.5/cbeg/?HandbookTopic=E&PhotographerID=93573082&Digitized=false`
-- `https://www.duchas.ie/api/v0.5/cbeg/?HandbookTopic=B006&CountyID=100023`
-- `https://www.duchas.ie/api/v0.5/cbeg/?CountyID=100024&DateFrom=1960&DateTo=1969&DateAccuracy=APPROX`
-- `https://www.duchas.ie/api/v0.5/cbes/?VolumeNumber=0133`
-- `https://www.duchas.ie/api/v0.5/cbes/?CountyID=100002&TopicID=5192275&Language=en`
-- `https://www.duchas.ie/api/v0.5/cbes/?PlaceID=18689`
-- `https://www.duchas.ie/api/v0.5/cbes/topics`
-- `https://www.duchas.ie/api/v0.5/counties`
+- `https://www.duchas.ie/api/v0.6/cbe/?VolumeID=7000256`
+- `https://www.duchas.ie/api/v0.6/cbe/?PersonID=315678581`
+- `https://www.duchas.ie/api/v0.6/cbed/315678333`
+- `https://www.duchas.ie/api/v0.6/cbed/1740563`
+- `https://www.duchas.ie/api/v0.6/cbed/?ModifiedSince=2019-01-01`
+- `https://www.duchas.ie/api/v0.6/cbed/?PlaceID=35176`
+- `https://www.duchas.ie/api/v0.6/cbed/?Gender=f&CountyID=100013`
+- `https://www.duchas.ie/api/v0.6/cbed/?Country=AU`
+- `https://www.duchas.ie/api/v0.6/cbed/?GeoNameID=2177413`
+- `https://www.duchas.ie/api/v0.6/cbed/?PlaceID=130443&Occupation=IASC`
+- `https://www.duchas.ie/api/v0.6/cbeg/974`
+- `https://www.duchas.ie/api/v0.6/cbeg/?CountyID=100009&ModifiedSince=2018-09-01`
+- `https://www.duchas.ie/api/v0.6/cbeg/?Status=4&CountyID=100023`
+- `https://www.duchas.ie/api/v0.6/cbeg/?Copyright=UNK&PhotographerID=93573082`
+- `https://www.duchas.ie/api/v0.6/cbeg/?HandbookTopic=E&PhotographerID=93573082&Digitized=false`
+- `https://www.duchas.ie/api/v0.6/cbeg/?HandbookTopic=B006&CountyID=100023`
+- `https://www.duchas.ie/api/v0.6/cbeg/?CountyID=100024&DateFrom=1960&DateTo=1969&DateAccuracy=APPROX`
+- `https://www.duchas.ie/api/v0.6/cbes/?VolumeNumber=0133`
+- `https://www.duchas.ie/api/v0.6/cbes/?CountyID=100002&TopicID=5192275&Language=en`
+- `https://www.duchas.ie/api/v0.6/cbes/?PlaceID=18689`
+- `https://www.duchas.ie/api/v0.6/cbes/topics`
+- `https://www.duchas.ie/api/v0.6/counties`
