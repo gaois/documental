@@ -36,7 +36,7 @@ The path part of the URL, such as `/`, needs to be included as part of `baseUrl`
 "rootPath": "/terminologue/"
 ```
 
-If your URL contains anything other than the default HTTP port then, again, the port should be included in `baseUrl` **and** given separately as `port`.
+If your URL contains anything other port than the default HTTP port then, again, the port should be included in `baseUrl` **and** given separately as `port`.
 
 ---
 
