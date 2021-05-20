@@ -22,3 +22,14 @@ Mura bhfuil uait ach Terminologue a *úsáid*, áfach, níl an t-ábhar seo oiri
 
 - [Terminologue a chumrú »](../configuration)  
   Foghlaim conas do shuiteán a chumrú ach an comhad `siteconfig.json` a úsáid.  
+
+### Easportáil agus importáil
+
+- [Easpórtáil go TBX »](../tbx-export)  
+  Conas cnuasach téarmaíochta a easpórtáil as Terminologue go TBX, agus míniú ar an chineáil TBX a thagann amach as.
+
+- [Iompórtáil as TBX »](../tbx-import)  
+  Conas cnuasach téarmaíochta a iompórtáil as TBX go Terminologue, agus míniú ar an chineáil TBX a bhfuil Terminologue ag súil leis.
+
+- [Easpórtáil go téacs téacs tábmharcáilte »](../txt-export)  
+  Conas cnuasach téarmaíochta a easpórtáil as Terminologue go téacs lom tábmharcáilte, agus míniú ar an dóigh chun na colúin a shaincheapadh.
