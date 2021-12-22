@@ -20,7 +20,7 @@ Tá sonraí ó thrí cinn de na cúig mhórbhailiúchán béaloidis atá ag Cnua
 
 #### An Príomhbhailiúchán Lámhscríbhinní (CBÉ)
 
-Tá 2,400 imleabhar ceangailte le hábhar a bailíodh ó 1932 i leith sa Phríomhbhailiúchán Lámhscríbhinní. Thiomsaigh bailitheoirí lánaimseartha agus páirtaimseartha an chuid is mó de na himleabhair faoi choimirce Choimisiún Béaloideasa Éireann (1935-1971). Tá thart ar dhá thrian den ábhar as Gaeilge agus cuimsítear ann gach gné de thraidisiún béil na hÉireann. Tá digitiú á dhéanamh ar an mBailiúchán seo faoi láthair agus foilsíodh 323 imleabhar ar líne go dtí seo.  
+Tá 2,400 imleabhar ceangailte le hábhar a bailíodh ó 1932 i leith sa Phríomhbhailiúchán Lámhscríbhinní. Thiomsaigh bailitheoirí lánaimseartha agus páirtaimseartha an chuid is mó de na himleabhair faoi choimirce Choimisiún Béaloideasa Éireann (1935-1971). Tá thart ar dhá thrian den ábhar as Gaeilge agus cuimsítear ann gach gné de thraidisiún béil na hÉireann. Tá digitiú á dhéanamh ar an mBailiúchán seo faoi láthair agus foilsíodh 337 imleabhar ar líne go dtí seo.  
 
 #### Bailiúchán na Scol (CBÉS)
 
