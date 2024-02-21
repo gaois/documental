@@ -49,7 +49,7 @@
 			</li>
 			<li>
 				<HomeResource 
-					href={`/${$locale}/data/logainm/v1.0/api`}
+					href={`/${$locale}/data/logainm/v1.1/api`}
 					heading='Logainm'
 					blurb={$_('home.sections.logainmBlurb')}/>
 			</li>
