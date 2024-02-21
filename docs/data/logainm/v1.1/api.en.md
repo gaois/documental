@@ -52,7 +52,7 @@ Use these query parameters to filter the results returned by the API.
 | `ExcludeStreets` | boolean       | If true, exclude places with a `CategoryID` of `SR` (streets) from the result set. Streets can add greatly to the size of the result set and, consequently, the response time when querying places that include large urban areas. |
 | `Latitude`    | float         | Filter by latitudinal coordinate. Must be used in conjunction with a `Longitude` value. |
 | `Longitude`   | float         | Filter by longitudinal coordinate. Must be used in conjunction with a `Latitude` value. |
-| `Accurate`    | boolean       | If true, only return places whose geographic coordinates are believed to be precise. If false, only return places whose geographic coordinates were obtained by extrapolation from neighbouring places <br/> **Deprecated**: As of version 1.1, all coordinates have been obtained from primary data sources. This parameter will likely be removed in the next major version. |
+| `Accurate`    | boolean       | If true, only return places whose geographic coordinates are believed to be precise. If false, only return places whose geographic coordinates were obtained by extrapolation from neighbouring places or were derived from an Irish Grid reference. |
 | `Radius`      | integer       | Specifies the radius size for a geographic query in metres. The maximum radius is 15,000. Defaults to 3,000 metres. |
 | `Query`       | string        | Filter by search term(s). Textual searches are accent sensitive, for example, the search terms 'Rath' and 'Ráth' each return different sets of results. Note that textual searches currently only retrieve exact matches for query terms. Partial or speculative matches may be detailed in the `SimilarNames` response field. |
 | `Gaeltacht`   | boolean       | If true, only return places which are in a Gaeltacht area. If false, exclude places in Gaeltacht areas from the result set. |
@@ -77,8 +77,8 @@ Below is a non-exhaustive list of valid API request URLs, provided for demonstra
 
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100013&Page=2&PerPage=200`
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100009&CategoryID=PAR`
-- `https://www.logainm.ie/api/v1.1/?PlaceID=100002&ModifiedSince=2019-01-01`
-- `https://www.logainm.ie/api/v1.1/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
+- `https://www.logainm.ie/api/v1.1/?PlaceID=100002&ModifiedSince=2022-01-01`
+- `https://www.logainm.ie/api/v1.1/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2021-01-01`
 - `https://www.logainm.ie/api/v1.1/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
 - `https://www.logainm.ie/api/v1.1/?GlossaryID=58`
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100024&Gaeltacht=true`

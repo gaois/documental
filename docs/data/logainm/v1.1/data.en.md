@@ -132,8 +132,21 @@ Expresses a geographical location in terms of latitudinal and longitudinal coord
 
 | Property name   | Type                | Cardinality         | Description               |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
-| Accurate        | boolean             | one                 | Indicates whether the coordinates are believed to be precise. Inaccurate coordinates are those that have been obtained by extrapolation from neighbouring places. <br/> **Deprecated**: As of version 1.1, all coordinates have been obtained from primary data sources. Therefore, this property is no longer useful. It will likely be removed in the next major API version. |
+| Accurate        | boolean             | one                 | Indicates whether the coordinates are believed to be precise. Inaccurate coordinates are those that have been obtained by extrapolation from neighbouring places or were derived from an Irish Grid reference. |
+| Source          | string              | none or one         | Indicates the source from which, or the means by which, the geographic data were obtained. |
 | Coordinates     | [`coordinates`](#coordinates) | one or many        | One or more pairs of latitudinal and longitudinal coordinates. Most places are represented by a single pair of coordinates. However, certain geographical features, such as rivers or islands in particular, may have two or more pairs. |
+
+#### `source`
+
+This possible values of the `source` property are as follows:
+
+| Value           | Description               |
+| :-------------- | :------------------------ |
+| extrapolation   | Geographic data obtained by extrapolation from neighbouring places. Therefore, a high level of accuracy cannot be guaranteed for this type of data. |
+| grid            | These geographic data were derived from an Irish Grid reference. While these data will have a reasonable degree of accuracy they are not as accurate as other sources. |
+| manual          | Data manually input by a member of the Placenames Branch or Gaois research team. |
+| osi             | Geographic data provided by [Tailte Éireann](https://tailte.ie/) (previously Ordnance Survey Ireland) to the Logainm project. |
+| osi (data.gov.ie) | Geographic data from [Tailte Éireann](https://tailte.ie/) published on the [data.gov.ie](https://data.gov.ie) open data platform. |
 
 ### `coordinates`
 
@@ -186,9 +199,9 @@ Describes a toponomy resource available on [logainm.ie](https://www.logainm.ie).
 | PageReference   | string              | none or one         | Specifies the page or pages within the resource associated with a particular place, if applicable. |
 | Supplier        | [`supplier`](#supplier) | none or one         | Metadata regarding the publisher/supplier of the resource. |
 
-#### `TypeID`
+#### `typeID`
 
-This possible values of the `TypeID` property are as follows:
+This possible values of the `typeID` property are as follows:
 
 | Value           | Description               |
 | :-------------- | :------------------------ |

@@ -52,7 +52,7 @@ Faightear rochtain ar na hacmhainní a chuireann an API ar fáil trí na cosáin
 | `ExcludeStreets` | Boole          | Má tá sé fíor, ná cuir áiteanna a bhfuil `CategoryID` de `SR` (sráideanna) ón tacar torthaí leo. D'fhéadfadh sráideanna cur go mór le méid an tacair torthaí agus, dá bharr sin, d'fhéadfadh sé cur leis an aga freagartha a bhaineann le háiteanna a gcuimsítear iontu ceantair mhóra uirbeacha. |
 | `Latitude`    | float           | Scag de réir comhordanáid domhanleithid. Caithfear é a úsáid i gcomhar le luach `Longitude`. |
 | `Longitude`   | float           | Scag de réir comhordanáid domhanfhaid. Caithfear é a úsáid i gcomhar le luach `Latitude`. |
-| `Accurate`    | Boole           | Má tá sé fíor, ná cuir ach áiteanna a gcreidtear go bhfuil a gcuid comhordanáidí geografacha beacht ar ais. Má tá sé bréagach, ná cuir ach áiteanna a bhfuarthas a gcuid comhordanáidí geografacha trí eachtarshuí ó áiteanna in aice láimhe ar ais. <br/> **Dímholta**: Fuarthas na comhordanáidí ar fad i leagan 1.1 den API ó fhoinsí príomhúla. Is dócha go mbainfear an paraiméadar seo ón chéad mhórleagan eile den API. |
+| `Accurate`    | Boole           | Má tá sé fíor, ná cuir ach áiteanna a gcreidtear go bhfuil a gcuid comhordanáidí geografacha beacht ar ais. Má tá sé bréagach, ná cuir ach áiteanna a bhfuarthas a gcuid comhordanáidí geografacha trí eachtarshuí ó áiteanna in aice láimhe, nó ar díorthaíodh a gcuid comhordanáidí ó thagairt de chuid Eangach na hÉireann, ar ais. |
 | `Radius`      | slánuimhir      | Sonraítear méid an gha a bhaineann leis an iarratas geografach i méadair. Is é 15,000 an t-uasmhéid do gha ar bith. Is é 3,000 an luach réamhshocraithe. |
 | `Query`       | teaghrán        | Scag de réir téarma(í) cuardaigh. Tá cuardaigh théacs íogair ó thaobh an tsínte fhada de, mar shampla, faightear torthaí difriúla ó na téarmaí cuardaigh 'Rath' agus 'Ráth'. Tabhair faoi deara nach bhfaightear ach meaitseálacha cruinne ar théarmaí iarratais trí chuardaigh théacs. D'fhéadfadh meaitseálacha páirteacha nó tuairimeacha a bheith sa réimse freagartha `SimilarNames`. |
 | `Gaeltacht`   | Boole           | Má tá sé fíor, ná cuir ach áiteanna atá i gceantar Gaeltachta ar ais. Má tá sé bréagach, ná cuir áiteanna atá i gceantair Ghaeltachta san áireamh sa tacar torthaí. |
@@ -77,8 +77,8 @@ Seo thíos liosta, nach bhfuil uileghabhálach, d'aimsitheoirí aonfhoirmeacha a
 
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100013&Page=2&PerPage=200`
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100009&CategoryID=PAR`
-- `https://www.logainm.ie/api/v1.1/?PlaceID=100002&ModifiedSince=2019-01-01`
-- `https://www.logainm.ie/api/v1.1/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2017-01-01`
+- `https://www.logainm.ie/api/v1.1/?PlaceID=100002&ModifiedSince=2022-01-01`
+- `https://www.logainm.ie/api/v1.1/?PlaceID=100001&CategoryID=SRB&ModifiedSince=2021-01-01`
 - `https://www.logainm.ie/api/v1.1/?Latitude=53.3693445&Longitude=-6.271958104774972&Radius=10000&CategoryID=PAR`
 - `https://www.logainm.ie/api/v1.1/?GlossaryID=58`
 - `https://www.logainm.ie/api/v1.1/?PlaceID=100024&Gaeltacht=true`

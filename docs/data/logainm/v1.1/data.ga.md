@@ -132,8 +132,21 @@ Léiríonn sé suíomh geografach i gcomhordanáidí domhanleithid agus domhanfh
 
 | Ainm an airí    | Cineál              | Bunuimhreacht       | Cur síos                  |
 | :-------------- | :------------------ | :------------------ | :------------------------ |
-| Accurate        | Boole               | ceann amháin        | Léiríonn sé cé acu a chreidtear go bhfuil na comhordanáidí beacht nó nach gcreidtear. Is ionann comhordanáidí míchruinne agus comhordanáidí a fuarthas trí eachtarshuí ó áiteanna in aice láimhe. <br/> **Dímholta**: Fuarthas na comhordanáidí ar fad i leagan 1.1 den API ó fhoinsí príomhúla. Dá bhrí sin, is beag feidhm atá leis an airí seo níos mó. Is dócha go mbainfear é ón chéad mhórleagan eile den API. |
+| Accurate        | Boole               | ceann amháin        | Léiríonn sé cé acu a chreidtear go bhfuil na comhordanáidí beacht nó nach gcreidtear. Is ionann comhordanáidí míchruinne agus comhordanáidí a fuarthas trí eachtarshuí ó áiteanna in aice láimhe nó comhordanáidí a díorthaíodh ó thagairt de chuid Eangach na hÉireann. |
+| Source          | teaghrán            | ceann ar bith nó ceann amháin | Cuireann sé foinse na sonraí geografacha, nó an modh trínar fuarthas iad, in iúl. |
 | Coordinates     | [`coordinates`](#coordinates) | ceann amháin nó go leor        | Péire amháin comhordanáidí domhanleithid agus domhanfhaid, nó níos mó. Léiríonn péire amháin comhordanáidí an chuid is mó de na háiteanna. D'fhéadfadh dhá phéire nó níos mó a bheith ag gnéithe áirithe geografacha, áfach, go háirithe aibhneacha nó oileáin. |
+
+#### `source`
+
+Seo a leanas luachanna féideartha an airí `source`:
+
+| Luach           | Cur síos                  |
+| :-------------- | :------------------------ |
+| extrapolation   | Fuarthas na sonraí geografacha trí eachtarshuí ó áiteanna in aice láimhe. Dá bhrí sin, ní féidir a dheimhniú go mbaineann leibhéal ard cruinnis leis na sonraí seo. |
+| grid            | Díorthaíodh na sonraí geografacha ó thagairt de chuid Eangach na hÉireann. Baineann leibhéal réasúnta cruinnis leis na sonraí seo ach níl siad chomh cruinn leis na foinsí eile. |
+| manual          | Sonraí ionchurtha de láimh ag duine d'fhoireann taighde an Bhrainse Logainneacha nó Gaois. |
+| osi             | Sonraí geografacha a chuir [Tailte Éireann](https://tailte.ie/) (Suirbhéireacht Ordanáis na hÉireann mar a bhí) ar fáil do thionscadal Logainm. |
+| osi (data.gov.ie) | Sonraí geografacha de chuid [Tailte Éireann](https://tailte.ie/) a foilsíodh ar an ardán sonraí oscailte [data.gov.ie](https://data.gov.ie) |
 
 ### `coordinates`
 
@@ -186,9 +199,9 @@ Déanann sé cur síos ar acmhainn logainmníochta atá ar fáil ar [logainm.ie]
 | PageReference   | teaghrán            | ceann ar bith nó ceann amháin         | Sonraíonn sé an leathanach, nó na leathanaigh, laistigh den acmhainn a bhaineann le háit ar leith, más bainteach. |
 | Supplier        | [`supplier`](#supplier) | ceann ar bith nó ceann amháin        | Meiteashonraí a bhaineann le foilsitheoir/soláthraí na hacmhainne. |
 
-#### `TypeID`
+#### `typeID`
 
-Seo a leanas luachanna féideartha an airí `TypeID`:
+Seo a leanas luachanna féideartha an airí `typeID`:
 
 | Luach           | Cur síos                  |
 | :-------------- | :------------------------ |

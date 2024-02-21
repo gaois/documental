@@ -11,7 +11,7 @@ public: true
 
 ## **v1.1.0** / 2024-02-22
 
-Tugann an eisiúint seo le fios go ndearnadh nuashonrú suntasach ar an tacar sonraí atá faoi API Logainm. Beidh na sonraí atá ar fáil tríd an API ar aon dul le suíomh poiblí nua [logainm.ie](https://www.logainm.ie), a seoladh i mí na Bealtaine 2022, feasta. Ba cheart go mbainfidh úsáideoirí an API tairbhe as:
+Tugann an eisiúint seo le fios go ndearnadh nuashonrú suntasach ar an tacar sonraí atá faoi API Logainm. Beidh na sonraí atá ar fáil tríd an API ar aon dul leo siúd atá ar fáil trí shuíomh poiblí nua [logainm.ie](https://www.logainm.ie), a seoladh i mí na Bealtaine 2022, feasta. Ba cheart go mbainfidh úsáideoirí an API tairbhe as:
 
 - Sonraí geografacha (i.e. comhordanáidí lárphointe domhanleithid agus domhanfhaid mar aon le tagairtí d'Eangach na hÉireann) atá níos cruinne agus níos iomláine ag gabháil leis na taifid áite.
 - Breis feabhais ar fheidhmíocht an API.
@@ -21,6 +21,7 @@ Tugann an eisiúint seo le fios go ndearnadh nuashonrú suntasach ar an tacar so
 ### Forbairtí breise
 
 - Anois, is féidir an API a cheadú trí [chomhéadan grafach Swagger](https://www.logainm.ie/api/swagger/index.html) (Eochair API ag teastáil).
+- Cuireadh airí nua `Source` leis an oibiacht [`geography`](/ga/data/logainm/v1.1/data#geography) a thugann le fios cá bhfuarthas na sonraí geografacha a bhaineann leis na háiteanna.
 
 ### Athraithe
 
@@ -28,8 +29,7 @@ Tugann an eisiúint seo le fios go ndearnadh nuashonrú suntasach ar an tacar so
 
 ### Dímholta
 
-- Is dócha go mbainfear an t-airí `Accurate` de chuid na hoibiachta [`geography`](/ga/data/logainm/v1.1/data#geography), mar aon leis an [pharaiméadar iarratais URL](/ga/data/logainm/v1.1/api#paraimeadair-iarratais-url) `Accurate`, ón chéad mhórleagan eile den API. Fuarthas na comhordanáidí ar fad i leagan 1.1 den API ó fhoinsí príomhúla. Dá bhrí sin, is beag feidhm atá leis an airí seo níos mó.
-- Tá [Tailte Éireann](https://tailte.ie/) tar éis teacht i gcomharbacht ar Shuirbhéireacht Ordanáis Éireann mar a bhí. Is dócha go ndéanfar nuashonrú ar thagairtí don chineál naisc `Osi` i leaganacha eile den API amach anseo.
+- Tá [Tailte Éireann](https://tailte.ie/) tar éis teacht i gcomharbacht ar Shuirbhéireacht Ordanáis Éireann mar a bhí. Is dócha go ndéanfar nuashonrú ar thagairtí do fhoinsí sonraí geografacha agus do na naisc a bhaineann le OSI i leaganacha eile den API amach anseo.
 
 ---
 

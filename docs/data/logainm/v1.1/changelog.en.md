@@ -11,7 +11,7 @@ public: true
 
 ## **v1.1.0** / 2024-02-22
 
-This release marks a significant update to the data set which underlies the Logainm API. It brings the data made available via the API into alignment with the new [logainm.ie](https://www.logainm.ie) public website, released in May 2022, with both technical solutions now drawing on the same live data source. API users should benefit from:
+This release marks a significant update to the Logainm API's underlying data set. It brings the data made available via the API into alignment with those available on the new [logainm.ie](https://www.logainm.ie) public website, released in May 2022, with both technical solutions now drawing on the same live data source. API users should benefit from:
 
 - More precise and more plentiful geographic data (i.e. centrepoint longitude and latitude coordinates and Irish Grid references) accompanying the place entries.
 - Further improved performance.
@@ -21,6 +21,7 @@ This release marks a significant update to the data set which underlies the Loga
 ### Added
 
 - The API can now be explored using the graphical [Swagger interface](https://www.logainm.ie/api/swagger/index.html) (API key required).
+- A new property `Source` was added to the [`geography`](/en/data/logainm/v1.1/data#geography) object. This indicates the source from which, or the means by which, geographic data associated with a place were obtained.
 
 ### Changed
 
@@ -28,8 +29,7 @@ This release marks a significant update to the data set which underlies the Loga
 
 ### Deprecated
 
-- The `Accurate` property of the [`geography`](/en/data/logainm/v1.1/data#geography) object, as well as the `Accurate` [URL query parameter](/en/data/logainm/v1.1/api#url-query-parameters), will likely be removed in the next major API version. As of version 1.1, all coordinates have been obtained from primary data sources. Therefore, this property is no longer useful.
-- Ordnance Survey Ireland is now known as [Tailte Éireann](https://tailte.ie/). Future API versions will likely update references to the `Osi` link type to reflect this.
+- Ordnance Survey Ireland (OSI) is now known as [Tailte Éireann](https://tailte.ie/). Future API versions will likely update references to geographic data sources and resource links associated with OSI to reflect this change.
 
 ## **v1.0.1** / 2021-01-21
 
