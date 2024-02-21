@@ -9,7 +9,7 @@ toc: false
 public: true
 ---
 
-## **v1.1.0** / 2024-02-22
+## **v1.1.0** / 2024-02-21
 
 Tugann an eisiúint seo le fios go ndearnadh nuashonrú suntasach ar an tacar sonraí atá faoi API Logainm. Beidh na sonraí atá ar fáil tríd an API ar aon dul leo siúd atá ar fáil trí shuíomh poiblí nua [logainm.ie](https://www.logainm.ie), a seoladh i mí na Bealtaine 2022, feasta. Ba cheart go mbainfidh úsáideoirí an API tairbhe as:
 

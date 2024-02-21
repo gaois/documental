@@ -9,7 +9,7 @@ toc: false
 public: true
 ---
 
-## **v1.1.0** / 2024-02-22
+## **v1.1.0** / 2024-02-21
 
 This release marks a significant update to the Logainm API's underlying data set. It brings the data made available via the API into alignment with those available on the new [logainm.ie](https://www.logainm.ie) public website, released in May 2022, with both technical solutions now drawing on the same live data source. API users should benefit from:
 
