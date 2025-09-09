@@ -28,7 +28,7 @@ For storing data on the server, including all the termbases, data about users an
 
 3. Using the terminal (if you're on GNU/Linux) or the command prompt (if you're on Microsoft Windows), go to the `website` sub-directory and run `npm install`. This will launch the Node.js Package Manager (NPM) which will download and install (into the `website/node_modules` directory) all dependencies needed by Terminologue. This may take a few minutes.
 
-4. In the `website` sub-directory, rename the file `siteconfig.template.json` to `siteconfig.json`.
+4. In the `data` sub-directory, rename the file `siteconfig.template.json` to `siteconfig.json`.
 
 5. In the `data` sub-directory, rename the file `terminologue.template.sqlite` to `terminologue.sqlite`.
 

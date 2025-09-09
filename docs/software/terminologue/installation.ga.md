@@ -28,7 +28,7 @@ Maidir le sonraí a stóráil ar an bhfreastalaí, lena n-áirítear gach cnuasa
 
 3. Sa teirminéal (má tá tú ar GNU/Linux) nó sa leid ordaithe (má tá tú ar Microsoft Windows), téigh chuig an bhfochomhadlann `website` agus rith  `npm install`. Lainseálfaidh sé seo Node Package Manager (NPM) a íoslódálfaidh agus a shuiteálfaidh (sa chomhadlann `website/node_modules`) gach spleáchas a theastaíonn ó Terminologue. D’fhéadfadh sé seo cúpla nóiméad a ghlacadh.
 
-4. San fhochomhadlann `website`, athainmnigh an comhad `siteconfig.template.json` agus tabhair `siteconfig.json` air.
+4. San fhochomhadlann `data`, athainmnigh an comhad `siteconfig.template.json` agus tabhair `siteconfig.json` air.
 
 5. San fhochomhadlann `data`, athainmnigh an comhad `terminologue.template.sqlite` agus tabhair `terminologue.sqlite` air.  
 
