@@ -8,7 +8,7 @@ order: 1
 public: true
 ---
 
-**Note:** This documentation describes a **prerelease** version of the Dúchas API. Features are being added on an ongoing basis. This documentation will be revised in advance of the v1.0 release. We welcome feedback at <gaois@dcu.ie>.
+**Note:** This documentation describes a **prerelease** version of the Dúchas API **that is no longer available**. This documentation will be revised in advance of the v1.0 release. We welcome feedback at <gaois@dcu.ie>. Prior to the release of v1.0, data dumps can be requested from the NFC (UCD) at <bealoideas@ucd.ie>, and if your request is approved, the applicable data will be exported by the team here at Gaois (DCU).
 
 ## Introduction
 

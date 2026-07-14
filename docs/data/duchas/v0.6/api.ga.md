@@ -8,7 +8,7 @@ order: 1
 public: true
 ---
 
-**Tabhair faoi deara:** Déantar cur síos sa doiciméad seo ar leagan **réamheisiúna** de API Dúchas. Tá gnéithe á gcur leis ar bhonn leanúnach. Déanfar athbhreithniú ar an doiciméad seo roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>.
+**Tabhair faoi deara:** Déantar cur síos sa doiciméad seo ar leagan **réamheisiúna** de API Dúchas **nach bhfuil ar fáil níos mó**. Déanfar athbhreithniú ar an doiciméad seo roimh eisiúint v1.0. Cuirimid fáilte roimh aiseolas ag <gaois@dcu.ie>. Roimh eisiúint v1.0, is féidir dumpaí sonraí a iarraidh ar CBÉ (UCD) ag <bealoideas@ucd.ie>, agus má cheadaítear d'iarratas, déanfaidh an fhoireann anseo ag Gaois (DCU) na sonraí ábhartha a easpórtáil.
 
 ## Réamhrá
 
